@@ -1,0 +1,96 @@
+/* ---------------------*/
+/*    HTML ELEMENTS     */
+/* ---------------------*/
+h1, h2, h3, p, li {
+    color: #1F294D; 
+    font-family: "Leelawadee UI";
+}
+ul, li{
+    list-style: none;
+}
+
+/* ---------------------*/
+/*    OPEN WEB PAGE     */
+/* ---------------------*/
+
+/* ---------------------*/
+/*      FRONT PAGE      */
+/* ---------------------*/
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#menubar{
+    background-color: #FFFFFF;
+    align-self: center;
+    width: 20%;
+}
+
+.colorsection {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F4F6FA;
+    width: 80%;
+}
+
+.colorsection .images{
+    align-self: flex-start;
+    display: flex;
+    width: 100%;
+}
+
+.img-top{
+    height: 30vh;
+}
+
+.img-top.purple {
+    width: 40%;
+    background-image: url(../media/purple-yellow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10rem;
+}
+
+.img-top.yellow {
+    width: 60%;
+    background-image: url(../media/yellow-pink.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+.colorsection div {
+    align-self: flex-start;
+    width: 60%;
+}
+
+.colorsection div h1 {
+    font-size: 4.25rem;
+    padding-left: 1em;
+    line-height: 140%;
+}
+.colorsection div span {
+    background-color: #F5F187;
+    font-weight: bold;
+}
+
+.colorsection .img-btm{
+    align-self: flex-end;
+    width: 100%;
+    height: 30vh;
+    background-image: url(../media/pink-purple-circle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin-right: 7rem;
+}
+
+/* ---------------------*/
+/*    ABOUT PAGE WEB    */
+/* ---------------------*/
+.om-oss {
+    display: none; 
+}
+
