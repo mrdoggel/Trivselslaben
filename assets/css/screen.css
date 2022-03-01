@@ -147,3 +147,59 @@ a:hover{
     display: none; 
 }
 
+
+
+/* ---------------------*/
+/*    LOGIN PAGE WEB    */
+/* ---------------------*/
+
+body {
+    height: 100%;
+    background: linear-gradient(90deg, #86f0f0 50%, #FFFFFF 50%);
+}
+
+.container {
+/* kommer kode her for å få alle elementer på riktig plass */
+}
+
+.introtekst {
+    width: 50%;
+}
+
+.bilde {
+    margin-left: 70%;
+}
+
+.loginBox {
+    width: 50%;
+    margin-left: 70%;
+    box-shadow: 2px 2px rgb(180, 180, 180);
+    width: 200px;
+    text-align: center;
+}
+
+input[type=text] {
+    margin: 5px;
+    border-radius: 15px;
+    border-width: 1.5px;
+    height: 25px;
+}
+
+ input[type=submit] {
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    
+}
