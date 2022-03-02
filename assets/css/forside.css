@@ -68,15 +68,16 @@ height: 92vh;
     font-size: 35px;
     padding-top: 10px;
     padding-left: 10px;
+    text-align: center;
 }
 
 #kurs1, #kurs2, #kurs3, #kurs4 {
     margin-left: 75px;
-    margin-top: 10px;
+    margin-top: 40px;
     margin-bottom: 20px;
     border-radius: 25px;
     width: 19%;
-    height: 323px;
+    height: 318px;
     box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 25%);
     text-align: center;
 }
@@ -88,7 +89,9 @@ height: 92vh;
 
 #kurs1 img, #kurs2 img, #kurs3 img, #kurs4 img {
     text-align: center;
+    height: 150px;
     width: 150px;
+
 }
 
 #kurs1 h4, #kurs2 h4, #kurs3 h4, #kurs4 h4 {
@@ -123,11 +126,11 @@ height: 92vh;
 
 #modul1, #modul2, #modul3 {
     margin-left: 75px;
-    margin-top: 10px;
+    margin-top: 40px;
     margin-bottom: 20px;
     border-radius: 25px;
     width: 27%;
-    height: 323px;
+    height: 318px;
     box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 25%);
     text-align: center;
 }
@@ -137,9 +140,11 @@ height: 92vh;
     border-radius: 0px, 0px, 25px;
 }
 
-#modul1 img, #modul2 img, #modul3 img {
+#modul1 h2, #modul2 h2, #modul3 h2 {
     text-align: center;
-    width: 150px;
+    font-size: 35px;
+    padding-top: 50px;
+    padding-bottom: 35px;
 }
 
 #modul1 h4, #modul2 h4, #modul3 h4 {
