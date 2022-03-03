@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Forside</title>
+    <title>Forside - Oversikt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/forside.css">
@@ -31,9 +31,9 @@
     </nav>
     <nav id="menubar">
         <ul>
-            <a href=""><li>Oversikt</li></a>
-            <a href=""><li>Påbegynt</li></a>
-            <a href=""><li>Fullført</li></a>
+            <a class="active" href="forside.php"><li>Oversikt</li></a>
+            <a href="påbegynt.php"><li>Påbegynt</li></a>
+            <a href="fullført.php"><li>Fullført</li></a>
         </ul>
     </nav>
     <div id="kurs_container">
