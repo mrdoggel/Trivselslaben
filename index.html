@@ -1,84 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/screen.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/screen.css" />
     <script src="assets/js/effects.js"></script>
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <div class="left-side">
-            <img src="assets/images/logo.png">
-            <nav id="menubar">
-                <div>
+  <body>
+    <main class="frontpage-container">
+      <div>
+        <img src="assets/images/logo.png" />
+        <nav id="menubar">
+          <div>
+            <ul>
+              <li class="login">
+                <a href="login.html" class="menulink">Logg inn</a>
+              </li>
+              <li class="about">
+                <span class="menulink">Om oss</span>
                 <ul>
-                    <li class="login"><a href="#">Logg inn</a></li>
-                    <li class="about"><a href="#">Om oss</a>
-                        <ul>
-                            <li class="about-choice">Trivselslaben</li>
-                            <li class="about-choice">Inova</li>
-                            <li class="about-choice">Vår visjon</li>
-                        </ul>
-                    </li>
-                    <li class="start"><a href="#">Kom i gang</a></li>
+                  <li class="about-choice one hidden">Trivselslaben</li>
+                  <li class="about-choice two hidden">Inova</li>
+                  <li class="about-choice three hidden">Vår visjon</li>
                 </ul>
-            </div>
-            </nav>
+              </li>
+              <li class="start"><a href="#" class="menulink">Kom i gang</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <section class="colorsection">
+        <div class="images">
+          <div class="img-top purple"></div>
+          <div class="img-top yellow"></div>
         </div>
-        
-        <section class="colorsection">
-            <div class="images">
-                <div class="img-top purple"></div>
-                <div class="img-top yellow"></div>
-            </div>
-            <div>
-                <h1>Det du trenger for å <span>etablere</span> og <span>videreutvikle</span> din bedrift</h1>
-            </div>
-            <div class="img-btm"></div>
-        </section>
 
+        <div>
+          <h1>
+            Det du trenger for å <span>etablere</span> og
+            <span>videreutvikle</span> din bedrift
+          </h1>
+        </div>
 
-        <section class="om-oss">
-            <article class="om-oss trivselslaben">
-                <h1>Trivselslaben</h1>
-                <div>Trivselslaben har medarbeidere i Vadsø, Skien og Trondheim. Sammen utgjør vi
-                    et tverrfaglig miljø med kompeansebakgrunn fra prosjektledelse, 
-                    virksomhetsledelse, pedagogikk, helse-/medisinske fag og tekniske fag. 
-                    
-                    For oss har den tverrfaglige tilnærming blitt en 
-                    nøkkel til å finne løsninger utenfor «boksen» og 
-                    oppnå gode resultater der vi engasjerer oss.
-                </div>
+          <div class="articles">
+            <article class="om-oss trivselslaben hidden">
+              <h1>Trivselslaben</h1>
+              <p>
+                Trivselslaben har medarbeidere i Vadsø, Skien og Trondheim.
+                Sammen utgjør vi et tverrfaglig miljø med kompeansebakgrunn fra
+                prosjektledelse, virksomhetsledelse, pedagogikk,
+                helse-/medisinske fag og tekniske fag.</p> <br>
+                <p>For oss har den
+                tverrfaglige tilnærming blitt en nøkkel til å finne løsninger
+                utenfor «boksen» og oppnå gode resultater der vi engasjerer oss.
+              </p>
             </article>
-            <article class="om-oss plattformen">
-                <h1>E-læringsplattformen</h1>
-                <div>Trivselslaben har medarbeidere i Vadsø, Skien og Trondheim. Sammen utgjør vi
-                    et tverrfaglig miljø med kompeansebakgrunn fra prosjektledelse, 
-                    virksomhetsledelse, pedagogikk, helse-/medisinske fag og tekniske fag. 
-                    
-                    For oss har den tverrfaglige tilnærming blitt en 
-                    nøkkel til å finne løsninger utenfor «boksen» og 
-                    oppnå gode resultater der vi engasjerer oss.
-                </div>
-            </article>
-            <article class="om-oss bakgrunn">
-                <h1>Bakgrunn og visjon</h1>
-                <div>Trivselslaben har medarbeidere i Vadsø, Skien og Trondheim. Sammen utgjør vi
-                    et tverrfaglig miljø med kompeansebakgrunn fra prosjektledelse, 
-                    virksomhetsledelse, pedagogikk, helse-/medisinske fag og tekniske fag. 
-                    
-                    For oss har den tverrfaglige tilnærming blitt en 
-                    nøkkel til å finne løsninger utenfor «boksen» og 
-                    oppnå gode resultater der vi engasjerer oss.
-                </div>
-            </article>
-        </section>
-    </div>
-</body>
 
+            <article class="om-oss plattformen hidden">
+              <h1>Inova</h1>
+              <p>
+                Trivselslaben har medarbeidere i Vadsø, Skien og Trondheim.
+                Sammen utgjør vi et tverrfaglig miljø med kompeansebakgrunn fra
+                prosjektledelse, virksomhetsledelse, pedagogikk,
+                helse-/medisinske fag og tekniske fag. For oss har den
+                tverrfaglige tilnærming blitt en nøkkel til å finne løsninger
+                utenfor «boksen» og oppnå gode resultater der vi engasjerer oss.
+              </p>
+            </article>
+
+            <article class="om-oss bakgrunn hidden">
+              <h1>Vår visjon</h1>
+              <p>
+                Trivselslaben har medarbeidere i Vadsø, Skien og Trondheim.
+                Sammen utgjør vi et tverrfaglig miljø med kompeansebakgrunn fra
+                prosjektledelse, virksomhetsledelse, pedagogikk,
+                helse-/medisinske fag og tekniske fag. For oss har den
+                tverrfaglige tilnærming blitt en nøkkel til å finne løsninger
+                utenfor «boksen» og oppnå gode resultater der vi engasjerer oss.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="img-btm"></div>
+      </section>
+    </main>
+  </body>
 </html>

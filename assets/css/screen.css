@@ -1,205 +1,221 @@
 /* ---------------------*/
 /*    HTML ELEMENTS     */
 /* ---------------------*/
-h1, h2, h3, p, li,  a{
-    color: #1F294D; 
-    font-family: "Leelawadee UI";
+h1,
+h2,
+h3,
+p,
+li,
+a {
+  color: #1f294d;
+  font-family: "Leelawadee UI";
 }
-ul, li{
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-a:hover{
-    font-size:smaller;
-    font-weight: bold;
-    transition: all 0.2s;
-}
-.about-choice:hover{
-    font-size: smaller;
-    transition: all 0.4s;
-}
-
-.about:hover{
-    background-size: 1.75rem;
-}
-.about-choice{
-   display: none;
-}
-.login{
-    background-image: url(../media/login.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-left: 2rem;
-    margin-bottom: 5rem;
-    line-height: 160%;
-}
-.about{
-    background-image: url(../media/info.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-left: 2rem;
-    margin-bottom: 5rem;
-    line-height: 160%;
-}
-
-.start{
-    background-image: url(../media/route.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-left: 2rem;
-    line-height: 160%;
-}
-
 
 /* ---------------------*/
-/*    OPEN WEB PAGE     */
+/*      UTILITIES       */
 /* ---------------------*/
+.hidden{
+    display: none;
+}
 
 /* ---------------------*/
-/*      FRONT PAGE      */
+/*      SITEWIDE        */
 /* ---------------------*/
-
-.container{
+.frontpage-container {
     display: flex;
     flex-direction: row;
     height: 100vh;
 }
 
 #menubar {
-    background-color: #FFFFFF;
-    width: 100%;
+    background-color: #ffffff;
     margin-top: 45%;
 }
-
+  
 #menubar div {
     width: 50%;
-    margin:auto;
+    margin: auto;
     text-transform: uppercase;
     font-size: 1.25rem;
 }
 
+.login { background-image: url(../media/login.png) }
+
+.about { background-image: url(../media/info.png) }
+  
+.start { background-image: url(../media/route.png) }
+
+.login, .about, .start {
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+    margin-bottom: 5rem;
+    line-height: 160%;
+}
+
+.menulink:hover {
+    font-size: smaller;
+    font-weight: bold;
+    transition: all 0.2s;
+}  
+
+.about:hover {
+    background-size: 1.75rem;
+}
+
+.about-choice:hover {
+    font-size: smaller;
+    transition: all 0.4s;
+}
+
+/* ---------------------*/
+/*      FRONT PAGE      */
+/* ---------------------*/
 .colorsection {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #F4F6FA;
-    width: 80%;
-    min-height: 100vh;
-    height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f4f6fa;
+  min-height: 100vh;
+  height: fit-content;
 }
 
-.colorsection .images{
-    align-self: flex-start;
-    display: flex;
-    width: 100%;
+.colorsection .images {
+  align-self: flex-start;
+  display: flex;
+  width: 100%;
 }
 
-.img-top{
-    height: 30vh;
+.img-top {
+  height: 30vh;
 }
 
 .img-top.purple {
-    width: 40%;
-    background-image: url(../media/purple-yellow.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: 10rem;
+  width: 40%;
+  background-image: url(../media/purple-yellow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 10rem;
 }
 
 .img-top.yellow {
-    width: 60%;
-    background-image: url(../media/yellow-pink.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-}
-.colorsection div {
-    align-self: flex-start;
-    width: 60%;
+  width: 60%;
+  background-image: url(../media/yellow-pink.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
 }
 
-.colorsection div h1 {
-    font-size: 4.25rem;
-    padding-left: 1em;
-    line-height: 140%;
-}
-.colorsection div span {
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, #F5F187 0%, #F5F187 0%);
-    font-weight: bold;
+.colorsection div:nth-child(2) {
+  align-self: flex-start;
+  width: 60%;
 }
 
-.colorsection .img-btm{
-    align-self: flex-end;
-    width: 100%;
-    height: 20vh;
-    background-image: url(../media/pink-purple-circle.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    margin-right: 7rem;
+.articles{
+  width: 60%;
+  margin: auto;
+  font-size: 1.75rem;
+  line-height: 120%;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.colorsection h1 {
+  font-size: 4.25rem;
+  padding-left: 1em;
+  line-height: 140%;
+}
+
+.colorsection span {
+  font-weight: bold;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    #f5f187 0%,
+    #f5f187 0%
+  );
+}
+
+.colorsection .img-btm {
+  align-self: flex-end;
+  width: 100%;
+  height: 20vh;
+  background-image: url(../media/pink-purple-circle.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  margin-right: 7rem;
 }
 
 /* ---------------------*/
 /*    ABOUT PAGE WEB    */
 /* ---------------------*/
-.om-oss {
-    display: none; 
+.om-oss h1 {
+  color:#FC9C7F; 
+  text-align: center;
 }
-
+.om-oss p {
+  
+}
 
 
 /* ---------------------*/
 /*    LOGIN PAGE WEB    */
 /* ---------------------*/
 
-body {
-    height: 100%;
-    background: linear-gradient(90deg, #86f0f0 50%, #FFFFFF 50%);
+/*body {
+  height: 100%;
+  background: linear-gradient(90deg, #86f0f0 50%, #ffffff 50%);
 }
 
 .container {
-/* kommer kode her for å få alle elementer på riktig plass */
-}
+  /* kommer kode her for å få alle elementer på riktig plass */
+/*}
 
 .introtekst {
-    width: 50%;
+  width: 50%;
 }
 
 .bilde {
-    margin-left: 70%;
+  margin-left: 70%;
 }
 
 .loginBox {
-    width: 50%;
-    margin-left: 70%;
-    box-shadow: 2px 2px rgb(180, 180, 180);
-    width: 200px;
-    text-align: center;
+  width: 50%;
+  margin-left: 70%;
+  box-shadow: 2px 2px rgb(180, 180, 180);
+  width: 200px;
+  text-align: center;
 }
 
-input[type=text] {
-    margin: 5px;
-    border-radius: 15px;
-    border-width: 1.5px;
-    height: 25px;
+input[type="text"] {
+  margin: 5px;
+  border-radius: 15px;
+  border-width: 1.5px;
+  height: 25px;
 }
 
- input[type=submit] {
-    border: none;
-    background-color: white;
-    font-size: 18px;
-    margin-bottom: 5px;
-    cursor: pointer;
+input[type="submit"] {
+  border: none;
+  background-color: white;
+  font-size: 18px;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 
 ::-webkit-input-placeholder {
-    text-align: center;
+  text-align: center;
 }
 
 h1 {
-    color: white;
-    font-weight: normal;
-    text-align: center;
-    
+  color: white;
+  font-weight: normal;
+  text-align: center;
 }

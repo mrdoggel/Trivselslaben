@@ -1,47 +1,78 @@
-"use strict"
+"use strict";
 
-let $listelem; 
-let $choice; 
+document.addEventListener("DOMContentLoaded", init);
 
-document.addEventListener("DOMContentLoaded", waitOnLoad);
+function init() {
+  document.querySelector(".about").addEventListener("mouseover", showAboutChoices);
+  document.querySelector(".about").addEventListener("mouseleave", hideAboutChoices);
+  document.querySelector(".one").addEventListener("click", showChoiceOne);
+  document.querySelector(".two").addEventListener("click", showChoiceTwo);
+  document.querySelector(".three").addEventListener("click", showChoiceThree);
 
-function waitOnLoad(){
-    document.querySelector(".about").addEventListener("mouseover", showOmOssCoices);
-    document.querySelector(".about").addEventListener("mouseleave", removeItems); 
-    $choice = document.querySelectorAll(".about-choice");
-    $choice.forEach((element)=> {
-        element.addEventListener("mouseover", choiceStyle); 
-    });
-    $choice.forEach((element)=> {
-        element.addEventListener("mouseleave", choiceStyleReset); 
-    });
+  const $choices = document.querySelectorAll(".about-choice");
+  $choices.forEach((element) => {
+    element.addEventListener("mouseover", choiceHoverStyle);
+  });
+  $choices.forEach((element) => {
+    element.addEventListener("mouseleave", choiceHoverStyleReset);
+  });
 }
 
-function showOmOssCoices(e){
-    e.preventDefault(); 
-    $listelem = document.querySelectorAll(".about-choice");
-    $listelem.forEach((element)=>{
-        element.style.display = "block";
-    });
-    document.querySelector(".about").style.margin = "auto auto 0rem auto";
-    document.querySelector(".start").style.margin = "2rem auto auto auto"
-}
-function removeItems(e){
-    e.preventDefault(); 
-    $listelem = document.querySelectorAll(".about-choice");
-    $listelem.forEach((element)=>{
-        element.style.display = "none";
-    });
-    document.querySelector(".about").style.margin = "auto auto 5rem auto";
+function showAboutChoices(e) {
+  e.preventDefault();
+  const $listelem = document.querySelectorAll(".about-choice");
+  $listelem.forEach((element) => {
+    element.style.display = "block";
+  });
+  document.querySelector(".about").style.margin = "auto auto 0rem auto";
+  document.querySelector(".start").style.margin = "2rem auto auto auto";
 }
 
-function choiceStyle(e){
-    e.preventDefault();
-    e.target.style.fontWeight = "bold";
+function hideAboutChoices(e) {
+  e.preventDefault();
+  const $listelem = document.querySelectorAll(".about-choice");
+  $listelem.forEach((element) => {
+    element.style.display = "none";
+  });
+  document.querySelector(".about").style.margin = "auto auto 5rem auto";
 }
 
-function choiceStyleReset(e){
-    e.preventDefault(); 
-    e.target.style.color = "#1F294D";
-    e.target.style.fontWeight = "normal";
+function choiceHoverStyle(e) {
+  e.preventDefault();
+  e.target.style.fontWeight = "bold";
+  e.target.style.cursor = "pointer";
+  console.log("hello");
+}
+
+function choiceHoverStyleReset(e) {
+  e.preventDefault();
+  e.target.style.color = "#1F294D";
+  e.target.style.fontWeight = "normal";
+}
+
+function showChoiceOne(e) {
+  e.preventDefault();
+  hideChoicesAndHeading();
+  document.querySelector(".om-oss.trivselslaben").classList.remove("hidden");
+  document.querySelector(".om-oss.trivselslaben").style.width = "100%"; 
+}
+
+function showChoiceTwo(e) {
+  e.preventDefault();
+  hideChoicesAndHeading();
+  document.querySelector(".om-oss.plattformen").classList.remove("hidden");
+}
+
+function showChoiceThree(e) {
+  e.preventDefault();
+  hideChoicesAndHeading();
+  document.querySelector(".om-oss.bakgrunn").classList.remove("hidden");
+}
+
+function hideChoicesAndHeading() {
+  let $choices = document.querySelectorAll(".om-oss");
+  $choices.forEach((element) => {
+    element.classList.add("hidden");
+  });
+  document.querySelector(".colorsection h1").classList.add("hidden");
 }
