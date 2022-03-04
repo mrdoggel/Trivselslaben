@@ -24,9 +24,39 @@ ul, li{
 }
 
 #menubar{
+    text-align: center;
     background-color: #FFFFFF;
-    align-self: center;
+    height: 100%;
     width: 20%;
+}
+
+#menubar img{
+    margin-top: 20px;
+}
+
+#menubar .meny{
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    background-color: #F4F6FA;
+    border-width: thin;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+}
+
+#menubar .meny li {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+#menubar .meny li:hover {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    font-size: 110%;
 }
 
 .colorsection {
@@ -36,6 +66,10 @@ ul, li{
     width: 80%;
     min-height: 100vh;
     height: fit-content;
+}
+
+.colorsection h1 {
+    color: black;
 }
 
 .colorsection .images{
@@ -95,7 +129,6 @@ ul, li{
 .om-oss {
     display: none; 
 }
-
 
 
 /* ---------------------*/

@@ -91,6 +91,7 @@
         </div>
 
     </div>
+
     <div id="kurs_container">
         <h1>Toppvalg basert på dine interesser</h1>
             <div id="kurs1">
