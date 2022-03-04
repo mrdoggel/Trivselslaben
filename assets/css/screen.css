@@ -2,50 +2,69 @@
 /*        MENUBAR       */
 /* ---------------------*/
 .frontpage-container {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.frontpage-container > div {
+  width: 25%;
+  text-align: center;
+}
+
+.frontpage-container img {
+  height: 20%;
 }
 
 #menubar {
-    background-color: #ffffff;
-    margin-top: 45%;
+  background-color: #ffffff;
+  text-align: left;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
 }
-  
+
 #menubar div {
-    width: 50%;
-    margin: auto;
-    text-transform: uppercase;
-    font-size: 1.25rem;
+  width: 50%;
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 1.25rem;
 }
 
-.login { background-image: url(../media/login.png) }
+.login {
+  background-image: url(../media/login.png);
+}
 
-.about { background-image: url(../media/info.png) }
-  
-.start { background-image: url(../media/route.png) }
+.about {
+  background-image: url(../media/info.png);
+}
 
-.login, .about, .start {
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-left: 2rem;
-    margin-bottom: 5rem;
-    line-height: 160%;
+.start {
+  background-image: url(../media/route.png);
+}
+
+.login,
+.about,
+.start {
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 2rem;
+  margin-bottom: 5rem;
+  line-height: 160%;
 }
 
 .menulink:hover {
-    font-size: smaller;
-    font-weight: bold;
-    transition: all 0.2s;
-}  
+  font-size: smaller;
+  font-weight: bold;
+  transition: all 0.2s;
+}
 
 .about:hover {
-    background-size: 1.75rem;
+  background-size: 1.75rem;
 }
 
 .about-choice:hover {
-    font-size: smaller;
-    transition: all 0.4s;
+  font-size: smaller;
+  transition: all 0.4s;
 }
 
 /* ---------------------*/
@@ -55,7 +74,8 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #f4f6fa;
-  min-height: 100vh;
+  max-height: 100vh;
+  width: 75%;
 }
 
 .colorsection .images {
@@ -89,18 +109,19 @@
   width: 60%;
 }
 
-.articles{
+.articles {
   width: 60%;
   margin: 0rem 0rem 0rem 4rem;
-  margin-top:0px; 
+  margin-top: 0px;
   font-size: 1.75rem;
   line-height: 120%;
 }
 
 .colorsection h1 {
-  font-size: 4.25rem;
+  font-size: 2.75rem;
   padding-left: 4rem;
-  line-height: 140%;
+  line-height: 180%;
+  letter-spacing: 0.1rem;
 }
 
 .colorsection span {
@@ -130,6 +151,6 @@
 /* ---------------------*/
 .om-oss h2 {
   font-size: 3.5rem;
-  color:#FC9C7F; 
+  color: #fc9c7f;
   padding: 0rem 0rem 3rem 0rem;
 }
