@@ -1,32 +1,5 @@
 /* ---------------------*/
-/*    HTML ELEMENTS     */
-/* ---------------------*/
-h1,
-h2,
-h3,
-p,
-li,
-a {
-  color: #1f294d;
-  font-family: "Leelawadee UI";
-}
-ul,
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-
-/* ---------------------*/
-/*      UTILITIES       */
-/* ---------------------*/
-.hidden{
-    display: none;
-}
-
-/* ---------------------*/
-/*      SITEWIDE        */
+/*        MENUBAR       */
 /* ---------------------*/
 .frontpage-container {
     display: flex;
@@ -76,14 +49,13 @@ a {
 }
 
 /* ---------------------*/
-/*      FRONT PAGE      */
+/*        CONTENT       */
 /* ---------------------*/
 .colorsection {
   display: flex;
   flex-wrap: wrap;
   background-color: #f4f6fa;
   min-height: 100vh;
-  height: fit-content;
 }
 
 .colorsection .images {
@@ -119,16 +91,15 @@ a {
 
 .articles{
   width: 60%;
-  margin: auto;
+  margin: 0rem 0rem 0rem 4rem;
+  margin-top:0px; 
   font-size: 1.75rem;
   line-height: 120%;
-  text-align: center;
-  align-self: flex-start;
 }
 
 .colorsection h1 {
   font-size: 4.25rem;
-  padding-left: 1em;
+  padding-left: 4rem;
   line-height: 140%;
 }
 
@@ -155,67 +126,10 @@ a {
 }
 
 /* ---------------------*/
-/*    ABOUT PAGE WEB    */
+/*         ABOUT        */
 /* ---------------------*/
-.om-oss h1 {
+.om-oss h2 {
+  font-size: 3.5rem;
   color:#FC9C7F; 
-  text-align: center;
-}
-.om-oss p {
-  
-}
-
-
-/* ---------------------*/
-/*    LOGIN PAGE WEB    */
-/* ---------------------*/
-
-/*body {
-  height: 100%;
-  background: linear-gradient(90deg, #86f0f0 50%, #ffffff 50%);
-}
-
-.container {
-  /* kommer kode her for å få alle elementer på riktig plass */
-/*}
-
-.introtekst {
-  width: 50%;
-}
-
-.bilde {
-  margin-left: 70%;
-}
-
-.loginBox {
-  width: 50%;
-  margin-left: 70%;
-  box-shadow: 2px 2px rgb(180, 180, 180);
-  width: 200px;
-  text-align: center;
-}
-
-input[type="text"] {
-  margin: 5px;
-  border-radius: 15px;
-  border-width: 1.5px;
-  height: 25px;
-}
-
-input[type="submit"] {
-  border: none;
-  background-color: white;
-  font-size: 18px;
-  margin-bottom: 5px;
-  cursor: pointer;
-}
-
-::-webkit-input-placeholder {
-  text-align: center;
-}
-
-h1 {
-  color: white;
-  font-weight: normal;
-  text-align: center;
+  padding: 0rem 0rem 3rem 0rem;
 }

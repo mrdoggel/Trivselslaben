@@ -1,0 +1,131 @@
+#container{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+#venstre {
+    background: linear-gradient(90deg, #95E3EC 100%, #FFFFFF 50%);
+    width: 65vw;
+    height: 100vh;
+    font-weight: lighter;
+}
+#venstre .introtekst {
+    margin-top: 30%;
+}
+
+#venstre h1, #venstre h2 {
+    margin-left: 4rem;
+    color: #FFFFFF;
+    padding: 0.5rem;
+}
+
+#venstre h1 {
+    font-size: 4rem;
+}
+
+#venstre h2 {
+    font-size: 3rem;
+    letter-spacing: 0.08rem;
+}
+
+#høyre {
+    text-align: center;
+    width: 35vw;
+    height: 100vh;
+}
+
+#høyre .bilde img{
+    width: 250px;
+}
+
+.loginBox {
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 1px 1px 10px rgb(71 71 71 / 30%);
+    width: 60%;
+    border-radius:10px;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.loginBox form {
+    padding: 1rem;
+}
+input{
+    display: block;
+    width: 90%;
+}
+
+.glemt{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.75rem 0rem 0.75rem 0rem;
+}
+
+.glemt a {
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 60%,
+    #FC9C7F 0%,
+    #FC9C7F 0%
+  );
+}
+
+.venstre {
+    padding: 0;
+    margin: 0;
+}
+
+.loginBox label {
+    display: block;
+    text-align: left;
+    font-size: 1.25rem;
+    padding: 0.75rem;
+}
+
+input[type=text] {
+    max-width: 100%;
+    border-radius: 15px;
+    border: 0.06rem solid #FC9C7F;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+ input[type=submit] {
+    width: 100%;
+    border: none;
+    background-color: white;
+    font-size: 1.75rem;
+    cursor: pointer;
+    padding: 1rem;
+    letter-spacing: 0.006rem;
+    text-align: center;
+}
+
+input[type=text]:focus {
+    border: 0.15rem solid #FC9C7F; 
+    outline: none;
+    transition: all 0.3s;
+}
+
+input[type=submit]:hover {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: 0.06rem;
+    transition: all 0.3s;
+}
+
+.glemt a:hover {
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 10%,
+    #FC9C7F 0%,
+    #FC9C7F 0%
+  );
+  letter-spacing: 0.08rem;
+  transition: all 0.3s;
+}
