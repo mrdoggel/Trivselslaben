@@ -28,6 +28,7 @@
   margin: auto;
   text-transform: uppercase;
   font-size: 1.25rem;
+  margin-top: 25%;
 }
 
 .login {
@@ -144,6 +145,19 @@
   background-size: contain;
   background-position: right;
   margin-right: 7rem;
+}
+
+@media only screen and (max-width: 1920px) {
+  .colorsection h1 {
+    font-size: 3.5rem;
+  }
+  .frontpage-container img {
+    height: 15rem;
+  }
+
+  #menubar div {
+    margin-top: 30%; 
+  }
 }
 
 /* ---------------------*/

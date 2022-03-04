@@ -128,3 +128,20 @@ input[type=submit]:hover {
   letter-spacing: 0.08rem;
   transition: all 0.3s;
 }
+
+@media only screen and (max-width: 1920px) {
+    .bilde img {
+        height: 15rem;
+    }
+    .loginBox {
+        margin-top: 20%;
+    }
+    #venstre h1 {
+        font-size: 5rem;
+    }
+    
+    #venstre h2 {
+        font-size: 3.25rem;
+        letter-spacing: 0.08rem;
+    }
+  }
