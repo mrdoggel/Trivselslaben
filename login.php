@@ -1,3 +1,6 @@
+<?php
+    require "assets/connection/conn.login.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,19 +18,25 @@
                 <h2>For deg som vil utvikle en solid start-up</h2>
             </div>
         </section>
-
         <aside id="høyre">
             <div class="bilde"><a href="index.html"><img src="assets/images/logo.png" alt="logo"></a></div>
 
             <div class="loginBox">
-                <form action="login.php">
+                <form action="login.php" method="post">
                     <label for="fname" class="venstre">E-post</label>
-                    <input type="text" id="fname" name="fname" placeholder="e-post">
+                    <input name="epost" type="text" id="fname" placeholder="e-post">
                     <label for="password" class="venstre">Passord</label>
-                    <input type="text" id="password" name="password"  placeholder="passord">
+                    <input name="passord" type="password" id="password" placeholder="passord">
                     <p class="glemt"><a href="glemt.php">Glemt passord?</a></p>
                     <p class="reg"><a href="registrer.php">Ingen bruker?</a></p>
-                    <input type="submit" value="Logg inn">
+                    <input name="logginn-knapp" type="submit" value="Logg inn">
+                    <?php  if (count($errors) > 0) : ?>
+                    <div class="error">
+                        <?php foreach ($errors as $error) : ?>
+                        <p style="color: red;"><?php echo $error ?></p>
+                        <?php endforeach ?>
+                    </div>
+                    <?php  endif ?>
                 </form>
             </div>
         </aside>
