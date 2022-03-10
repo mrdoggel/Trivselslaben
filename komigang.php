@@ -47,7 +47,7 @@
                     <li>- Gode repetisjonsmuligheter</li>
                     <li>- Steg-for-steg veiledning</li>
                 </ul>
-                <button><span cass="tilgang">Få tilgang til kursmateriale</span></button>
+                <button><span>Få tilgang til kursmateriale</span></button>
             </article>
             <article class="prisinfo årlig">
                 <div class="anbefales"> <span>Anbefales</span> </div>
@@ -60,7 +60,7 @@
                     <li>- Steg-for-steg veiledning</li>
                 </ul>
                 <p>Spar 15%</p>
-                <button><span cass="tilgang">Få tilgang til kursmateriale</span></button>
+                <button><span>Få tilgang til kursmateriale</span></button>
             </article>
         </div>
       </section>
