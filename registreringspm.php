@@ -37,6 +37,9 @@
                 </aside>
                 <section>
                     <div>
+                        <!-- Her kan du hente ut fra DB Martin :-) Var for å sjekke designet. Visste ikke hvordan du må sette det 
+                        opp, men om du trenger et form og at valgene må være av annen type er det bare å ordne så skal jeg fikse
+                        opp i CSS-en igjen til slutt -->
                         <p class="intvalg-en"><span>Finansiering</span></p>
                         <p class="intvalg-to"><span>Konseptutvikling</span></p>
                         <p class="intvalg-tre"><span>Økonomi</span></p>
