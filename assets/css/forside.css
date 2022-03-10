@@ -46,6 +46,7 @@
 }
 
 #navn_poeng {
+    font-family: "Leelawadee UI";
     position: absolute;
     width: 80px;
     right: 60px;
@@ -211,7 +212,7 @@ height: 92vh;
     text-align: center;
 }
 
-#progress1 p, #progress2 p, #progress3 p, {
+#progress1 p, #progress2 p, #progress3 p {
     font-size: 20px;
     border-radius: 0px, 0px, 25px;
     padding-left: 10px;
