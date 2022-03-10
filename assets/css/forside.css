@@ -6,20 +6,26 @@
 
 #navbar {
     width: 100%;
-    height: 75px;
+    height: 10vh;
     background-image: linear-gradient(to right, #d0d9f9 , #a3ecc8, #f2f088);
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#searchbar {
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
 }
 
 #searchbar input{
-    position: absolute;
-    left: 0;
-    width: 250px;
-    margin-top: 20px;
-    margin-left: 100px;
-    padding: 10px;
     box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 25%);
     border-radius: 5px;
     border: none;
+    height: 4vh;
+    width: 20vw;
+    margin-left: 4vw;
 }
 
 #searchbar textarea:focus, input:focus{
@@ -29,12 +35,10 @@
 #searchbar svg {
     box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 25%);
     z-index: 100;
-    position: absolute;
-    left: 380px;
-    margin-top: 20px;
-    padding: 5px;
-    width: 25px;
     border-radius: 5px;
+    width: 3vh;
+    margin-left: 1vw;
+    padding: 5px;
 }
 
 #searchbar svg:hover {
@@ -42,38 +46,40 @@
 }
 
 #profil {
-    position: absolute;
-    right: 0;
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: right;
+    margin-right: 4vw;
 }
 
 #navn_poeng {
     font-family: "Leelawadee UI";
-    position: absolute;
-    width: 80px;
-    right: 60px;
-    top: 20px;
+    margin-right: 1vw;
 }
 
 #profil img {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 50px;
     box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 25%);
     border-radius: 25px;
+    width: 5vh;
+}
+
+#content {
+
 }
 
 #menubar {
-float: left;
-width: 10%;
-height: 92vh;
-
+    margin-top: 25px;
+    width: 10%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #menubar ul {
-    margin-left: 35%;
-    padding-top: 350px;
-    font-size: 25px;
+    font-size: 1.5vw;
 }
 
 #menubar ul a {
@@ -82,43 +88,43 @@ height: 92vh;
 }
 
 #menubar ul li {
-    margin-top: 30px;
+    margin-bottom: 2.5vh;
 }
 
 .active {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.7vw;
 }
 
 #kurs_container {
+float: right;
+    width: 90%;
     display: flex;
     flex-flow: row wrap;
-    margin-left: 250px;
     margin-top: 25px;
     box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 25%);
 }
 
 #kurs_container h1 {
     width: 100%;
-    font-size: 35px;
+    font-size: 2vw;
     padding-top: 10px;
     padding-left: 10px;
     text-align: center;
 }
 
 #kurs1, #kurs2, #kurs3, #kurs4 {
-    margin-left: 75px;
-    margin-top: 40px;
+    margin-left: 4%;
+    margin-top: 1vw;
     margin-bottom: 20px;
     border-radius: 25px;
-    width: 310px;
-    height: 318px;
+    width: 20%;
     box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 25%);
     text-align: center;
 }
 
 #kurs1 p, #kurs2 p, #kurs3 p, #kurs4 p {
-    font-size: 20px;
+    font-size: 1.2vw;
     border-radius: 0px, 0px, 25px;
     padding-left: 10px;
     padding-right: 10px;
@@ -126,8 +132,8 @@ height: 92vh;
 
 #kurs1 img, #kurs2 img, #kurs3 img, #kurs4 img {
     text-align: center;
-    height: 150px;
-    width: 150px;
+    height: 49%;
+    width: 49%;
 
 }
 
@@ -135,14 +141,16 @@ height: 92vh;
     text-align: left;
     padding-left: 10px;
     padding-top: 10px;
+    font-size: 0.8vw;
 }
 #kurs1 .bottom, #kurs2 .bottom, #kurs3 .bottom, #kurs4 .bottom {
-    padding-top: 40px;
-    height: 100px;
+    height: 40%;
     width: 100%;
-    padding-left: -10px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 #kurs1 .bottom{
@@ -162,18 +170,17 @@ height: 92vh;
 }
 
 #modul1, #modul2, #modul3 {
-    margin-left: 75px;
-    margin-top: 40px;
+    margin-left: 2.5%;
+    margin-top: 1vw;
     margin-bottom: 20px;
     border-radius: 25px;
-    width: 437px;
-    height: 318px;
+    width: 30%;
     box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 25%);
     text-align: center;
 }
 
 #modul1 p, #modul2 p, #modul3 p {
-    font-size: 20px;
+    font-size: 1.2vw;
     border-radius: 0px, 0px, 25px;
     padding-left: 10px;
     padding-right: 10px;
@@ -181,85 +188,87 @@ height: 92vh;
 
 #modul1 h2, #modul2 h2, #modul3 h2 {
     text-align: center;
-    font-size: 35px;
-    padding-top: 50px;
-    padding-bottom: 35px;
+    font-size: 2.2vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 #modul1 h4, #modul2 h4, #modul3 h4 {
     text-align: left;
     padding-left: 10px;
     padding-top: 10px;
+    font-size: 0.8vw;
 }
 
 #modul1 .bottom, #modul2 .bottom, #modul3 .bottom {
-    padding-top: 40px;
-    height: 100px;
+    height: 31%;
     width: 100%;
-    padding-left: -10px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     background: #68cbd7;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 #progress1, #progress2, #progress3 {
-    margin-left: 75px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    border-radius: 25px;
-    width: 310px;
-    height: 318px;
-    box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 25%);
-    text-align: center;
+    margin-left: 2.5%;
+        margin-top: 1vw;
+        margin-bottom: 20px;
+        border-radius: 25px;
+        width: 30%;
+        box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 25%);
+        text-align: center;
 }
 
 #progress1 p, #progress2 p, #progress3 p {
-    font-size: 20px;
-    border-radius: 0px, 0px, 25px;
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 1.2vw;
+        border-radius: 0px, 0px, 25px;
+        padding-left: 10px;
+        padding-right: 10px;
 }
 
 #progress1 h4, #progress2 h4, #progress3 h4 {
     text-align: left;
     padding-left: 10px;
     padding-top: 10px;
+    font-size: 0.8vw;
 }
 
 #progress1 .bottom, #progress2 .bottom, #progress3 .bottom {
-    padding-top: 30px;
-    margin-top: 10px;
-    height: 100px;
-    width: 100%;
-    padding-left: -10px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    background: #B7BFDE;
-    font-size: 20px;
+    height: 28%;
+        width: 100%;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background: #b7bfde;
 }
 
 #finnished1 {
-    margin-left: 75px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    border-radius: 25px;
-    width: 310px;
-    height: 318px;
-    box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 25%);
-    text-align: center;
+    margin-left: 4%;
+        margin-top: 1vw;
+        margin-bottom: 20px;
+        border-radius: 25px;
+        width: 20%;
+        box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 25%);
+        text-align: center;
 }
 
 #finnished1 p {
-    font-size: 20px;
-    border-radius: 0px, 0px, 25px;
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 1.2vw;
+        border-radius: 0px, 0px, 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
 }
 
 #finnished1 h4 {
     text-align: left;
     padding-left: 10px;
     padding-top: 10px;
+    font-size: 0.8vw;
 }
 
 #finnished1 .poeng {
@@ -272,6 +281,7 @@ height: 92vh;
 
 #finnished1 .poeng h6{
     padding-left: 10px;
+    font-size: 1vw;
 }
 
 #finnished1 {
@@ -280,18 +290,20 @@ height: 92vh;
 }
 
 #finnished1 .bottom {
-    padding-top: 30px;
-    height: 50px;
-    width: 100%;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    height: 17%;
+        width: 100%;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     background: #B6F3AB;
 }
 
 .circle-wrap, .circle-wrap2, .circle-wrap3 {
   margin: auto;
-  width: 150px;
-  height: 150px;
+  width: 7.9vw;
+  height: 7.9vw;
   background: #fefcff;
   border-radius: 50%;
   border: 1px solid #cdcbd0;
@@ -304,14 +316,14 @@ height: 92vh;
 .circle-wrap3 .circle3 .mask3,
 .circle-wrap3 .circle3 .fill3
 {
-  width: 150px;
-  height: 150px;
+  width: 7.9vw;
+  height: 7.9vw;
   position: absolute;
   border-radius: 50%;
 }
 
 .mask .fill, .mask2 .fill2, .mask3 .fill3 {
-  clip: rect(0px, 75px, 150px, 0px);
+  clip: rect(0px, 3.95vw, 7.9vw, 0px);
   background-color: #227ded;
 }
 
@@ -319,7 +331,7 @@ height: 92vh;
  .circle-wrap2 .circle2 .mask2,
  .circle-wrap3 .circle3 .mask3
  {
-  clip: rect(0px, 150px, 150px, 75px);
+  clip: rect(0px, 7.9vw, 7.9vw, 3.95vw);
 }
 
 .mask.full,
@@ -371,25 +383,25 @@ height: 92vh;
  .circle-wrap2 .inside-circle2,
  .circle-wrap3 .inside-circle3
  {
-  width: 122px;
-  height: 122px;
+  width: 6.39vw;
+  height: 6.39vw;
   border-radius: 50%;
-  line-height: 120px;
+  line-height: 6.32vw;
   text-align: center;
-  margin-top: 14px;
-  margin-left: 14px;
+  margin-top: 0.734vw;
+  margin-left: 0.734vw;
   color: #1e51dc;
   position: absolute;
   z-index: 100;
   background: #d2eaf1;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 2vw;
 }
 
 .circle-wrap1 {
   margin: auto;
-  width: 150px;
-  height: 150px;
+  width: 7.9vw;
+  height: 7.9vw;
   background: #fefcff;
   border-radius: 50%;
   border: 1px solid #cdcbd0;
@@ -397,19 +409,19 @@ height: 92vh;
 
 .circle-wrap1 .circle1 .mask1,
 .circle-wrap1 .circle1 .fill1 {
-  width: 150px;
-  height: 150px;
+  width: 7.9vw;
+  height: 7.9vw;
   position: absolute;
   border-radius: 50%;
 }
 
 .mask1 .fill1 {
-  clip: rect(0px, 75px, 150px, 0px);
+  clip: rect(0px, 3.95vw, 7.9vw, 0px);
   background-color: #227ded;
 }
 
 .circle-wrap1 .circle1 .mask1 {
-  clip: rect(0px, 150px, 150px, 75px);
+  clip: rect(0px, 7.9vw, 7.9vw, 3.95vw);
 }
 
 .mask1.full1,
@@ -428,17 +440,17 @@ height: 92vh;
 }
 
 .circle-wrap1 .inside-circle1 {
-  width: 122px;
-  height: 122px;
+  width: 6.39vw;
+  height: 6.39vw;
   border-radius: 50%;
-  line-height: 120px;
+  line-height: 6.32vw;
   text-align: center;
-  margin-top: 14px;
-  margin-left: 14px;
+  margin-top: 0.734vw;
+  margin-left: 0.734vw;
   color: #1e51dc;
   position: absolute;
   z-index: 100;
   background: #d2eaf1;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 2vw;
 }

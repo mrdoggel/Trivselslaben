@@ -19,6 +19,7 @@
     <?php
         require "assets/reuse/navbar.php";
     ?>
+    <div id="content">
     <nav id="menubar">
         <ul>
             <a class="active" href="forside.php"><li>Oversikt</li></a>
@@ -80,6 +81,7 @@
                 <div class="bottom">
                     <p>Økonomi kan virke som en uoverkommelig oppgave, men det behøver ikke være det. Lær hva du må gjøre og hvordan.</p>
                 </div>
+            </div>
             </div>
     </div>
 </body>
