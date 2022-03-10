@@ -40,12 +40,21 @@
                         <!-- Her kan du hente ut fra DB Martin :-) Var for å sjekke designet. Visste ikke hvordan du må sette det 
                         opp, men om du trenger et form og at valgene må være av annen type er det bare å ordne så skal jeg fikse
                         opp i CSS-en igjen til slutt -->
-                        <p class="intvalg-en"><span>Finansiering</span></p>
-                        <p class="intvalg-to"><span>Konseptutvikling</span></p>
-                        <p class="intvalg-tre"><span>Økonomi</span></p>
-                        <p class="intvalg-fire"><span>Forretningsplan</span></p>
-                        <p class="intvalg-fem"><span>Design thinking</span></p>
-                        <p class="intvalg-seks"><span>Regnskap</span></p>
+                        <?php
+                            require "assets/connection/conn.php";
+                            $sql = $conn->prepare("SELECT * FROM tema");
+                                $sql->execute();
+                                $result = $sql->get_result();
+                              	if ($result->num_rows > 0) {
+                                  while($row = $result->fetch_assoc()) {
+                                    echo '<p class="intvalg';
+                                    echo $row["tema_id"];
+                                    echo '"><span>';
+                                    echo $row["navn"];
+                                    echo '</span></p>';
+                                  }
+                                }
+                        ?>
                     </div>
                 </section>
                 <button> <span><a href="registreringspm.php">Neste</a></span> </button>
