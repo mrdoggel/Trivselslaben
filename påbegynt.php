@@ -14,22 +14,9 @@
 
 <body>
 <div class="container">
-    <nav id="navbar">
-        <div id="searchbar">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Hva leter du etter?">
-        </div>
-        <div id="profil">
-            <div id ="navn_poeng">
-                Veronika
-
-                125 poeng
-            </div>
-            <div id="profilbilde">
-                <a href=""><img src="assets/media/admin.png"></img></a>
-            </div>
-        </div>
-    </nav>
+    <?php
+        require "assets/reuse/navbar.php";
+    ?>
     <nav id="menubar">
         <ul>
             <a href="forside.php"><li>Oversikt</li></a>

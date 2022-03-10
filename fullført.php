@@ -14,22 +14,9 @@
 
 <body>
 <div class="container">
-  <nav id="navbar">
-    <div id="searchbar">
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <input type="text" placeholder="Hva leter du etter?">
-    </div>
-    <div id="profil">
-      <div id ="navn_poeng">
-        Veronika
-
-        125 poeng
-      </div>
-      <div id="profilbilde">
-        <a href=""><img src="assets/media/admin.png"></img></a>
-      </div>
-    </div>
-  </nav>
+  <?php
+    require "assets/reuse/navbar.php";
+  ?>
   <nav id="menubar">
     <ul>
       <a href="forside.php"><li>Oversikt</li></a>
@@ -38,7 +25,7 @@
     </ul>
   </nav>
   <div id="kurs_container">
-            <h1>Her finner du kurs, quizer, videoer og annet du ikke rakk å fullføre</h1>
+            <h1>Her finner du fullførte moduler, kurs og quizer - hvis du trenger en oppfriskning</h1>
             <div id="finnished1">
                 <h4>KURS</h4>
                 <div class="circle-wrap1">
