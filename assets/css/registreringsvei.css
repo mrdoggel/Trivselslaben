@@ -1,0 +1,55 @@
+header {
+    height: 20vh;
+    background: linear-gradient(90deg, rgba(208,217,249,1) 13%, rgba(149,236,212,1) 40%, rgba(245,241,135,1) 100%);
+}
+header img {
+    max-height: 100%;
+}
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    position: relative;
+    border: none;
+    padding: 10rem; 
+    border: solid 0.068rem #68cbd7;
+    border-radius: 1rem;
+    box-shadow: 1px 10px 20px 1px rgb(0 0 0 / 15%);
+    font-size: 2rem;
+    text-align: center;
+    line-height: 160%;
+}
+section > h1 > span {
+    font-weight: bold;
+    padding: 0.25rem; 
+    color: #3EB728;
+    line-height: 200%;
+    background-color: #B6F3AB;
+}
+button {
+    background-color: #68CBD7;
+    border: none;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem; 
+    align-self: flex-end;
+    position: absolute;
+    bottom: 1rem;
+    right: 3%;
+    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
+    font-size: 1rem;
+    cursor: pointer;
+}
+button span {
+    background-color: #95E3EC;
+    padding:0.25rem 0.75rem 0.25rem 0.75rem; 
+    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
+}
+button:hover{
+    background-color: #FFFFFF;
+    transition: all 0.35s;
+    box-shadow: none;
+    font-size: 1.15rem; 
+    letter-spacing: 0.02rem;
+}
