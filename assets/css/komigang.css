@@ -1,0 +1,146 @@
+
+/* ---------------------*/
+/*        MENUBAR       */
+/* ---------------------*/
+.komigang-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  .komigang-container > div {
+    width: 20%;
+    text-align: center;
+    background: linear-gradient(rgba(208,217,249,1) 13%, rgba(149,236,212,1) 40%, rgba(245,241,135,1) 100%);;
+  }
+  
+  #menubar {
+    text-align: left;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #menubar div {
+    width: 50%;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin-top: 25%;
+  }
+  
+  .login {
+    background-image: url(../media/login.png);
+  }
+  
+  .about {
+    background-image: url(../media/info.png);
+  }
+  
+  .start {
+    background-image: url(../media/route.png);
+  }
+  
+  .login,
+  .about,
+  .start {
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+    margin-bottom: 5rem;
+    line-height: 160%;
+  }
+  
+  .menulink:hover {
+    font-size: smaller;
+    font-weight: bold;
+    transition: all 0.2s;
+  }
+  
+  .about:hover {
+    background-size: 1.75rem;
+  }
+  
+  .about-choice:hover {
+    font-size: smaller;
+    transition: all 0.4s;
+  }
+/* ---------------------*/
+/*        CONTENT       */
+/* ---------------------*/
+section{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.content-container{
+    width: 70%;
+    background-color: #F4F6FA;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem; 
+}
+.prisinfo{
+    position: relative;
+    background-color: #FFFFFF;
+    width: 40%;
+    height: 55vh;
+}
+.prisinfo h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 0.75rem;
+    padding-top: 1rem;
+    padding-left: 0.75rem;
+}
+.prisinfo h2 {
+    font-size: 2rem;
+    padding-bottom: 2rem; 
+    padding-left: 0.75rem;
+}
+.prisinfo li {
+    font-size: 1.25rem;
+    line-height: 200%;
+    padding-left: 0.75rem;
+    font-weight: lighter;
+}
+.prisinfo p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #B7BFDE;
+    padding: 3rem 0rem 3rem 0rem; 
+}
+button{
+    font-size: 1rem;
+    width: 70%;
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: none;
+    background-color: #B6F3AB;
+    padding: 1rem; 
+    margin-bottom: 3rem;
+    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
+    cursor: pointer;
+}
+button > span {
+    padding: 0.2rem;
+    background-color: #C7FCBD;
+    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
+}
+.anbefales {
+    height: 5%;
+}
+.anbefales span {
+    background-color: #F5F187;
+    font-size: 1.25rem;
+}
+button:hover{
+    background-color: #FFFFFF;
+    transition: all 0.3s;
+    box-shadow: none;
+    font-size: larger;
+    letter-spacing: 0.02rem;
+}
