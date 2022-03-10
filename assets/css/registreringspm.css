@@ -1,0 +1,221 @@
+/* ---------------------*/
+/*         COMMON       */
+/* ---------------------*/
+header {
+    height: 20vh;
+    background: linear-gradient(90deg, rgba(208,217,249,1) 13%, rgba(149,236,212,1) 40%, rgba(245,241,135,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spm {
+    text-align: left;
+    background-color: #FFFFFF;
+    background-image: url(../media/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0.75rem 0.75rem 0.75rem 4.5rem;
+    font-size: 1.5rem;
+    line-height: 160%;
+    border-radius: 0.75rem;
+    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
+}
+
+/* ---------------------*/
+/*        PROCESS       */
+/* ---------------------*/
+#spm-prosess{
+    height: 80vh; 
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+#spm-prosess button {
+    width: 30%;
+    height: 10vh;
+    background-color: #FFFFFF;
+}
+#spm-prosess p {
+    font-size: 1.75rem;
+    padding: 0.5rem 0.5rem 0rem 0.5rem; 
+    display: inline-block;
+    
+}
+#spm-prosess .info-container{
+    border-radius: 1rem;
+}
+#spm-prosess .info-container.en{
+    border: 0.068rem solid #f5f187; 
+}
+#spm-prosess .info-container.to{
+    border: 0.068rem solid #D0D9F9; 
+}
+#spm-prosess .info-container.tre{
+    border: 0.068rem solid #B6F3AB; 
+}
+#spm-prosess .valg1 {
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 70%,
+    #f5f187 0%,
+    #f5f187 0%
+  );
+}
+#spm-prosess .valg2{
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 70%,
+    #D0D9F9 0%,
+    #D0D9F9 0%
+  );
+}
+#spm-prosess .valg3 {
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 70%,
+    #B6F3AB 0%,
+    #B6F3AB 0%
+  );
+}
+#spm-prosess .valg:hover{
+    transition: all 0.5s;
+    letter-spacing: 0.05rem;
+    font-size: 1.6rem;
+    padding-top: 0rem;  
+}
+#spm-prosess .valg.valg1:hover {
+    background-color: #f5f187;
+}
+#spm-prosess .valg2:hover {
+    background-color: #D0D9F9;
+}
+#spm-prosess .valg3:hover {
+    background-color: #B6F3AB;
+}
+
+/* ---------------------*/
+/*       INTERESTS      */
+/* ---------------------*/
+#spm-interesser {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 80vh;
+}
+#spm-interesser aside {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 40%;
+}
+#spm-interesser section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+#spm-interesser aside p {
+    display: inline-block;
+    margin: 2rem 1rem 2rem 1rem; 
+    padding: 1rem;
+    background-color: #F4F6FA;
+    box-shadow: 1px 10px 20px 1px rgb(0 0 0 / 15%);
+    font-size: 1.25rem;
+}
+#spm-interesser section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 10px 20px 1px rgb(0 0 0 / 15%);
+    width: 90%;
+    padding: 3rem;
+    margin:2rem;  
+}
+#spm-interesser section div p {
+    width: 45%;
+    font-size: 2rem;
+    margin: 2rem 0rem 2rem 0rem;
+}
+.intvalg-en span{
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 70%,
+    #D0D9F9 0%,
+    #D0D9F9 0%
+  );
+}
+.intvalg-to span{
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 70%,
+    #F5F187 0%,
+    #F5F187 0%
+  );
+}
+.intvalg-tre span{
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 70%,
+        #B6F3AB 0%,
+        #B6F3AB 0%
+      ); 
+}
+.intvalg-fire span{
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 70%,
+    #95E3EC 0%,
+    #95E3EC 0%
+  );
+}
+.intvalg-fem span{
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 70%,
+    #F2BFB0 0%,
+    #F2BFB0 0%
+  );
+}
+.intvalg-seks span{
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 70%,
+    #ABBBF3 0%,
+    #ABBBF3 0%
+  );
+}
+button {
+    background-color: #68CBD7;
+    border: none;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem; 
+    align-self: flex-end;
+    position: absolute;
+    bottom: 1rem;
+    right: 3%;
+    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
+    font-size: 1rem;
+    cursor: pointer;
+}
+button span {
+    background-color: #95E3EC;
+    padding:0.25rem 0.75rem 0.25rem 0.75rem; 
+    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
+}
+button:hover{
+    background-color: #FFFFFF;
+    transition: all 0.35s;
+    box-shadow: none;
+    font-size: 1.15rem; 
+    letter-spacing: 0.02rem;
+}
