@@ -7,7 +7,8 @@ h3,
 h4,
 p,
 li,
-a {
+a,
+span {
   color: #1f294d;
   font-family: "Leelawadee UI";
 }
@@ -26,6 +27,7 @@ label{
     color: #1f294d;
     font-family: "Leelawadee UI";
 }
+
 /* ---------------------*/
 /*      UTILITIES       */
 /* ---------------------*/
