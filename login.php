@@ -28,7 +28,7 @@
                     <label for="password" class="venstre">Passord</label>
                     <input name="passord" type="password" id="password" placeholder="passord">
                     <p class="glemt"><a href="glemt.php">Glemt passord?</a></p>
-                    <p class="reg"><a href="registrer.php">Ingen bruker?</a></p>
+                    <p class="reg"><a href="registreringsvei.php">Ingen bruker?</a></p>
                     <input name="logginn-knapp" type="submit" value="Logg inn">
                     <?php  if (count($errors) > 0) : ?>
                     <div class="error">
