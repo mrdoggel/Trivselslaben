@@ -1,3 +1,8 @@
+/*
+    HER MÅ ALT STÅ SOM DET ER !!
+
+*/
+
 /* ---------------------*/
 /*         COMMON       */
 /* ---------------------*/
@@ -20,11 +25,35 @@ header {
     border-radius: 0.75rem;
     box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
 }
+.next {
+    background-color: #68CBD7;
+    border: none;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem; 
+    align-self: flex-end;
+    position: absolute;
+    bottom: 1rem;
+    right: 3%;
+    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
+    font-size: 1rem;
+    cursor: pointer;
+}
+.next span {
+    background-color: #95E3EC;
+    padding:0.25rem 0.75rem 0.25rem 0.75rem; 
+    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
+}
+.next:hover{
+    background-color: #FFFFFF;
+    transition: all 0.35s;
+    box-shadow: none;
+    font-size: 1.15rem; 
+    letter-spacing: 0.02rem;
+}
 
 /* ---------------------*/
 /*        PROCESS       */
 /* ---------------------*/
-#spm-prosess{
+#spm-prosess {
     height: 80vh; 
     display: flex;
     flex-wrap: nowrap;
@@ -37,7 +66,7 @@ header {
     height: 10vh;
     background-color: #FFFFFF;
 }
-#spm-prosess p {
+#spm-prosess span {
     font-size: 1.75rem;
     padding: 0.5rem 0.5rem 0rem 0.5rem; 
     display: inline-block;
@@ -87,6 +116,7 @@ header {
     letter-spacing: 0.05rem;
     font-size: 1.6rem;
     padding-top: 0rem;  
+    cursor: pointer;
 }
 #spm-prosess .valg.valg1:hover {
     background-color: #f5f187;
@@ -99,7 +129,139 @@ header {
 }
 
 /* ---------------------*/
-/*       INTERESTS      */
+/*     BEDRIFTTYPE      */
+/* ---------------------*/
+#spm-bedrift {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#spm-bedrift > p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 180%;
+}
+.bedrifttype {
+    max-height: 6vh;
+}
+#spm-bedrift article{
+    position: relative;
+    width: 30%;
+    margin: 2rem 0rem 2rem 0rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
+}
+
+#spm-bedrift article h1 {
+    display: inline-block;
+    font-size: 1.75rem;
+    padding-bottom: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+#bedrift1 h1{
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 60%,
+    #68CBD7 0%,
+    #68CBD7 0%
+  );
+}
+#bedrift2 h1 {
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 60%,
+    #D0D9F9 0%,
+    #D0D9F9 0%
+  );
+}
+#bedrift3 h1 {
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 60%,
+    #B6F3AB 0%,
+    #B6F3AB 0%
+  );
+}
+#bedrift4 h1 {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 60%,
+        #F2BFB0 0%,
+        #F2BFB0 0%
+      );   
+}
+#bedrift5 h1 {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 60%,
+        #95E3EC 0%,
+        #95E3EC 0%
+      );    
+}
+#bedrift6 h1 {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 60%,
+        #F5F187 0%,
+        #F5F187 0%
+      );  
+}
+
+#spm-bedrift article p {
+    font-size: 1.25rem;
+    line-height: 180%;
+    text-align: left;
+    margin-bottom: 1.25rem; 
+}
+
+#spm-bedrift article ul li {
+    text-align: left;
+    line-height: 130%;
+}
+
+#spm-bedrift article ul li span {
+    font-weight: bold;
+}
+
+#spm-bedrift article button {
+    margin: 1.25rem 0rem 1.25rem 0rem; 
+    padding: 0rem; 
+    border:none; 
+    letter-spacing: 0.03rem;
+}
+
+#bedrift1 button {
+    background-color: #68CBD7;
+}
+#bedrift2 button {
+    background-color: #D0D9F9;
+}
+#bedrift3 button {
+    background-color: #B6F3AB;
+}
+#bedrift4 button {
+    background-color: #F2BFB0;
+}
+#bedrift5 button {
+    background-color: #95E3EC;
+}
+#bedrift6 button {
+    background-color: #F5F187;
+}
+
+/* ---------------------*/
+/*       INTERESTS
+        IKKE REDIGER    */
 /* ---------------------*/
 #spm-interesser {
     display: flex;
@@ -141,7 +303,7 @@ header {
     font-size: 2rem;
     margin: 2rem 0rem 2rem 0rem;
 }
-.intvalg-en span{
+.intvalg1 span{
     background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
@@ -150,7 +312,7 @@ header {
     #D0D9F9 0%
   );
 }
-.intvalg-to span{
+.intvalg2 span{
     background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
@@ -159,7 +321,7 @@ header {
     #F5F187 0%
   );
 }
-.intvalg-tre span{
+.intvalg3 span{
     background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0) 0%,
@@ -168,7 +330,7 @@ header {
         #B6F3AB 0%
       ); 
 }
-.intvalg-fire span{
+.intvalg4 span{
     background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
@@ -177,7 +339,7 @@ header {
     #95E3EC 0%
   );
 }
-.intvalg-fem span{
+.intvalg5 span{
     background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
@@ -186,7 +348,7 @@ header {
     #F2BFB0 0%
   );
 }
-.intvalg-seks span{
+.intvalg6 span{
     background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
@@ -195,27 +357,22 @@ header {
     #ABBBF3 0%
   );
 }
-button {
-    background-color: #68CBD7;
-    border: none;
-    padding: 0.75rem 1.5rem 0.75rem 1.5rem; 
-    align-self: flex-end;
-    position: absolute;
-    bottom: 1rem;
-    right: 3%;
-    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
-    font-size: 1rem;
+
+#spm-interesser section p span:hover {
+    transition: all 0.5s;
+    letter-spacing: 0.05rem;
+    font-size: 1.5rem;
     cursor: pointer;
 }
-button span {
-    background-color: #95E3EC;
-    padding:0.25rem 0.75rem 0.25rem 0.75rem; 
-    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
+
+/* STYLING FOR VALGT INTERESSE */ 
+div p .valgt{
+    letter-spacing: 0.05rem;
+    font-size: 1.5rem; 
 }
-button:hover{
-    background-color: #FFFFFF;
-    transition: all 0.35s;
-    box-shadow: none;
-    font-size: 1.15rem; 
-    letter-spacing: 0.02rem;
-}
+div p .valgt-en{background-color: #D0D9F9;}
+div p .valgt-to{background-color: #F5F187;}
+div p .valgt-tre{background-color: #B6F3AB;}
+div p .valgt-fire{background-color: #95E3EC;}
+div p .valgt-fem{background-color: #F2BFB0;}
+div p .valgt-seks{background-color: #ABBBF3;}

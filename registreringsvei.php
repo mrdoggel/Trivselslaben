@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/registreringsvei.css">
-    <script src="assets/js/effects.js"></script>
 </head>
     <body>
         <header><img src="assets/images/logo.png" alt="Logo image"></header>
