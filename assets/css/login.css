@@ -90,14 +90,7 @@ input{
     margin: 0;
 }
 
-.loginBox label {
-    display: block;
-    text-align: left;
-    font-size: 1.25rem;
-    padding: 0.75rem;
-}
-
-.regBox label {
+.loginBox label, .regBox label {
     display: block;
     text-align: left;
     font-size: 1.25rem;
@@ -148,19 +141,26 @@ input[type=submit]:hover {
   transition: all 0.3s;
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1300px) {
+    .introtekst h1 {
+        font-size: 2rem;
+    }
+    .introtekst h2 {
+        font-size: 1.5rem;
+    }
     .bilde img {
-        height: 15rem;
+        max-height: 25vh;
     }
-    .loginBox {
-        margin-top: 20%;
+    .loginBox form {
+        margin-top: 3rem; 
     }
-    #venstre h1 {
-        font-size: 5rem;
+    .loginBox label, .regBox label {
+        font-size: 1rem;
     }
-    
-    #venstre h2 {
-        font-size: 3.25rem;
-        letter-spacing: 0.08rem;
+    .glemt, .reg {
+        font-size: 0.75rem;
+    }
+    input[type=submit]{
+        font-size: 1.25rem;
     }
 }

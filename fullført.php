@@ -61,7 +61,7 @@
         <p>Fra idé til konsept - vil konseptet overleve?</p>
       </div>
     </div>
-    
+
     <div id="kurs2" class="kurs">
       <h4>KURS</h4>
       <img src="assets/media/notepad.png" alt="notepad">

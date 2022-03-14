@@ -26,7 +26,7 @@
             <div id="spm-prosess" class="prossess-div">
                 <button class="info-container en"><span class="valg valg1">Jeg har en idé - det er det</span></button>
                 <button class="info-container to"><span class="valg valg2">Jeg er i gang med oppstarten</span></button>
-                <button class="info-container tre"><span class="valg valg3">Jeg er godt i gang med bedriften min </span></button>
+                <button class="info-container tre"><span class="valg valg3">Jeg er godt i gang</span></button>
             </div>
             
             <div id="hidden" class="bedrift-div"><!-- spm-bedrift -->

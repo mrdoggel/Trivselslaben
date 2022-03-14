@@ -47,7 +47,7 @@
                     <li>- Gode repetisjonsmuligheter</li>
                     <li>- Steg-for-steg veiledning</li>
                 </ul>
-                <button><span><a href="registreringsvei.php">Få tilgang til kursmateriale</a></span></button>
+                <button><span><a class="tilgang" href="registreringsvei.php">Få tilgang til kursmateriale</a></span></button>
             </article>
             <article class="prisinfo årlig">
                 <div class="anbefales"> <span>Anbefales</span> </div>

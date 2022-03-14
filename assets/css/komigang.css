@@ -149,3 +149,33 @@ button:hover{
     font-size: larger;
     letter-spacing: 0.02rem;
 }
+@media only screen and (max-width: 1300px) {
+  .komigang-container img {
+    max-height: 25vh;
+  }
+  #menubar ul li{
+    font-size: 1rem;
+  }
+  .anbefales span {
+    font-size: 0.9rem;
+  }
+  .prisinfo p {
+    padding-top: 1rem; 
+    font-size: 0.9rem;
+  }
+  .prisinfo {
+    height: 70vh;
+  }
+  .prisinfo h2{
+    font-size: 1.75rem;
+  }
+  .prisinfo h3{
+    font-size: 1.25rem;
+  }
+  .prisinfo li {
+    font-size: 1rem;
+  }
+  button span a{
+    font-size: 0.75rem;
+  }
+}
