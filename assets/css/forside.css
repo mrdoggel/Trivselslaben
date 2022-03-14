@@ -84,7 +84,7 @@ nav ul li {
 
 /* FELLES */
 h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   width: 100%;
   padding: 3rem; 
   font-weight: bold;
@@ -200,6 +200,10 @@ section {
 .underveis-container {
   width: 15%; 
 }
+.underveis-container > p {
+  font-size: 1rem;
+}
+
 .underveis{
   border-radius: 1rem;
   width: 100;
@@ -214,6 +218,12 @@ section {
   background-color: #B7BFDE;
   height: 15vh;
   margin-top: 1rem; 
+}
+
+.underveis-container > p:hover {
+  background-color: #f2f088;
+  font-size: 1.5rem;
+  transition: all 0.5s;
 }
 
 /* FULLFØRT */ 
@@ -265,7 +275,6 @@ section {
   height: 7.9vw;
   background: #fefcff;
   border-radius: 50%;
-  border: 1px solid #cdcbd0;
 }
 
 .circle-wrap .circle .mask,
@@ -283,7 +292,7 @@ section {
 
 .mask .fill, .mask2 .fill2, .mask3 .fill3 {
   clip: rect(0px, 3.95vw, 7.9vw, 0px);
-  background-color: #227ded;
+  background-color: #D0D9F9;
 }
 
 .circle-wrap .circle .mask,
@@ -345,16 +354,17 @@ section {
   width: 6.39vw;
   height: 6.39vw;
   border-radius: 50%;
+  font-family: "Leelawadee UI";
   line-height: 6.32vw;
   text-align: center;
   margin-top: 0.734vw;
   margin-left: 0.734vw;
-  color: #1e51dc;
+  color: #D0D9F9;
   position: absolute;
   z-index: 100;
-  background: #d2eaf1;
-  font-weight: 700;
-  font-size: 2vw;
+  background: #ffffff;
+  font-weight: lighter;
+  font-size: 1.25vw;
 }
 
 .circle-wrap1 {
@@ -363,7 +373,6 @@ section {
   height: 7.9vw;
   background: #fefcff;
   border-radius: 50%;
-  border: 1px solid #cdcbd0;
 }
 
 .circle-wrap1 .circle1 .mask1,
@@ -376,7 +385,7 @@ section {
 
 .mask1 .fill1 {
   clip: rect(0px, 3.95vw, 7.9vw, 0px);
-  background-color: #227ded;
+  background-color: #B6F3AB;
 }
 
 .circle-wrap1 .circle1 .mask1 {
@@ -406,10 +415,11 @@ section {
   text-align: center;
   margin-top: 0.734vw;
   margin-left: 0.734vw;
-  color: #1e51dc;
+  font-family: "Leelawadee UI";
+  color: #B6F3AB;
+  background: #ffffff;
   position: absolute;
   z-index: 100;
-  background: #d2eaf1;
-  font-weight: 700;
-  font-size: 2vw;
+  font-weight: lighter;
+  font-size: 1.25vw;
 }

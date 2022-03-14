@@ -39,8 +39,8 @@
         <div class="content-container">
             <article class="prisinfo">
                 <div class="anbefales"> </div>
-                <h1>Månedsbasert</h1>
-                <h2>kr 39,00/mnd</h2>
+                <h2>Månedsbasert</h2>
+                <h3>kr 39,00/mnd</h3>
                 <ul>
                     <li>- Full tilgang til kursmateriale</li>
                     <li>- Over 20 ulike moduler </li>
@@ -51,8 +51,8 @@
             </article>
             <article class="prisinfo årlig">
                 <div class="anbefales"> <span>Anbefales</span> </div>
-                <h1>Årsbasert</h1>
-                <h2>kr 389,00/år</h2>
+                <h2>Årsbasert</h2>
+                <h3>kr 389,00/år</h3>
                 <ul>
                     <li>- Full tilgang til kursmateriale</li>
                     <li>- Over 20 ulike moduler </li>

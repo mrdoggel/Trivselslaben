@@ -13,7 +13,6 @@
 </head>
 
 <body>
-  <div>
     <?php
         require "assets/reuse/navbar.php";
     ?>
@@ -26,29 +25,28 @@
     </nav>
 
     <section>
+
         <h1>Her finner du kurs, quizer, videoer og annet du ikke rakk å fullføre</h1>
         
         <div class="underveis-container">
-        <div class="underveis">
-          <h4>KURS</h4>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full">
-                <div class="fill"></div>
+          <div class="underveis">
+            <h4>KURS</h4>
+            <div class="circle-wrap">
+              <div class="circle">
+                <div class="mask full">
+                  <div class="fill"></div>
+                </div>
+                <div class="mask half">
+                  <div class="fill"></div>
+                </div>
+                <div class="inside-circle"> 26% </div>
               </div>
-              <div class="mask half">
-                <div class="fill"></div>
-              </div>
-              <div class="inside-circle"> 26% </div>
+            </div>
+            <div class="bottom">
+              <p>Hvordan drive designtegning?</p>
             </div>
           </div>
-          <div class="bottom">
-            <p>Hvordan drive designtegning?</p>
-          </div>
-        </div>
-        
-        <p>Fortsett der du slapp</p>
-
+          <p>Fortsett der du slapp</p>
         </div>
 
         <div class="underveis-container">
@@ -104,7 +102,7 @@
 
       <div id="kurs1" class="kurs">
         <h4>KURS</h4>
-        <img src="assets/media/lightbulb.jpg"></img>
+        <img src="assets/media/lightbulb.jpg" alt="lightbulb">
         <div class="bottom">
           <p>Fra idé til konsept - vil konseptet overleve?</p>
         </div>
@@ -112,7 +110,7 @@
       
       <div id="kurs2" class="kurs">
         <h4>KURS</h4>
-        <img src="assets/media/notepad.png"></img>
+        <img src="assets/media/notepad.png" alt="lightbulb">
         <div class="bottom">
           <p>Hvor må jeg registrere bedriften min?</p>
         </div>
