@@ -6,11 +6,11 @@
     <div id="profil">
         <div id ="navn_poeng">
             <?php
-                echo $_SESSION['navn'];
+                //echo $_SESSION['navn'];
             ?>
             <br>
             <?php
-                echo $_SESSION['poeng'] . " Poeng";
+                //echo $_SESSION['poeng'] . " Poeng";
             ?>
         </div>
         <div id="profilbilde">

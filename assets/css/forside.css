@@ -1,4 +1,4 @@
-//commit this
+/*commit this*/
 #container {
     max-width: 100vw;
     width: 100vw;
@@ -42,264 +42,223 @@
 }
 
 #searchbar svg:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #profil {
-    width: 50%;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: right;
-    margin-right: 4vw;
+  width: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: right;
+  margin-right: 4vw;
 }
 
 #navn_poeng {
-    font-family: "Leelawadee UI";
-    margin-right: 1vw;
+  font-family: "Leelawadee UI";
+  margin-right: 1vw;
 }
 
 #profil img {
-    box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 25%);
-    border-radius: 25px;
-    width: 5vh;
+  box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 25%);
+  border-radius: 25px;
+  width: 5vh;
 }
 
-#content {
-
+nav {
+  width: 10%;
+  font-size: 1.25rem;
+  float: left;
 }
 
-#menubar {
-    margin-top: 25px;
-    width: 10%;
-    float: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#menubar ul {
-    font-size: 1.5vw;
-}
-
-#menubar ul a {
-    text-decoration: 0;
-    color: orange;
-}
-
-#menubar ul li {
-    margin-bottom: 2.5vh;
+nav ul li {
+  margin: 3rem 0rem 3rem 0rem; 
+  padding-left: 2rem;
 }
 
 .active {
-    font-weight: bold;
-    font-size: 1.7vw;
+  font-weight: bold;
+  padding-left: 1rem;
 }
 
-#kurs_container {
-float: right;
-    width: 90%;
-    display: flex;
-    flex-flow: row wrap;
-    margin-top: 25px;
-    box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 25%);
+
+/* FELLES */
+h1 {
+  font-size: 2rem;
+  width: 100%;
+  padding: 3rem; 
+  font-weight: bold;
+  text-align: center;
 }
 
-#kurs_container h1 {
-    width: 100%;
-    font-size: 2vw;
-    padding-top: 10px;
-    padding-left: 10px;
-    text-align: center;
+h4 {
+  text-align: left;
+  padding: 0.625rem 0rem 0rem 0.625rem; 
+  font-size: 0.75rem;
+  width: 100%;
+  font-style: italic;
 }
 
-#kurs1, #kurs2, #kurs3, #kurs4 {
-    margin-left: 4%;
-    margin-top: 1vw;
-    margin-bottom: 20px;
-    border-radius: 25px;
-    width: 20%;
-    box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 25%);
-    text-align: center;
+p {
+  font-size: 1.25rem; 
+  font-family: "Leelawadee UI";
+  font-weight: lighter;
+  line-height: 150%;
+  text-align: center;
+  padding: 0.25rem; 
 }
 
-#kurs1 p, #kurs2 p, #kurs3 p, #kurs4 p {
-    font-size: 1.2vw;
-    border-radius: 0px, 0px, 25px;
-    padding-left: 10px;
-    padding-right: 10px;
+section {
+  float: right;
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 10%);
+  border-radius: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
-#kurs1 img, #kurs2 img, #kurs3 img, #kurs4 img {
-    text-align: center;
-    height: 49%;
-    width: 49%;
-
+.kurs {
+  border-radius: 1rem;
+  width: 15%;
+  margin: 1rem 3rem 3rem 3rem; 
+  box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 10%);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#kurs1 h4, #kurs2 h4, #kurs3 h4, #kurs4 h4 {
-    text-align: left;
-    padding-left: 10px;
-    padding-top: 10px;
-    font-size: 0.8vw;
-}
-#kurs1 .bottom, #kurs2 .bottom, #kurs3 .bottom, #kurs4 .bottom {
-    height: 40%;
-    width: 100%;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+.kurs img {
+  text-align: center;
+  max-width: 30%;
+  margin: 1rem;
+  align-self: center;
 }
 
+.bottom {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+
+.modul {
+  margin-bottom: 20px;
+  border-radius: 25px;
+  width: 25%;
+  box-shadow:  1px 1px 20px 1px rgb(0 0 0 / 10%);
+  display: flex;
+  flex-flow: wrap;
+  margin: 1rem; 
+  position: relative;
+  min-height: 30vh;
+}
+
+.modul h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: lighter;
+  width: 100%;
+  line-height: 120%;
+  padding: 1rem; 
+}
+
+
+.modul .bottom {
+  width: 100%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background: #68cbd7;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* OVERSIKT */
 #kurs1 .bottom{
     background: yellow;
 }
-
 #kurs2 .bottom{
     background: #f2bfb0;
 }
-
 #kurs3 .bottom{
     background: #d0d9f9;
 }
-
 #kurs4 .bottom{
     background: #95e3ec;
 }
 
-#modul1, #modul2, #modul3 {
-    margin-left: 2.5%;
-    margin-top: 1vw;
-    margin-bottom: 20px;
-    border-radius: 25px;
-    width: 30%;
-    box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 25%);
-    text-align: center;
+/* UNDERVEIS */
+.underveis-container {
+  width: 15%; 
+}
+.underveis{
+  border-radius: 1rem;
+  width: 100;
+  box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 10%);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#modul1 p, #modul2 p, #modul3 p {
-    font-size: 1.2vw;
-    border-radius: 0px, 0px, 25px;
-    padding-left: 10px;
-    padding-right: 10px;
+.underveis .bottom {
+  background-color: #B7BFDE;
+  height: 15vh;
+  margin-top: 1rem; 
 }
 
-#modul1 h2, #modul2 h2, #modul3 h2 {
-    text-align: center;
-    font-size: 2.2vw;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+/* FULLFØRT */ 
+.fullført {
+  border-radius: 1rem;
+  width: 20%;
+  margin: 1rem 3rem 3rem 3rem; 
+  box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 10%);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#modul1 h4, #modul2 h4, #modul3 h4 {
-    text-align: left;
-    padding-left: 10px;
-    padding-top: 10px;
-    font-size: 0.8vw;
+.fullført h6{
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 0.5rem; 
 }
 
-#modul1 .bottom, #modul2 .bottom, #modul3 .bottom {
-    height: 31%;
-    width: 100%;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    background: #68cbd7;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+.fullført span {
+  font-style: italic;
+  font-weight: bold;
 }
 
-#progress1, #progress2, #progress3 {
-    margin-left: 2.5%;
-        margin-top: 1vw;
-        margin-bottom: 20px;
-        border-radius: 25px;
-        width: 30%;
-        box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 25%);
-        text-align: center;
+.fullført .poeng {
+  width: 100%;
+  padding: 1rem 0rem 1rem 0rem; 
+  margin-top: 1rem; 
+  background-color: #F4F6FA;
+  font-size: 1rem;
 }
 
-#progress1 p, #progress2 p, #progress3 p {
-    font-size: 1.2vw;
-        border-radius: 0px, 0px, 25px;
-        padding-left: 10px;
-        padding-right: 10px;
+.fullført .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background: #B6F3AB;
+  padding: 0.5rem; 
+  height: auto;
 }
 
-#progress1 h4, #progress2 h4, #progress3 h4 {
-    text-align: left;
-    padding-left: 10px;
-    padding-top: 10px;
-    font-size: 0.8vw;
-}
-
-#progress1 .bottom, #progress2 .bottom, #progress3 .bottom {
-    height: 28%;
-        width: 100%;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        background: #b7bfde;
-}
-
-#finnished1 {
-    margin-left: 4%;
-        margin-top: 1vw;
-        margin-bottom: 20px;
-        border-radius: 25px;
-        width: 20%;
-        box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 25%);
-        text-align: center;
-}
-
-#finnished1 p {
-    font-size: 1.2vw;
-        border-radius: 0px, 0px, 25px;
-        padding-left: 10px;
-        padding-right: 10px;
-        text-align: center;
-}
-
-#finnished1 h4 {
-    text-align: left;
-    padding-left: 10px;
-    padding-top: 10px;
-    font-size: 0.8vw;
-}
-
-#finnished1 .poeng {
-    width: 100%;
-    background: #F4F6FA;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-top: 10px;
-}
-
-#finnished1 .poeng h6{
-    padding-left: 10px;
-    font-size: 1vw;
-}
-
-#finnished1 {
-    text-align: left;
-    padding-top: 10px;
-}
-
-#finnished1 .bottom {
-    height: 17%;
-        width: 100%;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    background: #B6F3AB;
-}
-
+/* PROGRESS CIRLCE */ 
 .circle-wrap, .circle-wrap2, .circle-wrap3 {
   margin: auto;
   width: 7.9vw;
