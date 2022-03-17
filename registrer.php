@@ -26,9 +26,9 @@
                     <label for="name" class="venstre">Fornavn</label>
                     <input name="navn" type="text" id="fname" placeholder="fornavn">
                     <label for="fname" class="venstre">E-post</label>
-                    <input name="epost" type="text" id="fname" placeholder="e-post">
+                    <input name="regEpost" type="text" id="email" placeholder="e-post">
                     <label for="password" class="venstre">Passord</label>
-                    <input name="passord" type="password" id="password" placeholder="passord">
+                    <input name="regPassord" type="password" id="password" placeholder="passord">
                     <label for="password" class="venstre">Gjenta Passord</label>
                     <input name="bekreft-passord" type="password" id="password" placeholder="gjenta passord">
                     <p class="glemt"><a href="glemt.php">Glemt passord?</a></p>

@@ -22,23 +22,22 @@
     <main>
         <nav>
             <ul>
-                <li><a class="active" href="forside.php">Oversikt</a></li>
+                <li><a href="forside.php">Oversikt</a></li>
                 <li><a href="påbegynt.php">Påbegynt</a></li>
                 <li><a href="fullført.php">Fullført</a></li>
             </ul>
         </nav>
 
         <section>
-            <h1>Kom i gang med disse kursene</h1>
             <?php
-                require "assets/reuse/hentKurs.php";
+                require "assets/reuse/hentSøk.php";
             ?>
         </section>
-        
+
         <section class="moduler">
-            <h1>Utforsk modulene</h1>
+            <h1>Toppvalg basert på dine interesser</h1>
             <?php
-                require "assets/reuse/hentModul.php";
+                require "assets/reuse/hentInteresser.php";
             ?>
         </section>
     </main>

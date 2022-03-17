@@ -98,39 +98,10 @@
     </section>
 
     <section>
-      <h1>Toppvalg basert på dine interesser</h1>
-
-      <div id="kurs1" class="kurs">
-        <h4>KURS</h4>
-        <img src="assets/media/lightbulb.jpg" alt="lightbulb">
-        <div class="bottom">
-          <p>Fra idé til konsept - vil konseptet overleve?</p>
-        </div>
-      </div>
-      
-      <div id="kurs2" class="kurs">
-        <h4>KURS</h4>
-        <img src="assets/media/notepad.png" alt="lightbulb">
-        <div class="bottom">
-          <p>Hvor må jeg registrere bedriften min?</p>
-        </div>
-      </div>
-        
-      <div id="modul2" class="modul">
-        <h4>MODUL</h4>
-        <h2>Hvordan videreutvikle et konsept?</h2>
-        <div class="bottom">
-          <p>Hvordan skape de beste idéene?<br>Hva skal til for et lønnsomt konsept og hvordan unngår du at konseptet dør ut?</p>
-        </div>
-      </div>
-        
-      <div id="modul3" class="modul">
-        <h4>MODUL</h4>
-        <h2>Inntekter, utgifter, lønn og regnskap - hva gjør jeg?</h2>
-        <div class="bottom">
-          <p>Økonomi kan virke som en uoverkommelig oppgave, men det behøver ikke være det. Lær hva du må gjøre og hvordan.</p>
-        </div>
-      </div>
+        <h1>Toppvalg basert på dine interesser</h1>
+        <?php
+            require "assets/reuse/hentInteresser.php";
+        ?>
     </section>
 </body>
 </html>

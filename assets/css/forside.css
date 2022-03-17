@@ -32,6 +32,19 @@
     outline: none;
 }
 
+#searchbar form {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+#searchbar button {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
 #searchbar svg {
     box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 25%);
     z-index: 100;
@@ -180,20 +193,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* OVERSIKT */
-#kurs1 .bottom{
-    background: yellow;
-}
-#kurs2 .bottom{
-    background: #f2bfb0;
-}
-#kurs3 .bottom{
-    background: #d0d9f9;
-}
-#kurs4 .bottom{
-    background: #95e3ec;
 }
 
 /* UNDERVEIS */

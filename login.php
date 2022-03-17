@@ -30,7 +30,7 @@
                     <p class="glemt"><a href="glemt.php">Glemt passord?</a></p>
                     <p class="reg"><a href="registreringsvei.php">Ingen bruker?</a></p>
                     <input name="logginn-knapp" type="submit" value="Logg inn">
-                    <?php  if (count($errors) > 0) : ?>
+                    <?php if (count($errors) > 0) : ?>
                     <div class="error">
                         <?php foreach ($errors as $error) : ?>
                         <p style="color: red;"><?php echo $error ?></p>
