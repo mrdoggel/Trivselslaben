@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/komigang.css">
     <script src="assets/js/effects.js"></script>
 </head>
-    <body>
+  <body>
     <main class="komigang-container">
       <div>
         <img src="assets/images/logo.png" alt="logo-image" />
@@ -65,5 +65,5 @@
         </div>
       </section>
     </main>
-    </body>
+  </body>
 </html>

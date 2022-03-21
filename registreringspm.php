@@ -161,19 +161,12 @@
                             }
                         ?>
                     </div>
-                    <!--
-                    <div>
-                        <p class="intvalg-en"><span class="intvalg">Finansiering</span></p>
-                        <p class="intvalg-to"><span class="intvalg">Konseptutvikling</span></p>
-                        <p class="intvalg-tre"><span class="intvalg">Økonomi</span></p>
-                        <p class="intvalg-fire"><span class="intvalg">Forretningsplan</span></p>
-                        <p class="intvalg-fem"><span class="intvalg">Design thinking</span></p>
-                        <p class="intvalg-seks"><span class="intvalg">Regnskap</span></p>
-                    </div>-->
+                    
                 </section>
-                <button class="next"> <span><a href="registrer.php">Neste</a></span> </button>
+                <form action="registrer.php" method="post">
+                    <button type"submit" class="next"> <span><a href="registrer.php">Neste</a></span> </button>
+                </form>
             </div>
-
         </main>
     </body>
 </html>

@@ -17,7 +17,6 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    /*test*/
 }
 
 #searchbar input{
@@ -36,7 +35,7 @@
 #searchbar form {
     margin: 0;
     padding: 0;
-    display: inline;
+    display: flex;
 }
 
 #searchbar button {
@@ -114,10 +113,10 @@ h4 {
 }
 
 p {
-  font-size: 1.25rem; 
-  font-family: "Leelawadee UI";
+  font-size: 1rem; 
   font-weight: lighter;
   line-height: 150%;
+  letter-spacing: 0.03rem;
   text-align: center;
   padding: 0.25rem; 
 }
@@ -144,6 +143,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  transition: all 0.3s;
 }
 
 .kurs img {
@@ -177,7 +177,7 @@ section {
 
 .modul h2 {
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: lighter;
   width: 100%;
   line-height: 120%;

@@ -1,0 +1,80 @@
+header {
+    height: 20vh;
+    background: linear-gradient(90deg, rgba(208,217,249,1) 13%, rgba(149,236,212,1) 40%, rgba(245,241,135,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header p {
+    text-align: center;
+    background-color: #FFFFFF;
+    background-image: url(../media/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0.75rem 3rem 0.75rem 10rem; 
+    font-size: 1.5rem;
+    line-height: 160%;
+    border-radius: 0.75rem;
+    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
+}
+main {
+    width: 60%;
+    margin: auto;
+    margin-top: 5rem; 
+    border-radius: 0.75rem;
+    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
+}
+form {
+    padding: 2rem; 
+}
+form > div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+#registrer-div{
+    width: 100%;
+    margin-top: 2rem; 
+}
+form > div > div {
+    width: 40%;
+    margin-top: 2rem; 
+}
+label{
+    font-size: 1.25rem;
+}
+input {
+    width: 70%;
+    text-align: center;
+    border-radius: 1rem;
+}
+#registrer{
+    width: fit-content;
+    border: none;
+    border-radius: 0rem;
+    background-color: #95E3EC;
+    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 10%);
+    cursor: pointer;
+}
+label, input {
+    padding: 0.5rem; 
+    display: block;
+}
+#navn input {
+    border: 0.0682rem solid #FC9C7F;
+}
+#navn input[type=text]:focus {
+    border: 0.0682rem solid #FC9C7F;
+}
+#e-post input {
+    border: 0.0682rem solid #B6F3AB;
+}
+#e-post input[type=text]:focus {
+    border: 0.0682rem solid #B6F3AB;
+}
+#passord input {
+    border: 0.0682rem solid #95E3EC;
+}
+#passord input[type=password]:focus {
+    border: 0.0682rem solid #95E3EC;
+}
