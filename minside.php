@@ -105,6 +105,13 @@
                                 <button>Legg til</button>
                             </form>
                         </div>
+                        
+                        <div>
+                            <h3>Kontrakter</h3>
+                            <form action="">
+                                <button>Legg til</button>
+                            </form>
+                        </div>
                     </section>
                 </div>
 
