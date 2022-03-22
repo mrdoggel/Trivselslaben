@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/reset.css"/>
     <link rel="stylesheet" href="assets/css/global.css"/>
     <link rel="stylesheet" href="assets/css/minside.css">
+
 </head>
     <body id="body">
         <?php
@@ -25,7 +26,7 @@
             </nav>
             <section>
                 <!-- Oppdater brukerinfo --> 
-                <form class="personling-info hidden" action="minside.php" method="post" enctype="multipart/form-data">
+                <form class="personling-info " action="minside.php" method="post" enctype="multipart/form-data">
                     <div>
                         <!-- #TODO Satt inn bilde/last opp nytt - fikser css senere -->
                         <?php if (isset($_SESSION['bilde'])) { ?>
@@ -75,48 +76,47 @@
                 <div class="interesser">
                     <section>
                         <h2>Dine interesser</h2>
-                        <div>
-                            <div>
-                                <h3 class="">Regnskap</h3>
-                            </div>
-                            <form class="fjern" action="">
-                                <button>fjern</button>
-                            </form>            
-                        </div>
-                        <div>
-                            <div>
-                                <h3>Hoho</h3>
-                            </div>
-                            <form class="fjern" action="">
-                                <button>fjern</button>
-                            </form>           
-                        </div>
+                        <?php
+                            require "assets/reuse/hentTema.php"
+                        ?>
                     </section>
 
                     <section id="finn-og-legg-til">
                         <!-- #TODO: SØKE ETTER INTERESSER MAN IKKE HAR OG EVENTUELT LEGGE TIL, Håper layouten funker -->
-                        <form action="" method="">
-                            <input type="text" name="" placeholder="Finn nye interesser..">
-                        </form>
+                        <form method="post" action="assets/reuse/leggTilTema.php">
+                            <div class="dropdown">
 
-                        <div>
-                            <h3>Kontrakter</h3>
-                            <form action="">
-                                <button>Legg til</button>
+                                <input onfocus="myFunction()" type="text" placeholder="Finn interesser..." id="myInput" onkeyup="filterFunction()">
+
+                                <div id="myDropdown" class="dropdown-content">
+
+                                    <?php
+                                        require "assets/connection/conn.php";
+                                        $sql = $conn->prepare("SELECT * FROM tema WHERE tema_id NOT IN(SELECT tema_id FROM person_i_tema WHERE person_id = $id)");
+                                        $sql->execute();
+                                        $result = $sql->get_result();
+                                        if ($result->num_rows > 0) {
+                                            while($row = $result->fetch_assoc()) {
+                                                echo '<button name="tema-knapp" type="submit" value="';
+                                                echo $row["tema_id"];
+                                                echo '">';
+                                                echo $row["navn"];
+                                                echo '</button><br>';
+                                            }
+                                        }
+                                    ?>
+
+                                </div>
+
+                            </div>
                             </form>
-                        </div>
-                        
-                        <div>
-                            <h3>Kontrakter</h3>
-                            <form action="">
-                                <button>Legg til</button>
-                            </form>
-                        </div>
                     </section>
                 </div>
+
 
             </section>
 
         </main>
     </body>
+    <script src="assets/js/minside.js"></script>
 </html>

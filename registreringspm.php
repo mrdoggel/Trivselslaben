@@ -164,7 +164,7 @@
                     
                 </section>
                 <form action="registrer.php" method="post"> 
-                    <button type"submit" class="next"> <span><a href="registrer.php" id="interessebtn">Neste</a></span> </button>
+                    <button type="submit" class="next"> <span><a href="registrer.php" id="interessebtn">Neste</a></span> </button>
                 </form>
             </div>
         </main>
