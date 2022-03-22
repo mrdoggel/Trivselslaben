@@ -1,3 +1,6 @@
+<?php
+    require "assets/connection/oppdaterProfil.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,14 +53,6 @@
                     </div>
                     
                     <div>
-                        <div>
-                            <label for="nyepost">E-post</label>
-                            <input name="nyepost" type="text" id="nyepost" placeholder="e-post">
-                        </div>
-                        <div>
-                            <label for="nyepostconf">Bekreft e-post</label>
-                            <input name="nyepostconf" type="text" id="nyepostconf" placeholder="bekreft epost">
-                        </div>
                         <div>
                             <label for="nybesk">Beskrivelse</label>
                             <input value="<?php echo $_SESSION['beskrivelse'] ?>" name="nybesk" type="text" id="nybesk" placeholder="beskrivelse">
