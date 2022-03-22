@@ -9,13 +9,20 @@
     <link rel="stylesheet" href="assets/css/reset.css"/>
     <link rel="stylesheet" href="assets/css/global.css"/>
     <link rel="stylesheet" href="assets/css/registrer.css"/>
+    <script src="assets/js/sendinteresser.js">></script>
 </head>
-<body>
+<body> 
     <header>
         <p>Da er du snart i gang! <br> Vennligst fyll ut all informasjon i feltene under </p>
    </header>
     <main>
-        <form action="registrer.php" method="post" enctype="multipart/form-data">
+        <!-- action="registrer.php" -->
+        <form id="regform" method="post" enctype="multipart/form-data">
+               <!-- HER KOMMER INTERESSE-FELTER: 
+            id="valgx" name="valgx" value="interessen" 
+            <input type="hidden" id="" name="" value="">
+            -->
+
             <div id="navn">
                 <div>
                     <label for="name">Fornavn</label>
@@ -61,7 +68,7 @@
                     <input name="bekreft-passord" type="password" id="password" placeholder="gjenta passord">
                 </div>
             </div>
-         
+
             <!-- vet ikke om du må ha den php-greia inn i div-en her -->
             <div id="registrer-div">
                 <input id="registrer" name="reg-knapp" type="submit" value="Registrer">
