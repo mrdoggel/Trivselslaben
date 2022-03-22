@@ -1,3 +1,6 @@
+<?php
+    require "assets/connection/oppdaterProfil.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,41 +25,50 @@
             </nav>
             <section>
                 <!-- Oppdater brukerinfo --> 
-                <form class="personling-info hidden" action="">
+                <form class="personling-info hidden" action="minside.php" method="post" enctype="multipart/form-data">
                     <div>
-                        <!-- #TODO Sett inn bilde/last opp nytt - fikser css senere -->
-
-                        <!-- #TODO Sett inn navn på bruker her -->
-                        <h2>Veronika Hansen</h2>
+                        <!-- #TODO Satt inn bilde/last opp nytt - fikser css senere -->
+                        <?php if (isset($_SESSION['bilde'])) { ?>
+                        <a href="minside.php"><img src="<?php echo $_SESSION['bilde']; ?>"></img></a>
+                        <?php } else { ?>
+                        <a href="minside.php"><img src="assets/images/default.jpg"></img></a>
+                        <?php } ?>
+                        <!-- #TODO Satt inn navn på bruker her -->
+                        <h2><?php echo $_SESSION['fnavn'] . " " . $_SESSION['enavn'] ?></h2>
                     </div>
-
                     <div>
                         <!-- #TODO??? Sette inn fornavn, etternavn og e-post i placeholderne?? -->
                         <div>
-                            <label for="nyttfnavn">Fornavn</label>
-                            <input name="nyttfnavn" type="text" id="nyttfnavn" placeholder="fornavn">
+                        <input type="file" name ="bilde" placeholder="Nytt bilde">
                         </div>
                         <div>
-                            <label for="nyttenavn">Etternavn</label>
-                            <input name="nytteenavn" type="text" id="nyttenavn" placeholder="etternavn">
-                    
+                        <!-- #TODO??? Sette inn fornavn, etternavn og e-post i placeholderne?? -->
+                        <label for="nyttfnavn">Fornavn</label>
+                        <input value="<?php echo $_SESSION['fnavn'] ?>" name="nyttfnavn" type="text" id="nyttfnavn" placeholder="fornavn">
+                        </div>
+                        <div>
+                        <label for="nyttenavn">Etternavn</label>
+                        <input value="<?php echo $_SESSION['enavn'] ?>" name="nyttenavn" type="text" id="nyttenavn" placeholder="etternavn">
                         </div>
                     </div>
                     
                     <div>
                         <div>
-                            <label for="nyepost">E-post</label>
-                            <input name="nyepost" type="text" id="nyepost" placeholder="e-post">
-                        </div>
-                        <div>
-                            <label for="nyepostconf">Bekreft e-post</label>
-                            <input name="nyepostconf" type="text" id="nyepostconf" placeholder="bekreft epost">
+                            <label for="nybesk">Beskrivelse</label>
+                            <input value="<?php echo $_SESSION['beskrivelse'] ?>" name="nybesk" type="text" id="nybesk" placeholder="beskrivelse">
                         </div>
                     </div>
 
                     <div>
-                        <button type="submit">Oppdater informasjon</button>
+                        <button name="oppdater-knapp" type="submit">Oppdater profil</button>
                     </div>
+                    <?php if (count($errors) > 0) : ?>
+                    <div class="error">
+                        <?php foreach ($errors as $error) : ?>
+                        <p style="color: red;"><?php echo $error ?></p>
+                        <?php endforeach ?>
+                    </div>
+                    <?php  endif ?>
                 </form>
 
                 <!-- #TODO: HENT UT INTERESSER OG FJERNE :-) Håper layouten funker-->

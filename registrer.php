@@ -15,11 +15,11 @@
         <p>Da er du snart i gang! <br> Vennligst fyll ut all informasjon i feltene under </p>
    </header>
     <main>
-        <form action="registrer.php" method="post">    
+        <form action="registrer.php" method="post" enctype="multipart/form-data">
             <div id="navn">
                 <div>
                     <label for="name">Fornavn</label>
-                    <input name="navn" type="text" id="fname" placeholder="fornavn">
+                    <input name="fnavn" type="text" id="fname" placeholder="fornavn">
                 </div>
 
                 <div>
@@ -32,6 +32,7 @@
             <div id="bilde">
                 <div>
                     <!-- Her kan du hente profilbilde, kan fikse css-en senere -->
+                    <input type="file" name ="bilde" placeholder="">
 
                 </div>
             </div>
@@ -45,7 +46,7 @@
                 <div>
                     <!-- Felt for å bekreft e-post, vet ikke om dette er nødvendig - i så fall kan du ta det bort!! hvis ikke endre id..? -->
                     <label for="fname">Bekreft e-post</label>
-                    <input name="regEpost" type="text" id="email" placeholder="e-post">
+                    <input name="gjentaRegEpost" type="text" id="email" placeholder="e-post">
                 </div>
             </div>
 

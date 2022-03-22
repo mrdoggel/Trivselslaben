@@ -24,7 +24,9 @@ if (isset($_POST['logginn-knapp'])) {
         $hash = $row['passord'];
         if (password_verify($password, $hash)) {
             session_start();
-            $_SESSION['navn'] = $row['navn'];
+            $_SESSION['fnavn'] = $row['fornavn'];
+            $_SESSION['enavn'] = $row['etternavn'];
+            $_SESSION['beskrivelse'] = $row['beskrivelse'];
             $_SESSION['poeng'] = $row['poeng'];
             $_SESSION['bilde'] = $row['profilbilde'];
             $_SESSION['email'] = $row['epost'];
