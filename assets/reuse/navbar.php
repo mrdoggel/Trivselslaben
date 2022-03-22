@@ -1,7 +1,7 @@
 <nav id="navbar">
         <div id="searchbar">
         <form action="søk.php" method="post" style="padding: 0; margin: 0; display: flex;">
-            <input type="text" name="søkeparameter" placeholder="Hva leter du etter?">
+            <input required type="text" name="søkeparameter" placeholder="Hva leter du etter?">
         </form>
         </div>
     <div id="profil">
