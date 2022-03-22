@@ -22,7 +22,7 @@
             </nav>
             <section>
                 <!-- Oppdater brukerinfo --> 
-                <form class="personlig-info" action="">
+                <form action="">
                     <div>
                         <!-- #TODO Sett inn bilde/last opp nytt - fikser css senere -->
 
@@ -55,7 +55,7 @@
                     </div>
 
                     <div>
-                        <button type="submit">Registrer</button>
+                        <button type="submit">Oppdater informasjon</button>
                     </div>
                 </form>
             </section>

@@ -10,7 +10,8 @@ h6,
 p,
 li,
 a,
-span {
+span,
+button {
   color: #1f294d;
   font-family: "Leelawadee UI";
 }
