@@ -22,7 +22,7 @@
             </nav>
             <section>
                 <!-- Oppdater brukerinfo --> 
-                <form action="">
+                <form class="personlig-info" action="">
                     <div>
                         <!-- #TODO Sett inn bilde/last opp nytt - fikser css senere -->
 
@@ -32,19 +32,26 @@
 
                     <div>
                         <!-- #TODO??? Sette inn fornavn, etternavn og e-post i placeholderne?? -->
-                        <label for="nyttfnavn">Fornavn</label>
-                        <input name="nyttfnavn" type="text" id="nyttfnavn" placeholder="fornavn">
-
-                        <label for="nyttenavn">Etternavn</label>
-                        <input name="nytteenavn" type="text" id="nyttenavn" placeholder="etternavn">
+                        <div>
+                            <label for="nyttfnavn">Fornavn</label>
+                            <input name="nyttfnavn" type="text" id="nyttfnavn" placeholder="fornavn">
+                        </div>
+                        <div>
+                            <label for="nyttenavn">Etternavn</label>
+                            <input name="nytteenavn" type="text" id="nyttenavn" placeholder="etternavn">
+                    
+                        </div>
                     </div>
-
+                    
                     <div>
-                        <label for="nyepost">E-post</label>
-                        <input name="nyepost" type="text" id="nyepost" placeholder="e-post">
-
-                        <label for="nyepostconf">Bekreft e-post</label>
-                        <input name="nyepostconf" type="text" id="nyepostconf" placeholder="bekreft epost">
+                        <div>
+                            <label for="nyepost">E-post</label>
+                            <input name="nyepost" type="text" id="nyepost" placeholder="e-post">
+                        </div>
+                        <div>
+                            <label for="nyepostconf">Bekreft e-post</label>
+                            <input name="nyepostconf" type="text" id="nyepostconf" placeholder="bekreft epost">
+                        </div>
                     </div>
 
                     <div>
