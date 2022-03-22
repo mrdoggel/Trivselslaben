@@ -67,6 +67,8 @@ h2 {
     font-size: 2rem;
     font-weight: bold;
     margin-top:4rem; 
+    padding-left: 0rem;
+    text-align: left;
 }
 #admin-nav li {
     font-size: 1.25rem;
@@ -79,26 +81,28 @@ h2 {
 
 
 
-
+/* PERSONLIG INFO */
+h1 {
+    font-weight: 300;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 1rem; 
+}
 section {
     width: 80%;
 }
 form {
     padding: 2rem; 
 }
-h2 {
+.personling-info h2 {
     font-weight: 100;
     font-size: 2rem;
     padding: 2rem;
 }
-label, input {
-    display: block;
-    margin: 1rem; 
-}
-label{
+.personling-info label{
     font-size: 1.25rem;
 }
-input {
+.personling-info input {
     width: 70%;
     font-size: 1.25rem;
     text-align: center;
@@ -106,28 +110,129 @@ input {
     border: 0.04rem solid #1F294D; 
     padding: 0.75rem 0.5rem 0.75rem 0.5rem; 
 }
-button {
+.personling-info label, .personling-info input {
+    display: block;
+    margin: 1rem; 
+}
+.personling-info button {
     font-size: 1.25rem;
     border: none;
     background-color: #B6F3AB;
     box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 10%);
     margin-top: 6rem; 
 }
-form div:first-of-type {
-    margin-bottom: 3rem;
+.personling-info div:first-of-type {
+    margin-bottom: 1rem;
 }
-form > div {
+.personling-info > div {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
 }
-form > div > div {
+.personling-info > div > div {
     width: 40%;
     margin-top: 2rem; 
 }
 
+
+
+
+
+
+/* INTERESSER */
+.interesser {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+} 
+.interesser h2 {
+    width: 100%;
+    padding: 2rem 0rem 2rem 0rem; 
+}
+.interesser h3 {
+    font-size: 1.5rem;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 70%,
+        #B6F3AB 0%,
+        #B6F3AB 0%
+    );
+}
+.interesser input{
+    font-size: 1.5rem;
+}
+.interesser form {
+    padding-left: 0rem;
+    width: 30%;
+}
+.fjern button {
+    border: none;
+    background-color: #ffffff;
+    font-size: 1rem;
+    color: #F21212;
+}
+.interesser form, .interesser h2 {
+    padding-top: 8rem; 
+}
+.interesser section {
+    width: 40%;
+}
+.interesser > section > div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 50%;
+}
+.interesser > section > div > div {
+    width: 50%;
+}
+.interesser h3{
+    display: inline-block;
+}
+.interesser .fjern, .interesser > section > div > div {
+    padding: 2rem 0rem 0rem 0rem; 
+    margin: 0rem; 
+    width: 50%;
+}
+
+#finn-og-legg-til h3{
+    padding: 1.5rem 0rem 0rem 0rem; 
+    background: none;
+}
+#finn-og-legg-til button {
+    border: none;
+    background-color: #ffffff;
+    padding-left: 0rem;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 60%,
+        #B6F3AB 0%,
+        #B6F3AB 0%
+    );
+    cursor: pointer;
+}
+#finn-og-legg-til div {
+    display: block;
+}
+#finn-og-legg-til > div > form {
+    padding: 0rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* HOVER */
-button:hover{
+.personling-info button:hover{
     cursor: pointer;
     transition: all 0.5s; 
     box-shadow: none;

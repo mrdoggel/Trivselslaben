@@ -22,7 +22,7 @@
             </nav>
             <section>
                 <!-- Oppdater brukerinfo --> 
-                <form action="">
+                <form class="personling-info hidden" action="">
                     <div>
                         <!-- #TODO Sett inn bilde/last opp nytt - fikser css senere -->
 
@@ -58,6 +58,44 @@
                         <button type="submit">Oppdater informasjon</button>
                     </div>
                 </form>
+
+                <!-- #TODO: HENT UT INTERESSER OG FJERNE :-) Håper layouten funker-->
+                <div class="interesser">
+                    <section>
+                        <h2>Dine interesser</h2>
+                        <div>
+                            <div>
+                                <h3 class="">Regnskap</h3>
+                            </div>
+                            <form class="fjern" action="">
+                                <button>fjern</button>
+                            </form>            
+                        </div>
+                        <div>
+                            <div>
+                                <h3>Hoho</h3>
+                            </div>
+                            <form class="fjern" action="">
+                                <button>fjern</button>
+                            </form>           
+                        </div>
+                    </section>
+
+                    <section id="finn-og-legg-til">
+                        <!-- #TODO: SØKE ETTER INTERESSER MAN IKKE HAR OG EVENTUELT LEGGE TIL, Håper layouten funker -->
+                        <form action="" method="">
+                            <input type="text" name="" placeholder="Finn nye interesser..">
+                        </form>
+
+                        <div>
+                            <h3>Kontrakter</h3>
+                            <form action="">
+                                <button>Legg til</button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+
             </section>
 
         </main>

@@ -11,7 +11,8 @@ p,
 li,
 a,
 span,
-button {
+button,
+::placeholder {
   color: #1f294d;
   font-family: "Leelawadee UI";
 }
@@ -22,7 +23,7 @@ li {
 a {
   text-decoration: none;
 }
-input{
+input[type="text"]{
   color: #1f294d;
   font-family: "Leelawadee UI";
 }
