@@ -93,17 +93,15 @@ function choiceEffect(e){
 }
 
 function settInnInteresse(interesse, id){ 
-    document.querySelector("#send-interesser").insertAdjacentHTML("afterbegin", `<input type="hidden" id="${id}" name="${id}" value="${interesse}">`);
-    
-    console.log(document.querySelector("#send-interesser").innerHTML); 
-    //document.querySelector(`#${id}`).value = interesse;
+    //document.querySelector("#send-interesser").insertAdjacentHTML("afterbegin", `<input type="hidden" id="${id}" name="${id}" value="${interesse}">`); 
+    document.querySelector(`#${id}`).value = interesse;
+    console.log(document.querySelector("#send-interesser").innerHTML);
 }
 
 function fjernInteresse(id){
-    document.querySelector(`#${id}`).remove(); 
-    
+    //document.querySelector(`#${id}`).remove(); 
+    document.querySelector(`#${id}`).value = ""; 
     console.log(document.querySelector("#send-interesser").innerHTML);
-    //document.querySelector(`#${id}`).value = ""; 
 }
 
 //Vis bedriftinfo

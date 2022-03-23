@@ -164,24 +164,16 @@
                     </div>
                     
                 </section>
-<<<<<<< HEAD
                 <form id="send-interesser" action="registrer.php" method="post"> 
+                    <input type="hidden" id="valg1" name="valg1" value="">
+                    <input type="hidden" id="valg2" name="valg2" value="">
+                    <input type="hidden" id="valg3" name="valg3" value="">
+                    <input type="hidden" id="valg4" name="valg4" value="">
+                    <input type="hidden" id="valg5" name="valg5" value="">
+                    <input type="hidden" id="valg6" name="valg6" value="">
                     <button type"submit" class="next"> <span><a href="registrer.php" id="interessebtn">Neste</a></span> </button>
-=======
-                <form action="registrer.php" method="post"> 
-                    <button type="submit" class="next"> <span><a href="registrer.php" id="interessebtn">Neste</a></span> </button>
->>>>>>> 9c53ac295e25d50eebc9f159bfdc1d167b7b74d4
                 </form>
             </div>
         </main>
     </body>
 </html>
-
-
-
-<!-- <input type="hidden" id="valg1" name="valg1" value="">
-                    <input type="hidden" id="valg2" name="valg2" value="">
-                    <input type="hidden" id="valg3" name="valg3" value="">
-                    <input type="hidden" id="valg4" name="valg4" value="">
-                    <input type="hidden" id="valg5" name="valg5" value="">
-                    <input type="hidden" id="valg6" name="valg6" value="">-->
