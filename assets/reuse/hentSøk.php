@@ -4,10 +4,15 @@ $søkeparameter = $_POST['søkeparameter'];
 $sql = $conn->prepare("SELECT * FROM kurs k WHERE k.navn LIKE '%$søkeparameter%'");
 $sql->execute();
 $result = $sql->get_result();
+$resultat = false;
 if ($result->num_rows > 0) {
-    echo '<h1>Kurs som kan stemme overens med "';
-    echo $søkeparameter;
-    echo '"</h1>';
+    if ($resultat == false ) {
+        $resultat = true;
+        echo '<h1>Resultat som kan stemme overens med "';
+        echo $søkeparameter;
+        echo '"</h1>';
+    }
+
     while($row = $result->fetch_assoc()) {
         echo '<div id="kurs';
         echo $row["kurs_id"];
@@ -28,13 +33,16 @@ if ($result->num_rows > 0) {
         echo '</p></div></div>';
     }
 }
-$sql1 = $conn->prepare("SELECT * FROM modul m WHERE m.navn LIKE '%$søkeparameter%'");
+$sql1 = $conn->prepare("SELECT * FROM modul m WHERE m.navn LIKE '%$søkeparameter%' OR m.beskrivelse LIKE '%$søkeparameter%'");
 $sql1->execute();
 $result1 = $sql1->get_result();
 if ($result1->num_rows > 0) {
-    echo '<h1>Moduler som kan stemme overens med "';
-    echo $søkeparameter;
-    echo '"</h1>';
+    if ($resultat == false ) {
+        $resultat = true;
+        echo '<h1>Resultat som kan stemme overens med "';
+        echo $søkeparameter;
+        echo '"</h1>';
+    }
     while($row = $result1->fetch_assoc()) {
         echo '<div id="modul';
         echo $row["modul_id"];
@@ -49,9 +57,11 @@ if ($result1->num_rows > 0) {
         echo '</p></div></div>';
     }
 } else {
-    echo '<h1>Fant ingenting som som stemmer med "';
-    echo $søkeparameter;
-    echo '"';
+    if ($resultat == false) {
+        echo '<h1>Fant ingenting som som stemmer med "';
+        echo $søkeparameter;
+        echo '"</h1>';
+    }
 }
 
 ?>

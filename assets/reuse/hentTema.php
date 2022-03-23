@@ -8,10 +8,22 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
   echo '<div>
         <div>
-        <h3 class="">';echo $row['navn'];echo '</h3>
+        <h3 style="';
+        echo 'background: linear-gradient(
+                              180deg,
+                              rgba(255, 255, 255, 0) 0%,
+                              rgba(255, 255, 255, 0) 70%, ';
+                              echo $row['farge'];
+                              echo ' 0%,';
+                              echo $row['farge'];
+                              echo ' 0%';
+                              echo ');';
+        echo '" class="">';echo $row['navn'];echo '</h3>
         </div>
         <form class="fjern" action="assets/reuse/fjernTema.php" method="post">
-        <input type="hidden" name="tema" value="';echo $row['tema_id']; echo '"></input>
+        <input style="';
+
+        echo '" type="hidden" name="tema" value="';echo $row['tema_id']; echo '"></input>
         <button>fjern</button>
         </form>
         </div>';

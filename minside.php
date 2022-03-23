@@ -86,7 +86,7 @@
                         <form method="post" action="assets/reuse/leggTilTema.php">
                             <div class="dropdown">
 
-                                <input onfocus="myFunction()" type="text" placeholder="Finn interesser..." id="myInput" onkeyup="filterFunction()">
+                                <input onfocus="myFunction()" onfocusout="myFunction2()" type="text" placeholder="Legg til interesser..." id="myInput" onkeyup="filterFunction()">
 
                                 <div id="myDropdown" class="dropdown-content">
 
