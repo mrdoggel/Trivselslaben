@@ -165,13 +165,18 @@
                     
                 </section>
                 <form id="send-interesser" action="registrer.php" method="post"> 
-                    <input type="hidden" id="valg1" name="valg1" value="">
-                    <input type="hidden" id="valg2" name="valg2" value="">
-                    <input type="hidden" id="valg3" name="valg3" value="">
-                    <input type="hidden" id="valg4" name="valg4" value="">
-                    <input type="hidden" id="valg5" name="valg5" value="">
-                    <input type="hidden" id="valg6" name="valg6" value="">
-                    <button type"submit" class="next"> <span><a href="registrer.php" id="interessebtn">Neste</a></span> </button>
+                    <?php
+                                for ($i = 1; $i <= 6; $i++) {
+                                    $valg = "valg";
+                                    $valg .= $i;
+                                    echo '<input id="';
+                                    echo $valg;
+                                    echo '" type="hidden" name="';
+                                    echo $valg;
+                                    echo '" value=""></input>';
+                                }
+                                ?>
+                    <button type="submit" class="next"> <span>Neste</span> </button>
                 </form>
             </div>
         </main>

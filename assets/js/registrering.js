@@ -84,7 +84,7 @@ function choiceEffect(e){
         e.target.classList.contains("valgt-fem") ? settInnInteresse(clickedInterest, id) : fjernInteresse(id);
     }
     if(parentClass == "intvalg6"){
-        id = "valg6"; 
+        id = "valg6";
         e.target.classList.toggle("valgt");
         e.target.classList.toggle("valgt-seks");
         e.target.classList.contains("valgt-seks") ? settInnInteresse(clickedInterest, id) : fjernInteresse(id);
@@ -94,7 +94,9 @@ function choiceEffect(e){
 
 function settInnInteresse(interesse, id){ 
     //document.querySelector("#send-interesser").insertAdjacentHTML("afterbegin", `<input type="hidden" id="${id}" name="${id}" value="${interesse}">`); 
-    document.querySelector(`#${id}`).value = interesse;
+    var numb = id.match(/\d/g);
+        numb = numb.join("");
+    document.querySelector(`#${id}`).value = numb;
     console.log(document.querySelector("#send-interesser").innerHTML);
 }
 

@@ -17,11 +17,19 @@
    </header>
     <main>
         <form action="registrer.php" method="post" enctype="multipart/form-data">
-               <!-- HER KOMMER INTERESSE-FELTER: 
-            id="valgx" name="valgx" value="interessen" 
-            <input type="hidden" id="" name="" value="">
-            -->
 
+            <?php
+
+            for ($i = 1; $i <= 6; $i++) {
+                $valg = "valg";
+                $valg .= $i;
+                echo '<input type="hidden" name="';
+                echo $valg;
+                echo '" value="';
+                echo $_POST[$valg];
+                echo '"></input>';
+            }
+            ?>
             <div id="navn">
                 <div>
                     <label for="name">Fornavn</label>
