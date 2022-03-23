@@ -164,8 +164,13 @@
                     </div>
                     
                 </section>
+<<<<<<< HEAD
                 <form id="send-interesser" action="registrer.php" method="post"> 
                     <button type"submit" class="next"> <span><a href="registrer.php" id="interessebtn">Neste</a></span> </button>
+=======
+                <form action="registrer.php" method="post"> 
+                    <button type="submit" class="next"> <span><a href="registrer.php" id="interessebtn">Neste</a></span> </button>
+>>>>>>> 9c53ac295e25d50eebc9f159bfdc1d167b7b74d4
                 </form>
             </div>
         </main>
