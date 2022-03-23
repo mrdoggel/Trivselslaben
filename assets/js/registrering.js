@@ -15,7 +15,7 @@ function init() {
     const $interessevalg = document.querySelectorAll(".intvalg p"); 
     $interessevalg.forEach(function($choice){
         $choice.addEventListener("click", choiceEffect); 
-    })
+    });
 
     const $bedrifttype = document.querySelectorAll(".bedrifttype");
     $bedrifttype.forEach((element)=> {
@@ -51,37 +51,59 @@ function choiceEffect(e){
     e.preventDefault(); 
     const clickedInterest = e.target.innerHTML; 
     const parentClass = e.target.parentElement.className;
+    let id; 
 
     if(parentClass == "intvalg1"){
+        id = "valg1"; 
         e.target.classList.toggle("valgt");
         e.target.classList.toggle("valgt-en");
-        e.target.classList.contains("valgt-en") ? sessionStorage.setItem("valg1", clickedInterest) : sessionStorage.removeItem("valg1");
+        e.target.classList.contains("valgt-en") ? settInnInteresse(clickedInterest, id) : fjernInteresse(id); 
     }
     if(parentClass == "intvalg2"){
+        id = "valg2"; 
         e.target.classList.toggle("valgt");
         e.target.classList.toggle("valgt-to");
-        e.target.classList.contains("valgt-to") ? sessionStorage.setItem("valg2", clickedInterest) : sessionStorage.removeItem("valg2");
+        e.target.classList.contains("valgt-to") ? settInnInteresse(clickedInterest, id) : fjernInteresse(id);
     }
     if(parentClass == "intvalg3"){
+        id = "valg3"; 
         e.target.classList.toggle("valgt");
         e.target.classList.toggle("valgt-tre");
-        e.target.classList.contains("valgt-tre") ? sessionStorage.setItem("valg3", clickedInterest) : sessionStorage.removeItem("valg3");
+        e.target.classList.contains("valgt-tre") ? settInnInteresse(clickedInterest, id) : fjernInteresse(id);
     }
     if(parentClass == "intvalg4"){
+        id = "valg4"; 
         e.target.classList.toggle("valgt");
         e.target.classList.toggle("valgt-fire");
-        e.target.classList.contains("valgt-fire") ? sessionStorage.setItem("valg4", clickedInterest) : sessionStorage.removeItem("valg4");
+        e.target.classList.contains("valgt-fire") ? settInnInteresse(clickedInterest, id) : fjernInteresse(id);
     }
     if(parentClass == "intvalg5"){
+        id = "valg5"; 
         e.target.classList.toggle("valgt");
         e.target.classList.toggle("valgt-fem");
-        e.target.classList.contains("valgt-fem") ? sessionStorage.setItem("valg5", clickedInterest) : sessionStorage.removeItem("valg5");
+        e.target.classList.contains("valgt-fem") ? settInnInteresse(clickedInterest, id) : fjernInteresse(id);
     }
     if(parentClass == "intvalg6"){
+        id = "valg6"; 
         e.target.classList.toggle("valgt");
         e.target.classList.toggle("valgt-seks");
-        e.target.classList.contains("valgt-seks") ? sessionStorage.setItem("valg6", clickedInterest) : sessionStorage.removeItem("valg6"); 
+        e.target.classList.contains("valgt-seks") ? settInnInteresse(clickedInterest, id) : fjernInteresse(id);
+        //e.target.classList.contains("valgt-seks") ? sessionStorage.setItem("valg6", clickedInterest) : sessionStorage.removeItem("valg6"); 
     }
+}
+
+function settInnInteresse(interesse, id){ 
+    document.querySelector("#send-interesser").insertAdjacentHTML("afterbegin", `<input type="hidden" id="${id}" name="${id}" value="${interesse}">`);
+    
+    console.log(document.querySelector("#send-interesser").innerHTML); 
+    //document.querySelector(`#${id}`).value = interesse;
+}
+
+function fjernInteresse(id){
+    document.querySelector(`#${id}`).remove(); 
+    
+    console.log(document.querySelector("#send-interesser").innerHTML);
+    //document.querySelector(`#${id}`).value = ""; 
 }
 
 //Vis bedriftinfo

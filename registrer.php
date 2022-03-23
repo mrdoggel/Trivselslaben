@@ -16,8 +16,7 @@
         <p>Da er du snart i gang! <br> Vennligst fyll ut all informasjon i feltene under </p>
    </header>
     <main>
-        <!-- action="registrer.php" -->
-        <form id="regform" method="post" enctype="multipart/form-data">
+        <form action="registrer.php" method="post" enctype="multipart/form-data">
                <!-- HER KOMMER INTERESSE-FELTER: 
             id="valgx" name="valgx" value="interessen" 
             <input type="hidden" id="" name="" value="">
@@ -71,7 +70,7 @@
 
             <!-- vet ikke om du må ha den php-greia inn i div-en her -->
             <div id="registrer-div">
-                <input id="registrer" name="reg-knapp" type="submit" value="Registrer">
+                <span><input name="reg-knapp" type="submit" value="Registrer"></span>
             </div>
             <?php  if (count($errors) > 0) : ?>
                 <div class="error">

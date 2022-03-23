@@ -49,6 +49,7 @@ input {
     border-radius: 1rem;
 }
 #registrer{
+    font-size: 1rem;
     width: fit-content;
     border: none;
     border-radius: 0rem;
@@ -77,4 +78,10 @@ label, input {
 }
 #passord input[type=password]:focus {
     border: 0.0682rem solid #95E3EC;
+}
+
+#registrer:hover {
+    box-shadow: none;
+    transition: all 0.3s;
+    letter-spacing: 0.04rem;
 }

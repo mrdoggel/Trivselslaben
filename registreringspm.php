@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/registreringspm.css">
     <script src="assets/js/registrering.js"></script>
+    <!--<script src="assets/js/sendinteresser.js"></script>-->
 </head>
     <body>
         <header>
@@ -163,10 +164,19 @@
                     </div>
                     
                 </section>
-                <form action="registrer.php" method="post"> 
+                <form id="send-interesser" action="registrer.php" method="post"> 
                     <button type"submit" class="next"> <span><a href="registrer.php" id="interessebtn">Neste</a></span> </button>
                 </form>
             </div>
         </main>
     </body>
 </html>
+
+
+
+<!-- <input type="hidden" id="valg1" name="valg1" value="">
+                    <input type="hidden" id="valg2" name="valg2" value="">
+                    <input type="hidden" id="valg3" name="valg3" value="">
+                    <input type="hidden" id="valg4" name="valg4" value="">
+                    <input type="hidden" id="valg5" name="valg5" value="">
+                    <input type="hidden" id="valg6" name="valg6" value="">-->

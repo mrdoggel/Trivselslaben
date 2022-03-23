@@ -22,6 +22,6 @@ function sendInteresser(e){
         }
     });
 
-    //console.log(document.querySelector("#regform").innerHTML); 
+    console.log(document.querySelector("#regform").innerHTML); 
 }
 
