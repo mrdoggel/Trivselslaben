@@ -23,12 +23,14 @@ if (isset($_POST['reg-knapp'])) {
     $valg4 = mysqli_real_escape_string($conn, $_POST['valg4']);
     $valg5 = mysqli_real_escape_string($conn, $_POST['valg5']);
     $valg6 = mysqli_real_escape_string($conn, $_POST['valg6']);
+    if (!empty($_FILES['bilde']['name'])) {
     $fil = $_FILES['bilde'];
     $filNavn = $_FILES['bilde']['name'];
     $filTmpNavn = $_FILES['bilde']['tmp_name'];
     $filStrl = $_FILES['bilde']['size'];
     $filType = $_FILES['bilde']['type'];
     $filError = $_FILES['bilde']['error'];
+    }
     $tab = array($valg1, $valg2, $valg3, $valg4, $valg5, $valg6);
 
   // form validation: ensure that the form is correctly filled ...
@@ -55,8 +57,8 @@ if (isset($_POST['reg-knapp'])) {
       array_push($errors, "Epost finnes allerede");
     }
   }
-
-  $filExt = explode('.', $filNavn);
+    if (!empty($filNavn)) {
+    $filExt = explode('.', $filNavn);
       $filFaktiskExt = strtolower(end($filExt));
 
       $lovlig = array('jpg', 'jpeg', 'png');
@@ -74,6 +76,9 @@ if (isset($_POST['reg-knapp'])) {
         }
       } else {
         array_push($errors, "Du kan ikke laste opp filer av denne typen!");
+      }
+      } else {
+        $filDestinasjon = NULL;
       }
   // Finally, register user if there are no errors in the form
   if (count($errors) == 0) {
