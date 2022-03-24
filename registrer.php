@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="assets/css/reset.css"/>
     <link rel="stylesheet" href="assets/css/global.css"/>
     <link rel="stylesheet" href="assets/css/registrer.css"/>
-    <script src="assets/js/sendinteresser.js">></script>
+    <!--
+    <script src="assets/js/registrering.js">></script>--> 
+    <script src="assets/js/registreringStyle.js"></script>
 </head>
 <body> 
     <header>
         <p>Da er du snart i gang! <br> Vennligst fyll ut all informasjon i feltene under </p>
    </header>
     <main>
-        <form action="registrer.php" method="post" enctype="multipart/form-data">
+        <form id="regform" action="registrer.php" method="post" enctype="multipart/form-data">
 
             <?php
 
@@ -43,12 +45,14 @@
                 </div>
             </div>
 
-            <div id="bilde">
+            <div id="profilbilde">
                 <div>
-                    <!-- Her kan du hente profilbilde, kan fikse css-en senere -->
-                    <input type="file" name ="bilde" placeholder="">
+                    <label>Profilbilde</label>
+                    <label for="bilde" id="last-opp-btn">last opp</label>
+                    <input type="file" id="bilde" name="bilde">
 
                 </div>
+
             </div>
 
             <div id="e-post">
@@ -78,12 +82,12 @@
 
             <!-- vet ikke om du må ha den php-greia inn i div-en her -->
             <div id="registrer-div">
-                <span><input name="reg-knapp" type="submit" value="Registrer"></span>
+                <input name="reg-knapp" type="submit" value="Registrer">
             </div>
             <?php  if (count($errors) > 0) : ?>
                 <div class="error">
                     <?php foreach ($errors as $error) : ?>
-                    <p style="color: red;"><?php echo $error ?></p>
+                    <p>* <?php echo $error ?></p>
                     <?php endforeach ?>
                 </div>
             <?php  endif ?>

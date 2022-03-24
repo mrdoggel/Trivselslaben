@@ -137,7 +137,7 @@ section {
   border-radius: 1rem;
   width: 15%;
   margin: 0rem 3rem 3rem 3rem; 
-  box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 10%);
+  box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 20%);
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -163,13 +163,12 @@ section {
 }
 
 .modul {
-  margin-bottom: 20px;
   border-radius: 25px;
   width: 25%;
   box-shadow:  1px 1px 20px 1px rgb(0 0 0 / 10%);
   display: flex;
   flex-flow: wrap;
-  margin: 1rem; 
+  margin: 0rem 1rem 1rem 1rem; 
   position: relative;
   min-height: 30vh;
 }
@@ -223,6 +222,7 @@ section {
   background-color: #f2f088;
   font-size: 1.5rem;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 /* FULLFØRT */ 

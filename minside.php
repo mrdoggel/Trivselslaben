@@ -27,21 +27,29 @@
             <section>
                 <!-- Oppdater brukerinfo --> 
                 <form class="personling-info " action="minside.php" method="post" enctype="multipart/form-data">
-                    <div>
+                    
+                    <div id="navn-bilde">
                         <!-- #TODO Satt inn bilde/last opp nytt - fikser css senere -->
                         <?php if (isset($_SESSION['bilde'])) { ?>
+                        
+                        <div>
                         <a href="minside.php"><img src="<?php echo $_SESSION['bilde']; ?>"></img></a>
+                            <label for="bilde" id="last-opp-btn">last opp</label>
+                            <input id="bilde" type="file" name ="bilde" placeholder="Nytt bilde">
+                        </div>
                         <?php } else { ?>
-                        <a href="minside.php"><img src="assets/images/default.jpg"></img></a>
+                        <div>
+                            <a href="minside.php"><img src="assets/images/default.jpg"></img></a>
+                        </div>
+                        
                         <?php } ?>
                         <!-- #TODO Satt inn navn på bruker her -->
                         <h2><?php echo $_SESSION['fnavn'] . " " . $_SESSION['enavn'] ?></h2>
                     </div>
+
                     <div>
                         <!-- #TODO??? Sette inn fornavn, etternavn og e-post i placeholderne?? -->
-                        <div>
-                        <input type="file" name ="bilde" placeholder="Nytt bilde">
-                        </div>
+                        
                         <div>
                         <!-- #TODO??? Sette inn fornavn, etternavn og e-post i placeholderne?? -->
                         <label for="nyttfnavn">Fornavn</label>
@@ -60,20 +68,20 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div id="oppdater-btn"> 
                         <button name="oppdater-knapp" type="submit">Oppdater profil</button>
                     </div>
                     <?php if (count($errors) > 0) : ?>
-                    <div class="error">
+                    <div id="error">
                         <?php foreach ($errors as $error) : ?>
-                        <p style="color: red;"><?php echo $error ?></p>
+                        <p>* <?php echo $error ?></p>
                         <?php endforeach ?>
                     </div>
                     <?php  endif ?>
                 </form>
 
-                <!-- #TODO: HENT UT INTERESSER OG FJERNE :-) Håper layouten funker-->
-                <div class="interesser">
+                <!-- Se/oppdater interesser -->
+                <div id="hidden" class="interesser">
                     <section>
                         <h2>Dine interesser</h2>
                         <?php
@@ -112,7 +120,6 @@
                             </form>
                     </section>
                 </div>
-
 
             </section>
 

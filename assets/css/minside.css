@@ -92,7 +92,9 @@ section {
     width: 80%;
 }
 form {
-    padding: 2rem; 
+    width: 70%;
+    margin: auto;
+    padding: 3rem;
 }
 .personling-info h2 {
     font-weight: 100;
@@ -107,8 +109,9 @@ form {
     font-size: 1.25rem;
     text-align: center;
     border-radius: 1.5rem;
-    border: 0.04rem solid #1F294D; 
     padding: 0.75rem 0.5rem 0.75rem 0.5rem; 
+    background-color: rgb(182	243	171 / 15%);
+    border: none;
 }
 .personling-info label, .personling-info input {
     display: block;
@@ -127,15 +130,54 @@ form {
 .personling-info > div {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+#oppdater-btn {
     justify-content: center;
 }
 .personling-info > div > div {
-    width: 40%;
+    width: 50%;
     margin-top: 2rem; 
 }
-
-
-
+#navn-bilde {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+#navn-bilde img {
+    width:10rem;
+    height:10rem;
+    object-fit:cover;
+    border-radius:50%;
+}
+#navn-bilde div {
+    width: 20%;
+    margin: 0rem; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#navn-bilde label {
+    padding: 0rem; 
+    margin: 0rem; 
+    color: #FC9C7F;
+}
+#last-opp-btn{
+    display: block;
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 2rem; 
+    cursor: pointer;
+    text-align: center;
+}
+#bilde {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
 
 
 
@@ -171,6 +213,7 @@ form {
     background-color: #ffffff;
     font-size: 1rem;
     color: #F21212;
+    cursor: pointer;
 }
 .interesser form, .interesser h2 {
     padding-top: 8rem; 
@@ -213,9 +256,7 @@ form {
     );
     cursor: pointer;
 }
-#finn-og-legg-til div {
 
-}
 #finn-og-legg-til > div > form {
     padding: 0rem;
 }

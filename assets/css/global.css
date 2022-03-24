@@ -41,3 +41,20 @@ label{
 #hidden{
   display: none;
 }
+#error {
+  display: block;
+  text-align: center;
+  margin-top: 0.75rem; 
+}
+#error p{
+  color: #FF9494; 
+  padding: 0.25rem; 
+}
+.error {
+  display: block;
+  text-align: center;
+}
+.error p{
+  color: #FF9494; 
+  padding: 0.25rem; 
+}

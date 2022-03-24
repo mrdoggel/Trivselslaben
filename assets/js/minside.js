@@ -1,3 +1,14 @@
+"use strict"
+
+document.addEventListener("DOMContentLoaded", init);
+
+function init() {
+  $oppdaterInfo = document.querySelector(".personlig-info"); 
+  if($oppdaterInfo.id != "hidden"){
+    document.querySelector("ul li:nth-child(2)").classList.add("aktiv")
+  }
+}
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
