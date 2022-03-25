@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/reset.css"/>
     <link rel="stylesheet" href="assets/css/global.css"/>
     <link rel="stylesheet" href="assets/css/minside.css">
-
+    <script src="assets/js/minside.js"></script>
 </head>
     <body id="body">
         <?php
@@ -19,14 +19,14 @@
             <nav id="admin-nav">
                 <h1>Min profil</h1>
                 <ul>
-                    <li>Brukerinformasjon</li>
-                    <li>Mine interesser</li>
+                    <li id="bruker-info">Brukerinformasjon</li>
+                    <li id="bruker-interesser">Mine interesser</li>
                     <li>Lagrede kurs</li>
                 </ul>
             </nav>
             <section>
                 <!-- Oppdater brukerinfo --> 
-                <form class="personling-info " action="minside.php" method="post" enctype="multipart/form-data">
+                <form class="personling-info" action="minside.php" method="post" enctype="multipart/form-data">
                     
                     <div id="navn-bilde">
                         <!-- #TODO Satt inn bilde/last opp nytt - fikser css senere -->
@@ -94,7 +94,8 @@
                         <form method="post" action="assets/reuse/leggTilTema.php">
                             <div class="dropdown">
 
-                                <input onfocus="myFunction()" onfocusout="myFunction2()" type="text" placeholder="Legg til interesser..." id="myInput" onkeyup="filterFunction()">
+                                <!--<input id="myInput" onfocus="myFunction()" onfocusout="myFunction2()" type="text" placeholder="Legg til interesser..." onkeyup="filterFunction()">-->
+                                <input id="myInput" type="text" placeholder="Legg til interesser..."> 
 
                                 <div id="myDropdown" class="dropdown-content">
 
@@ -125,5 +126,4 @@
 
         </main>
     </body>
-    <script src="assets/js/minside.js"></script>
 </html>

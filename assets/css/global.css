@@ -23,7 +23,7 @@ li {
 a {
   text-decoration: none;
 }
-input[type="text"], input[type="submit"]{
+input[type="text"], input[type="submit"], textarea[type="text"]{
   color: #1f294d;
   font-family: "Leelawadee UI";
 }
