@@ -64,7 +64,7 @@
                     <div>
                         <div>
                             <label for="nybesk">Beskrivelse</label>
-                            <input value="<?php echo $_SESSION['beskrivelse'] ?>" name="nybesk" type="text" id="nybesk" placeholder="beskrivelse">
+                            <textarea rows="3" name="nybesk" type="text" id="nybesk" placeholder="beskrivelse"><?php echo $_SESSION['beskrivelse'] ?></textarea>
                         </div>
                     </div>
 

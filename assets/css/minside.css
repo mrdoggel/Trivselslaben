@@ -104,16 +104,25 @@ form {
 .personling-info label{
     font-size: 1.25rem;
 }
-.personling-info input {
+.personling-info input, .personling-info textarea {
     width: 70%;
     font-size: 1.25rem;
-    text-align: center;
     border-radius: 1.5rem;
     padding: 0.75rem 0.5rem 0.75rem 0.5rem; 
     background-color: rgb(182	243	171 / 15%);
     border: none;
+    resize: none;
 }
-.personling-info label, .personling-info input {
+
+.personling-info textarea {
+    width: 170%;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+.personling-info label, .personling-info input, .personling-info textarea {
     display: block;
     margin: 1rem; 
 }

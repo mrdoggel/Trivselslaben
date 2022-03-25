@@ -15,12 +15,14 @@ if (isset($_POST['oppdater-knapp'])) {
     $fnavn = mysqli_real_escape_string($conn, $_POST['nyttfnavn']);
     $enavn = mysqli_real_escape_string($conn, $_POST['nyttenavn']);
     $besk = mysqli_real_escape_string($conn, $_POST['nybesk']);
-    $fil = $_FILES['bilde'];
-    $filNavn = $_FILES['bilde']['name'];
-    $filTmpNavn = $_FILES['bilde']['tmp_name'];
-    $filStrl = $_FILES['bilde']['size'];
-    $filType = $_FILES['bilde']['type'];
-    $filError = $_FILES['bilde']['error'];
+    if (!empty($_FILES['bilde']['name'])) {
+        $fil = $_FILES['bilde'];
+        $filNavn = $_FILES['bilde']['name'];
+        $filTmpNavn = $_FILES['bilde']['tmp_name'];
+        $filStrl = $_FILES['bilde']['size'];
+        $filType = $_FILES['bilde']['type'];
+        $filError = $_FILES['bilde']['error'];
+    }
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
@@ -28,8 +30,8 @@ if (isset($_POST['oppdater-knapp'])) {
   if (empty($enavn)) { array_push($errors, "Etternavn kreves"); }
 
   $filExt = explode('.', $filNavn);
-      $filFaktiskExt = strtolower(end($filExt));
-      $lovlig = array('jpg', 'jpeg', 'png');
+  $filFaktiskExt = strtolower(end($filExt));
+  $lovlig = array('jpg', 'jpeg', 'png');
     if (!empty($filNavn)) {
       if (in_array($filFaktiskExt, $lovlig)) {
         if ($filError === 0) {
@@ -46,7 +48,7 @@ if (isset($_POST['oppdater-knapp'])) {
         array_push($errors, "Du kan ikke laste opp filer av denne typen!");
       }
     } else {
-        array_push($errors, "Bilde kreves");
+
     }
 
   // Finally, register user if there are no errors in the form
@@ -54,14 +56,16 @@ if (isset($_POST['oppdater-knapp'])) {
   	  $sql = $conn->prepare("UPDATE person SET fornavn = ?, etternavn = ?, beskrivelse = ?, profilbilde = ? WHERE person_id = $id");
       $sql->bind_param("ssss", $fnavn, $enavn, $besk, $filDestinasjon);
       if ($sql->execute() === TRUE) {
-      $_SESSION['fnavn'] = $fnavn;
-      $_SESSION['enavn'] = $enavn;
-      $_SESSION['beskrivelse'] = $besk;
-      $_SESSION['bilde'] = $filDestinasjon;
-      move_uploaded_file($filTmpNavn, $filDestinasjon);
-      header('location: minside.php?oppdatert');
+          $_SESSION['fnavn'] = $fnavn;
+          $_SESSION['enavn'] = $enavn;
+          $_SESSION['beskrivelse'] = $besk;
+          if (!empty($filNavn)) {
+            $_SESSION['bilde'] = $filDestinasjon;
+            move_uploaded_file($filTmpNavn, $filDestinasjon);
+          }
+          header('location: minside.php?oppdatert');
     } else {
-      array_push($errors, "Databasefeil");
+        array_push($errors, "Databasefeil");
       }
 
   }
