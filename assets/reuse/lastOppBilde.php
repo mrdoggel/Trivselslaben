@@ -1,11 +1,13 @@
 <?php
-
-    $fil = $_FILES['Bilde'];
-    $filNavn = $_FILES['Bilde']['name'];
-    $filTmpNavn = $_FILES['Bilde']['tmp_name'];
-    $filStrl = $_FILES['Bilde']['size'];
-    $filType = $_FILES['Bilde']['type'];
-    $filError = $_FILES['Bilde']['error'];
+    require "../connection/conn.php";
+    session_start();
+    $id = $_SESSION['id'];
+    $fil = $_FILES['bilde'];
+    $filNavn = $_FILES['bilde']['name'];
+    $filTmpNavn = $_FILES['bilde']['tmp_name'];
+    $filStrl = $_FILES['bilde']['size'];
+    $filType = $_FILES['bilde']['type'];
+    $filError = $_FILES['bilde']['error'];
 
     $filExt = explode('.', $filNavn);
     $filFaktiskExt = strtolower(end($filExt));
@@ -16,14 +18,15 @@
       if ($filError === 0) {
         if ($filStrl < 1000000) {
           $filNavnNy = uniqid('', true).".".$filFaktiskExt;
-          $filDestinasjon = 'Bilder/'.$filNavnNy;
-          move_uploaded_file($filTmpNavn, "../".$filDestinasjon);
+          $filDestinasjon = 'assets/images/'.$filNavnNy;
 
-          $sql = $conn->prepare("CALL oppdaterProfil(?, ?, ?, ?, ?, ?, ?)");
-          $sql->bind_param("sssssss", $pnr, $filDestinasjon, $fornavn, $etternavn, $epost, $fdato, $bio);
+
+          $sql = $conn->prepare("UPDATE person SET profilbilde = ? WHERE person_id = $id");
+          $sql->bind_param("s", $filDestinasjon);
           if ($sql->execute() === TRUE) {
-
-            header("location: ../minside.php?Oppdatert");
+            move_uploaded_file($filTmpNavn, "../../".$filDestinasjon);
+            header("location: ../../minside.php?Oppdatert");
+            $_SESSION['bilde'] = $filDestinasjon;
 
           } else {
             echo $conn->error;
@@ -38,6 +41,5 @@
     } else {
       echo "Du kan ikke laste opp filer av denne typen!";
     }
-  }
 
 ?>

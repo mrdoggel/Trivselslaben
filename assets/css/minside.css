@@ -91,11 +91,13 @@ h1 {
 section {
     width: 80%;
 }
-form {
+
+.personlig-info {
     width: 70%;
     margin: auto;
     padding: 3rem;
 }
+
 .personling-info h2 {
     font-weight: 100;
     font-size: 2rem;
@@ -103,6 +105,7 @@ form {
 }
 .personling-info label{
     font-size: 1.25rem;
+    margin 2rem;
 }
 .personling-info input {
     width: 70%;
@@ -113,10 +116,33 @@ form {
     background-color: rgb(182	243	171 / 15%);
     border: none;
 }
+
+.personling-info textarea {
+    width: 170%;
+    font-size: 1.25rem;
+    text-align: left;
+    border-radius: 1.5rem;
+    padding: 0.75rem 0.5rem 0.75rem 0.5rem;
+    background-color: rgb(182	243	171 / 15%);
+    border: none;
+    resize: none;
+    outline: 0;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
 .personling-info label, .personling-info input {
     display: block;
-    margin: 1rem; 
+    margin: 2rem;
 }
+
+.personling-info label, .personling-info textarea {
+    display: block;
+    margin: 2rem;
+}
+
 .personling-info button {
     font-size: 1.25rem;
     border: none;
@@ -137,31 +163,93 @@ form {
 }
 .personling-info > div > div {
     width: 50%;
-    margin-top: 2rem; 
 }
 #navn-bilde {
+    display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
 }
-#navn-bilde img {
+
+#navn-bilde .cont {
+    margin-top: 2rem;
+    display: flex;
+    width: 30%;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#navn-bilde .imgcontainer {
+    width: 13%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    content-align: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.imgcontainer:hover {
+    cursor: pointer;
+}
+
+.imgcontainer .hover{
     width:10rem;
     height:10rem;
-    object-fit:cover;
+    margin: auto;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.imgcontainer .bilde-i-bilde{
+    margin: auto;
+    width:7rem;
+    height:7rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.imgcontainer .bilde-i-bilde:hover {
+    cursor: pointer;
+}
+
+#navn-bilde .outer-image {
+    width:10rem;
+    height:10rem;
     border-radius:50%;
 }
-#navn-bilde div {
-    width: 20%;
-    margin: 0rem; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+#navn-bilde .inner-image{
+    width:6rem;
+    height:6rem;
 }
+
+#navn-bilde .inner-image:hover {
+    cursor: pointer;
+}
+
 #navn-bilde label {
     padding: 0rem; 
     margin: 0rem; 
     color: #FC9C7F;
+
 }
+
+.bilde-i-bilde {
+    width: 20%;
+    height: 25%;
+    margin: auto;
+    position: absolute;
+    align-items: center;
+    display: none;
+}
+
 #last-opp-btn{
     display: block;
     font-size: 1rem;
@@ -179,7 +267,12 @@ form {
 	z-index: -1;
 }
 
-
+.hiddenfile {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    z-index: -100;
+}
 
 /* INTERESSER */
 .interesser {
@@ -189,7 +282,7 @@ form {
 } 
 .interesser h2 {
     width: 100%;
-    padding: 2rem 0rem 2rem 0rem; 
+    padding: 2rem 0rem 2rem 0rem;
 }
 .interesser h3 {
     font-size: 1.5rem;
@@ -261,17 +354,6 @@ form {
     padding: 0rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* HOVER */
 .personling-info button:hover{
     cursor: pointer;
@@ -320,6 +402,16 @@ form {
 .dropdown-content button:hover {background-color: #f1f1f1}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.show {
+    display:block;
+    cursor: pointer;
+}
 
-.hide {display:none;}
+.hide {
+    display:none;
+}
+
+.linkStyle {
+    filter: brightness(30%);
+    cursor: pointer;
+}

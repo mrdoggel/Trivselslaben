@@ -25,32 +25,42 @@
                 </ul>
             </nav>
             <section>
-                <!-- Oppdater brukerinfo --> 
-                <form class="personling-info " action="minside.php" method="post" enctype="multipart/form-data">
-                    
+                <!-- Oppdater brukerinfo -->
                     <div id="navn-bilde">
-                        <!-- #TODO Satt inn bilde/last opp nytt - fikser css senere -->
-                        <?php if (isset($_SESSION['bilde'])) { ?>
-                        
-                        <div>
-                        <a href="minside.php"><img src="<?php echo $_SESSION['bilde']; ?>"></img></a>
-                            <label for="bilde" id="last-opp-btn">last opp</label>
-                            <input id="bilde" type="file" name ="bilde" placeholder="Nytt bilde">
+                        <div class="cont">
+                            <div class="imgcontainer" onmouseover="bildeMouseover()" onmouseout="bildeMouseoverRemove()">
+                                <!-- #TODO Satt inn bilde/last opp nytt - fikser css senere -->
+                                <?php if (isset($_SESSION['bilde'])) { ?>
+                                <label for="bilde">
+                                <div class="hover">
+                                    <img id="outer-image" class="outer-image" src="<?php echo $_SESSION['bilde']; ?>"></img>
+                                </div>
+                                <div id="bilde-i-bilde" class="bilde-i-bilde">
+                                    <img id="inner-image" class="inner-image" src="assets/media/upload.png"></img>
+                                </div>
+                                </label>
+                                    <form id="bildeUpload" action="assets/reuse/lastOppBilde.php" method="post" enctype="multipart/form-data">
+                                        <input id="bilde" type="file" hidden="true" onchange="submitBilde()" name ="bilde"></input>
+                                    </form>
+
+                                <?php } else { ?>
+                                    <img src="assets/images/default.jpg"></img>
+                                    <form id="bildeUpload" action="assets/reuse/lastOppBilde.php" method="post" enctype="multipart/form-data">
+                                        <input id="bilde" type="file" name="bilde"></input>
+                                    </form>
+                                <?php } ?>
+                            </div>
                         </div>
-                        <?php } else { ?>
-                        <div>
-                            <a href="minside.php"><img src="assets/images/default.jpg"></img></a>
-                        </div>
-                        
-                        <?php } ?>
+
                         <!-- #TODO Satt inn navn på bruker her -->
                         <h2><?php echo $_SESSION['fnavn'] . " " . $_SESSION['enavn'] ?></h2>
                     </div>
-
+                    <form class="personling-info" action="minside.php" method="post">
                     <div>
                         <!-- #TODO??? Sette inn fornavn, etternavn og e-post i placeholderne?? -->
-                        
+
                         <div>
+
                         <!-- #TODO??? Sette inn fornavn, etternavn og e-post i placeholderne?? -->
                         <label for="nyttfnavn">Fornavn</label>
                         <input value="<?php echo $_SESSION['fnavn'] ?>" name="nyttfnavn" type="text" id="nyttfnavn" placeholder="fornavn">
@@ -64,7 +74,7 @@
                     <div>
                         <div>
                             <label for="nybesk">Beskrivelse</label>
-                            <input value="<?php echo $_SESSION['beskrivelse'] ?>" name="nybesk" type="text" id="nybesk" placeholder="beskrivelse">
+                            <textarea rows="3" maxlength="150" name="nybesk" id="nybesk" placeholder="beskrivelse"><?php echo $_SESSION['beskrivelse'] ?></textarea>
                         </div>
                     </div>
 
@@ -79,7 +89,6 @@
                     </div>
                     <?php  endif ?>
                 </form>
-
                 <!-- Se/oppdater interesser -->
                 <div id="hidden" class="interesser">
                     <section>

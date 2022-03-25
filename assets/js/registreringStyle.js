@@ -40,3 +40,7 @@ function sjekkOpplastning(e){
         console.log($bilde.value)
     }
 }
+
+function tilBunn(){
+    window.scrollTo(0,document.body.scrollHeight);
+}

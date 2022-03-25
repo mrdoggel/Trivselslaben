@@ -46,7 +46,7 @@ if (isset($_POST['oppdater-knapp'])) {
         array_push($errors, "Du kan ikke laste opp filer av denne typen!");
       }
     } else {
-        array_push($errors, "Bilde kreves");
+        $filDestinasjon = $_SESSION['bilde'];
     }
 
   // Finally, register user if there are no errors in the form
