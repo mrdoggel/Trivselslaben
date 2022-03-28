@@ -173,7 +173,7 @@ form {
     width:10rem;
     height:10rem;
     object-fit:cover;
-    border-radius:50%;
+    
 }
 #navn-bilde div {
     width: 20%;
@@ -182,6 +182,7 @@ form {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 #navn-bilde label {
     padding: 0rem; 
     margin: 0rem; 
@@ -190,6 +191,7 @@ form {
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 0) 70%, #B6F3AB 0%,#B6F3AB 0%);
 }
+
 #last-opp-btn{
     display: block;
     font-size: 1rem;
@@ -325,3 +327,78 @@ form {
 .show {display:block;}
 
 .hide {display:none;}
+
+@media only screen and (max-width: 1300px) {
+    #searchbar input {
+        font-size: 0.8rem;
+        width: 15vw;
+    }
+    nav {
+        font-size: 1rem;
+      }
+
+    #admin-nav h1 {
+        font-size: 1.5rem;
+    }
+
+    #admin-nav li {
+        font-size: 1rem;
+        margin: 4rem 0rem 4rem 0rem;
+    }
+
+    #admin-nav {
+        padding-left: 4rem;
+        width: 17%;
+    }
+
+    #navn-bilde div {
+        width: 12%;
+    }
+
+    #navn-bilde img {
+        width: 5.8rem;
+        height: 5.8rem;
+        border-radius: 50%;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    .personling-info > div > div {
+        margin-top: 0rem;
+    }
+
+    .personling-info h2 {
+        font-weight: 100;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .personling-info label, .personling-info input, .personling-info textarea {
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+
+    .personling-info button {
+        font-size: 1rem;
+        margin-top: 1rem; 
+        padding:0.5rem; 
+    }
+
+    .interesser h3 {
+        font-size: 1.2rem;
+}
+
+    .interesser input {
+        font-size: 1rem;
+    }
+
+    #finn-og-legg-til button {
+        font-size: 1rem;
+    }
+    
+    #finn-og-legg-til button:hover {
+    font-size: 1.2rem;
+}
+}
