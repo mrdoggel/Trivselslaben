@@ -98,12 +98,16 @@
                 <article id="bedrift4" class="bedrifttype">
                     <h1>Enkeltmannsfortetak (ENK)</h1>
                     <div class="hidden">
-                        <p></p>
+                        <p>
+                        Skal du drive for deg selv, ha muligheten til å komme raskt opp og vil ha en selskapsform som er enkelt å etablere? 
+                        Enkeltmannsforetak er en selskapsform med lite formaliteter og gir deg fri mulighet til å bruke pengene i selskapet som du vil. 
+                        Selskapet ditt og deg sees under ett.
+                        </p>
                         <ul>
-                            <li><span>Levetid:</span></li>
+                            <li><span>Levetid:</span> Ingen begrensning</li>
                             <li><span>Antall eiere:</span> 1</li>
-                            <li><span>Omsetningsgrense:</span>-</li>
-                            <li><span>Kapitalkrav:</span></li>
+                            <li><span>Omsetningsgrense:</span> Ingen grense</li>
+                            <li><span>Kapitalkrav:</span> Ingen</li>
                         </ul>
                         <button>Jeg skal starte ENK</button>
                         <a href="https://www.altinn.no/starte-og-drive/starte/valg-av-organisasjonsform/enkeltpersonforetak/">Les mer om ansvarlig selskap her</a>
@@ -128,12 +132,16 @@
                 <article id="bedrift6" class="bedrifttype">
                     <h1>Aksjeselskap (AS)</h1>
                     <div class="hidden">
-                        <p></p>
+                        <p>
+                            Planlegger du å starte næringsvirksomhet alene eller sammen med andre? 
+                            Innebærer næringsvirksomheten en økonomisk risiko? Vil du ha rettigheter som arbeidstaker og muligheten til at andre vil investere i selskapet ditt? 
+                            Da kan aksjeselskap være en hensiktsmessig organisasjonsform. 
+                        </p>
                         <ul>
-                        <li><span>Levetid:</span></li>
-                            <li><span>Antall eiere:</span></li>
-                            <li><span>Omsetningsgrense:</span>-</li>
-                            <li><span>Kapitalkrav:</span></li>
+                        <li><span>Levetid:</span> Ingen begrensning</li>
+                            <li><span>Antall eiere:</span> Ingen begrensning, både juridiske og fysiske personer</li>
+                            <li><span>Omsetningsgrense:</span> Ingen grense</li>
+                            <li><span>Kapitalkrav:</span> Ingen begrensning</li>
                         </ul>
                         <button>Jeg skal starte AS</button>
                         <a href="https://www.altinn.no/starte-og-drive/starte/valg-av-organisasjonsform/aksjeselskap/">Les mer om ansvarlig selskap her</a>
