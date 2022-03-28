@@ -11,8 +11,8 @@
     <meta charset="UTF-8">
     <title>Forside - Påbegynt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/common/reset.css">
+    <link rel="stylesheet" href="assets/css/common/global.css">
     <link rel="stylesheet" href="assets/css/registreringspm.css">
     <script src="assets/js/registrering.js"></script>
     <!--<script src="assets/js/sendinteresser.js"></script>-->
