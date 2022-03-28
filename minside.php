@@ -97,7 +97,7 @@
                         <div class="dropdown">
 
                                 <!--<input id="myInput" onfocus="myFunction()" onfocusout="myFunction2()" type="text" placeholder="Legg til interesser..." onkeyup="filterFunction()">-->
-                                <input id="myInput" type="text" placeholder="Legg til interesser..."> 
+                                <input id="myInput" type="text" placeholder="Søk og finn interesser ..."> 
 
                                 <div id="myDropdown" class="dropdown-content">
 

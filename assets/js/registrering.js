@@ -19,9 +19,14 @@ function init() {
 
     const $bedrifttype = document.querySelectorAll(".bedrifttype");
     $bedrifttype.forEach((element)=> {
-        element.addEventListener("mouseover", showDescription); 
+        element.addEventListener("mouseover", showDescription, false); 
         element.addEventListener("mouseleave", hideDescription); 
     });
+
+    const $bedrifter = document.querySelectorAll(".bedrifttype button");
+    $bedrifter.forEach((element)=>{
+        element.addEventListener("click", gåTilInteresser);
+    })
 }
 
 function storeProcessChoice(e){
@@ -121,4 +126,13 @@ function hideDescription(e){
         e.target.lastElementChild.classList.add("hidden");
     }
     document.querySelector(`#${e.currentTarget.id}`).style.maxHeight = ""; 
+}
+
+function gåTilInteresser(e){
+    e.preventDefault(); 
+    const n = e.target.innerHTML.replace(/[\[\]?.,\/#!$%\^&\*;:{}=\\|_~()]/g, "").split(" ");
+    const bedrift = n[n.length - 1]; 
+    localStorage.setItem("bedrifttype", bedrift); 
+    document.querySelector(".bedrift-div").id = "hidden"; 
+    document.querySelector(".interesse-div").id = "spm-interesser"; 
 }

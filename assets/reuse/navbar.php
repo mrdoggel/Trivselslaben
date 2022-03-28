@@ -6,13 +6,16 @@
         </div>
     <div id="profil">
         <div id ="navn_poeng">
+            <p>
             <?php
-                //echo $_SESSION['navn'];
+                echo $_SESSION['fnavn'];
             ?>
-            <br>
+            </p>
+            <p>
             <?php
-                //echo $_SESSION['poeng'] . " Poeng";
+                echo $_SESSION['poeng'] . " Poeng";
             ?>
+            </p>
         </div>
         <!-- Lagt inn link til min side her -->
         <div id="profilbilde">

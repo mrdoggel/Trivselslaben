@@ -19,8 +19,8 @@ header {
     background-image: url(../media/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 0.75rem 0.75rem 0.75rem 4.5rem;
-    font-size: 1.5rem;
+    padding: 0.75rem 0.75rem 0.75rem 5rem;
+    font-size: 1.75rem;
     line-height: 160%;
     border-radius: 0.75rem;
     box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
@@ -140,21 +140,38 @@ header {
     width: 100%;
     text-align: center;
     font-size: 1.25rem;
-    line-height: 180%;
+    margin: 4rem 1rem 2rem 1rem;
+}
+#spm-bedrift p span{
+    padding: 1rem;
+    background-color: #F4F6FA;
+    box-shadow: 1px 10px 20px 1px rgb(0 0 0 / 10%);
 }
 .bedrifttype {
     max-height: 6vh;
+    transition: all 2s linear;
+}
+.bedrifttype a{
+    font-size: 1rem;
+    padding-top: 1rem;
+    display: block;
+    letter-spacing: 0.08rem;
+    font-weight: 100;
+}
+.bedrifttype a:hover{
+    letter-spacing: 0rem;
+    transition: all 0.2s;
+    cursor: pointer;
 }
 #spm-bedrift article{
     position: relative;
     width: 30%;
-    margin: 2rem 0rem 2rem 0rem;
+    margin: 4rem 0rem 2rem 0rem;
     padding: 1rem;
     text-align: center;
     border-radius: 1rem;
-    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
+    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 10%);
 }
-
 #spm-bedrift article h1 {
     display: inline-block;
     font-size: 1.75rem;
@@ -219,9 +236,13 @@ header {
 
 #spm-bedrift article p {
     font-size: 1.25rem;
-    line-height: 180%;
+    line-height: 200%;
     text-align: left;
     margin-bottom: 1.25rem; 
+    padding: 2rem;
+}
+#spm-bedrift article ul {
+    padding-left: 2rem; 
 }
 
 #spm-bedrift article ul li {
@@ -234,12 +255,21 @@ header {
 }
 
 #spm-bedrift article button {
+    font-size: 1.25rem;
     margin: 1.25rem 0rem 1.25rem 0rem; 
     padding: 0rem; 
     border:none; 
     letter-spacing: 0.03rem;
+    box-shadow: 1px 10px 20px 1px rgb(0 0 0 / 15%);
 }
-
+#spm-bedrift article button:hover{
+    cursor: pointer;
+    font-size: x-large;
+    font-weight: 100;
+    letter-spacing: 0.04rem;
+    box-shadow: none;
+    transition: all 0.4s;
+}
 #bedrift1 button {
     background-color: #68CBD7;
 }

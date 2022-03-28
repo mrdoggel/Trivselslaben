@@ -82,15 +82,27 @@ nav {
   font-size: 1.25rem;
   float: left;
 }
-
-nav ul li {
-  margin: 3rem 0rem 3rem 0rem; 
-  padding-left: 2rem;
+main nav {
+  min-height: 85vh;
+  max-height: 85vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
-
+main nav ul li {
+  margin: 3rem 0rem 3rem 0rem; 
+  letter-spacing: 0.05rem;
+  font-size: 1.5rem;
+  transition: all 0.4s;
+}
+main nav ul li:hover{
+  font-weight: lighter;
+  font-size: 1.7rem;
+}
 .active {
-  font-weight: bold;
+  font-weight: lighter;
   padding-left: 1rem;
+  font-size: 1.7rem;
 }
 
 
@@ -99,8 +111,8 @@ h1 {
   font-size: 1.75rem;
   width: 100%;
   padding: 3rem; 
-  font-weight: bold;
-  text-align: center;
+  font-weight: 500;
+  text-align: left;
 }
 
 h4 {
@@ -113,7 +125,7 @@ h4 {
 
 p {
   font-size: 1rem; 
-  font-weight: lighter;
+  font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.03rem;
   text-align: center;
@@ -122,13 +134,13 @@ p {
 
 section {
   float: right;
-  width: 85%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 1rem;
-  box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 10%);
-  border-radius: 1rem;
+  box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 25%);
+  border-radius: 0.2rem;
   padding-bottom: 2rem;
   margin-bottom: 3rem;
 }
@@ -137,12 +149,12 @@ section {
   border-radius: 1rem;
   width: 15%;
   margin: 0rem 3rem 3rem 3rem; 
-  box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 20%);
+  box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  transition: all 0.3s;
+  transition: all 0.7s;
 }
 
 .kurs img {
@@ -151,10 +163,13 @@ section {
   margin: 1rem;
   align-self: center;
 }
-
+.kurs p{
+  transition: all 0.5s;
+  cursor: pointer;
+}
 .bottom {
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
   align-items: center;
   justify-content: center;
   display: flex;

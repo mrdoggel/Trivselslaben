@@ -14,14 +14,18 @@
 }
 
 #searchbar input{
-    box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 25%);
+    font-size: 1.25rem;
+    text-align: left;
+    box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 10%);
     border-radius: 5px;
     border: none;
     height: 4vh;
     width: 20vw;
     margin-left: 4vw;
 }
-
+#searchbar input::placeholder{
+    text-align: left;
+}
 #searchbar textarea:focus, input:focus{
     outline: none;
 }
@@ -41,11 +45,22 @@
 }
 
 #profil img {
-  box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 25%);
-  border-radius: 25px;
-  width: 5vh;
+    box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 10%);
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
 }
-
+#navn_poeng p{
+    font-weight: 100;
+    font-size: 1rem;
+    color:#1f294d;
+    text-align: center;
+}
+#navn_poeng p:first-of-type{
+    font-size: 1.5rem;
+    padding-bottom: 0.2rem;
+}
 
 
 
@@ -130,8 +145,9 @@ form {
     font-size: 1.25rem;
     border: none;
     background-color: #B6F3AB;
-    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 10%);
+    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
     margin-top: 3rem; 
+    padding:0.5rem; 
 }
 .personling-info div:first-of-type {
     margin-bottom: 1rem;
@@ -169,7 +185,10 @@ form {
 #navn-bilde label {
     padding: 0rem; 
     margin: 0rem; 
-    color: #FC9C7F;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 70%, #B6F3AB 0%,#B6F3AB 0%);
 }
 #last-opp-btn{
     display: block;
@@ -187,8 +206,6 @@ form {
 	position: absolute;
 	z-index: -1;
 }
-
-
 
 /* INTERESSER */
 .interesser {
@@ -283,6 +300,12 @@ form {
     font-weight: bold;
 }
 /* HOVER */
+#navn-bilde label:hover{
+    background-color: #B6F3AB;
+    letter-spacing: 0.04rem;
+    transition: all 0.4s;
+}
+
 .personling-info button:hover{
     cursor: pointer;
     transition: all 0.5s; 

@@ -20,7 +20,7 @@
     <body>
         <header>
             <p class="spm spm-1">Hvilket alternativ samsvarer best med hvor du er i prosessen?</p>
-            <p class="spm spm-2 hidden">Hva slags bedrift passer best for deg?</p>
+            <p class="spm spm-2 hidden">Hva slags organisasjonsform passer best for deg?</p>
             <p class="spm spm-3 hidden">Hva slags temaer er du interessert i?</p>
         </header>
         <main>
@@ -31,8 +31,7 @@
             </div>
             
             <div id="hidden" class="bedrift-div"><!-- spm-bedrift -->
-                <p>Nedenfor finner du en oversikt over vanlige bedriftstyper.</p>
-                <p>Hold muspekeren over for å lese beskrivelsene og velg den du tenker er mest relevant for deg.</p>
+                <p><span>Hold muspekeren over for å lese beskrivelsene og velg den du tenker er mest relevant for deg.</span></p>
                 
                 <article id="bedrift1" class="bedrifttype">
                     <h1>Ansvarlig selskap (ANS/DA)</h1>
@@ -50,7 +49,8 @@
                             <li><span>Omsetningsgrense:</span> ingen</li>
                             <li><span>Kapitalkrav:</span> ingen</li>
                         </ul>
-                        <button>Jeg skal starte ansvarlig selskap</button>
+                        <button>Jeg skal starte ANS</button>
+                        <a href="https://www.altinn.no/starte-og-drive/starte/valg-av-organisasjonsform/ansvarlig-selskap/">Les mer om ansvarlig selskap her</a>
                     </div>
                 </article>
 
@@ -70,7 +70,8 @@
                             <li><span>Omsetningsgrense:</span> ingen</li>
                             <li><span>Kapitalkrav:</span> ingen</li>
                         </ul>
-                        <button>Jeg skal starte samvirkeforetak</button>
+                        <button>Jeg skal starte SA</button>
+                        <a href="https://www.altinn.no/starte-og-drive/starte/valg-av-organisasjonsform/samvirkeforetak/">Les mer om ansvarlig selskap her</a>
                     </div>
                 </article>
 
@@ -89,8 +90,8 @@
                             <li><span>Omsetningsgrense:</span>140 000,-</li>
                             <li><span>Kapitalkrav:</span> ingen</li>
                         </ul>
-                        <a href="https://www.altinn.no/starte-og-drive/starte/valg-av-organisasjonsform/ansvarlig-selskap/">Les mer om ansvarlig selskap her</a>
-                        <button>Jeg skal starte studentbedrift</button>
+                        <button>Jeg skal starte SB</button>
+                        <a href="https://www.ue.no/program/studentbedrift">Les mer om ansvarlig selskap her</a>
                     </div>
                 </article>
 
@@ -104,11 +105,12 @@
                             <li><span>Omsetningsgrense:</span>-</li>
                             <li><span>Kapitalkrav:</span></li>
                         </ul>
-                        <button>Jeg skal starte enkeltmannsfortetak</button>
+                        <button>Jeg skal starte ENK</button>
+                        <a href="https://www.altinn.no/starte-og-drive/starte/valg-av-organisasjonsform/enkeltpersonforetak/">Les mer om ansvarlig selskap her</a>
                     </div>
                 </article>
 
-                <article id="bedrift5" class="bedrifttype">
+                <!--<article id="bedrift5" class="bedrifttype">
                     <h1>Oppstartsbedrift</h1>
                     <div class="hidden">
                         <p></p>
@@ -119,8 +121,9 @@
                             <li><span>Kapitalkrav:</span></li>
                         </ul>
                         <button>Jeg skal starte oppstartsbedrift</button>
+                        <a href="https://www.altinn.no/starte-og-drive/starte/valg-av-organisasjonsform/ansvarlig-selskap/">Les mer om ansvarlig selskap her</a>
                     </div>
-                </article>
+                </article>-->
 
                 <article id="bedrift6" class="bedrifttype">
                     <h1>Aksjeselskap (AS)</h1>
@@ -132,7 +135,8 @@
                             <li><span>Omsetningsgrense:</span>-</li>
                             <li><span>Kapitalkrav:</span></li>
                         </ul>
-                        <button>Jeg skal starte aksjeselskap</button>
+                        <button>Jeg skal starte AS</button>
+                        <a href="https://www.altinn.no/starte-og-drive/starte/valg-av-organisasjonsform/aksjeselskap/">Les mer om ansvarlig selskap her</a>
                     </div>
                 </article>
             </div> 

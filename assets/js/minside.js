@@ -42,7 +42,7 @@ function inputFokus(e){
 function inputFokusReset(e) {
   e.preventDefault();
   const $inputFelt = document.querySelector("#myInput"); 
-  $inputFelt.placeholder == "" ? $inputFelt.placeholder = "Legg til interesser ..." : ""; 
+  $inputFelt.placeholder == "" ? $inputFelt.placeholder = "Søk og finn interesser ..." : ""; 
   document.querySelector("#myDropdown").classList.remove("show");
 } 
 
