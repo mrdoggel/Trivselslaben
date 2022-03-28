@@ -152,8 +152,12 @@ input[type=submit]:hover {
     .bilde img {
         max-height: 25vh;
     }
+    .loginBox {
+        margin-top: 3rem;
+    }
+
     .loginBox form {
-        margin-top: 3rem; 
+        margin-top: 3rem;
     }
     .loginBox label, .regBox label {
         font-size: 1rem;
