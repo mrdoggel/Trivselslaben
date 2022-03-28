@@ -1,0 +1,66 @@
+#navbar {
+    width: 100%;
+    height: 15vh;
+    background-image: linear-gradient(to right, #d0d9f9 , #a3ecc8, #f2f088);
+    display: flex;
+  }
+  #navbar > div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  
+  #searchbar form {
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  #searchbar input{
+    font-size: 1.25rem;
+    text-align: left;
+    box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    border: none;
+    height: 4vh;
+    width: 20vw;
+    margin-left: 4vw;
+  }
+  
+  #searchbar input::placeholder{
+    text-align: left;
+  }
+  
+  #searchbar textarea:focus, input:focus{
+    outline: none;
+  }
+  
+  #profil {
+    justify-content: right;
+    margin-right: 4vw;
+  }
+  
+  #profil img {
+    box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 10%);
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  #navn_poeng {
+    margin-right: 1vw;
+  }
+  
+  #navn_poeng p{
+    line-height: 100%;
+    padding: 0rem;
+    font-weight: 100;
+    font-size: 1rem;
+    color:#1f294d;
+    text-align: center;
+  }
+  
+  #navn_poeng p:first-of-type{
+    font-size: 1.5rem;
+    padding-bottom: 0.2rem;
+  }
