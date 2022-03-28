@@ -19,7 +19,7 @@
             <nav id="admin-nav">
                 <h1>Min profil</h1>
                 <ul>
-                    <li id="bruker-info">Brukerinformasjon</li>
+                    <li id="bruker-info" class="min-side-valgt">Brukerinformasjon</li>
                     <li id="bruker-interesser">Mine interesser</li>
                     <li>Lagrede kurs</li>
                 </ul>
@@ -29,7 +29,6 @@
                 <form class="personling-info" action="minside.php" method="post" enctype="multipart/form-data">
                     
                     <div id="navn-bilde">
-                        <!-- #TODO Satt inn bilde/last opp nytt - fikser css senere -->
                         <?php if (isset($_SESSION['bilde'])) { ?>
                         
                         <div>
@@ -40,6 +39,8 @@
                         <?php } else { ?>
                         <div>
                             <a href="minside.php"><img src="assets/images/default.jpg"></img></a>
+                            <input id="nytt-bilde" type="file" name ="bilde" placeholder="Nytt bilde">
+                            <label for="nytt-bilde" id="last-opp-btn">last opp</label>
                         </div>
                         
                         <?php } ?>
@@ -92,14 +93,15 @@
                     <section id="finn-og-legg-til">
                         <!-- #TODO: SØKE ETTER INTERESSER MAN IKKE HAR OG EVENTUELT LEGGE TIL, Håper layouten funker -->
                         <form method="post" action="assets/reuse/leggTilTema.php">
-                            <div class="dropdown">
+                            
+                        <div class="dropdown">
 
                                 <!--<input id="myInput" onfocus="myFunction()" onfocusout="myFunction2()" type="text" placeholder="Legg til interesser..." onkeyup="filterFunction()">-->
                                 <input id="myInput" type="text" placeholder="Legg til interesser..."> 
 
                                 <div id="myDropdown" class="dropdown-content">
 
-                                    <?php
+                                <?php
                                         require "assets/connection/conn.php";
                                         $sql = $conn->prepare("SELECT * FROM tema WHERE tema_id NOT IN(SELECT tema_id FROM person_i_tema WHERE person_id = $id)");
                                         $sql->execute();

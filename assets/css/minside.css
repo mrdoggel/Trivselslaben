@@ -206,6 +206,7 @@ form {
 }
 .interesser h3 {
     font-size: 1.5rem;
+    font-weight: 200;
     background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0) 0%,
@@ -275,7 +276,12 @@ form {
 #finn-og-legg-til > div > form {
     padding: 0rem;
 }
-
+.min-side-valgt {
+    transition: all 0.8s; 
+    padding-left: 1rem;
+    letter-spacing: 0.04rem;
+    font-weight: bold;
+}
 /* HOVER */
 .personling-info button:hover{
     cursor: pointer;
