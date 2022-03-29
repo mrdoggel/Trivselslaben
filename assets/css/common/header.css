@@ -65,3 +65,10 @@
     font-size: 1.5rem;
     padding-bottom: 0.2rem;
   }
+
+  @media only screen and (max-width: 1550px) {
+    #searchbar input {
+        font-size: 0.8rem;
+        width: 15vw;
+    }
+  }
