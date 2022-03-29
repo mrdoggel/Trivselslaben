@@ -27,39 +27,9 @@
     </header>
 
     <main>
-        <div class="quiz-div" id="quiz-1">
-            <img src="assets/images/økonomi-quiz-img.jpeg" alt="quiz-img">
-            <h2> <a href="økonomiquiz.php">Inntekter, lønn, utgifter og regnskap</a></h2>
-            <p class="mer">&vellip;</p>
-            <div class="overlap hidden">
-                <p>Spill</p>
-                <form action="">
-                    <button>Lagre til senere</button>
-                </form>
-            </div>
-        </div>
-        <div class="quiz-div" id="quiz-2">
-            <img src="assets/images/suksessfull-quiz-img.png" alt="quiz-img">
-            <h2><a href="#">Hva gjør en suksessfull bedrift?</a></h2>
-            <p class="mer">&vellip;</p>
-            <div class="overlap hidden">
-                <p>Spill</p>
-                <form action="">
-                    <button>Lagre til senere</button>
-                </form>
-            </div>
-        </div>
-        <div class="quiz-div" id="quiz-3">
-            <img src="assets/images/nettverk-quiz-img.jpg" alt="quiz-img">
-            <h2><a href="#">Hvem vinner kundene?</a></h2>
-            <p class="mer">&vellip;</p>
-            <div class="overlap hidden">
-                <p>Spill</p>
-                <form action="">
-                    <button>Lagre til senere</button>
-                </form>
-            </div>
-        </div>
+        <?php
+            require "assets/reuse/hentQuiz.php";
+        ?>
     </main>
 
 </body>

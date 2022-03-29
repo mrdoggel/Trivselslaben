@@ -43,8 +43,8 @@
                         <?php } else { ?>
                         <div>
                             <a href="minside.php"><img src="assets/images/default.jpg"></img></a>
-                            <input id="nytt-bilde" type="file" name ="bilde" placeholder="Nytt bilde">
-                            <label for="nytt-bilde" id="last-opp-btn">last opp</label>
+                            <label for="bilde" id="last-opp-btn">last opp</label>
+                            <input id="bilde" type="file" name ="bilde" placeholder="Nytt bilde">
                         </div>
                         
                         <?php } ?>

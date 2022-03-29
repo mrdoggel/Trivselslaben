@@ -21,7 +21,7 @@
     <header>
         <?php
             require "assets/reuse/navbar.php";
-            require "assets/reuse/top-nav.php"; 
+            require "assets/reuse/top-nav.php";
         ?>
     </header>
 
