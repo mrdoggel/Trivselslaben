@@ -6,19 +6,23 @@
     <meta charset="UTF-8">
     <title>Forside - Påbegynt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/common/reset.css">
+    <link rel="stylesheet" href="assets/css/common/global.css">
+    <link rel="stylesheet" href="assets/css/common/header.css">
     <link rel="stylesheet" href="assets/css/forside.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <?php
-        require "assets/reuse/navbar.php";
-    ?>
+    <header>
+      <?php
+          require "assets/reuse/navbar.php";
+      ?>
+    </header>
+    <main>
     <nav>
         <ul>
-          <li> <a href="forside.php">Oversikt</a></li>
+          <li> <a href="forside.php">Alle</a></li>
           <li><a class="active" href="påbegynt.php">Påbegynt</a></li>
           <li><a href="fullført.php">Fullført</a></li>
         </ul>
@@ -103,5 +107,6 @@
             require "assets/reuse/hentInteresser.php";
         ?>
     </section>
+    </main>
 </body>
 </html>

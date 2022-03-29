@@ -6,8 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="assets/css/reset.css"/>
-    <link rel="stylesheet" href="assets/css/global.css"/>
+    <link rel="stylesheet" href="assets/css/common/reset.css"/>
+    <link rel="stylesheet" href="assets/css/common/global.css"/>
     <link rel="stylesheet" href="assets/css/registrer.css"/>
     <!--
     <script src="assets/js/registrering.js">></script>--> 
