@@ -62,7 +62,7 @@
                 <input type="hidden" name="spørsmål" value="';
                 echo $spmid;
                 echo '">';
-                echo '<input id="alternativ2" type="" name="alternativ">
+                echo '<input id="alternativ2" type="hidden" name="alternativ">
                 <button name="spm-btn-neste" type="submit">Neste</button></form></div>';
             } else {
                 echo '<form action="assets/connection/fullfør.php?quiz=';

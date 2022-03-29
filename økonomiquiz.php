@@ -30,7 +30,7 @@
         ?>
     </header>
 
-    <main>
+    <main class="main-quiz">
         <?php
         if (!isset($spm)) {
             $spm = 1;
