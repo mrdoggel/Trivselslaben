@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/common/top-nav.css">
     <link rel="stylesheet" href="assets/css/quiz.css">
     <script src="assets/js/quiz.js"></script>
+    <script src="assets/js/top-nav.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -45,7 +46,7 @@
             </div>
         </div>
         <div class="quiz-div" id="quiz-3">
-            <img src="assets/images/kunde-quiz-img.jpg" alt="quiz-img">
+            <img src="assets/images/nettverk-quiz-img.jpg" alt="quiz-img">
             <h2><a href="#">Hvem vinner kundene?</a></h2>
             <p class="mer">&vellip;</p>
             <div class="overlap hidden">

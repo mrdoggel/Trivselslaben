@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/common/top-nav.css"/>
     <link rel="stylesheet" href="assets/css/minside.css">
     <script src="assets/js/minside.js"></script>
+    <script src="assets/js/top-nav.js"></script>
 </head>
     <body id="body">
         <?php
@@ -29,7 +30,6 @@
                 </ul>
             </nav>
             <section>
-                <!-- Oppdater brukerinfo --> 
                 <form class="personling-info" action="minside.php" method="post" enctype="multipart/form-data">
                     
                     <div id="navn-bilde">
