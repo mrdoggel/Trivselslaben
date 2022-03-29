@@ -328,11 +328,12 @@ form {
 
 .hide {display:none;}
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1550px) {
     #searchbar input {
         font-size: 0.8rem;
         width: 15vw;
     }
+    
     nav {
         font-size: 1rem;
       }
