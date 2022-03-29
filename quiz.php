@@ -46,7 +46,7 @@
         </div>
         <div class="quiz-div" id="quiz-2">
             <img src="assets/images/suksessfull-quiz-img.png" alt="quiz-img">
-            <h2>Hva gjør en suksessfull bedrift?</h2>
+            <h2><a href="#">Hva gjør en suksessfull bedrift?</a></h2>
             <p class="mer">&vellip;</p>
             <div class="overlap hidden">
                 <p>Spill</p>
@@ -55,7 +55,7 @@
         </div>
         <div class="quiz-div" id="quiz-3">
             <img src="assets/images/kunde-quiz-img.jpg" alt="quiz-img">
-            <h2>Hvem vinner kundene?</h2>
+            <h2><a href="#">Hvem vinner kundene?</a></h2>
             <p class="mer">&vellip;</p>
             <div class="overlap hidden">
                 <p>Spill</p>

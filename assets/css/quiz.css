@@ -65,7 +65,7 @@ main{
 .overlap {
     position: absolute;
     bottom: -5vh; 
-    margin-left: 65%;
+    margin-left: 60%;
     width: 50%;
     max-height: fit-content;
     text-align: left;
@@ -81,4 +81,12 @@ main{
 .overlap p:hover {
     cursor: pointer;
     font-weight: 400;
+}
+
+.quiz-div:hover {
+    transition: all 0.3s;
+    min-width: 27%;
+    max-width: 27%;
+    box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 25%);
+    font-weight: bold;
 }
