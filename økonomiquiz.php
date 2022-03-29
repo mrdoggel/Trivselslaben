@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/quiz.css">
     <link rel="stylesheet" href="assets/css/økonomiquiz.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="assets/js/økonomiquiz.js"></script>
 </head>
 
 <body>
@@ -36,18 +37,18 @@
 
     <main>
         <form action="">
-            <legend>Inntekter, lønn, utgifter og regnskap</legend>
+            <legend><span>Inntekter, lønn, utgifter og regnskap</span></legend>
 
-            <div class="spm-div">
+            <div class="spm-div" id="spm-1">
                 <label for="spm-arbeidsgiver">Når regnes du som arbeidsgiver?</label>
-                <input type="hidden" name="spm-arbeidsgiver" id="spm-arbeidsgiver">
+                <input id="spm-arbeidsgiver" type="hidden" name="spm-arbeidsgiver">
                 <div class="svr svr-1">Når du betaler ut lønn eller annen godtgjørelse</div>
                 <div class="svr svr-2">Når du eier et AS</div>
                 <div class="svr svr-3">Når du starter en bedrift</div>
                 <div class="svr svr-4">Når du selger en vare</div>
             </div>
 
-            <div class="hidden">
+        <div class="hidden">
 
             <div class="spm-div hidden">
                 <label for="spm-budsjett">Hva inneholder et budsjett?</label>
@@ -85,7 +86,7 @@
                 <label for="spm-økonomi">Økonomi er et viktig tema for enhver bedrift</label>
             </div>
 
-            </div>
+        </div>
         </form>
     </main>
 </body>
