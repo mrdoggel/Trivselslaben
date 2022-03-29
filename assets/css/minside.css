@@ -6,7 +6,8 @@ h2 {
 }
 #admin-nav {
     width: 20%;
-    height: 85vh;
+    min-height: 85vh;
+    max-height: fit-content;
     text-align: left;
     padding-left: 5rem;
     box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
