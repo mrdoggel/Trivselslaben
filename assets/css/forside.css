@@ -357,6 +357,12 @@ section {
 }
 
 @media only screen and (max-width: 1300px) {
+  main nav ul li {
+    font-size: 1rem;
+  }
+  .active {
+    font-size: 1.2rem;
+  }
   nav {
     font-size: 1rem;
   }
