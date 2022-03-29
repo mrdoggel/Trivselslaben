@@ -90,3 +90,13 @@ main{
     box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 25%);
     font-weight: bold;
 }
+
+@media only screen and (max-width: 1550px) {
+    .quiz-div h2 {
+        font-size: 1rem;
+    }
+
+    .mer {
+        font-size: 1rem;
+    }
+  }
