@@ -37,7 +37,7 @@
     <main>
         <div class="quiz-div" id="quiz-1">
             <img src="assets/images/økonomi-quiz-img.jpeg" alt="quiz-img">
-            <h2> <a href="inntektquiz.php">Inntekter, lønn, utgifter og regnskap</a></h2>
+            <h2> <a href="økonomiquiz.php">Inntekter, lønn, utgifter og regnskap</a></h2>
             <p class="mer">&vellip;</p>
             <div class="overlap hidden">
                 <p>Spill</p>

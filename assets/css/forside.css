@@ -66,7 +66,6 @@ p {
   font-size: 1rem; 
   font-weight: 500;
   line-height: 150%;
-  letter-spacing: 0.03rem;
   text-align: center;
   padding: 0.25rem; 
 }
@@ -93,7 +92,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  transition: all 0.7s;
 }
 
 .kurs img {
@@ -105,6 +103,10 @@ section {
 .kurs p{
   transition: all 0.5s;
   cursor: pointer;
+}
+.kurs:hover, .modul:hover{
+  transition: all 0.3s;
+  box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 30%);
 }
 .bottom {
   border-bottom-left-radius: 0.5rem;
