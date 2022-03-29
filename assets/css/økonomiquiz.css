@@ -1,25 +1,28 @@
 main form {
     width: 70%;
     margin: auto;
-    margin-top: 3rem; 
+    margin-top: 5rem; 
     text-align: center;
     box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
 }
 legend{
     text-align: left;
-    padding:  0rem 0rem 0rem 2rem; 
+    padding:  0rem; 
     margin-top: -2vh;
     font-size: 1.4rem;
+    font-weight: 600;
+    margin-left: 1rem;
 }
 legend span {
     background-color: #F4F6FA;
     box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
+    padding: 1rem;  
 }
 label{
     width: 90%;
     font-size: 1.5rem;
     box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
-    margin: 3rem 1rem 2rem 1rem; 
+    margin: 4rem 1rem 2rem 1rem; 
     padding: 2rem; 
 }
 .svr {
@@ -29,7 +32,7 @@ label{
     margin: 1rem 1rem 2rem 1rem;
     font-size: 1.25rem; 
     box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 5%);
-    opacity: 85%;
+    opacity: 80%;
     display: flex;
     justify-content: center;
     align-items: center;

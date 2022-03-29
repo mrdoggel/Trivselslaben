@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="assets/css/common/reset.css"/>
     <link rel="stylesheet" href="assets/css/common/global.css"/>
     <link rel="stylesheet" href="assets/css/common/header.css"/>
+    <link rel="stylesheet" href="assets/css/common/top-nav.css"/>
     <link rel="stylesheet" href="assets/css/minside.css">
     <script src="assets/js/minside.js"></script>
 </head>
     <body id="body">
         <?php
             require "assets/reuse/navbar.php";
+            require "assets/reuse/top-nav.php"; 
         ?>
+        
         <main>
             <nav id="admin-nav">
                 <h1>Min profil</h1>
