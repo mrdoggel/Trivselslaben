@@ -1,0 +1,25 @@
+#top-nav {
+    max-width: 100%;
+    max-height: 5vh;
+    min-height: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(to right, #d0d9f9 , #a3ecc8, #f2f088);
+    box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 5%);
+    opacity: 80%;
+}
+  
+#top-nav nav ul li {
+    font-size: 1.25rem;
+    display: inline;
+    padding: 0.5rem 2rem 0.5rem 2rem; 
+}
+  
+  
+.active {
+    font-weight: lighter;
+    padding-left: 1rem;
+    font-size: 1.7rem;
+}

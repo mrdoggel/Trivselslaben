@@ -1,0 +1,69 @@
+main form {
+    width: 70%;
+    margin: auto;
+    margin-top: 5rem; 
+    text-align: center;
+    box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
+}
+legend{
+    text-align: left;
+    padding:  0rem; 
+    margin-top: -2vh;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+legend span {
+    background-color: #F4F6FA;
+    box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
+    padding: 1rem;  
+}
+label{
+    width: 90%;
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
+    margin: 4rem 1rem 2rem 1rem; 
+    padding: 2rem; 
+}
+.svr {
+    width: 45%;
+    min-height: 10vh;
+    max-height: 10vh;
+    margin: 1rem 1rem 2rem 1rem;
+    font-size: 1.25rem; 
+    box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 5%);
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.svr:hover, .valgt-svar {
+    cursor: pointer;
+    transition: all 0.4s;
+    opacity: 100%;
+    font-size: 1.3rem;
+    letter-spacing: 0.03rem;
+    box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 25%);
+}
+.spm-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin:auto;
+}
+.svr-1 {
+    background-color: #F5F187;
+}
+
+.svr-2 {
+    background-color: #D0D9F9;
+}
+
+.svr-3 {
+    background-color: #B6F3AB;
+}
+
+.svr-4 {
+    background-color: #95E3EC;
+}

@@ -1,4 +1,6 @@
-"use strict"
+/* TRENGER IKKE DENNE LIKEVEL */
+
+/*"use strict"
 
 document.addEventListener("DOMContentLoaded", init);
 
@@ -12,12 +14,10 @@ function init() {
 
 function kursHover(e){
     e.preventDefault(); 
-    document.querySelector(`#${e.currentTarget.id} p`).style.fontSize = "larger";
     document.querySelector(`#${e.currentTarget.id} p`).style.fontWeight = "normal";    
 }
 
 function kursLeave(e){
     e.preventDefault(); 
     document.querySelector(`#${e.currentTarget.id} p`).attributeStyleMap.delete("font-weight");
-    document.querySelector(`#${e.currentTarget.id} p`).attributeStyleMap.delete("font-size");
-}
+}*/
