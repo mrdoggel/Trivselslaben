@@ -17,7 +17,6 @@
             echo '<label for="spm-arbeidsgiver">';
             echo $row['navn'];
             echo '</label>';
-            echo '<input id="spm-arbeidsgiver" type="hidden" name="spm-arbeidsgiver">';
             $sql2 = $conn->prepare("SELECT * FROM alternativ_i_spørsmål WHERE spørsmål_id = $spmid");
             $sql2->execute();
             $result2 = $sql2->get_result();
@@ -41,41 +40,24 @@
                     echo '</div>';
                 }
             }
+            echo '<form action="assets/connection/registrerValg.php" method="post">
+            <input type="hidden" name="spørsmål" value="';
+            echo $spmid;
+            echo '">';
+            echo '<input type="hidden" name="quiz" value="';
+            echo $quizid;
+            echo '">';
+            echo '<input class="alternativ" id="alternativ1" type="hidden" name="alternativ">';
+
             if ($spm > 1) {
-                echo '<form action="økonomiquiz.php?quiz=';
-                echo $quizid;
-                echo '&spm=';
-                echo $spm-1;
-                echo '" method="post">
-                <input type="hidden" name="spørsmål" value="';
-                echo $spmid;
-                echo '">';
-                echo '<input class="alternativ" id="alternativ1" type="" name="alternativ">
-                <button name="spm-btn-tilbake" type="submit">Tilbake</button></form>';
+                echo '<button name="spm-btn-tilbake" type="submit">Tilbake</button>';
             }
             if ($spmid < 10) {
-                echo '<form action="økonomiquiz.php?quiz=';
-                echo $quizid;
-                echo '&spm=';
-                echo $spmid+1;
-                echo '" method="post">
-                <input type="hidden" name="spørsmål" value="';
-                echo $spmid;
-                echo '">';
-                echo '<input id="alternativ2" type="hidden" name="alternativ">
-                <button name="spm-btn-neste" type="submit">Neste</button></form></div>';
+                echo '<button name="spm-btn-neste" type="submit">Neste</button>';
             } else {
-                echo '<form action="assets/connection/fullfør.php?quiz=';
-                echo $quizid;
-                echo '&spm=';
-                echo $spmid+1;
-                echo '" method="post">
-                <input type="hidden" name="spørsmål" value="';
-                echo $spmid;
-                echo '">';
-                echo '<input id="alternativ3" type="hidden" name="alternativ">
-                <button name="spm-btn-fullfør" type="submit">Fullfør</button></form></div>';
+                echo '<button name="spm-btn-fullfør" type="submit">Fullfør</button>';
             }
+            echo '</form></div>';
         }
     }
     ?>

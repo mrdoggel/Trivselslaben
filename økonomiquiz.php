@@ -23,7 +23,9 @@
             require "assets/reuse/navbar.php";
             require "assets/reuse/top-nav.php";
             $id = $_SESSION["id"];
-            $quizid = $_GET['quiz'];
+            if (isset($_GET['quiz'])) {
+                $quizid = $_GET['quiz'];
+            }
             if (isset($_GET['spm'])) {
                 $spm = $_GET['spm'];
             }
