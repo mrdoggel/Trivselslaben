@@ -23,6 +23,17 @@
         ?>
     </header>
 
+    <div id="top-nav">
+        <nav>
+            <ul>
+                <li class="active">Utforsk</li>
+                <li>Kurs</li>
+                <li>Moduler</li>
+                <li><a href="quiz.php">Quiz</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <main>
         <nav>
             <ul>
@@ -31,17 +42,6 @@
                 <li><a href="fullført.php">Fullført</a></li>
             </ul>
         </nav>
-        
-        <div id="top-nav">
-        <nav>
-                <ul>
-                    <li class="active">Utforsk</li>
-                    <li>Kurs</li>
-                    <li>Moduler</li>
-                    <li>Quiz</li>
-                </ul>
-            </nav>
-        </div>
         
         <section>
 
