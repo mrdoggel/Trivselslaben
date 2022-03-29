@@ -33,7 +33,9 @@
             <p class="mer">&vellip;</p>
             <div class="overlap hidden">
                 <p>Spill</p>
-                <p>Lagre til senere</p>
+                <form action="">
+                    <button>Lagre til senere</button>
+                </form>
             </div>
         </div>
         <div class="quiz-div" id="quiz-2">
@@ -42,7 +44,9 @@
             <p class="mer">&vellip;</p>
             <div class="overlap hidden">
                 <p>Spill</p>
-                <p>Lagre til senere</p>
+                <form action="">
+                    <button>Lagre til senere</button>
+                </form>
             </div>
         </div>
         <div class="quiz-div" id="quiz-3">
@@ -51,7 +55,9 @@
             <p class="mer">&vellip;</p>
             <div class="overlap hidden">
                 <p>Spill</p>
-                <p>Lagre til senere</p>
+                <form action="">
+                    <button>Lagre til senere</button>
+                </form>
             </div>
         </div>
     </main>

@@ -1,27 +1,50 @@
-main nav {
-  width: 15%;
-  font-size: 1.25rem;
-  min-height: 85vh;
-  max-height: 85vh;
-  float: left;
+main{
   display: flex;
-  justify-content:center;
-  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+#section-container {
+  align-self: left;
+  width: 80%;
+}
+main nav {
+    max-width: 15%;
+    min-height: 85vh;
+    max-height: fit-content;
+    text-align: left;
+    padding-left: 5rem;
+}
+
+main nav h1{
+  font-size: 2rem;
+    font-weight: bold;
+    margin-top:4rem; 
+    text-align: left;
+    padding: 1rem; 
+    padding-left: 0rem;
 }
 
 main nav ul li {
-  margin: 3rem 0rem 3rem 0rem; 
-  letter-spacing: 0.05rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  margin: 6rem 0rem 6rem 0rem;
   transition: all 0.4s;
 }
 
-main nav ul li:hover{
-  font-size: 1.7rem;
+.forside-valgt {
+  transition: all 0.8s; 
+  padding-left: 1rem;
+  letter-spacing: 0.04rem;
+  font-weight: bold;
 }
-
+.forside-valg:hover{
+    cursor: pointer;
+    transition: all 0.4s;
+    padding-left: 1rem;
+    letter-spacing: 0.04rem;
+    font-weight: bold;
+}
 /* FELLES */
-h1 {
+h2 {
   font-size: 1.75rem;
   width: 100%;
   padding: 3rem; 
@@ -47,7 +70,7 @@ p {
 
 section {
   float: right;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -151,7 +174,7 @@ section {
 
 .underveis-container > p:hover {
   background-color: #f2f088;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -177,7 +200,6 @@ section {
 }
 
 .fullført span {
-  font-style: italic;
   font-weight: bold;
 }
 

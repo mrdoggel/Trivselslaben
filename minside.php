@@ -48,15 +48,12 @@
                         </div>
                         
                         <?php } ?>
-                        <!-- #TODO Satt inn navn på bruker her -->
                         <h2><?php echo $_SESSION['fnavn'] . " " . $_SESSION['enavn'] ?></h2>
                     </div>
 
                     <div>
-                        <!-- #TODO??? Sette inn fornavn, etternavn og e-post i placeholderne?? -->
                         
                         <div>
-                        <!-- #TODO??? Sette inn fornavn, etternavn og e-post i placeholderne?? -->
                         <label for="nyttfnavn">Fornavn</label>
                         <input value="<?php echo $_SESSION['fnavn'] ?>" name="nyttfnavn" type="text" id="nyttfnavn" placeholder="fornavn">
                         </div>
