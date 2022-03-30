@@ -50,13 +50,15 @@ main{
     box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
     background-color: #F4F6FA;    
 }
-.overlap p {
+.overlap button, .overlap p {
+    border: none;
+    background-color: transparent;
     font-size: 1.15rem;
     position: static;
     font-weight: 100;
     padding: 0.5rem 0rem 0.5rem 1rem; 
 }
-.overlap p:hover {
+.overlap p:hover, .overlap button:hover {
     cursor: pointer;
     font-weight: 400;
 }

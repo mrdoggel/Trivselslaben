@@ -10,13 +10,16 @@ function init() {
 }
 
 function velg(e){
-    e.preventDefault(); 
+    e.preventDefault();
 
-    const $alleSvar = document.querySelectorAll(`#${e.target.parentNode.id} div`); 
+    const $inputFelt = document.querySelector(`#${e.target.parentNode.id} form:last-of-type input:last-of-type`);
+    const $inputFelt2 = document.querySelector(`#${e.target.parentNode.id} form:last-of-type input:last-of-type`);
+    $inputFelt.value = e.target.innerHTML;
+    $inputFelt2.value = e.target.innerHTML;
+
+    const $alleSvar = document.querySelectorAll(`#${e.target.parentNode.id} div`);
     $alleSvar.forEach((element)=>{
-        element.classList.remove("valgt-svar");  
+        element.classList.remove("valgt-svar");
     })
-  
-    document.querySelector(`#${e.target.parentNode.id} input`).value = e.target.innerHTML;
-    e.target.classList.add("valgt-svar"); 
+    e.target.classList.add("valgt-svar");
 }

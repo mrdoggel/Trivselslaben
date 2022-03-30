@@ -21,63 +21,26 @@
     <header>
         <?php
             require "assets/reuse/navbar.php";
-            require "assets/reuse/top-nav.php"; 
+            require "assets/reuse/top-nav.php";
+            $id = $_SESSION["id"];
+            if (isset($_GET['quiz'])) {
+                $quizid = $_GET['quiz'];
+            }
+            if (isset($_GET['spm'])) {
+                $spm = $_GET['spm'];
+            }
         ?>
     </header>
 
-    <main>
-        <form action="">
-            <legend><span>Inntekter, lønn, utgifter og regnskap</span></legend>
-
-            <div class="spm-div" id="spm-1">
-                <label for="spm-arbeidsgiver">Når regnes du som arbeidsgiver?</label>
-                <input id="spm-arbeidsgiver" type="hidden" name="spm-arbeidsgiver">
-                <div class="svr svr-1">Når du betaler ut lønn eller annen godtgjørelse</div>
-                <div class="svr svr-2">Når du eier et AS</div>
-                <div class="svr svr-3">Når du starter en bedrift</div>
-                <div class="svr svr-4">Når du selger en vare</div>
-            </div>
-
-        <div class="hidden">
-
-            <div class="spm-div hidden">
-                <label for="spm-budsjett">Hva inneholder et budsjett?</label>
-            </div>
-
-            <div class="spm-div hidden">
-                <label for="spm-utgift">Hva er en utgift?</label>
-            </div>
-
-            <div class="spm-div hidden">
-                <label for="spm-inntekt">Hva er en inntekt?</label>
-            </div>
-
-            <div class="spm-div hidden">
-                <label for="spm-enk-ansatt">Som innehaver av et enkeltmannsforetak regnes du som en ansatt</label>   
-            </div>
-
-            <div class="spm-div hidden">
-                <label for="spm-forretningsmodel">Hvilken av disse inngår ikke i forretningsmodellen?</label>
-            </div>
-
-            <div class="spm-div hidden">
-                <label for="spm-ansettelse">Når du går i gang med å ansette noen kan det være lurt å</label>
-            </div>
-
-            <div class="spm-div hidden">
-                <label for="spm-budsjettyper">Likviditetsbudsjett og resultatbudsjett er det samme</label>
-            </div>
-
-            <div class="spm-div hidden">
-                <label for="">Hva er en fordel med å lage budsjett?</label>
-            </div>
-
-            <div class="spm-div hidden">
-                <label for="spm-økonomi">Økonomi er et viktig tema for enhver bedrift</label>
-            </div>
-
-        </div>
-        </form>
+    <main class="main-quiz">
+        <?php
+        if (!isset($spm)) {
+            $spm = 1;
+            require "assets/reuse/hentSpm.php";
+        } else {
+            require "assets/reuse/hentSpm.php";
+        }
+        ?>
     </main>
 </body>
 </html>

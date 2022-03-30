@@ -1,4 +1,5 @@
 <nav id="navbar">
+    <img src="assets/images/logo.png" alt="logo-img">
     <div id="searchbar">
         <form action="søk.php" method="post">
             <input required type="text" name="søkeparameter" placeholder="Hva leter du etter?">

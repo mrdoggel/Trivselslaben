@@ -43,20 +43,17 @@
                         <?php } else { ?>
                         <div>
                             <a href="minside.php"><img src="assets/images/default.jpg"></img></a>
-                            <input id="nytt-bilde" type="file" name ="bilde" placeholder="Nytt bilde">
-                            <label for="nytt-bilde" id="last-opp-btn">last opp</label>
+                            <label for="bilde" id="last-opp-btn">last opp</label>
+                            <input id="bilde" type="file" name ="bilde" placeholder="Nytt bilde">
                         </div>
                         
                         <?php } ?>
-                        <!-- #TODO Satt inn navn på bruker her -->
                         <h2><?php echo $_SESSION['fnavn'] . " " . $_SESSION['enavn'] ?></h2>
                     </div>
 
                     <div>
-                        <!-- #TODO??? Sette inn fornavn, etternavn og e-post i placeholderne?? -->
                         
                         <div>
-                        <!-- #TODO??? Sette inn fornavn, etternavn og e-post i placeholderne?? -->
                         <label for="nyttfnavn">Fornavn</label>
                         <input value="<?php echo $_SESSION['fnavn'] ?>" name="nyttfnavn" type="text" id="nyttfnavn" placeholder="fornavn">
                         </div>
