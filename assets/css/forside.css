@@ -1,52 +1,50 @@
-#top-nav {
-  box-shadow: none;
-  margin: 1rem 0rem 1rem 0rem;
-  width: 80%;
-  float: right;
+main{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
-#top-nav nav {
-  width: 100%;
-  max-height: 5vh;
-  min-height: 5vh;
+#section-container {
+  align-self: left;
+  width: 80%;
 }
-#top-nav nav ul li {
-  display: inline;
-  padding: 0.5rem 2rem 0.5rem 2rem; 
+main nav {
+    max-width: 15%;
+    min-height: 85vh;
+    max-height: fit-content;
+    text-align: left;
+    padding-left: 5rem;
 }
 
-main nav {
-  width: 15%;
-  font-size: 1.25rem;
-  min-height: 85vh;
-  max-height: 85vh;
-  float: left;
-  display: flex;
-  justify-content:center;
-  align-items: center;
+main nav h1{
+  font-size: 2rem;
+    font-weight: bold;
+    margin-top:4rem; 
+    text-align: left;
+    padding: 1rem; 
+    padding-left: 0rem;
 }
 
 main nav ul li {
-  margin: 3rem 0rem 3rem 0rem; 
-  letter-spacing: 0.05rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  margin: 6rem 0rem 6rem 0rem;
   transition: all 0.4s;
 }
 
-main nav ul li:hover{
-  font-size: 1.7rem;
-}
-
-.active {
-  font-weight: lighter;
+.forside-valgt {
+  transition: all 0.8s; 
   padding-left: 1rem;
-  font-size: 1.7rem;
+  letter-spacing: 0.04rem;
+  font-weight: bold;
 }
-
+.forside-valg:hover{
+    cursor: pointer;
+    transition: all 0.4s;
+    padding-left: 1rem;
+    letter-spacing: 0.04rem;
+    font-weight: bold;
+}
 /* FELLES */
-h1 {
+h2 {
   font-size: 1.75rem;
   width: 100%;
   padding: 3rem; 
@@ -66,14 +64,13 @@ p {
   font-size: 1rem; 
   font-weight: 500;
   line-height: 150%;
-  letter-spacing: 0.03rem;
   text-align: center;
   padding: 0.25rem; 
 }
 
 section {
   float: right;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -93,7 +90,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  transition: all 0.7s;
 }
 
 .kurs img {
@@ -105,6 +101,10 @@ section {
 .kurs p{
   transition: all 0.5s;
   cursor: pointer;
+}
+.kurs:hover, .modul:hover{
+  transition: all 0.3s;
+  box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 30%);
 }
 .bottom {
   border-bottom-left-radius: 0.5rem;
@@ -174,7 +174,7 @@ section {
 
 .underveis-container > p:hover {
   background-color: #f2f088;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -200,7 +200,6 @@ section {
 }
 
 .fullført span {
-  font-style: italic;
   font-weight: bold;
 }
 

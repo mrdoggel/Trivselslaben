@@ -4,9 +4,12 @@ main{
 h2 {
     font-size: 1.75rem;
 }
+
+
 #admin-nav {
     width: 20%;
-    height: 85vh;
+    min-height: 85vh;
+    max-height: fit-content;
     text-align: left;
     padding-left: 5rem;
     box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
@@ -105,6 +108,7 @@ form {
 #navn-bilde img {
     width:10rem;
     height:10rem;
+    border-radius: 50%;
     object-fit:cover;
     
 }
@@ -266,6 +270,7 @@ form {
         font-size: 0.8rem;
         width: 15vw;
     }
+    
     nav {
         font-size: 1rem;
       }

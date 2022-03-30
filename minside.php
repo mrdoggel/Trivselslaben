@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="assets/css/common/reset.css"/>
     <link rel="stylesheet" href="assets/css/common/global.css"/>
     <link rel="stylesheet" href="assets/css/common/header.css"/>
+    <link rel="stylesheet" href="assets/css/common/top-nav.css"/>
     <link rel="stylesheet" href="assets/css/minside.css">
     <script src="assets/js/minside.js"></script>
+    <script src="assets/js/top-nav.js"></script>
 </head>
     <body id="body">
         <?php
             require "assets/reuse/navbar.php";
+            require "assets/reuse/top-nav.php"; 
         ?>
+        
         <main>
             <nav id="admin-nav">
                 <h1>Min profil</h1>
@@ -26,7 +30,6 @@
                 </ul>
             </nav>
             <section>
-                <!-- Oppdater brukerinfo --> 
                 <form class="personling-info" action="minside.php" method="post" enctype="multipart/form-data">
                     
                     <div id="navn-bilde">
@@ -40,20 +43,17 @@
                         <?php } else { ?>
                         <div>
                             <a href="minside.php"><img src="assets/images/default.jpg"></img></a>
-                            <input id="nytt-bilde" type="file" name ="bilde" placeholder="Nytt bilde">
-                            <label for="nytt-bilde" id="last-opp-btn">last opp</label>
+                            <label for="bilde" id="last-opp-btn">last opp</label>
+                            <input id="bilde" type="file" name ="bilde" placeholder="Nytt bilde">
                         </div>
                         
                         <?php } ?>
-                        <!-- #TODO Satt inn navn på bruker her -->
                         <h2><?php echo $_SESSION['fnavn'] . " " . $_SESSION['enavn'] ?></h2>
                     </div>
 
                     <div>
-                        <!-- #TODO??? Sette inn fornavn, etternavn og e-post i placeholderne?? -->
                         
                         <div>
-                        <!-- #TODO??? Sette inn fornavn, etternavn og e-post i placeholderne?? -->
                         <label for="nyttfnavn">Fornavn</label>
                         <input value="<?php echo $_SESSION['fnavn'] ?>" name="nyttfnavn" type="text" id="nyttfnavn" placeholder="fornavn">
                         </div>

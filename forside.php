@@ -11,52 +11,45 @@
     <link rel="stylesheet" href="assets/css/common/reset.css">
     <link rel="stylesheet" href="assets/css/common/global.css">
     <link rel="stylesheet" href="assets/css/common/header.css">
+    <link rel="stylesheet" href="assets/css/common/top-nav.css">
     <link rel="stylesheet" href="assets/css/forside.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="assets/js/oversiktssider.js"></script>
+    <script src="assets/js/top-nav.js"></script>
 </head>
 
 <body>
     <header>
         <?php
             require "assets/reuse/navbar.php";
+            require "assets/reuse/top-nav.php";
         ?>
     </header>
 
     <main>
-        <nav>
+        <nav id="forside-nav">
+            <h1>Utforsk</h1>
             <ul>
-                <li><a class="active" href="forside.php">Alle</a></li>
-                <li><a href="påbegynt.php">Påbegynt</a></li>
-                <li><a href="fullført.php">Fullført</a></li>
+                <li class="forside-valg"><a class="forside-valgt" href="forside.php">Utforsk alle</a></li>
+                <li class="forside-valg"><a href="påbegynt.php">Påbegynt</a></li>
+                <li class="forside-valg"><a href="fullført.php">Fullført</a></li>
             </ul>
         </nav>
-        
-        <div id="top-nav">
-        <nav>
-                <ul>
-                    <li class="active">Utforsk</li>
-                    <li>Kurs</li>
-                    <li>Moduler</li>
-                    <li>Quiz</li>
-                </ul>
-            </nav>
-        </div>
-        
+        <div id="section-container">
         <section>
 
-            <h1>Kom i gang med disse kursene</h1>
+            <h2>Kom i gang med disse kursene</h2>
             <?php
                 require "assets/reuse/hentKurs.php";
             ?>
         </section>
         
         <section class="moduler">
-            <h1>Utforsk modulene</h1>
+            <h2>Utforsk modulene</h2>
             <?php
                 require "assets/reuse/hentModul.php";
             ?>
         </section>
+        </div>
     </main>
 
 </body>
