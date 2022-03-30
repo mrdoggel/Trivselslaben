@@ -5,6 +5,9 @@
     background-image: linear-gradient(to right, #d0d9f9 , #a3ecc8, #f2f088);
     display: flex;
   }
+#navbar a, #navbar img {
+  max-height: inherit;
+}
   #navbar > div {
     width: 50%;
     display: flex;
@@ -24,7 +27,6 @@
     border: none;
     height: 4vh;
     width: 20vw;
-    margin-left: 4vw;
   }
   
   #searchbar input::placeholder{
