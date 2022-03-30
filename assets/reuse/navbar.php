@@ -1,5 +1,5 @@
 <nav id="navbar">
-    <img src="assets/images/logo.png" alt="logo-img">
+    <a href="forside.php"><img src="assets/images/logo.png" alt="logo-img"></a>
     <div id="searchbar">
         <form action="søk.php" method="post">
             <input required type="text" name="søkeparameter" placeholder="Hva leter du etter?">
