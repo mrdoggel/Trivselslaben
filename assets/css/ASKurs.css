@@ -1,63 +1,60 @@
-#main-box{
-    width: 80%;
-  margin:auto;
+main{
+  width: 80%;
+  padding: 5rem;
+  margin: 3rem auto 3rem auto;
+  text-align: center;
+
+}
+article {
   box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 25%);
-  border-radius: 0.2rem;
-  padding-bottom: 10rem;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
-
+  margin-top: 7.5%;
+  margin-bottom: 5%;
+  margin-left:15%;
+  margin-right: 15%;
+  text-align: center;
 }
-#h-box{
-    margin:auto;
-    width:80%;
-    text-align: center;
-
+h2{
+  display: inline-block;
+  margin-top:1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }
-#overskrift{
-    padding-top: 5%;
-    display: inline-block;
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0) 90%, #B6F3AB 0%,#B6F3AB 0%);
+h3{
+  text-align: left;
+  padding: 0.25rem; 
+}
+h1 span{
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 70%, #B6F3AB 0%,#B6F3AB 0%);
 }  
-p{
-    margin-right: 10%;
-    margin-left:10%;
-    text-align: center;
-    margin-top:5%;
-    line-height: 180%;
 
+p, li{
+  margin:auto;
+  line-height: 200%;
+  letter-spacing: -0.3px;
+  padding: 0.25rem;
 }
-.under-box{
-    box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 25%);
-    margin-top: 7.5%;
-    margin-bottom: 5%;
-    margin-left:15%;
-    margin-right: 15%;
-    text-align: center;
+
+li {
+  font-size: 1.2rem;
 }
-.under-overskrift{
-    display: inline-block;
-    margin-top:1rem;
-    margin-bottom: 1rem;
-}
+
 .innhold{
-    line-height: normal;
-    font-size:medium;
-    padding-bottom: 2%;
+  padding: 2rem; 
+  text-align: left;
 }
-.liste-style{
-    padding-left: 2.5%;
-    text-align: start;
-    line-height: normal;
+
+#beskrivelse {
+  width: 80%;
+  box-shadow: 1px 10px 15px 1px rgb(182 243 171 / 20%);
+  border-radius: 1rem;
+  margin: 2rem auto auto auto;
+  padding: 2rem; 
 }
-.liste-overskrifter{
-    font-size: large;
-    text-align: start;
-    margin-left: 1.5%;
-}
+
+
 #intro h2{
     background: linear-gradient(
         180deg,
@@ -89,7 +86,17 @@ p{
         rgba(255, 255, 255, 0) 70%, #95E3EC 0%,#95E3EC 0%);
 }
 
+
+
+
+
+
 * {box-sizing:border-box}
+
+
+
+
+
 
 /* Slideshow container */
 .slideshow-container {

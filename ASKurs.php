@@ -6,28 +6,32 @@
     <link rel="stylesheet" href="assets/css/common/reset.css"/>
     <link rel="stylesheet" href="assets/css/common/global.css"/>
     <link rel="stylesheet" href="assets/css/common/header.css"/>
+    <link rel="stylesheet" href="assets/css/common/top-nav.css">
     <link rel="stylesheet" href="assets/css/ASKurs.css"/>
+    <script src="assets/js/ASKurs.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="assets/js/AKKurs.js"></script>
     <title>Aksjeselskap Kurs</title>
 </head>
 <body>
 <body>
         <?php
             require "assets/reuse/navbar.php";
+            require "assets/reuse/top-nav.php"; 
         ?>
         
-        <div id ="main-box"> 
-            <div id ="h-box">
-                <h1 id="overskrift">Aksjeselskap - AS</h1>
-            </div>
-            <div>
-                <p>
-                    Planlegger du å starte næringsvirksomhet alene eller sammen med andre? Innebærer næringsvirksomheten en økonomisk risiko? Vil du ha rettigheter som arbeidstaker og muligheten til at andre vil investere i selskapet ditt? Da kan aksjeselskap være en hensiktsmessig organisasjonsform. Da kan AS være organisasjonsformen for deg.
+        <main> 
+            
+            <h1> <span>Aksjeselskap - AS</span></h1>
+            
+            <div id="beskrivelse">
+                <p>Planlegger du å starte næringsvirksomhet alene eller sammen med andre? </p>
+                <p>Innebærer næringsvirksomheten en økonomisk risiko?</p> 
+                <p>Vil du ha rettigheter som arbeidstaker og muligheten til at andre vil investere i selskapet ditt? </p>
+                    <p>Da kan aksjeselskap være en hensiktsmessig organisasjonsform.
                 </p>
             </div>
-            <article class="under-box" id ="intro">
-                <h2 class="under-overskrift">Introduksjon, hva er et AS?</h2>
+            <article id="intro">
+                <h2 class="under-overskrift">Introduksjon: hva er et AS?</h2>
                 <div class="innhold hidden" >
                     <p>
                     Et aksjeselskap eller et AS, er et selskap med bestemt kapital* fordelt på én eller flere andeler som kalles aksjer. Dette er den vanligste selskapsformen i næringslivet, og i 2020 var det registrert drøyt 340 000 aksjeselskap i Norge.
@@ -39,28 +43,27 @@
                     </p>
                 </div>
             </article>
-            <article class ="under-box" id = "fordeler">
-                <h2 class= "under-overskrift">Fordeler og ulemper med et AS</h2>
+            <article id="fordeler">
+                <h2 class="under-overskrift">Fordeler og ulemper med et AS</h2>
                 <div class = "innhold hidden">
-                    <h2 class = "liste-overskrifter">Fordeler</h2>
+                    <h3>Fordeler</h3>
                     <ul class = "liste-style">
-                            <li> - Begrenset personlig ansvar for selskapets forpliktelser</li>
-                            <li> - Bygge opp egenkapital med lavere skatt enn for enkeltpersonforetak</li>
-                            <li> - Tilnærmet skattefritt utbytte til selskapsaksjonærer, det vil si aksjonær som ikke er privatperson</li>
-                            <li> - Muligheten til å være ansatt</li>
+                            <li>Begrenset personlig ansvar for selskapets forpliktelser</li>
+                            <li>Bygge opp egenkapital med lavere skatt enn for enkeltpersonforetak</li>
+                            <li>Tilnærmet skattefritt utbytte til selskapsaksjonærer, det vil si aksjonær som ikke er privatperson</li>
+                            <li>Muligheten til å være ansatt</li>
                         </ul>
                         <br></br>
-                    <h2 class = "liste-overskrifter">Ulemper</h2>
+                    <h3>Ulemper</h3>
                         <ul class = "liste-style">
-                            <li> - Begrenset personlig ansvar for selskapets forpliktelser</li>
-                            <li> - Bygge opp egenkapital med lavere skatt enn for enkeltpersonforetak</li>
-                            <li> - Tilnærmet skattefritt utbytte til selskapsaksjonærer, det vil si aksjonær som ikke er privatperson</li>
-                            <li> - Muligheten til å være ansatt</li>
+                            <li>Formaliteter</li>
+                            <li>Arbeidsgiveravgift</li>
+                            <li>Krav om aksjekapital</li>
                         </ul>
                 </div>
             </article>
-            <article class ="under-box" id ="tingÅTenkePå">
-                <h2 class= "under-overskrift">Viktige ting å tenke på</h2>
+            <article id="tingÅTenkePå">
+                <h2 class="under-overskrift">Viktige ting å tenke på</h2>
                     <div class = "innhold hidden">
                             <p>Selv om det i teorien er mulig å starte AS med 30 000 kr er det viktig å huske på at det er en rekke kostnader forbundet ved selve oppstartsprosessen.
                             Ikke nok med at du må betale 5570 kroner (i 2021) til Brønnøysundregistrene for selve registreringen, men du vil også garantert få kostnader knyttet til utstyr, lokaler og andre administrative ting som kan dukke opp.</p>
@@ -68,8 +71,8 @@
                             <p>Lag en forretningsmodell. Illustrer  i kortform hva slags tjenester du leverer, hvem kunden er, og hvem som er konkurrentene dine. Dette kan forutsi eventuelle utfordringer for virksomheten</p>
                     </div>
             </article>
-            <article class ="under-box" id ="forutsetninger">
-                <h2 class= "under-overskrift">Forutsetninger</h2>
+            <article id="forutsetninger">
+                <h2 class="under-overskrift">Forutsetninger</h2>
                     <div class ="innhold hidden">
                         <ul class = "liste-style">
                             <li> - Et aksjeselskap kan stiftes av en eller flere personer. Både fysiske personer og juridiske personer (andre aksjeselskap) kan være stiftere. </li>
@@ -80,8 +83,9 @@
                         </ul>
                     </div>
             </article>
-            <article class ="under-box" id ="opprette">
-                <h2 class= "under-overskrift">Hvordan opprette et AS</h2>
+
+            <article id="opprette">
+                <h2 class="under-overskrift">Hvordan opprette et AS</h2>
                     <div class ="liste-style hidden">
                          <!-- Slideshow container -->
             <div class="slideshow-container">
