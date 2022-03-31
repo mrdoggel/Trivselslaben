@@ -6,31 +6,6 @@ h2 {
 }
 
 
-#admin-nav {
-    width: 20%;
-    min-height: 85vh;
-    max-height: fit-content;
-    text-align: left;
-    padding-left: 5rem;
-    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
-}
-#admin-nav h1{
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top:4rem; 
-    padding-left: 0rem;
-    text-align: left;
-}
-#admin-nav li {
-    font-size: 1.25rem;
-    margin: 6rem 0rem 6rem 0rem;
-}
-#admin-nav li:hover {
-    cursor: pointer;
-    font-weight: bold;
-}
-
-
 
 /* PERSONLIG INFO */
 h1 {
@@ -232,12 +207,7 @@ form {
 #finn-og-legg-til > div > form {
     padding: 0rem;
 }
-.min-side-valgt {
-    transition: all 0.8s; 
-    padding-left: 1rem;
-    letter-spacing: 0.04rem;
-    font-weight: bold;
-}
+
 /* HOVER */
 #navn-bilde label:hover{
     background-color: #B6F3AB;

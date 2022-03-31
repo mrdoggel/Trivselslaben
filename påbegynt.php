@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/common/global.css">
     <link rel="stylesheet" href="assets/css/common/header.css">
     <link rel="stylesheet" href="assets/css/common/top-nav.css">
+    <link rel="stylesheet" href="assets/css/common/side-nav.css">
     <link rel="stylesheet" href="assets/css/forside.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="assets/js/top-nav.js"></script>
@@ -23,17 +24,17 @@
       ?>
     </header>
     <main>
-    <nav>
-        <h1>Utforsk</h1>
-        <ul>
-          <li class="forside-valg"> <a href="forside.php">Utforsk alle</a></li>
-          <li class="forside-valg"><a class="forside-valgt" href="påbegynt.php">Påbegynt</a></li>
-          <li class="forside-valg"><a href="fullført.php">Fullført</a></li>
-        </ul>
-    </nav>
+    <nav id="forside-nav">
+            <h1>Utforsk</h1>
+            <ul>
+                <li><a href="forside.php">Utforsk alle</a></li>
+                <li class="side-nav-valgt"><a href="påbegynt.php">Påbegynt</a></li>
+                <li><a href="fullført.php">Fullført</a></li>
+            </ul>
+        </nav>
 
-    <div id="section-container">
-    <section>
+      <div id="section-container">
+      <section>
 
         <h2>Her finner du det du ikke rakk å fullføre</h2>
         

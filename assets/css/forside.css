@@ -35,9 +35,6 @@ div.scrollmenu {
 }
 
 
-
-
-
 main{
   display: flex;
   flex-wrap: nowrap;
@@ -50,40 +47,6 @@ main{
 #section-container-search {
   width: 90%;
   margin: auto;
-}
-main nav {
-    max-width: 15%;
-    min-height: 85vh;
-    max-height: fit-content;
-    text-align: left;
-    padding-left: 5rem;
-}
-
-main nav h1{
-  font-size: 2rem;
-    font-weight: bold;
-    margin-top:4rem; 
-    text-align: left;
-    padding: 1rem; 
-    padding-left: 0rem;
-}
-
-main nav ul li {
-  font-size: 1.25rem;
-  margin: 6rem 0rem 6rem 0rem;
-  transition: all 0.4s;
-}
-
-.forside-valgt {
-  transition: all 0.8s; 
-  padding-left: 1rem;
-  font-weight: bold;
-}
-.forside-valg:hover{
-    cursor: pointer;
-    transition: all 0.4s;
-    padding-left: 1rem;
-    font-weight: bold;
 }
 
 /* FELLES */
@@ -139,8 +102,6 @@ section {
   transition: all 0.3s;
   min-width: 250px;
   opacity: 100%;
-  margin-left: 2rem; 
-  margin-right: 2rem;
   box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 30%);
 }
 .kurs img {

@@ -28,9 +28,9 @@ function visBrukerInteresser(e){
 function settValgtStil(menyValg){
   const $minSideMeny = document.querySelectorAll("#admin-nav li"); 
   $minSideMeny.forEach((element)=>{
-    element.classList.remove("min-side-valgt"); 
+    element.classList.remove("side-nav-valgt"); 
   });
-  menyValg.classList.add("min-side-valgt"); 
+  menyValg.classList.add("side-nav-valgt"); 
 }
 
 function inputFokus(e){
