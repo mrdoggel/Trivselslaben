@@ -240,14 +240,6 @@ form {
         font-size: 0.8rem;
         width: 15vw;
     }
-    
-    /* nav {
-        font-size: 1rem;
-      } */
-
-    /* #admin-nav h1 {
-        font-size: 1.5rem;
-    } */
 
     #admin-nav li {
         font-size: 1rem;
@@ -264,8 +256,8 @@ form {
     }
 
     #navn-bilde img {
-        width: 5.8rem;
-        height: 5.8rem;
+        width: 5rem;
+        height: 5rem;
         border-radius: 50%;
     }
 
