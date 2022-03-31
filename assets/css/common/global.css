@@ -13,6 +13,7 @@ li,
 a,
 span,
 button,
+div,
 ::placeholder {
   color: #1f294d;
   font-family: "Leelawadee UI";
