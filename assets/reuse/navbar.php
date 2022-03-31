@@ -10,12 +10,12 @@
         <div id ="navn_poeng">
             <p>
                 <?php
-                    echo $_SESSION['fnavn'];
+                   //echo $_SESSION['fnavn'];
                 ?>
             </p>
             <p>
                 <?php
-                    echo $_SESSION['poeng'] . " Poeng";
+                    //echo $_SESSION['poeng'] . " Poeng";
                 ?>
             </p>
         </div>

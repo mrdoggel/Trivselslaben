@@ -27,7 +27,7 @@ p{
     margin-left:10%;
     text-align: center;
     margin-top:5%;
-    line-height: normal;
+    line-height: 180%;
 
 }
 .under-box{
@@ -58,31 +58,31 @@ p{
     text-align: start;
     margin-left: 1.5%;
 }
-#intro h1{
+#intro h2{
     background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 0) 70%, #D0D9F9 0%,#D0D9F9 0%);
 }
-#fordeler h1{
+#fordeler h2{
     background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 0) 70%, #F5F187 0%,#F5F187 0%);
 }
-#tingÅTenkePå h1{
+#tingÅTenkePå h2{
     background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 0) 70%, #B6F3AB 0%,#B6F3AB 0%);
 }
-#forutsetninger h1{
+#forutsetninger h2{
     background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 0) 70%, #F2BFB0 0%,#F2BFB0 0%);
 }
-#opprette h1{
+#opprette h2{
     background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0) 0%,
