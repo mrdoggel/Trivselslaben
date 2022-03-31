@@ -41,7 +41,6 @@ function choiceHoverStyle(e) {
   e.preventDefault();
   e.target.style.fontWeight = "bold";
   e.target.style.cursor = "pointer";
-  console.log("hello");
 }
 
 function choiceHoverStyleReset(e) {
