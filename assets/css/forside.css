@@ -418,8 +418,13 @@ section {
   nav {
     font-size: 1rem;
   }
-  section{
-    padding-bottom: 1rem;
+  section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    padding: 0.5rem 1rem 1.5rem 1rem; 
   }
  
   h4 {
@@ -448,6 +453,11 @@ section {
   .fullført h6 {
     font-size: 0.7rem;
   }
+
+  div.scrollmenu {
+    padding-bottom: 1rem;
+  }
+
   .scrollmenu .kurs {
     min-width: 180px;
     max-width: 180px;
@@ -469,5 +479,3 @@ section {
     max-width: 300px;
   }
 }
-
-
