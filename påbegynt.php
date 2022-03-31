@@ -52,7 +52,7 @@
               </div>
             </div>
             <div class="bottom">
-              <p>Hvordan drive designtegning?</p>
+              <p>Hvordan drive designtenkning?</p>
             </div>
           </div>
           <p>Fortsett der du slapp</p>
@@ -74,7 +74,7 @@
             </div>
           </div>
           <div class="bottom">
-            <p>Start en bedrift fra A - Å</p>
+            <p>Start en bedrift fra A-Å</p>
           </div>
         </div>
 
@@ -108,9 +108,11 @@
 
     <section>
         <h2>Toppvalg basert på dine interesser</h2>
-        <?php
+        <div class="scrollmenu">
+          <?php
             require "assets/reuse/hentInteresser.php";
-        ?>
+          ?>
+        </div>
     </section>
     </div>
     </main>

@@ -62,9 +62,11 @@
     
   <section>
     <h2>Toppvalg basert på dine interesser</h2>
-    <?php
-        require "assets/reuse/hentInteresser.php";
-    ?>
+    <div class="scrollmenu">
+      <?php
+          require "assets/reuse/hentInteresser.php";
+      ?>
+    </div>
   </section>
 </div>
   </main>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/common/reset.css">
     <link rel="stylesheet" href="assets/css/common/global.css">
     <link rel="stylesheet" href="assets/css/common/header.css">
+    <link rel="stylesheet" href="assets/css/common/top-nav.css">
     <link rel="stylesheet" href="assets/css/forside.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -18,29 +19,28 @@
 <body>
     <?php
         require "assets/reuse/navbar.php";
+        require "assets/reuse/top-nav.php";
     ?>
 
     <main>
-        <nav>
-            <ul>
-                <li><a href="forside.php">Oversikt</a></li>
-                <li><a href="påbegynt.php">Påbegynt</a></li>
-                <li><a href="fullført.php">Fullført</a></li>
-            </ul>
-        </nav>
-
+        <div id="section-container-search">
         <section>
-            <?php
-                require "assets/reuse/hentSøk.php";
-            ?>
+            <div class="scrollmenu">
+                <?php
+                    require "assets/reuse/hentSøk.php";
+                ?>
+            </div>
         </section>
 
         <section class="moduler">
-            <h1>Toppvalg basert på dine interesser</h1>
-            <?php
-                require "assets/reuse/hentInteresser.php";
-            ?>
+            <h2>Toppvalg basert på dine interesser</h2>
+            <div class="scrollmenu">
+                <?php
+                    require "assets/reuse/hentInteresser.php";
+                ?>
+            </div>
         </section>
+        </div>
     </main>
 
 </body>

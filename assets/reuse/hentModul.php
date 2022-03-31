@@ -1,6 +1,6 @@
 <?php
 require "assets/connection/conn.php";
-$sql = $conn->prepare("SELECT * FROM modul WHERE modul_id <= 3");
+$sql = $conn->prepare("SELECT * FROM modul");
 $sql->execute();
 $result = $sql->get_result();
 if ($result->num_rows > 0) {
@@ -9,9 +9,11 @@ if ($result->num_rows > 0) {
         echo $row["modul_id"];
         echo '" class="modul">';
         echo '<h4>MODUL</h4>';
+        echo '<div class="modul-tittel">';
         echo '<h2>';
         echo $row["navn"];
         echo '</h2>';
+        echo '</div>';
         echo '<div class="bottom"';
         echo '"><p>';
         echo $row["beskrivelse"];

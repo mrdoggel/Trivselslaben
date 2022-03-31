@@ -39,9 +39,10 @@ if ($result->num_rows > 0) {
                 echo $row2["modul_id"];
                 echo '" class="modul">';
                 echo '<h4>MODUL</h4>';
+                echo '<div class="modul-tittel">';
                 echo '<h2>';
                 echo $row2["navn"];
-                echo '</h2>';
+                echo '</h2></div>';
                 echo '<div class="bottom"';
                 echo '"><p>';
                 echo $row2["beskrivelse"];
