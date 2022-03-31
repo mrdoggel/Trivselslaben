@@ -1,7 +1,7 @@
 #navbar {
     width: 100%;
-    max-height: 10vh;
-    min-height: 10vh;
+    max-height: 15vh;
+    min-height: 15vh;
     background-image: linear-gradient(to right, #d0d9f9 , #a3ecc8, #f2f088);
     display: flex;
   }

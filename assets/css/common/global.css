@@ -36,6 +36,11 @@ legend{
   color: #1f294d;
   font-family: "Leelawadee UI";
 }
+.scrollmenu .kurs .bottom p, .scrollmenu .modul .modul-tittel h2{
+  font-family: "Segoe UI";
+  font-weight: 500;
+}
+
 /* ---------------------*/
 /*      UTILITIES       */
 /* ---------------------*/

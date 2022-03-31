@@ -1,3 +1,43 @@
+/* SCROLL */
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  max-width: max-content;
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.scrollmenu > div {
+  display: inline-block;
+  max-width: 20%;
+  min-width: 20%;
+  margin: 1rem 1.5rem 3rem 1.5rem;
+}
+
+/* width */
+.scrollmenu::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1;;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f1f1f1;
+}
+
+
+
+
+
 main{
   display: flex;
   flex-wrap: nowrap;
@@ -6,6 +46,10 @@ main{
 #section-container {
   align-self: left;
   width: 80%;
+}
+#section-container-search {
+  width: 90%;
+  margin: auto;
 }
 main nav {
     max-width: 15%;
@@ -33,16 +77,15 @@ main nav ul li {
 .forside-valgt {
   transition: all 0.8s; 
   padding-left: 1rem;
-  letter-spacing: 0.04rem;
   font-weight: bold;
 }
 .forside-valg:hover{
     cursor: pointer;
     transition: all 0.4s;
     padding-left: 1rem;
-    letter-spacing: 0.04rem;
     font-weight: bold;
 }
+
 /* FELLES */
 h2 {
   font-size: 1.75rem;
@@ -61,8 +104,7 @@ h4 {
 }
 
 p {
-  font-size: 1rem; 
-  font-weight: 500;
+  font-size: 1.2rem; 
   line-height: 150%;
   text-align: center;
   padding: 0.25rem; 
@@ -74,36 +116,50 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 1rem;
+  margin-top: 3rem;
   box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 25%);
   border-radius: 0.2rem;
-  padding-bottom: 2rem;
   margin-bottom: 3rem;
+  padding-top: 2rem;
 }
 
-.kurs {
+.scrollmenu .kurs {
   border-radius: 1rem;
-  width: 15%;
-  margin: 0rem 3rem 3rem 3rem; 
+  min-width: 220px;
+  max-width: 220px;
   box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: 260px;
+  opacity: 95%;
 }
-
+.kurs:hover{
+  transition: all 0.3s;
+  min-width: 250px;
+  opacity: 100%;
+  margin-left: 2rem; 
+  margin-right: 2rem;
+  box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 30%);
+}
 .kurs img {
   text-align: center;
-  max-width: 30%;
-  margin: 1rem;
+  max-width: 40%;
+  margin: 0rem 1rem 1rem 1rem;
   align-self: center;
 }
 .kurs p{
   transition: all 0.5s;
   cursor: pointer;
 }
-.kurs:hover, .modul:hover{
+.scrollmenu .modul:hover{
   transition: all 0.3s;
+  min-width: 370px;
+  max-width: 370px;
+  opacity: 100%;
+  margin-left: 3rem; 
+  margin-right: 3rem;
   box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 30%);
 }
 .bottom {
@@ -113,47 +169,58 @@ section {
   justify-content: center;
   display: flex;
   width: 100%;
-  height: 50%;
+  min-height: 100px;
+  white-space: break-spaces;
 }
 
-.modul {
+.scrollmenu .modul {
+  min-width: 300px;
   border-radius: 25px;
-  width: 25%;
   box-shadow:  1px 1px 20px 1px rgb(0 0 0 / 10%);
-  display: flex;
-  flex-flow: wrap;
-  margin: 0rem 1rem 1rem 1rem; 
   position: relative;
-  min-height: 30vh;
+  height: 260px;
+  white-space: break-spaces;
 }
-
 .modul h2 {
   text-align: center;
   font-size: 1.5rem;
   font-weight: lighter;
   width: 100%;
   line-height: 120%;
-  padding: 1rem; 
+  padding: 0rem; 
 }
-
-
+.modul-tittel {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .modul .bottom {
   width: 100%;
+  height: 50%;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  position: absolute;
+  bottom: 0;
   background: #68cbd7;
-  align-self: flex-end;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  white-space: break-spaces;
+}
+.modul .bottom p {
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: -0.2px;
+  line-height: 200%;
 }
 
+/* --------- */
 /* UNDERVEIS */
+/* --------- */
 .underveis-container {
   width: 15%; 
 }
 .underveis-container > p {
   font-size: 1rem;
+  margin-bottom: 2rem; 
 }
 
 .underveis{
@@ -175,11 +242,14 @@ section {
 .underveis-container > p:hover {
   background-color: #f2f088;
   font-size: 1.25rem;
+  margin-bottom: 2rem;
   transition: all 0.5s;
   cursor: pointer;
 }
 
+/* -------- */
 /* FULLFØRT */ 
+/* -------- */
 .fullført {
   border-radius: 1rem;
   width: 20%;
@@ -222,7 +292,9 @@ section {
   height: auto;
 }
 
+/* --------------- */
 /* PROGRESS CIRLCE */ 
+/* --------------- */
 .circle-wrap, .circle-wrap2, .circle-wrap3 {
   margin: auto;
   width: 7.9vw;
@@ -416,3 +488,5 @@ section {
     font-size: 0.7rem;
   }
 }
+
+

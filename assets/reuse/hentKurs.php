@@ -1,10 +1,11 @@
 <?php
 require "assets/connection/conn.php";
-$sql = $conn->prepare("SELECT * FROM kurs WHERE kurs_id <= 25");
+$sql = $conn->prepare("SELECT * FROM kurs");
 $sql->execute();
 $result = $sql->get_result();
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
+        echo '<div>';
         echo '<div id="kurs';
         echo $row["kurs_id"];
         echo '" class="kurs">';
@@ -17,7 +18,7 @@ if ($result->num_rows > 0) {
         echo $row["farge"];
         echo '"><p>';
         echo $row["navn"];
-        echo '</p></div></div>';
+        echo '</p></div></div></div>';
     }
 }
 ?>

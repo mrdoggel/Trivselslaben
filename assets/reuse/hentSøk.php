@@ -8,9 +8,9 @@ $resultat = false;
 if ($result->num_rows > 0) {
     if ($resultat == false ) {
         $resultat = true;
-        echo '<h1>Resultat som kan stemme overens med "';
+        echo '<h2>Resultat som kan stemme overens med "';
         echo $søkeparameter;
-        echo '"</h1>';
+        echo '"</h2>';
     }
 
     while($row = $result->fetch_assoc()) {
@@ -39,18 +39,19 @@ $result1 = $sql1->get_result();
 if ($result1->num_rows > 0) {
     if ($resultat == false ) {
         $resultat = true;
-        echo '<h1>Resultat som kan stemme overens med "';
+        echo '<h2>Resultat som kan stemme overens med "';
         echo $søkeparameter;
-        echo '"</h1>';
+        echo '"</h2>';
     }
     while($row = $result1->fetch_assoc()) {
         echo '<div id="modul';
         echo $row["modul_id"];
         echo '" class="modul">';
         echo '<h4>MODUL</h4>';
+        echo '<div class="modul-tittel">';
         echo '<h2>';
         echo $row["navn"];
-        echo '</h2>';
+        echo '</h2></div>';
         echo '<div class="bottom"';
         echo '"><p>';
         echo $row["beskrivelse"];

@@ -24,6 +24,7 @@
             require "assets/reuse/top-nav.php";
         ?>
     </header>
+       
 
     <main>
         <nav id="forside-nav">
@@ -34,20 +35,35 @@
                 <li class="forside-valg"><a href="fullført.php">Fullført</a></li>
             </ul>
         </nav>
+
+
         <div id="section-container">
         <section>
-
-            <h2>Kom i gang med disse kursene</h2>
-            <?php
+            <h2>Kom i gang med kursene</h2>
+            <div class="scrollmenu">
+                <!--<div><a href="#home">Home</a></div>
+                <div><a href="#news">News</a></div>
+                <div><a href="#contact">Contact</a></div>
+                <div><a href="#about">About</a></div>-->
+                <?php
                 require "assets/reuse/hentKurs.php";
             ?>
+            </div>
+            <!--<h2>Kom i gang med disse kursene</h2>-->
+            <?php//require "assets/reuse/hentKurs.php";?>
         </section>
         
         <section class="moduler">
             <h2>Utforsk modulene</h2>
-            <?php
+            <div class="scrollmenu">
+                <!--<div><a href="#home">Home</a></div>
+                <div><a href="#news">News</a></div>
+                <div><a href="#contact">Contact</a></div>
+                <div><a href="#about">About</a></div>-->
+                <?php
                 require "assets/reuse/hentModul.php";
-            ?>
+                ?>
+            </div>
         </section>
         </div>
     </main>
