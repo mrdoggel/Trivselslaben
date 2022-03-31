@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/common/header.css"/>
     <link rel="stylesheet" href="assets/css/common/top-nav.css"/>
     <link rel="stylesheet" href="assets/css/minside.css">
+    <link rel="stylesheet" href="assets/css/common/side-nav.css">
     <script src="assets/js/minside.js"></script>
     <script src="assets/js/top-nav.js"></script>
 </head>
@@ -24,11 +25,12 @@
             <nav id="admin-nav">
                 <h1>Min profil</h1>
                 <ul>
-                    <li id="bruker-info" class="min-side-valgt">Brukerinformasjon</li>
+                    <li id="bruker-info" class="side-nav-valgt">Brukerinformasjon</li>
                     <li id="bruker-interesser">Mine interesser</li>
                     <li>Lagrede kurs</li>
                 </ul>
             </nav>
+
             <section>
                 <form class="personling-info" action="minside.php" method="post" enctype="multipart/form-data">
                     

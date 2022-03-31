@@ -1,0 +1,43 @@
+main nav {
+    min-height: 85vh;
+    max-height: fit-content;
+    text-align: left;
+    padding-left: 5rem;
+}
+
+main nav h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top:4rem; 
+    text-align: left;
+    padding: 1rem; 
+    padding-left: 0rem;
+}
+
+main nav ul li {
+    transition: all 0.4s;
+  font-size: 1.25rem;
+  margin: 6rem 0rem 6rem 0rem;
+  cursor: pointer;
+}
+
+main nav ul li:hover{
+    padding-left: 1rem;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+}
+
+.side-nav-valgt {
+    padding-left: 1rem;
+    letter-spacing: -0.2px;
+    font-weight: bold;
+}
+
+#forside-nav {
+    max-width: 15%;
+}
+
+#admin-nav {
+    width: 20%;
+    box-shadow: 1px 10px 15px 1px rgb(0 0 0 / 15%);
+}
