@@ -10,130 +10,155 @@
     <link rel="stylesheet" href="assets/css/ASKurs.css"/>
     <script src="assets/js/ASKurs.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aksjeselskap Kurs</title>
+    <title>Hvordan starte aksjeselskap</title>
 </head>
 <body>
-<body>
-        <?php
-            require "assets/reuse/navbar.php";
-            require "assets/reuse/top-nav.php"; 
-        ?>
+    <?php
+        require "assets/reuse/navbar.php";
+        require "assets/reuse/top-nav.php"; 
+    ?>
         
-        <main> 
+    <main> 
+        <div id="kurs-container">
+        <h1> <span>Hvordan starte et aksjeselskap</span></h1>
+        <div id="beskrivelse">
+            <p>Planlegger du å starte næringsvirksomhet alene eller sammen med andre? </p>
+            <p>Innebærer næringsvirksomheten en økonomisk risiko?</p> 
+            <p>Vil du ha rettigheter som arbeidstaker og muligheten til at andre vil investere i selskapet ditt? </p>
+            <p>Da kan aksjeselskap være en hensiktsmessig organisasjonsform.</p>
+        </div>
             
-            <h1> <span>Aksjeselskap - AS</span></h1>
-            
-            <div id="beskrivelse">
-                <p>Planlegger du å starte næringsvirksomhet alene eller sammen med andre? </p>
-                <p>Innebærer næringsvirksomheten en økonomisk risiko?</p> 
-                <p>Vil du ha rettigheter som arbeidstaker og muligheten til at andre vil investere i selskapet ditt? </p>
-                    <p>Da kan aksjeselskap være en hensiktsmessig organisasjonsform.
+        <article id="intro">
+            <h2 class="under-overskrift">Introduksjon: hva er et AS?</h2>
+            <div class="innhold hidden" >
+                <p>Et aksjeselskap eller et AS, er et selskap med bestemt kapital* fordelt på én eller flere andeler som kalles aksjer. Dette er den vanligste selskapsformen i næringslivet, og i 2020 var det registrert drøyt 340 000 aksjeselskap i Norge.
+                   Et aksjeselskap kan du se på som en egen juridisk person og du som eier er ikke ansvarlige for mer enn den aksjekapitalen* som er innbetalt. Dette innebærer at hvis du som person har innbetalt 30 000 kroner som aksjekapital så er du i utgangspunktet ikke ansvarlig for mer enn dette.
+                   Det begrensede ansvaret, fleksibiliteten og omsetteligheten av aksjene gjør at et aksjeselskap er å foretrekke dersom du planlegger etablering med flere eiere og muligheten for å få investorer til å satse penger på selskapet.
                 </p>
             </div>
-            <article id="intro">
-                <h2 class="under-overskrift">Introduksjon: hva er et AS?</h2>
-                <div class="innhold hidden" >
-                    <p>
-                    Et aksjeselskap eller et AS, er et selskap med bestemt kapital* fordelt på én eller flere andeler som kalles aksjer. Dette er den vanligste selskapsformen i næringslivet, og i 2020 var det registrert drøyt 340 000 aksjeselskap i Norge.
-                    <br></br>
-                    Et aksjeselskap kan du se på som en egen juridisk person og du som eier er ikke ansvarlige for mer enn den aksjekapitalen* som er innbetalt. Dette innebærer at hvis du som person har innbetalt 30 000 kroner som aksjekapital så er du i utgangspunktet ikke ansvarlig for mer enn dette.
-                    <br></br>
-                    Det begrensede ansvaret, fleksibiliteten og omsetteligheten av aksjene gjør at et aksjeselskap er å foretrekke dersom du planlegger etablering med flere eiere og muligheten for å få investorer til å satse penger på selskapet.
-                    <br>
-                    </p>
+        </article>
+            
+        <article id="fordeler">
+            <h2 class="under-overskrift">Fordeler og ulemper</h2>
+            <div class = "innhold hidden">
+                <h3>Fordeler</h3>
+                <ul>
+                    <li>Begrenset personlig ansvar for selskapets forpliktelser</li>
+                    <li>Bygge opp egenkapital med lavere skatt enn for enkeltpersonforetak</li>
+                    <li>Tilnærmet skattefritt utbytte til selskapsaksjonærer, det vil si aksjonær som ikke er privatperson</li>
+                    <li>Muligheten til å være ansatt</li>
+                </ul>
+                        
+                <h3>Ulemper</h3>
+                <ul>
+                    <li>Formaliteter</li>
+                    <li>Arbeidsgiveravgift</li>
+                    <li>Krav om aksjekapital</li>
+                </ul>
+            </div>
+        </article>
+            
+        <article id="tingÅTenkePå">
+            <h2 class="under-overskrift">Viktige ting å tenke på</h2>
+            <div class = "innhold hidden">
+                <p>Selv om det i teorien er mulig å starte AS med 30 000 kr er det viktig å huske på at det er en rekke kostnader forbundet ved selve oppstartsprosessen.
+                    Ikke nok med at du må betale 5570 kroner (i 2021) til Brønnøysundregistrene for selve registreringen, men du vil også garantert få kostnader knyttet til utstyr, lokaler og andre administrative ting som kan dukke opp.</p>
+                <p>Samt huske på at hvis du skal selge varer, må du ha penger til å kjøpe dem inn også.</p>
+                <p>Lag en forretningsmodell. Illustrer  i kortform hva slags tjenester du leverer, hvem kunden er, og hvem som er konkurrentene dine. Dette kan forutsi eventuelle utfordringer for virksomheten</p>
+            </div>
+        </article>
+            
+        <article id="forutsetninger">
+            <h2 class="under-overskrift">Forutsetninger</h2>
+            <div class ="innhold hidden">
+                <ul>
+                    <li>Et aksjeselskap kan stiftes av en eller flere personer. Både fysiske personer og juridiske personer (andre aksjeselskap) kan være stiftere. </li>
+                    <li>For å være stifter eller ha en annen rolle i et aksjeselskap må du ha fylt 18 år.</li>
+                    <li> - Selskapet må ha en norsk forretningsadresse (det vil si en norsk fysisk adresse som oppgis med gate eller vei, husnummer, postnummer og sted. Postboksadresse godtas ikke)</li>
+                </ul>
+            </div>
+        </article>
+
+        <article id="opprette">
+            <h2 class="under-overskrift">Slik går du frem</h2>
+            
+            <div id="hidden" class="guide">
+
+                <div class="steg-for-steg">
+                    
+                    <div class="steg fade">
+                        <div class="text">
+                            <p>
+                                1. For å stifte et AS må du først fylle ut og signere dette skjema
+                                </br>
+                                <a href="https://www.altinn.no/skjemaoversikt/bronnoysundregistrene/stiftelse-av-aksjeselskap/">
+                                    dette skjema 
+                                </a>
+                                hos Altinn
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="steg fade">
+                        <div class="text">
+                            <p>
+                                2. <span>Opprett aksjekapitalkonto</span> i banken og  <span>betal aksjekapitalen</span> på minimum 30 000 NOK
+                                </br>
+                                Husk å be om bekreftelse fra banken!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="steg fade">
+                        <div class="text">
+                            <p>
+                                3. <span>Send melding til signering.</span>
+                                </br>
+                                Hele styret, samt den som har avgitt bekreftelse på at aksjekapitalen er innbetalt og eventuell revisor, må signere meldingen elektronisk.</p>
+                        </div>
+                    </div>
+
+                    <div class="steg fade">
+                        <div class="text">
+                            <p>
+                                4. Du vil nå <span>motta en melding</span> på Altinn 
+                                </br>
+                                Følg lenken <span>"Gå til registrering i Foretaksregisteret"</span>. Følgende må vedlegges:
+                                <ul class="vedlegg-liste">
+                                    <li><span>Bekreftelse på innbetalt aksjekapital</span></li>
+                                    <li><span>Eventuell redegjørelse ved tingsinnskudd</span></li>
+                                    <li><span>Revisors bekreftelse</span></li>
+                                </ul>
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="steg fade">
+                        <div class="text">
+                            <p>
+                                5. <span>Du har nå registrert ditt AS!</span>
+                                </br>
+                                <p>
+                                    Når alt er godkjent og selskapet offisielt er registrert får du melding i Altinn
+                                <p>
+                        </div>
+                    </div>
+
+                    
                 </div>
-            </article>
-            <article id="fordeler">
-                <h2 class="under-overskrift">Fordeler og ulemper med et AS</h2>
-                <div class = "innhold hidden">
-                    <h3>Fordeler</h3>
-                    <ul class = "liste-style">
-                            <li>Begrenset personlig ansvar for selskapets forpliktelser</li>
-                            <li>Bygge opp egenkapital med lavere skatt enn for enkeltpersonforetak</li>
-                            <li>Tilnærmet skattefritt utbytte til selskapsaksjonærer, det vil si aksjonær som ikke er privatperson</li>
-                            <li>Muligheten til å være ansatt</li>
-                        </ul>
-                        <br></br>
-                    <h3>Ulemper</h3>
-                        <ul class = "liste-style">
-                            <li>Formaliteter</li>
-                            <li>Arbeidsgiveravgift</li>
-                            <li>Krav om aksjekapital</li>
-                        </ul>
+                <a class="forrige">&#8592;</a>
+                    
+                    <a class="neste">&#8594;</a>
+                <div class="dotter">
+                    <span class="dot" id="slide-en"></span>
+                    <span class="dot" id="slide-to"></span>
+                    <span class="dot" id="slide-tre"></span>
+                    <span class="dot" id="slide-fire"></span>
+                    <span class="dot" id="slide-fem"></span>
                 </div>
-            </article>
-            <article id="tingÅTenkePå">
-                <h2 class="under-overskrift">Viktige ting å tenke på</h2>
-                    <div class = "innhold hidden">
-                            <p>Selv om det i teorien er mulig å starte AS med 30 000 kr er det viktig å huske på at det er en rekke kostnader forbundet ved selve oppstartsprosessen.
-                            Ikke nok med at du må betale 5570 kroner (i 2021) til Brønnøysundregistrene for selve registreringen, men du vil også garantert få kostnader knyttet til utstyr, lokaler og andre administrative ting som kan dukke opp.</p>
-                            <p>Samt huske på at hvis du skal selge varer, må du ha penger til å kjøpe dem inn også.</p>
-                            <p>Lag en forretningsmodell. Illustrer  i kortform hva slags tjenester du leverer, hvem kunden er, og hvem som er konkurrentene dine. Dette kan forutsi eventuelle utfordringer for virksomheten</p>
-                    </div>
-            </article>
-            <article id="forutsetninger">
-                <h2 class="under-overskrift">Forutsetninger</h2>
-                    <div class ="innhold hidden">
-                        <ul class = "liste-style">
-                            <li> - Et aksjeselskap kan stiftes av en eller flere personer. Både fysiske personer og juridiske personer (andre aksjeselskap) kan være stiftere. </li>
-                            <br></br>
-                            <li> - For å være stifter eller ha en annen rolle i et aksjeselskap må du ha fylt 18 år.</li>
-                            <br></br>
-                            <li> - Selskapet må ha en norsk forretningsadresse (det vil si en norsk fysisk adresse som oppgis med gate eller vei, husnummer, postnummer og sted. Postboksadresse godtas ikke)</li>
-                        </ul>
-                    </div>
-            </article>
-
-            <article id="opprette">
-                <h2 class="under-overskrift">Hvordan opprette et AS</h2>
-                    <div class ="liste-style hidden">
-                         <!-- Slideshow container -->
-            <div class="slideshow-container">
-                    <br></br>
-                    <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
-                    <div class="text">1/3</div>
-                    <br></br>
-                    <div class="text">Stift aksjeselskapet ved å fylle ut og signere skjemaet her:</div>
-                    <br></br>
-                    <div class="text"><a href="https://www.altinn.no/skjemaoversikt/bronnoysundregistrene/stiftelse-av-aksjeselskap/"> SKJEMA</a></div>
-                    </div>
-
-                    <div class="mySlides fade">
-                    <div class="text tall">2/3</div>
-                    <br></br>
-                    <div class="text">- Når skjemaet er fyllt ut, be banken om å opprette en aksjekapitalkonto.</div>
-                    <div class="text">- Betal inn aksjekapitalen(minimum 30 000 norske kroner) og be om bekreftelse fra banken.</div>
-                    <div class="text">- Ved tingsinnskudd* må revisor bekrefte verdien av tingsinnskuddet.</div>
-                    <br></br>
-                    <div class="text">- Send melding til signering. Da får du tilsendt meldingen elektronisk og kan signere meldingen. Hele styret må signere meldingen elektronisk, og den som har avgitt bekreftelse om at aksjekapitalen er innbetalt må signere denne elektronisk. Har aksjeselskapet valgt å ha revisor må revisor signere elektronisk på meldingen.</div>
-
-                    </div>
-
-                    <div class="mySlides fade">
-                    <div class="text">3/3</div>
-                    <br></br>
-                    <div class="text">- Registrer AS ved å følge lenken "Gå til registrering i Foretaksregisteret" i meldingen du har mottatt i "Innboksen" i Altinn.</div>
-                    <div class="text">- Bekreftelse på innbetalt aksjekapital og eventuelt redegjørelse ved tingsinnskudd og revisors bekreftelse av denne må vedlegges.</div>
-                    <div class="text">- Når selskapet er registrert får innsender beskjed om dette i "Innboksen" i Altinn.</div>
-
-
-                    </div>
-
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
-                    <br>
-
-                    <!-- The dots/circles -->
-                    <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
-                    </div>
-            </article>
+            </div>
+        </article>
         </div>
+    </main>
 </body>
 </html>

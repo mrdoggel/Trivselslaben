@@ -16,9 +16,9 @@ if ($result->num_rows > 0) {
         echo '<div class="bottom"';
         echo 'style="background-color:';
         echo $row["farge"];
-        echo '"><p>';
+        echo '"><h3>';
         echo $row["navn"];
-        echo '</p></div></div></div>';
+        echo '</h3></div></div></div>';
     }
 }
 ?>

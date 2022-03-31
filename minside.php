@@ -15,6 +15,7 @@
     <script src="assets/js/minside.js"></script>
     <script src="assets/js/top-nav.js"></script>
 </head>
+    <!-- hva skal jeg med den id-en -->
     <body id="body">
         <?php
             require "assets/reuse/navbar.php";

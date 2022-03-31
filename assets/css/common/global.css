@@ -50,10 +50,19 @@ legend{
   color: #1f294d;
   font-family: "Leelawadee UI";
 }
-.scrollmenu .kurs .bottom p, .scrollmenu .modul .modul-tittel h2{
-  font-family: "Segoe UI";
-  font-weight: 500;
+.scrollmenu::-webkit-scrollbar {
+  width: 20px;
 }
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1;;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to right, #d0d9f9 , #a3ecc8, #f2f088);
+}
+
 @media only screen and (max-width: 1300px) {
   h1 {
     font-size: 2rem;

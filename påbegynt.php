@@ -53,7 +53,7 @@
               </div>
             </div>
             <div class="bottom">
-              <p>Hvordan drive designtenkning?</p>
+              <h3>Hvordan drive designtenkning?</h3>
             </div>
           </div>
           <p>Fortsett der du slapp</p>
@@ -75,7 +75,7 @@
             </div>
           </div>
           <div class="bottom">
-            <p>Start en bedrift fra A-Å</p>
+            <h3>Start en bedrift fra A-Å</h3>
           </div>
         </div>
 
@@ -99,7 +99,7 @@
             </div>
           </div>
           <div class="bottom">
-            <p>Studentbedrift, enkeltmannsforetak eller AS - hva er forskjellen?</p>
+            <h3>SB, ENK eller AS - Hva er forskjellen?</h3>
           </div>
         </div>
         <p>Fortsett der du slapp</p>

@@ -10,9 +10,9 @@ if ($result->num_rows > 0) {
         echo '" class="modul">';
         echo '<h4>MODUL</h4>';
         echo '<div class="modul-tittel">';
-        echo '<h2>';
+        echo '<h3>';
         echo $row["navn"];
-        echo '</h2>';
+        echo '</h3>';
         echo '</div>';
         echo '<div class="bottom"';
         echo '"><p>';

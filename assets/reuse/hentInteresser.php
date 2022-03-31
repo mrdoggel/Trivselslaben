@@ -24,9 +24,9 @@ if ($result->num_rows > 0) {
                 echo '<div class="bottom"';
                 echo 'style="background-color:';
                 echo $row1["farge"];
-                echo '"><p>';
+                echo '"><h3>';
                 echo $row1["navn"];
-                echo '</p></div></div>';
+                echo '</h3></div></div>';
             }
         }
 
@@ -40,9 +40,9 @@ if ($result->num_rows > 0) {
                 echo '" class="modul">';
                 echo '<h4>MODUL</h4>';
                 echo '<div class="modul-tittel">';
-                echo '<h2>';
+                echo '<h3>';
                 echo $row2["navn"];
-                echo '</h2></div>';
+                echo '</h3></div>';
                 echo '<div class="bottom"';
                 echo '"><p>';
                 echo $row2["beskrivelse"];

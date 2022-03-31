@@ -53,11 +53,11 @@
         </div>
       </div>
       <div class="poeng">
-        <h6>Opptjente poeng: <span>25</span></h6>
-        <h6>Fullført: <span>20.02</span></h6>
+        <p>Opptjente poeng: <span>25</span></p>
+        <p>Fullført: <span>20.02</span></p>
       </div>
       <div class="bottom">
-        <p>Hvordan minimere faste utgifter</p>
+        <h3>Hvordan minimere faste utgifter</h3>
       </div>
     </div>
   </section>

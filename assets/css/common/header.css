@@ -5,8 +5,10 @@
     background-image: linear-gradient(to right, #d0d9f9 , #a3ecc8, #f2f088);
     display: flex;
   }
+  
 #navbar a, #navbar img {
   max-height: inherit;
+  margin: 0rem;
 }
   #navbar > div {
     width: 50%;
@@ -44,7 +46,7 @@
   
   #profil img {
     box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 10%);
-    width: 3rem;
+    max-width: 3rem;
     height: 3rem;
     object-fit: cover;
     border-radius: 50%;
