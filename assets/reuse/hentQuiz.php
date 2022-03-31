@@ -20,6 +20,7 @@ if ($result->num_rows > 0) {
         echo '">';
         echo $row['quiznavn'];
         echo '</a></h2>';
+        echo '<p>fullført</p>';
         echo '<p class="mer">&vellip;</p>';
         echo '<div class="overlap hidden">';
         echo '<p>Spill</p>';

@@ -15,7 +15,6 @@
 
 }
 #overskrift{
-    font-size: x-large;   
     padding-top: 5%;
     display: inline-block;
     background: linear-gradient(
@@ -40,7 +39,6 @@ p{
     text-align: center;
 }
 .under-overskrift{
-    font-size: x-large;
     display: inline-block;
     margin-top:1rem;
     margin-bottom: 1rem;

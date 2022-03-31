@@ -1,6 +1,16 @@
+nav ul li {
+    font-size: 1.1rem;
+    letter-spacing: -0.1px;
+}
+
+.top-nav-active {
+    font-size: 1.4rem;
+    letter-spacing: 0.03rem;
+}
+
 #top-nav {
     max-width: 100%;
-    max-height: 5vh;
+    padding: 0.5rem;
     min-height: 5vh;
     display: flex;
     flex-wrap: wrap;
@@ -8,27 +18,16 @@
     align-items: center;
     background-image: linear-gradient(to right, #d0d9f9 , #a3ecc8, #f2f088);
     box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 5%);
-    opacity: 80%;
+    opacity: 70%;
 }
   
 #top-nav nav ul li {
+    transition: all 0.5s;
     display: inline;
     padding: 0.5rem 2rem 0.5rem 2rem; 
 }
 
-nav ul li {
-    font-size: 1.25rem;
-}
 #top-nav li:hover {
-    font-size: 1.5rem;
-    letter-spacing: 0.05rem;
+    font-size: 1.25rem;
     letter-spacing: 0.03rem;
-    transition: all 0.5s;
-}
-
-.top-nav-active {
-    font-size: 1.75rem;
-    letter-spacing: 0.05rem;
-    letter-spacing: 0.03rem;
-    transition: all 0.5s;
 }
