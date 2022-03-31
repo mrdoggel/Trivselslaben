@@ -41,9 +41,9 @@ main{
   justify-content: space-between;
 }
 #section-container {
-  align-self: left;
   width: 80%;
 }
+
 #section-container-search {
   width: 90%;
   margin: auto;

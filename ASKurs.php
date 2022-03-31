@@ -26,9 +26,9 @@
                     Planlegger du å starte næringsvirksomhet alene eller sammen med andre? Innebærer næringsvirksomheten en økonomisk risiko? Vil du ha rettigheter som arbeidstaker og muligheten til at andre vil investere i selskapet ditt? Da kan aksjeselskap være en hensiktsmessig organisasjonsform. Da kan AS være organisasjonsformen for deg.
                 </p>
             </div>
-            <article class ="under-box" id ="intro">
-                <h1 class= "under-overskrift">Introduksjon, hva er et AS?</h1>
-                <div class ="innhold hidden" >
+            <article class="under-box" id ="intro">
+                <h2 class="under-overskrift">Introduksjon, hva er et AS?</h2>
+                <div class="innhold hidden" >
                     <p>
                     Et aksjeselskap eller et AS, er et selskap med bestemt kapital* fordelt på én eller flere andeler som kalles aksjer. Dette er den vanligste selskapsformen i næringslivet, og i 2020 var det registrert drøyt 340 000 aksjeselskap i Norge.
                     <br></br>
@@ -40,7 +40,7 @@
                 </div>
             </article>
             <article class ="under-box" id = "fordeler">
-                <h1 class= "under-overskrift">Fordeler og ulemper med et AS</h1>
+                <h2 class= "under-overskrift">Fordeler og ulemper med et AS</h2>
                 <div class = "innhold hidden">
                     <h2 class = "liste-overskrifter">Fordeler</h2>
                     <ul class = "liste-style">
@@ -60,7 +60,7 @@
                 </div>
             </article>
             <article class ="under-box" id ="tingÅTenkePå">
-                <h1 class= "under-overskrift">Viktige ting å tenke på</h1>
+                <h2 class= "under-overskrift">Viktige ting å tenke på</h2>
                     <div class = "innhold hidden">
                             <p>Selv om det i teorien er mulig å starte AS med 30 000 kr er det viktig å huske på at det er en rekke kostnader forbundet ved selve oppstartsprosessen.
                             Ikke nok med at du må betale 5570 kroner (i 2021) til Brønnøysundregistrene for selve registreringen, men du vil også garantert få kostnader knyttet til utstyr, lokaler og andre administrative ting som kan dukke opp.</p>
@@ -69,7 +69,7 @@
                     </div>
             </article>
             <article class ="under-box" id ="forutsetninger">
-                <h1 class= "under-overskrift">Forutsetninger</h1>
+                <h2 class= "under-overskrift">Forutsetninger</h2>
                     <div class ="innhold hidden">
                         <ul class = "liste-style">
                             <li> - Et aksjeselskap kan stiftes av en eller flere personer. Både fysiske personer og juridiske personer (andre aksjeselskap) kan være stiftere. </li>
@@ -81,7 +81,7 @@
                     </div>
             </article>
             <article class ="under-box" id ="opprette">
-                <h1 class= "under-overskrift">Hvordan opprette et AS</h1>
+                <h2 class= "under-overskrift">Hvordan opprette et AS</h2>
                     <div class ="liste-style hidden">
                          <!-- Slideshow container -->
             <div class="slideshow-container">
