@@ -24,6 +24,12 @@ function visInnhold(e){
     e.preventDefault();
     document.querySelector(`#${e.target.parentNode.id} div`).classList.toggle("hidden");
     document.querySelector(`#${e.target.parentNode.id} div`).id = "hidden" ? document.querySelector(`#${e.target.parentNode.id} div`).id = "" : ""; 
+    console.log(e.target); 
+    const $alleOverskrifter = document.querySelectorAll(".under-overskrift"); 
+    $alleOverskrifter.forEach((element)=>{
+      element.style.opacity = "60%"
+    });
+    e.target.style.opacity = "100%"; 
     showSlides(1); 
 }
 
@@ -41,11 +47,13 @@ function gåTilSlide(e){
   dotID == "fire" ? showSlides(slideIndex = 4) : "";
   dotID == "fem" ? showSlides(slideIndex = 5) : "";
 }
+
 function visKurs(e){
   e.preventDefault(); 
   document.querySelector("#kurs-startside").id = "hidden"; 
   document.querySelector("#kurs-container").removeAttribute("id"); 
 }
+
 function showSlides(n) {
   
   const slides = document.querySelectorAll(".steg"); 
