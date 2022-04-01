@@ -1,6 +1,7 @@
 <?php
 require "assets/connection/conn.php";
 $søkeparameter = $_POST['søkeparameter'];
+$currKurs = null;
 $sql = $conn->prepare("SELECT * FROM kurs k WHERE k.navn LIKE '%$søkeparameter%'");
 $sql->execute();
 $result = $sql->get_result();
@@ -34,7 +35,7 @@ if ($result->num_rows > 0) {
         echo '</p></div></div>';
     }
 }
-$sql1 = $conn->prepare("SELECT * FROM modul m WHERE m.navn LIKE '%$søkeparameter%' OR m.beskrivelse LIKE '%$søkeparameter%'");
+$sql1 = $conn->prepare("SELECT * FROM modul m WHERE m.navn LIKE '%$søkeparameter%' OR m.beskrivelse LIKE '%$søkeparameter%' GROUP BY m.navn");
 $sql1->execute();
 $result1 = $sql1->get_result();
 if ($result1->num_rows > 0) {

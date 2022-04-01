@@ -6,14 +6,13 @@ $sql->execute();
 $result = $sql->get_result();
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-
+        $currKurs = 0;
         $temaId = $row['tema_id'];
-
-        $sql1 = $conn->prepare("SELECT distinct k.* FROM kurs k, kurs_i_tema kt, tema t WHERE k.kurs_id = kt.kurs_id AND kt.tema_id = $temaId");
+        $sql1 = $conn->prepare("SELECT k.* FROM kurs k, kurs_i_tema kt WHERE k.kurs_id = kt.kurs_id AND kt.tema_id = $temaId AND k.kurs_id;");
         $sql1->execute();
         $result1 = $sql1->get_result();
         if ($result1->num_rows > 0) {
-            while($row1 = $result1->fetch_assoc()) {
+            while ($row1 = $result1->fetch_assoc()) {
                 echo '<div id="kurs';
                 echo $row1["kurs_id"];
                 echo '" class="kurs">';

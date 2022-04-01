@@ -29,6 +29,7 @@
                     <li id="bruker-info" class="side-nav-valgt">Brukerinformasjon</li>
                     <li id="bruker-interesser">Mine interesser</li>
                     <li>Lagrede kurs</li>
+                    <a href="assets/connection/logout.php"><li>Logg ut</li></a>
                 </ul>
             </nav>
 
