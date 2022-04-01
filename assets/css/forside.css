@@ -408,6 +408,14 @@ img {
   div.scrollmenu {
     padding-bottom: 1rem;
   }
+  
+  .kurs h3, .moduler h3, .underveis h3, .fullført h3 {
+    font-size: 1rem;
+  }
+  
+  #section-container h2 {
+    font-size: 1.5rem;
+  }
 
   .scrollmenu .kurs {
     min-width: 180px;
@@ -415,18 +423,9 @@ img {
     height: 220px;
   }
 
-  .scrollmenu .kurs:hover{
-    min-width: 200px;
-    max-width: 200px;
-  }
-
   .scrollmenu .modul {
     min-width: 260px;
     height: 240px;
   }
   
-  .scrollmenu .modul:hover{
-    min-width: 300px;
-    max-width: 300px;
-  }
 }
