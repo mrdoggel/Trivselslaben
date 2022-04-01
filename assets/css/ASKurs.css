@@ -6,19 +6,14 @@ main{
 
 }
 article {
-  box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 25%);
-  margin-top: 7.5%;
-  margin-bottom: 5%;
-  margin-left:15%;
-  margin-right: 15%;
+  width: 70%;
+  margin: auto;  
   text-align: center;
 }
 h2{
   display: inline-block;
-  margin-top:1rem;
+  margin-top:2.5rem;
   margin-bottom: 1rem;
-  opacity: 60%;
-  cursor: pointer;
 }
 h3{
   text-align: left;
@@ -60,16 +55,6 @@ dd{
   font-size: 1rem;
   box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 15%); 
 }
-/*#start-kurs {
-  border: none;
-  background-color: #FFFFFF;
-  font-size: 1.5rem;
-  font-weight: 100;
-  border: 1px solid #a3ecc8;
-  border-radius: 0.2rem;
-  cursor: pointer;
-  margin-top: 1rem; 
-}*/
 
 #start-kurs {   
   margin-top: 1rem;     
@@ -94,9 +79,12 @@ dd{
 #start-kurs:hover {        
   background-position: 0 0;
   box-shadow: none;
+  opacity: 70%;
   font-size: 1.55rem;
 }
-
+#kurs-container {
+  position: relative;
+}
 .text .vedlegg-liste li span{
   margin: 0.5rem; 
   font-size: 1rem;
@@ -109,6 +97,9 @@ dd{
 }
 .text span:last-of-type{
   font-style: italic;
+}
+.valgt-overskrift{
+  opacity: 100%;
 }
 .om-kurset{
    display: flex;
@@ -254,15 +245,41 @@ dd{
   animation-name: fade;
   animation-duration: 1.5s;
 }
-#kurs-container{
+#til-toppen{
+  position: fixed;
+  bottom: 20px; 
+  right: 30px;
+  border: none;
+  background-color: #FFFFFF;
+  cursor: pointer; 
+}
+#kurs-startside{
   display: none;
+}
+#info-div{
+  min-height: 80vh;
+  max-height: 80vh;
 }
 #beskrivelse {
   width: 80%;
-  box-shadow: 1px 10px 15px 1px rgb(182 243 171 / 20%);
   border-radius: 1rem;
-  margin: 2rem auto auto auto;
-  padding: 2rem; 
+  margin: 2rem auto 0rem auto;
+}
+#beskrivelse > div {
+  box-shadow: 1px 10px 15px 1px rgb(182 243 171 / 20%);
+  max-width: fit-content;
+  margin: auto;
+}
+#beskrivelse ul{
+  margin: 2rem auto 2rem auto; 
+}
+#beskrivelse li{
+  border-top: 2px solid #F4F6FA;
+  max-width: 20vw;
+  padding: 0.75rem;
+  font-family: "Segoe UI";
+  font-weight: 500; 
+  cursor: pointer;
 }
 #intro h2{
     background: linear-gradient(

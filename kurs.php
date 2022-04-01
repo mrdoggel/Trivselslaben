@@ -55,18 +55,28 @@ session_start();
     </div>
 
     <div id="kurs-container">
-
-        <h1> <span>Hvordan starte et aksjeselskap</span></h1>
-        <div id="beskrivelse">
-            <p>Planlegger du å starte næringsvirksomhet alene eller sammen med andre? </p>
-            <p>Innebærer næringsvirksomheten en økonomisk risiko?</p> 
-            <p>Vil du ha rettigheter som arbeidstaker og muligheten til at andre vil investere i selskapet ditt? </p>
-            <p>Da kan aksjeselskap være en hensiktsmessig organisasjonsform.</p>
+        <div id="info-div">
+            <h1> <span>Hvordan starte et aksjeselskap</span></h1>
+            <div id="beskrivelse">
+                <div>
+                    <p>Planlegger du å starte næringsvirksomhet alene eller sammen med andre? </p>
+                    <p>Innebærer næringsvirksomheten en økonomisk risiko?</p> 
+                    <p>Vil du ha rettigheter som arbeidstaker og muligheten til at andre vil investere i selskapet ditt? </p>
+                    <p>Da kan aksjeselskap være en hensiktsmessig organisasjonsform.</p>
+                </div>
+                <ul>
+                    <li class="naviger">Introduksjon</li>
+                    <li class="naviger">Fordeler og ulemper</li>
+                    <li class="naviger">Ting å tenke på</li>
+                    <li class="naviger">Forutsetninger</li>
+                    <li class="naviger">Slik oppretter du AS</li>
+                </ul>
+            </div>
         </div>
             
         <article id="intro">
-            <h2 class="under-overskrift">Introduksjon: hva er et AS?</h2>
-            <div class="innhold hidden" >
+            <h2 class="under-overskrift" id="introduksjon">Introduksjon: hva er et AS?</h2>
+            <div class="innhold" >
                 <p>Et aksjeselskap eller et AS, er et selskap med bestemt kapital* fordelt på én eller flere andeler som kalles aksjer. Dette er den vanligste selskapsformen i næringslivet, og i 2020 var det registrert drøyt 340 000 aksjeselskap i Norge.
                    Et aksjeselskap kan du se på som en egen juridisk person og du som eier er ikke ansvarlige for mer enn den aksjekapitalen* som er innbetalt. Dette innebærer at hvis du som person har innbetalt 30 000 kroner som aksjekapital så er du i utgangspunktet ikke ansvarlig for mer enn dette.
                    Det begrensede ansvaret, fleksibiliteten og omsetteligheten av aksjene gjør at et aksjeselskap er å foretrekke dersom du planlegger etablering med flere eiere og muligheten for å få investorer til å satse penger på selskapet.
@@ -75,8 +85,8 @@ session_start();
         </article>
             
         <article id="fordeler">
-            <h2 class="under-overskrift">Fordeler og ulemper</h2>
-            <div class = "innhold hidden">
+            <h2 class="under-overskrift" id="fordeler-ulemper">Fordeler og ulemper</h2>
+            <div class = "innhold">
                 <div class="tabell">
                     <table>
                     <tr id="span">
@@ -105,8 +115,8 @@ session_start();
         </article>
             
         <article id="tingÅTenkePå">
-            <h2 class="under-overskrift">Viktige ting å tenke på</h2>
-            <div class = "innhold hidden">
+            <h2 class="under-overskrift" id="tenk-på">Viktige ting å tenke på</h2>
+            <div class = "innhold">
                 <p>Selv om det i teorien er mulig å starte AS med 30 000 kr er det viktig å huske på at det er en rekke kostnader forbundet ved selve oppstartsprosessen.
                     Ikke nok med at du må betale 5570 kroner (i 2021) til Brønnøysundregistrene for selve registreringen, men du vil også garantert få kostnader knyttet til utstyr, lokaler og andre administrative ting som kan dukke opp.</p>
                 <p>Samt huske på at hvis du skal selge varer, må du ha penger til å kjøpe dem inn også.</p>
@@ -115,8 +125,8 @@ session_start();
         </article>
             
         <article id="forutsetninger">
-            <h2 class="under-overskrift">Forutsetninger</h2>
-            <div class ="innhold hidden">
+            <h2 class="under-overskrift" id="forutsetninger">Forutsetninger</h2>
+            <div class ="innhold">
                 <ul>
                     <li>Et aksjeselskap kan stiftes av en eller flere personer. Både fysiske personer og juridiske personer (andre aksjeselskap) kan være stiftere. </li>
                     <li>For å være stifter eller ha en annen rolle i et aksjeselskap må du ha fylt 18 år.</li>
@@ -126,9 +136,9 @@ session_start();
         </article>
 
         <article id="opprette">
-                <h2 class="under-overskrift">Slik går du frem</h2>
+                <h2 class="under-overskrift" id="opprette">Slik oppretter du AS</h2>
             
-                <div id="hidden" class="guide">
+                <div class="guide">
 
                 <div class="steg-for-steg">
                     
@@ -203,7 +213,9 @@ session_start();
                     </div>
                 </div>
             </article>
-    </div>
+    
+        </div>
+        <button id="til-toppen">Til toppen</button>
     </main>
 </body>
 </html>
