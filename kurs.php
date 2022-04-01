@@ -73,63 +73,104 @@ session_start();
                 </div>
             </article>
             
-            <article id="fordeler">
-                <h2 class="under-overskrift">Fordeler og ulemper</h2>
-                <div class = "innhold hidden">
-                    <h3>Fordeler</h3>
-                    <ul>
-                        <li>Begrenset personlig ansvar for selskapets forpliktelser</li>
-                        <li>Bygge opp egenkapital med lavere skatt enn for enkeltpersonforetak</li>
-                        <li>Tilnærmet skattefritt utbytte til selskapsaksjonærer, det vil si aksjonær som ikke er privatperson</li>
-                        <li>Muligheten til å være ansatt</li>
-                    </ul>
-                            
-                    <h3>Ulemper</h3>
-                    <ul>
-                        <li>Formaliteter</li>
-                        <li>Arbeidsgiveravgift</li>
-                        <li>Krav om aksjekapital</li>
-                    </ul>
-                </div>
-            </article>
+        <article id="fordeler">
+            <h2 class="under-overskrift">Fordeler og ulemper</h2>
+            <div class = "innhold hidden">
+            <table>
+                <tr>
+                <th colspan="2">Fordeler Ulemper</th>
+                </tr>
+                <tr>
+                <td>Begrenset personlig ansvar for selskapets forpliktelser</td>
+                <td>Formaliteter</td>
+                </tr>
+                <tr>
+                    <td>Bygge egenkapital med lavere skatt enn ENK</td>
+                    <td>Arbeidsgiveravgift</td>
+                </tr>
+                <tr>
+                    <td>Tilnærmet skattefritt utbytte til selskapsaksjonærer</td>
+                    <td>Krav om aksjekapital</td>
+                </tr>
+                <tr>
+                    <td>Mulighet til å være ansatt</td>
+                    <td>Utbytteregler</td>
+                </tr>
+            </table>
+            </div>
+        </article>
             
-            <article id="tingÅTenkePå">
-                <h2 class="under-overskrift">Viktige ting å tenke på</h2>
-                <div class = "innhold hidden">
-                    <p>Selv om det i teorien er mulig å starte AS med 30 000 kr er det viktig å huske på at det er en rekke kostnader forbundet ved selve oppstartsprosessen.
-                        Ikke nok med at du må betale 5570 kroner (i 2021) til Brønnøysundregistrene for selve registreringen, men du vil også garantert få kostnader knyttet til utstyr, lokaler og andre administrative ting som kan dukke opp.</p>
-                    <p>Samt huske på at hvis du skal selge varer, må du ha penger til å kjøpe dem inn også.</p>
-                    <p>Lag en forretningsmodell. Illustrer  i kortform hva slags tjenester du leverer, hvem kunden er, og hvem som er konkurrentene dine. Dette kan forutsi eventuelle utfordringer for virksomheten</p>
-                </div>
-            </article>
-                
-            <article id="forutsetninger">
-                <h2 class="under-overskrift">Forutsetninger</h2>
-                <div class ="innhold hidden">
-                    <ul>
-                        <li>Et aksjeselskap kan stiftes av en eller flere personer. Både fysiske personer og juridiske personer (andre aksjeselskap) kan være stiftere. </li>
-                        <li>For å være stifter eller ha en annen rolle i et aksjeselskap må du ha fylt 18 år.</li>
-                        <li> - Selskapet må ha en norsk forretningsadresse (det vil si en norsk fysisk adresse som oppgis med gate eller vei, husnummer, postnummer og sted. Postboksadresse godtas ikke)</li>
-                    </ul>
-                </div>
-            </article>
+        <article id="tingÅTenkePå">
+            <h2 class="under-overskrift">Viktige ting å tenke på</h2>
+            <div class = "innhold hidden">
+                <p>Selv om det i teorien er mulig å starte AS med 30 000 kr er det viktig å huske på at det er en rekke kostnader forbundet ved selve oppstartsprosessen.
+                    Ikke nok med at du må betale 5570 kroner (i 2021) til Brønnøysundregistrene for selve registreringen, men du vil også garantert få kostnader knyttet til utstyr, lokaler og andre administrative ting som kan dukke opp.</p>
+                <p>Samt huske på at hvis du skal selge varer, må du ha penger til å kjøpe dem inn også.</p>
+                <p>Lag en forretningsmodell. Illustrer  i kortform hva slags tjenester du leverer, hvem kunden er, og hvem som er konkurrentene dine. Dette kan forutsi eventuelle utfordringer for virksomheten</p>
+            </div>
+        </article>
+            
+        <article id="forutsetninger">
+            <h2 class="under-overskrift">Forutsetninger</h2>
+            <div class ="innhold hidden">
+                <ul>
+                    <li>Et aksjeselskap kan stiftes av en eller flere personer. Både fysiske personer og juridiske personer (andre aksjeselskap) kan være stiftere. </li>
+                    <li>For å være stifter eller ha en annen rolle i et aksjeselskap må du ha fylt 18 år.</li>
+                    <li> - Selskapet må ha en norsk forretningsadresse (det vil si en norsk fysisk adresse som oppgis med gate eller vei, husnummer, postnummer og sted. Postboksadresse godtas ikke)</li>
+                </ul>
+            </div>
+        </article>
 
-            <article id="opprette">
-                <h2 class="under-overskrift">Slik går du frem</h2>
-                
-                <div id="hidden" class="guide">
+        <article id="opprette">
+            <h2 class="under-overskrift">Slik går du frem</h2>
+            
+            <div id="hidden" class="guide">
 
-                    <div class="steg-for-steg">
-                        
-                        <div class="steg fade">
-                            <div class="text">
-                                <p>
-                                    1. For å stifte et AS må du først fylle ut og signere dette skjema
-                                    </br>
-                                    <a href="https://www.altinn.no/skjemaoversikt/bronnoysundregistrene/stiftelse-av-aksjeselskap/">
-                                        dette skjema 
-                                    </a>
-                                    hos Altinn
+                <div class="steg-for-steg">
+                    
+                    <div class="steg fade">
+                        <div class="text">
+                            <p>
+                                1. For å stifte et AS må du først fylle ut og signere dette skjema
+                                </br>
+                                <a href="https://www.altinn.no/skjemaoversikt/bronnoysundregistrene/stiftelse-av-aksjeselskap/">
+                                    dette skjema 
+                                </a>
+                                hos Altinn
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="steg fade">
+                        <div class="text">
+                            <p>
+                                2. <span>Opprett aksjekapitalkonto</span> i banken og  <span>betal aksjekapitalen</span> på minimum 30 000 NOK
+                                </br>
+                                Husk å be om bekreftelse fra banken!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="steg fade">
+                        <div class="text">
+                            <p>
+                                3. <span>Send melding til signering.</span>
+                                </br>
+                                Hele styret, samt den som har avgitt bekreftelse på at aksjekapitalen er innbetalt og eventuell revisor, må signere meldingen elektronisk.</p>
+                        </div>
+                    </div>
+
+                    <div class="steg fade">
+                        <div class="text">
+                            <p>
+                                4. Du vil nå <span>motta en melding</span> på Altinn 
+                                </br>
+                                Følg lenken <span>"Gå til registrering i Foretaksregisteret"</span>. Følgende må vedlegges:
+                                <ul class="vedlegg-liste">
+                                    <li><span>Bekreftelse på innbetalt aksjekapital</span></li>
+                                    <li><span>Eventuell redegjørelse ved tingsinnskudd</span></li>
+                                    <li><span>Revisors bekreftelse</span></li>
+                                </ul>
                                 </p>
                             </div>
                         </div>
