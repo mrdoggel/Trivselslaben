@@ -30,8 +30,11 @@
                         while($row3 = $result3->fetch_assoc()) {
                             if ($row3['alternativ_id'] == $row2['alternativ_id']) {
                                 echo 'valgt-svar ';
+                                $tekst = $row2['tekst'];
                             }
                         }
+                    } else {
+                        $tekst = "";
                     }
                     echo 'svr-';
                     echo $row2['alternativ_id'];
@@ -47,7 +50,12 @@
             echo '<input type="hidden" name="quiz" value="';
             echo $quizid;
             echo '">';
-            echo '<input class="alternativ" id="alternativ1" type="hidden" name="alternativ">';
+            echo '<input type="hidden" name="ant" value="';
+            echo $antRett;
+            echo '">';
+            echo '<input type="hidden" value="';
+            echo $tekst;
+            echo '" name="alternativ">';
 
             if ($spm > 1) {
                 echo '<button name="spm-btn-tilbake" type="submit">Tilbake</button>';
