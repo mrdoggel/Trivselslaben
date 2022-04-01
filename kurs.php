@@ -44,27 +44,30 @@ session_start();
         <article id="fordeler">
             <h2 class="under-overskrift">Fordeler og ulemper</h2>
             <div class = "innhold hidden">
-            <table>
-                <tr>
-                <th colspan="2">Fordeler Ulemper</th>
-                </tr>
-                <tr>
-                <td>Begrenset personlig ansvar for selskapets forpliktelser</td>
-                <td>Formaliteter</td>
-                </tr>
-                <tr>
-                    <td>Bygge egenkapital med lavere skatt enn ENK</td>
-                    <td>Arbeidsgiveravgift</td>
-                </tr>
-                <tr>
-                    <td>Tilnærmet skattefritt utbytte til selskapsaksjonærer</td>
-                    <td>Krav om aksjekapital</td>
-                </tr>
-                <tr>
-                    <td>Mulighet til å være ansatt</td>
-                    <td>Utbytteregler</td>
-                </tr>
-            </table>
+                <div class="tabell">
+                    <table>
+                    <tr id="span">
+                    <th>Fordeler</th>
+                    <th>Ulemper</th>
+                    </tr>
+                    <tr>
+                    <td>Begrenset personlig ansvar for selskapets forpliktelser</td>
+                    <td>Formaliteter</td>
+                    </tr>
+                    <tr>
+                        <td>Bygge egenkapital med lavere skatt enn ENK</td>
+                        <td>Arbeidsgiveravgift</td>
+                    </tr>
+                    <tr>
+                        <td>Tilnærmet skattefritt utbytte til selskapsaksjonærer</td>
+                        <td>Krav om aksjekapital</td>
+                    </tr>
+                    <tr>
+                        <td>Mulighet til å være ansatt</td>
+                        <td>Utbytteregler</td>
+                    </tr>
+                </table>
+                </div>
             </div>
         </article>
             
