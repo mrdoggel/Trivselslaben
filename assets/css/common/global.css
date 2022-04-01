@@ -61,6 +61,7 @@ legend{
 }
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to right, #d0d9f9 , #a3ecc8, #f2f088);
+  opacity: 60%;
 }
 
 @media only screen and (max-width: 1300px) {

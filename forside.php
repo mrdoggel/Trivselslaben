@@ -40,7 +40,7 @@
 
         <div id="section-container">
         <section>
-            <h2>Kom i gang med kursene</h2>
+            <h2>Mest populære kurs denne uken</h2>
             <div class="scrollmenu">
                 <?php
                 require "assets/reuse/hentKurs.php";
@@ -49,7 +49,7 @@
         </section>
         
         <section class="moduler">
-            <h2>Utforsk modulene</h2>
+            <h2>Mest populære moduler i dag</h2>
             <div class="scrollmenu">
                 <?php
                 require "assets/reuse/hentModul.php";
