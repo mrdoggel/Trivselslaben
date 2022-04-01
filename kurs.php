@@ -44,20 +44,27 @@ session_start();
         <article id="fordeler">
             <h2 class="under-overskrift">Fordeler og ulemper</h2>
             <div class = "innhold hidden">
-                <h3>Fordeler</h3>
-                <ul>
-                    <li>Begrenset personlig ansvar for selskapets forpliktelser</li>
-                    <li>Bygge opp egenkapital med lavere skatt enn for enkeltpersonforetak</li>
-                    <li>Tilnærmet skattefritt utbytte til selskapsaksjonærer, det vil si aksjonær som ikke er privatperson</li>
-                    <li>Muligheten til å være ansatt</li>
-                </ul>
-                        
-                <h3>Ulemper</h3>
-                <ul>
-                    <li>Formaliteter</li>
-                    <li>Arbeidsgiveravgift</li>
-                    <li>Krav om aksjekapital</li>
-                </ul>
+            <table>
+                <tr>
+                <th colspan="2">Fordeler Ulemper</th>
+                </tr>
+                <tr>
+                <td>Begrenset personlig ansvar for selskapets forpliktelser</td>
+                <td>Formaliteter</td>
+                </tr>
+                <tr>
+                    <td>Bygge egenkapital med lavere skatt enn ENK</td>
+                    <td>Arbeidsgiveravgift</td>
+                </tr>
+                <tr>
+                    <td>Tilnærmet skattefritt utbytte til selskapsaksjonærer</td>
+                    <td>Krav om aksjekapital</td>
+                </tr>
+                <tr>
+                    <td>Mulighet til å være ansatt</td>
+                    <td>Utbytteregler</td>
+                </tr>
+            </table>
             </div>
         </article>
             
