@@ -11,6 +11,7 @@ if ($result->num_rows > 0) {
         echo '<h2>Resultat som kan stemme overens med "';
         echo $søkeparameter;
         echo '"</h2>';
+        echo '<div class="scrollmenu">';
     }
 
     while($row = $result->fetch_assoc()) {
@@ -61,7 +62,7 @@ if ($result1->num_rows > 0) {
     if ($resultat == false) {
         echo '<h1>Fant ingenting som som stemmer med "';
         echo $søkeparameter;
-        echo '"</h1>';
+        echo '"</h1></div>';
     }
 }
 

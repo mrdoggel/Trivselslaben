@@ -25,11 +25,9 @@
     <main>
         <div id="section-container-search">
         <section>
-            <div class="scrollmenu">
                 <?php
                     require "assets/reuse/hentSøk.php";
                 ?>
-            </div>
         </section>
 
         <section class="moduler">
