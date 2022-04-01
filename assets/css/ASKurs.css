@@ -253,7 +253,7 @@ dd{
   background-color: #FFFFFF;
   cursor: pointer; 
 }
-#kurs-startside{
+#kurs-container{
   display: none;
 }
 #info-div{

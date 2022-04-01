@@ -1,0 +1,23 @@
+#alle-kurs, #alle-moduler {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+#alle-kurs {
+    width: 60%;
+}
+
+#alle-moduler {
+    width: 50%;
+}
+main {
+    flex-wrap: wrap;
+}
+form {
+    width: 100%;
+    text-align: center;
+}
