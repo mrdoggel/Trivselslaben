@@ -17,12 +17,12 @@ function init() {
 
     document.querySelector(".forrige").addEventListener("click", endreSlide);
     document.querySelector(".neste").addEventListener("click", endreSlide);
+    document.querySelector("#start-kurs").addEventListener("click", visKurs);
 }
 
 function visInnhold(e){
     e.preventDefault();
     document.querySelector(`#${e.target.parentNode.id} div`).classList.toggle("hidden");
-    e.target.classList.toggle("åpen");
     document.querySelector(`#${e.target.parentNode.id} div`).id = "hidden" ? document.querySelector(`#${e.target.parentNode.id} div`).id = "" : ""; 
     showSlides(1); 
 }
@@ -41,7 +41,11 @@ function gåTilSlide(e){
   dotID == "fire" ? showSlides(slideIndex = 4) : "";
   dotID == "fem" ? showSlides(slideIndex = 5) : "";
 }
-
+function visKurs(e){
+  e.preventDefault(); 
+  document.querySelector("#kurs-startside").id = "hidden"; 
+  document.querySelector("#kurs-container").removeAttribute("id"); 
+}
 function showSlides(n) {
   
   const slides = document.querySelectorAll(".steg"); 

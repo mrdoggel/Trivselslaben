@@ -1,7 +1,7 @@
 main{
   width: 80%;
-  padding: 5rem;
-  margin: 3rem auto 3rem auto;
+  padding: 2rem 4rem 4rem 4rem;
+  margin: 1rem auto 3rem auto;
   text-align: center;
 
 }
@@ -42,7 +42,7 @@ li {
 dt{
   margin: 2rem 1rem 0rem 2rem; 
   text-align: left;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-family: "Segoe UI";
   font-weight: 500;
   background-color:linear-gradient(
@@ -60,6 +60,43 @@ dd{
   font-size: 1rem;
   box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 15%); 
 }
+/*#start-kurs {
+  border: none;
+  background-color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 100;
+  border: 1px solid #a3ecc8;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  margin-top: 1rem; 
+}*/
+
+#start-kurs {   
+  margin-top: 1rem;     
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 15%); 
+  background-color: #FFFFFF;
+  background-image: linear-gradient(
+    to left,
+    transparent,
+    transparent 50%,
+    #B6F3AB 50%,
+    #B6F3AB
+  );
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 0.2s ease-in; 
+}
+
+#start-kurs:hover {        
+  background-position: 0 0;
+  box-shadow: none;
+  font-size: 1.55rem;
+}
+
 .text .vedlegg-liste li span{
   margin: 0.5rem; 
   font-size: 1rem;
@@ -79,6 +116,7 @@ dd{
    align-items: flex-start;
    --min-height: 30vh;
    max-height: fit-content;
+   margin-top: 1rem;
 }
 .kurs-info {
   position: relative;
@@ -89,7 +127,32 @@ dd{
   --border-width: 2px;
   border-radius: var(--border-width);
 }
-
+.kurs-velkommen h1 {
+  font-size: 1.4rem;
+}
+.kurs-velkommen h2{
+  font-family: "Segoe UI";
+  font-weight: 500;
+  opacity: 100%;
+  cursor: auto;
+  margin: 1rem auto 0rem auto;
+  font-size: 1.6rem;
+}
+.kurs-velkommen h3{
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.kurs-velkommen p{
+  font-size: 1.1rem;
+  padding: 0rem; 
+  margin: 0.75rem auto 0rem auto;
+  width: 65ch;
+  line-height: 180%;
+  font-style: italic;
+  background-color: #a3ecc8;
+  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 15%); 
+}
 .kurs-info::after {
     position: absolute;
     content: "";
@@ -194,7 +257,6 @@ dd{
 #kurs-container{
   display: none;
 }
-
 #beskrivelse {
   width: 80%;
   box-shadow: 1px 10px 15px 1px rgb(182 243 171 / 20%);
@@ -214,13 +276,6 @@ dd{
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 0) 70%, #F5F187 0%,#F5F187 0%);
 }
-
-.innhold {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 table {
   border-collapse: collapse;
   border-radius: 1em;
