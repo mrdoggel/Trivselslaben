@@ -40,13 +40,13 @@
                         <?php if (isset($_SESSION['bilde'])) { ?>
                         
                         <div>
-                        <a href="minside.php"><img src="<?php echo $_SESSION['bilde']; ?>"></img></a>
+                            <img src="<?php echo $_SESSION['bilde']; ?>"></img>
                             <label for="bilde" id="last-opp-btn">last opp</label>
                             <input id="bilde" type="file" name ="bilde" placeholder="Nytt bilde">
                         </div>
                         <?php } else { ?>
                         <div>
-                            <a href="minside.php"><img src="assets/images/default.jpg"></img></a>
+                            <img src="assets/images/default.jpg"></img>
                             <label for="bilde" id="last-opp-btn">last opp</label>
                             <input id="bilde" type="file" name ="bilde" placeholder="Nytt bilde">
                         </div>

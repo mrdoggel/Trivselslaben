@@ -66,10 +66,7 @@ session_start();
             </span></h1>
             <div id="beskrivelse">
                 <div>
-                    <p>Planlegger du å starte næringsvirksomhet alene eller sammen med andre? </p>
-                    <p>Innebærer næringsvirksomheten en økonomisk risiko?</p> 
-                    <p>Vil du ha rettigheter som arbeidstaker og muligheten til at andre vil investere i selskapet ditt? </p>
-                    <p>Da kan aksjeselskap være en hensiktsmessig organisasjonsform.</p>
+                    <?php require "assets/reuse/hentKursBeskrivelse.php" ?>
                 </div>
                 <ul>
                     <li class="naviger">Introduksjon</li>
@@ -117,7 +114,7 @@ session_start();
                 </ul>
             </div>
         </article>
-
+        <?php //if ($_GET['kurs'] == 29) { ?>
         <article id="opprette">
                 <h2 class="under-overskrift" id="opprette">Slik oppretter du AS</h2>
             
@@ -196,7 +193,7 @@ session_start();
                     </div>
                 </div>
             </article>
-    
+        <?php //} ?>
         </div>
         <button id="til-toppen">Til toppen</button>
     </main>

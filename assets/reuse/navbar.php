@@ -22,9 +22,9 @@
 
         <div id="profilbilde">
             <?php if (isset($_SESSION['bilde'])) { ?>
-                <img src="<?php echo $_SESSION['bilde']; ?>"></img>
+                <a href="minside.php"><img src="<?php echo $_SESSION['bilde']; ?>"></img></a>
             <?php } else { ?>
-                <img src="assets/images/default.jpg"></img>
+                <a href="minside.php"><img src="assets/images/default.jpg"></img></a>
             <?php } ?>
         </div>
     </div>
