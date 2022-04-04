@@ -438,6 +438,10 @@ img {
     max-width: 230px;
   }
 
+  .modul h3 {
+    font-size: 1.3rem;
+  }
+
   .kurs, .modul {
     height: 240px;
   }
