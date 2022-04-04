@@ -65,18 +65,26 @@ legend{
 }
 
 @media only screen and (max-width: 1500px) {
-  h1 {
-    font-size: 2rem;
+  h1 span {
+    font-size: 1.2rem;
   }
-  h2 {
-    font-size: 1.25rem;
+  div h2 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  div p {
+    font-size: 0.8rem;
   }
   p {
     font-size: 1rem;
   }
   ul li {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
+div #beskrivelse {
+  margin: 1rem auto 0rem auto;
+}
 }
 /* ---------------------*/
 /*      UTILITIES       */
