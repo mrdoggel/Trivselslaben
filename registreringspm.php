@@ -1,9 +1,3 @@
-<!--Comitt-->
-
-<!--
-    HER MÅ ALT STÅ SOM DET ER 
-
--->
 <!DOCTYPE html>
 <html lang="en">
 

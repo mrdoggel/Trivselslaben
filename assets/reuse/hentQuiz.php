@@ -9,13 +9,13 @@ if ($result->num_rows > 0) {
         echo '<div class="quiz-div" id="quiz-';
         echo $row['quiz_id'];
         echo '">';
-        echo '<a href="økonomiquiz.php?quiz=';
+        echo '<a href="quiz.php?quiz=';
         echo $row['quiz_id'];
         echo '">';
         echo '<img src="';
         echo $row['bilde'];
         echo '" alt="quiz-img"></a>';
-        echo '<h2> <a href="økonomiquiz.php?quiz=';
+        echo '<h2> <a href="quiz.php?quiz=';
         echo $row['quiz_id'];
         echo '">';
         echo $row['quiznavn'];

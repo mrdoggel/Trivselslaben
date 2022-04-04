@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require "assets/reuse/sessionSjekk.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">

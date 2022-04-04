@@ -1,5 +1,6 @@
 <?php
     require "assets/connection/oppdaterProfil.php";
+    require "assets/reuse/sessionSjekk.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
