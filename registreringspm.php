@@ -91,7 +91,7 @@
                             <li><span>Kapitalkrav:</span> ingen</li>
                         </ul>
                         <button>Jeg skal starte SB</button>
-                        <a href="https://www.ue.no/program/studentbedrift">Les mer om ansvarlig selskap her</a>
+                        <a href="https://www.ue.no/program/studentbedrift">Les mer om student bedrift her</a>
                     </div>
                 </article>
 

@@ -27,7 +27,7 @@ h1 span{
 }  
 p, li, dd{
   margin:auto;
-  line-height: 200%;
+  line-height: 130%;
   letter-spacing: -0.3px;
   padding: 0.25rem;
 }
@@ -269,6 +269,8 @@ dd{
   box-shadow: 1px 10px 15px 1px rgb(182 243 171 / 20%);
   max-width: fit-content;
   margin: auto;
+  padding-bottom: 2%;
+  padding-top: 0.3%;
 }
 #beskrivelse ul{
   margin: 2rem auto 2rem auto; 
