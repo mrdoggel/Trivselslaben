@@ -40,29 +40,7 @@
 
   <div id="section-container">
   <section>
-    <h2>Her finner du alt fullført </h2>
-    
-    <div class="fullført">
-      <h4>KURS</h4>
-      <div class="circle-wrap1">
-        <div class="circle1">
-          <div class="mask1 full1">
-            <div class="fill1"></div>
-          </div>
-          <div class="mask1 half1">
-            <div class="fill1"></div>
-          </div>
-          <div class="inside-circle1"> 100% </div>
-        </div>
-      </div>
-      <div class="poeng">
-        <p>Opptjente poeng: <span>25</span></p>
-        <p>Fullført: <span>20.02</span></p>
-      </div>
-      <div class="bottom">
-        <h3>Hvordan minimere faste utgifter</h3>
-      </div>
-    </div>
+    <?php require "assets/reuse/hentFullført.php"; ?>
   </section>
     
   <section>
