@@ -113,7 +113,7 @@
                                         $result = $sql->get_result();
                                         if ($result->num_rows > 0) {
                                             while($row = $result->fetch_assoc()) {
-                                                echo '<button name="tema-knapp" type="submit" value="';
+                                                echo '<button id="bruker-interesser" name="tema-knapp" type="submit" value="';
                                                 echo $row["tema_id"];
                                                 echo '">';
                                                 echo $row["navn"];

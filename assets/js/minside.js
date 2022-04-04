@@ -6,8 +6,8 @@ function init() {
   document.querySelector("#bruker-info").addEventListener("click", visBrukerInfo);
   document.querySelector("#bruker-interesser").addEventListener("click", visBrukerInteresser);
 
-  document.querySelector(".dropdown input").addEventListener("mouseover", inputFokus); 
-  document.querySelector(".dropdown").addEventListener("mouseleave", inputFokusReset);
+  document.querySelector(".dropdown input").addEventListener("onFocus", inputFokus);
+  document.querySelector(".dropdown").addEventListener("onFocusOut", inputFokusReset);
   document.querySelector("#myInput").addEventListener("keyup", filterListe);
 }
 
