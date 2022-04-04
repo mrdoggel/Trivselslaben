@@ -427,5 +427,32 @@ img {
     min-width: 260px;
     height: 240px;
   }
+
+  .kurs {
+    min-width: 180px;
+    max-width: 180px;
+  }
+
+  .modul {
+    min-width: 230px;
+    max-width: 230px;
+  }
+
+  .kurs, .modul {
+    height: 240px;
+  }
+
+  .underveis-container {
+    min-width: 200px;
+    max-width: 200px;
+  }
+
+  .fullført .bottom {
+    padding: 0rem;
+  }
+
+  .bottom {
+    min-height: 60px;
+  }
   
 }

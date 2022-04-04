@@ -105,7 +105,7 @@ dd{
    display: flex;
    justify-content: center;
    align-items: flex-start;
-   --min-height: 30vh;
+   --min-height: 35vh;
    max-height: fit-content;
    margin-top: 1rem;
 }
@@ -375,4 +375,54 @@ tr:last-child {
 h2:hover {
   transition: ease 0.4s;
   opacity: 100%;
+}
+
+
+@media only screen and (max-width: 1500px) {
+main {
+  padding-top: 0rem; 
+}
+
+dt {
+  font-size: 0.85rem;
+}
+
+dd {
+  font-size: 0.75rem;
+  margin: 0.5rem auto 0.5rem 2rem;
+}
+
+.kurs-velkommen p {
+  font-size: 0.8rem;
+}
+
+.kurs-velkommen h2 {
+  font-size: 1.2rem;
+}
+
+.kurs-velkommen h3 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.kurs-info {
+  margin: 1rem;
+}
+
+.om-kurset {
+  margin-top: 0rem;
+}
+
+.kurs-velkommen h1 {
+  font-size: 1.1rem;
+}
+
+#start-kurs {   
+  font-size: 1rem;
+  margin-top: 0rem;  
+}
+
+#start-kurs:hover {        
+  font-size: 1.2rem;
+}
 }
