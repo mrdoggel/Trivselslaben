@@ -64,6 +64,38 @@ legend{
   opacity: 60%;
 }
 
+/* ---------------------*/
+/*      UTILITIES       */
+/* ---------------------*/
+.hidden{
+  display: none;
+}
+
+.error {
+display: block;
+text-align: center;
+}
+
+.error p{
+color: #FF9494; 
+padding: 0.25rem; 
+}
+
+#hidden{
+display: none;
+}
+
+#error {
+display: block;
+text-align: center;
+margin-top: 0.75rem; 
+}
+
+#error p{
+color: #FF9494; 
+padding: 0.25rem; 
+}
+
 @media only screen and (max-width: 1500px) {
   h1 span {
     font-size: 1.2rem;
@@ -82,49 +114,18 @@ legend{
   ul li {
     font-size: 0.8rem;
   }
-div #beskrivelse {
-  margin: 1rem auto 0rem auto;
-}
-div .dot {
-  height: 0.4rem;
-  width: 0.4rem;
-}
-div .guide {
-  min-height: 40vh;
-  max-height: 40vh;
-}
-div .text .vedlegg-liste li span {
-  font-size: 0.8rem;
-}
-/* ---------------------*/
-/*      UTILITIES       */
-/* ---------------------*/
-.hidden{
-    display: none;
-}
-
-.error {
-  display: block;
-  text-align: center;
-}
-
-.error p{
-  color: #FF9494; 
-  padding: 0.25rem; 
-}
-
-#hidden{
-  display: none;
-}
-
-#error {
-  display: block;
-  text-align: center;
-  margin-top: 0.75rem; 
-}
-
-#error p{
-  color: #FF9494; 
-  padding: 0.25rem; 
-}
+  div #beskrivelse {
+    margin: 1rem auto 0rem auto;
+  }
+  div .dot {
+    height: 0.4rem;
+    width: 0.4rem;
+  }
+  div .guide {
+    min-height: 40vh;
+    max-height: 40vh;
+  }
+  div .text .vedlegg-liste li span {
+    font-size: 0.8rem;
+  }
 }

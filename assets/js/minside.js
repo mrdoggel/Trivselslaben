@@ -9,6 +9,7 @@ function init() {
   document.querySelector(".dropdown input").addEventListener("onFocus", inputFokus);
   document.querySelector(".dropdown").addEventListener("onFocusOut", inputFokusReset);
   document.querySelector("#myInput").addEventListener("keyup", filterListe);
+
 }
 
 function visBrukerInfo(e){
@@ -16,6 +17,8 @@ function visBrukerInfo(e){
   settValgtStil(e.target); 
   document.querySelector(".personling-info").id = ""
   document.querySelector(".interesser").id = "hidden"; 
+
+  console.log("vis brukerinfo")
 }
 
 function visBrukerInteresser(e){
@@ -23,6 +26,8 @@ function visBrukerInteresser(e){
   settValgtStil(e.target);
   document.querySelector(".personling-info").id = "hidden"
   document.querySelector(".interesser").id = "";
+
+  console.log("vis brukerinteresser")
 }
 
 function settValgtStil(menyValg){
