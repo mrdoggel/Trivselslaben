@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/common/global.css">
     <link rel="stylesheet" href="assets/css/common/header.css">
     <link rel="stylesheet" href="assets/css/common/top-nav.css">
-    <link rel="stylesheet" href="assets/css/quiz.css">
+    <link rel="stylesheet" href="assets/css/alleQuizer.css">
     <script src="assets/js/quiz.js"></script>
     <script src="assets/js/top-nav.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

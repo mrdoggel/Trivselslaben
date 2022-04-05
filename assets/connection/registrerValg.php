@@ -2,7 +2,7 @@
 session_start();
 $id = $_SESSION['id'];
 
-//Hvis og bare hvis noen av knappene på økonomiquiz er trykket
+//Hvis og bare hvis noen av knappene på quiz er trykket
 if (isset($_POST['spm-btn-tilbake']) || isset($_POST['spm-btn-neste']) || isset($_POST['spm-btn-fullfør'])) {
     $quiz = $_POST['quiz'];
     $spm = $_POST['spørsmål'];
@@ -64,11 +64,11 @@ if (isset($_POST['spm-btn-tilbake']) || isset($_POST['spm-btn-neste']) || isset(
             if ($sql->execute() === TRUE) {
                 if (isset($_POST['spm-btn-tilbake'])) {
                     $newspm = $spm-1;
-                    header("location: ../../økonomiquiz.php?quiz=$quiz&spm=$newspm&ant=$antRett");
+                    header("location: ../../quiz.php?quiz=$quiz&spm=$newspm&ant=$antRett");
                 }
                 if (isset($_POST['spm-btn-neste'])) {
                     $newspm = $spm+1;
-                    header("location: ../../økonomiquiz.php?quiz=$quiz&spm=$newspm&ant=$antRett");
+                    header("location: ../../quiz.php?quiz=$quiz&spm=$newspm&ant=$antRett");
                 }
                 if (isset($_POST['spm-btn-fullfør'])) {
                     header("location: regPoeng.php?quiz=$quiz&ant=$antRett");
@@ -86,11 +86,11 @@ if (isset($_POST['spm-btn-tilbake']) || isset($_POST['spm-btn-neste']) || isset(
             if ($sql->execute() === TRUE) {
                 if (isset($_POST['spm-btn-tilbake'])) {
                     $newspm = $spm-1;
-                    header("location: ../../økonomiquiz.php?quiz=$quiz&spm=$newspm&ant=$antRett");
+                    header("location: ../../quiz.php?quiz=$quiz&spm=$newspm&ant=$antRett");
                 }
                 if (isset($_POST['spm-btn-neste'])) {
                     $newspm = $spm+1;
-                    header("location: ../../økonomiquiz.php?quiz=$quiz&spm=$newspm&ant=$antRett");
+                    header("location: ../../quiz.php?quiz=$quiz&spm=$newspm&ant=$antRett");
                 }
                 if (isset($_POST['spm-btn-fullfør'])) {
                     header("location: regPoeng.php?quiz=$quiz&ant=$antRett");
@@ -101,11 +101,11 @@ if (isset($_POST['spm-btn-tilbake']) || isset($_POST['spm-btn-neste']) || isset(
     } else {
         if (isset($_POST['spm-btn-tilbake'])) {
             $newspm = $spm-1;
-            header("location: ../../økonomiquiz.php?quiz=$quiz&spm=$newspm&ant=$antRett");
+            header("location: ../../quiz.php?quiz=$quiz&spm=$newspm&ant=$antRett");
         }
         if (isset($_POST['spm-btn-neste'])) {
             $newspm = $spm+1;
-            header("location: ../../økonomiquiz.php?quiz=$quiz&spm=$newspm&ant=$antRett");
+            header("location: ../../quiz.php?quiz=$quiz&spm=$newspm&ant=$antRett");
         }
         if (isset($_POST['spm-btn-fullfør'])) {
             header("location: regPoeng.php?quiz=$quiz&ant=$antRett");
