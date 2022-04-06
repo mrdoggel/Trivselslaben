@@ -19,6 +19,7 @@
   #searchbar form {
     padding: 0; 
     margin: 0; 
+    width: auto;
   }
   
   #searchbar input{

@@ -8,12 +8,14 @@ main{
 article {
   width: 70%;
   margin: auto;  
+  margin-top: 3rem; 
   text-align: center;
 }
 h2{
   display: inline-block;
   margin-top:2.5rem;
   margin-bottom: 1rem;
+  padding-top: 0.5rem;
 }
 h3{
   text-align: left;
@@ -31,13 +33,16 @@ p, li, dd{
   letter-spacing: -0.3px;
   padding: 0.25rem;
 }
+p{
+  line-height: 200%;
+}
 li {
   font-size: 1.2rem;
 }
 dt{
   margin: 2rem 1rem 0rem 2rem; 
   text-align: left;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-family: "Segoe UI";
   font-weight: 500;
   background-color:linear-gradient(
@@ -50,9 +55,9 @@ dt{
 dd{
   max-width: fit-content;
   padding: 0rem;
-  margin: 0.5rem auto 0.5rem 6rem; 
+  margin: 0.85rem auto 0.85rem 6rem; 
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.1rem;
   box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 15%); 
 }
 
@@ -252,6 +257,9 @@ dd{
   border: none;
   background-color: #FFFFFF;
   cursor: pointer; 
+  font-size: 1.25rem;
+  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 15%);
+  background-color: #a3ecc8;
 }
 #kurs-container{
   display: none;

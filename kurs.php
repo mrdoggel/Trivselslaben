@@ -194,9 +194,9 @@
                     </div>
                 </div>
             </article>
+            <button id="til-toppen">Til toppen</button>
         <?php //} ?>
         </div>
-        <button id="til-toppen">Til toppen</button>
     </main>
 </body>
 </html>

@@ -30,9 +30,9 @@ if ($result->num_rows > 0) {
         echo '<div class="bottom"';
         echo 'style="background-color:';
         echo $row["farge"];
-        echo '"><p>';
+        echo '"><h3>';
         echo $row["navn"];
-        echo '</p></div></div>';
+        echo '</h3></div></div>';
     }
 }
 $sql1 = $conn->prepare("SELECT * FROM modul m WHERE m.navn LIKE '%$søkeparameter%' OR m.beskrivelse LIKE '%$søkeparameter%' GROUP BY m.navn");
@@ -51,9 +51,9 @@ if ($result1->num_rows > 0) {
         echo '" class="modul">';
         echo '<h4>MODUL</h4>';
         echo '<div class="modul-tittel">';
-        echo '<h2>';
+        echo '<h3>';
         echo $row["navn"];
-        echo '</h2></div>';
+        echo '</h3></div>';
         echo '<div class="bottom"';
         echo '"><p>';
         echo $row["beskrivelse"];

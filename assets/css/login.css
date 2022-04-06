@@ -1,3 +1,75 @@
+input {
+    display: block;
+    width: 90%;
+    max-width: 100%;
+    border-radius: 15px;
+    border: 0.06rem solid #FC9C7F;
+    padding: 0.75rem;
+    text-align: center;
+    box-shadow: 0 0 0px 1000px white inset;
+}
+
+input[type=submit] {
+    width: 100%;
+    border: none;
+    background-color: white;
+    font-size: 1.75rem;
+    cursor: pointer;
+    padding: 1rem;
+    letter-spacing: 0.006rem;
+    text-align: center;
+}
+
+.bilde img {
+    height: 10rem;
+}
+
+.loginBox form, .regBox form {
+    padding: 1rem;
+}
+
+.glemt a {
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 60%,
+    #FC9C7F 0%,
+    #FC9C7F 0%
+  );
+}
+
+.loginBox, .regBox {
+    margin: auto;
+    box-shadow: 1px 1px 10px rgb(71 71 71 / 30%);
+    width: 60%;
+    border-radius:10px;
+    text-align: center;
+}
+
+.loginBox {
+    margin-top: 8rem; 
+}
+
+.glemt{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.75rem 0rem 0.75rem 0rem;
+}
+
+.venstre {
+    padding: 0;
+    margin: 0;
+}
+.reg a{
+    font-size: 0.85rem;
+}
+.loginBox label, .regBox label {
+    display: block;
+    text-align: left;
+    font-size: 1.25rem;
+    padding: 0.75rem;
+}
+
 #container{
     display: flex;
     flex-flow: row nowrap;
@@ -11,6 +83,7 @@
     height: 100vh;
     font-weight: lighter;
 }
+
 #venstre .introtekst {
     margin-top: 30%;
 }
@@ -34,87 +107,6 @@
     text-align: center;
     width: 35vw;
     height: 100vh;
-}
-
-.bilde img {
-    height: 10rem;
-}
-
-.loginBox {
-    margin: auto;
-    margin-top: 8rem; 
-    box-shadow: 1px 1px 10px rgb(71 71 71 / 30%);
-    width: 60%;
-    border-radius:10px;
-    text-align: center;
-}
-
-.regBox {
-    margin: auto;
-    box-shadow: 1px 1px 10px rgb(71 71 71 / 30%);
-    width: 60%;
-    border-radius:10px;
-    text-align: center;
-}
-
-.loginBox form {
-    padding: 1rem;
-}
-
-.regBox form {
-    padding: 1rem;
-}
-
-input{
-    display: block;
-    width: 90%;
-}
-
-.glemt{
-    font-size: 1rem;
-    text-align: center;
-    padding: 0.75rem 0rem 0.75rem 0rem;
-}
-
-.glemt a {
-    background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0) 60%,
-    #FC9C7F 0%,
-    #FC9C7F 0%
-  );
-}
-
-.venstre {
-    padding: 0;
-    margin: 0;
-}
-
-.loginBox label, .regBox label {
-    display: block;
-    text-align: left;
-    font-size: 1.25rem;
-    padding: 0.75rem;
-}
-
-input {
-    max-width: 100%;
-    border-radius: 15px;
-    border: 0.06rem solid #FC9C7F;
-    padding: 0.75rem;
-    text-align: center;
-}
-
- input[type=submit] {
-    width: 100%;
-    border: none;
-    background-color: white;
-    font-size: 1.75rem;
-    cursor: pointer;
-    padding: 1rem;
-    letter-spacing: 0.006rem;
-    text-align: center;
 }
 
 input:focus {
