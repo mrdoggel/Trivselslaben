@@ -410,18 +410,34 @@ div p .valgt-seks{background-color: #ABBBF3;}
 @media only screen and (max-width: 1300px){
     .spm {
         font-size: 1.25rem;
+        padding: 0.75rem;
     }
     #spm-prosess span {
         font-size: 1.25rem;
+        padding: 0;
     }
     #spm-prosess .valg:hover {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
+
+    #spm-bedrift > p {
+        font-size: 1.2rem;
+    }
+    
+    #spm-bedrift article {
+        padding: 1rem;
+        margin: 2rem 0rem 2rem 0.5rem;
+    }
+
     #spm-bedrift article h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
     }
     #spm-bedrift article p {
-        font-size: 1rem;
+        font-size: 0.75rem;
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+        line-height: 100%;
     }
     #spm-interesser section div {
         padding: 1rem; 
@@ -430,6 +446,14 @@ div p .valgt-seks{background-color: #ABBBF3;}
         font-size: 0.75rem;
     }
     #spm-interesser section div p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    #spm-interesser section p span:hover {
+      font-size: 1.3rem;  
+    }
+
+    #spm-interesser aside p {
+        font-size: 1.1rem;
     }
 }
