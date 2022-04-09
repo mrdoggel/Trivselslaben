@@ -28,7 +28,9 @@ if (isset($_POST['logginn-knapp'])) {
             $_SESSION['enavn'] = $row['etternavn'];
             $_SESSION['beskrivelse'] = $row['beskrivelse'];
             $_SESSION['poeng'] = $row['poeng'];
-            $_SESSION['bilde'] = $row['profilbilde'];
+            if ($row['profilbilde'] != NULL) {
+                $_SESSION['bilde'] = $row['profilbilde'];
+            }
             $_SESSION['email'] = $row['epost'];
             $_SESSION['id'] = $row['person_id'];
             $_SESSION['success'] = "Du er nå logget inn";
