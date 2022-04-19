@@ -151,7 +151,7 @@ form {
 }
 .interesser form {
     padding-left: 0rem;
-    width: 30%;
+    width: 50%;
 }
 .fjern button {
     border: none;
@@ -184,14 +184,11 @@ form {
     width: 50%;
 }
 #myInput {
-    box-sizing: border-box;
-    background-image: url('searchicon.png');
-    background-position: 14px 12px;
-    background-repeat: no-repeat;
     text-align: center;
     padding: 1rem 0rem 1rem 0rem;
     border: none;
     box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 10%);
+    width: 100%;
 }
 #finn-og-legg-til h3{
     padding: 1.5rem 0rem 0rem 0rem; 
@@ -287,12 +284,12 @@ form {
     .interesser input {
         font-size: 1rem;
     }
-
+/*
     #finn-og-legg-til button {
         font-size: 1rem;
     }
     
     #finn-og-legg-til button:hover {
     font-size: 1.2rem;
-}
+}*/
 }

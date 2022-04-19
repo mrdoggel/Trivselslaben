@@ -1,0 +1,64 @@
+main{
+    text-align: center;
+    font-size: 1.5rem;
+} 
+
+h1{
+    font-weight: 600;
+}
+
+h1, h2 {
+    padding: 0.5rem;
+    font-family: "Segoe UI";
+}
+
+main > p {
+    margin: 2rem;
+}
+
+main > p span {
+    box-shadow: 1px 1px 5px 3px rgba(89, 141, 65, 15%);
+    cursor: pointer;
+}
+
+.quiz-res-container {
+    width: 60%;
+    margin: 4rem auto 2rem auto;
+    padding: 2rem; 
+    box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 10%);
+}
+
+.quiz-res-container p {
+    margin: 1rem;
+}
+
+.quiz-res-container span {
+    background-color: #a3ecc8;
+    font-family: "Segoe UI";
+    font-style: italic;
+    font-weight: 500;
+}
+
+#prøv-igjen span{
+    font-size: 1rem;
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 65%,
+    #B6F3AB 0%,
+    #B6F3AB 0%
+  );
+  cursor: pointer;
+  font-weight: 100;
+}
+
+main > p span:hover {
+    transition: all 0.3s;
+    font-size: 1.4rem;
+}
+
+#prøv-igjen span:hover {
+    transition: all 0.3s;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}

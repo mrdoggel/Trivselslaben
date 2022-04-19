@@ -123,7 +123,7 @@
 
                 <div class="steg-for-steg">
                     
-                    <div class="steg fade">
+                    <div class="steg fade" id="første-slide">
                         <div class="text">
                             <p>
                                 1. For å stifte et AS må du først fylle ut og signere

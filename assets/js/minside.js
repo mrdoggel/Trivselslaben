@@ -6,8 +6,8 @@ function init() {
   document.querySelector("#bruker-info").addEventListener("click", visBrukerInfo);
   document.querySelector("#bruker-interesser").addEventListener("click", visBrukerInteresser);
 
-  document.querySelector(".dropdown input").addEventListener("onFocus", inputFokus);
-  document.querySelector(".dropdown").addEventListener("onFocusOut", inputFokusReset);
+  document.querySelector(".søk-input").addEventListener("mouseover", inputFokus);
+  document.querySelector(".dropdown").addEventListener("mouseleave", inputFokusReset);
   document.querySelector("#myInput").addEventListener("keyup", filterListe);
 
 }
@@ -41,6 +41,7 @@ function settValgtStil(menyValg){
 function inputFokus(e){
   e.preventDefault();
   e.target.placeholder = ""; 
+  console.log("hallo fra dropdown input"); 
   document.querySelector("#myDropdown").classList.add("show"); 
 }
 
@@ -53,6 +54,8 @@ function inputFokusReset(e) {
 
 function filterListe(e) {
   e.preventDefault();
+
+  console.log("hallo")
   
   const input = e.target.value.toUpperCase();
   const $alleValg = document.querySelectorAll("#myDropdown button");

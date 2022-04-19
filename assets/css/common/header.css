@@ -63,12 +63,28 @@
     font-weight: 100;
     font-size: 1rem;
     color:#1f294d;
-    text-align: center;
+    text-align: right;
   }
   
   #navn_poeng p:first-of-type{
     font-size: 1.5rem;
     padding-bottom: 0.2rem;
+  }
+
+  #navn_poeng .poeng-info-txt{
+    margin-top: 0.5rem; 
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 1.15rem;
+    font-style: italic;
+    box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 10%);
+  }
+
+  #navn_poeng #poeng-info{
+    padding-bottom: 0.1rem;
+    text-decoration:underline dotted;
+    text-underline-offset: 4px; 
+    cursor: pointer;
   }
 
   @media only screen and (max-width: 1550px) {
