@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="assets/css/common/reset.css">
     <link rel="stylesheet" href="assets/css/common/global.css">
     <link rel="stylesheet" href="assets/css/komigang.css">
-    <script src="assets/js/effects.js"></script>
+    <link rel="stylesheet" href="assets/css/common/index-nav.css">
+    <script src="assets/js/omoss.js"></script>
 </head>
   <body>
     <main class="komigang-container">
-      <div>
+      <div id="index-side-nav">
         <img src="assets/images/logo.png" alt="logo-image" />
         <nav id="menubar">
           <div>

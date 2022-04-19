@@ -1,0 +1,58 @@
+#index-side-nav {
+    width: 20%; 
+    text-align: center;
+    box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 10%);
+}
+
+#menubar {
+    background-color: #ffffff;
+    text-align: left;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#menubar div {
+    width: 50%;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin-top: 25%;
+}
+
+  .login {
+    background-image: url(../../media/login.png);
+  }
+  
+  .about {
+    background-image: url(../../media/info.png);
+  }
+  
+  .start {
+    background-image: url(../../media/route.png);
+  }
+  
+  .login,
+  .about,
+  .start {
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+    margin-bottom: 5rem;
+    line-height: 160%;
+  }
+  
+  .menulink:hover {
+    font-size: smaller;
+    font-weight: bold;
+    transition: all 0.2s;
+  }
+  
+  .about:hover {
+    background-size: 1.75rem;
+  }
+  
+  .about-choice:hover {
+    font-size: smaller;
+    transition: all 0.4s;
+  }
