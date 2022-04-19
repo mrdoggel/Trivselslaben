@@ -1,33 +1,40 @@
 nav ul li {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     letter-spacing: -0.1px;
+    font-weight: 100;
 }
 
 .top-nav-active {
-    font-size: 1.4rem;
-    letter-spacing: 0.03rem;
+    font-size: 1.55rem;
+    letter-spacing: 1.5px;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 10%,
+        rgba(255, 255, 255, 0) 60%, #ffffff  0%,#ffffff  0%);
 }
 
 #top-nav {
     max-width: 100%;
-    padding: 0.5rem;
     min-height: 5vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    padding: 0.4rem 0rem 0.4rem 0rem; 
     background-image: linear-gradient(to right, #d0d9f9 , #a3ecc8, #f2f088);
-    box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 5%);
-    opacity: 70%;
+    box-shadow: 2px 2px 6px 3px rgb(0 0 0 / 15%);
+    opacity: 85%;
+    color: black;
+    text-transform: uppercase;
 }
   
 #top-nav nav ul li {
     transition: all 0.5s;
     display: inline;
-    padding: 0.5rem 2rem 0.5rem 2rem; 
+    margin: 0.5rem 4rem 0.5rem 4rem; 
 }
 
 #top-nav li:hover {
-    font-size: 1.25rem;
-    letter-spacing: 0.03rem;
+    font-size: 1.55rem;
+    letter-spacing: 1.5px;
 }

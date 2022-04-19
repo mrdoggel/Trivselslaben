@@ -13,5 +13,5 @@ function init() {
     window.location.href.includes("urs") ? document.querySelector("#nav-kurs").classList.add("top-nav-active") : ""; 
     window.location.href.includes("odul") ? document.querySelector("#nav-moduler").classList.add("top-nav-active") : ""; 
     window.location.href.includes("minside") ? document.querySelector("#nav-min-side").classList.add("top-nav-active") : ""; 
-    window.location.href.includes("quiz") ? document.querySelector("#nav-quiz").classList.add("top-nav-active") : ""; 
+    window.location.href.includes("quizer") ? document.querySelector("#nav-quiz").classList.add("top-nav-active") : ""; 
 }
