@@ -1,0 +1,77 @@
+form {
+    box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 10%);
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 2rem; 
+    padding: 0.5rem; 
+}
+
+label {
+    font-size: 1rem; 
+    margin: 0rem 7rem 0rem 0rem; 
+    cursor: pointer;
+}
+input[type="checkbox"]{
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+}
+
+input[type="submit"]{
+    border: none;
+    background-color: #a3ecc8;
+    font-style: italic;
+    cursor: pointer;
+    font-family: "Segoe UI"; 
+    font-weight: 500; 
+    letter-spacing: 1px;
+}
+
+input#org-tema:checked + label#org-tema {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 60%,
+        #F5F187 0%,
+        #F5F187 0%
+    );
+    font-family: "Segoe UI"; 
+    font-weight: 500; 
+}
+
+input#øko-tema:checked + label#øko-tema {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 60%,
+        #B6F3AB 0%,
+        #B6F3AB 0%
+    );
+    font-family: "Segoe UI"; 
+    font-weight: 500; 
+}
+
+input#konsept-tema:checked + label#konsept-tema {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 60%,
+        #D0D9F9 0%,
+        #D0D9F9 0%
+    );
+    font-family: "Segoe UI"; 
+    font-weight: 500; 
+}
+
+input#reg-tema:checked + label#reg-tema {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 60%,
+        #F2BFB0 0%,
+        #F2BFB0 0%
+    );
+    font-family: "Segoe UI"; 
+    font-weight: 500;
+}

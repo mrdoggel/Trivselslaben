@@ -28,7 +28,8 @@
     </header>
 
     <main>
-        <?php
+        <?php 
+            require "assets/reuse/filter.php";
             require "assets/reuse/hentQuiz.php";
         ?>
     </main>

@@ -1,0 +1,194 @@
+#progresjon img {
+    width: 25%;
+}
+
+
+
+
+
+main {
+    display: flex;
+}
+
+main > div {
+    width: 20%;
+    text-align: center;
+    box-shadow: 1px 10px 20px 1px rgb(0 0 0 / 10%);
+    min-height: 80vh;
+    max-width: fit-content;
+}
+
+section {
+    width: 80%;
+    text-align: center;
+}
+
+article {
+    width: 50%;
+    margin: auto;
+    /*background-color: #d0d9f9;*/
+    opacity: 90%;
+    box-shadow: 1px 10px 20px 1px rgb(208 217 249 / 35%);
+    /*box-shadow: 1px 10px 20px 1px rgb(0 0 0 / 15%);*/
+    padding: 5rem 10rem 5rem 10rem;
+    margin-top: 5rem;
+    height: fit-content;
+    text-align: right;
+}
+
+article h1 {
+    font-size: 2.25rem;
+    text-align: left;
+}
+
+article p {
+    font-size: 1.25rem;
+    line-height: 230%;
+    letter-spacing: -1px;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+article button {
+    text-align: right;
+    margin-top: 2rem; 
+    cursor: pointer;
+    border: none;
+    background-color: #a3ecc8;
+    padding: 0.2rem; 
+}
+
+main nav {
+    margin-top: 2rem;
+    text-align: left;
+    font-size: 1.25rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Segoe UI";
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+h2{ 
+    width: 80%;
+    margin: auto;
+    padding: 0.5rem;
+    font-family: "Segoe UI";
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+section h2 {
+    margin-top: 2rem; 
+}
+
+dt, dd{
+    margin: 1rem; 
+    letter-spacing: -1px;
+}
+
+dt{
+    margin-left: 1rem;
+}
+
+dd{
+    margin-left: 2.5rem;
+}
+
+section button {
+    margin-top: 2rem; 
+    border: none;
+    background-color:#a3ecc8;
+    font-family: "Segoe UI";
+    font-weight: 500;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.lest {
+    background-image: url(../media/check.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.ikke-lest{
+    background-image: url(../media/cancel.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+.rep-spm-info-txt {
+    margin: 1rem auto auto auto;
+}
+
+.rep-spm-info-txt span {
+    background-color: #a3ecc8;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#modul-bilde {
+    max-width: 40%;
+    margin-top: 2rem; 
+}
+
+#om-modulen {
+    width: 70%;
+    margin: 2rem auto 1rem auto;
+    padding: 1rem;
+    box-shadow: 1px 10px 20px 1px rgb(208 217 249 / 35%);
+    text-align: center;
+}
+
+#om-modulen p {
+    letter-spacing: -1px;
+    line-height: 250%;
+}
+
+#progresjon {
+    position: relative;
+    width: 35%;
+    margin: 3rem auto auto auto; 
+    padding: 1rem;
+    background-color:#ffffff;
+    --border-width: 3px;
+    border-radius: var(--border-width);
+    text-align: center;
+}
+
+#rep-spm-info {
+    text-decoration: underline dotted 1px;
+    text-underline-offset: 4px;
+    font-style: italic;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#progresjon::after{
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      to right,
+      #d0d9f9,
+      #a3ecc8,
+      #f2f088
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+}
+
+@keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
+  }

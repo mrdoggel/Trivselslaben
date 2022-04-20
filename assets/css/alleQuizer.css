@@ -1,7 +1,6 @@
 main{
     width: 70%;
     margin: auto;
-    margin-top: 5rem; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -16,7 +15,7 @@ main{
     position: relative; 
     text-align: center;
     box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
-    margin: 2rem; 
+    margin: 3rem 2rem 2rem 2rem; 
 }
 .quiz-div h2 {
     margin-top: 0.5rem; 

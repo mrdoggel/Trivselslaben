@@ -27,7 +27,7 @@
     </header>
 
     <main>
-        <?php require "assets/reuse/filter.php"?>
+        <?php require "assets/reuse/filter.php"; ?>
         
         <div id="alle-moduler">
         <?php

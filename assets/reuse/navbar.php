@@ -1,6 +1,7 @@
 <head>
-<script src="assets/js/visPoengInfo.js"></script>
+    <script src="assets/js/visPoengInfo.js"></script>
 </head>
+
 <nav id="navbar">
     <a href="forside.php">
         <img src="assets/images/logo.png" alt="logo-img"></img>
