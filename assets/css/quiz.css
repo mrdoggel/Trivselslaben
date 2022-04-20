@@ -88,3 +88,23 @@ button:hover {
 .svr-4 {
     background-color: #95E3EC;
 }
+
+@media only screen and (max-width: 1300px) {
+    legend {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+
+    .svr {
+        font-size: 1rem;
+        margin: 0rem 1rem 1.25rem 1rem;
+    }
+
+    .svr:hover, .valgt-svar {
+        font-size: 1.1rem;
+    }
+}

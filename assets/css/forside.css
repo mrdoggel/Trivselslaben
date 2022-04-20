@@ -250,6 +250,11 @@ main img {
 }
 
 @media only screen and (max-width: 1300px) {
+  .utfclass {
+    background: linear-gradient( 180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 70%, #B6F3AB 0%,#B6F3AB 0%);
+    margin-right: 2rem;
+    font-size: 1.2rem;
+  }
   .active {
     font-size: 1.2rem;
   }
