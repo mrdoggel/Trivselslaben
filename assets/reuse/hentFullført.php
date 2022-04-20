@@ -57,5 +57,5 @@ if ($result->num_rows > 0) {
 
     }
 } else {
-    echo '<h2>Det ser ikke ut som du har fullført noe. Trykk nedenfor for å begynne<br><br><a style="color:blue;" href="alleQuizer.php">Quizer</a><br><a style="color:blue;" href="alleKurs.php">Kurs</a><br><a style="color:blue;" href="alleModuler.php">Moduler</a></h2>';
+    echo '<h2>Det ser ikke ut som du har fullført noe. Trykk nedenfor for å begynne<br><br><a href="alleQuizer.php" class="utfclass">Test deg selv i quiz</a><a href="alleKurs.php" class="utfclass">Finn et kurs</a><a href="alleModuler.php" class="utfclass">Utforsk moduler</a></h2>';
 }
