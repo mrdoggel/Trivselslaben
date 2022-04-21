@@ -6,11 +6,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Fullført quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/common/reset.css"/>
     <link rel="stylesheet" href="assets/css/common/global.css"/>
     <link rel="stylesheet" href="assets/css/common/header.css">
     <link rel="stylesheet" href="assets/css/common/top-nav.css">
     <link rel="stylesheet" href="assets/css/common/quiz-fullført.css">
+    <link rel="stylesheet" href="assets/css/forside.css">
 </head>
 <body> 
     <header>
@@ -23,16 +25,7 @@
     <main>
         <div class="quiz-res-container">
             <h2>Du har nå fullført quizen</h2> 
-            <!-- #TODO Sett inn navn på quiz her -->
-            <h1>Inntekter, utgifter, lønn og regnskap</h1>
-
-            <div>
-                <!-- #TODO Sett inn animasjon her, bildet skal vekk -->
-                <img src="assets/images/logo.png" alt="">
-            </div>
-            
-            <!-- #TODO Sett inn riktig prosent og antall poeng man får for quizen -->
-            <p><span>Du scoret 90% riktig og fikk 15 poeng!</span></p>
+           <?php require "assets/reuse/hentQuizResultat.php"; ?>
             <p id="prøv-igjen"><span>Prøv på nytt</span></p>
 
         </div>

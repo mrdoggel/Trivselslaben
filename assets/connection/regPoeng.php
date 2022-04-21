@@ -23,30 +23,22 @@ if ($result->num_rows > 0) {
     $sql = $conn->prepare("UPDATE person_i_quiz SET antall_rette = ? WHERE person_id = ? AND quiz_id = ? AND fullført_dato = ?");
     $sql->bind_param("ssss", $antRett, $id, $quiz, $dato);
     if($sql->execute()) {
-        if ($prosentKlart < 100) {
-            header("location: ../../påbegynt.php");
-        } else {
-            $sql = $conn->prepare("UPDATE person SET poeng = poeng + ? WHERE person_id = $id");
-            $sql->bind_param("s", $poeng);
-            if($sql->execute()) {
-                $_SESSION['poeng'] = $_SESSION['poeng'] + $poeng;
-                header("location: ../../fullført.php");
-            }
+        $sql = $conn->prepare("UPDATE person SET poeng = poeng + ? WHERE person_id = $id");
+        $sql->bind_param("s", $poeng);
+        if($sql->execute()) {
+            $_SESSION['poeng'] = $_SESSION['poeng'] + $poeng;
+            header("location: ../../quizresultat.php?quiz=$quiz");
         }
     }
 } else {
     $sql = $conn->prepare("INSERT INTO person_i_quiz (person_id, quiz_id, antall_rette, fullført_dato) VALUES (?,?,?,?)");
     $sql->bind_param("ssss", $id, $quiz, $antRett, $dato);
     if($sql->execute()) {
-        if ($prosentKlart < 100) {
-            header("location: ../../påbegynt.php");
-        } else {
-            $sql = $conn->prepare("UPDATE person SET poeng = poeng + ? WHERE person_id = $id");
-            $sql->bind_param("s", $poeng);
-            if($sql->execute()) {
-                $_SESSION['poeng'] = $_SESSION['poeng'] + $poeng;
-                header("location: ../../fullført.php");
-            }
+        $sql = $conn->prepare("UPDATE person SET poeng = poeng + ? WHERE person_id = $id");
+        $sql->bind_param("s", $poeng);
+        if($sql->execute()) {
+            $_SESSION['poeng'] = $_SESSION['poeng'] + $poeng;
+            header("location: ../../quizresultat.php?quiz=$quiz");
         }
     }
 }
