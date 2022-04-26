@@ -26,7 +26,6 @@
         <div class="quiz-res-container">
             <h2>Du har nå fullført quizen</h2> 
            <?php require "assets/reuse/hentQuizResultat.php"; ?>
-            <p id="prøv-igjen"><span>Prøv på nytt</span></p>
 
         </div>
 

@@ -48,5 +48,8 @@ if ($result->num_rows > 0) {
         echo 'deg);}}';
         echo '</style></div>';
         echo "<p><span>Du scoret $prosent% riktig og fikk $poeng poeng!</span></p>";
+        echo '<p id="prøv-igjen"><a href="quiz.php?quiz=';
+        echo $quiz;
+        echo'"><span>Prøv på nytt</span></a></p>';
     }
 }

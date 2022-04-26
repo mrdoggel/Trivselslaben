@@ -30,6 +30,11 @@
             } else {
                 $antRett = 0;
             }
+            if (isset($_GET['svart'])) {
+                $svart = $_GET['svart'];
+            } else {
+                $svart = 0;
+            }
             if (isset($_GET['quiz'])) {
                 $quizid = $_GET['quiz'];
             }

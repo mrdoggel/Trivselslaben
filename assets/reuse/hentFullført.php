@@ -1,14 +1,14 @@
 <?php
 require "assets/connection/conn.php";
 $id = $_SESSION['id'];
-$sql = $conn->prepare("SELECT * FROM person_i_quiz pq, quiz q WHERE pq.quiz_id = q.quiz_id AND pq.person_id = $id AND pq.antall_rette = q.antall_spørsmål");
+$sql = $conn->prepare("SELECT * FROM person_i_quiz pq, quiz q WHERE pq.quiz_id = q.quiz_id AND pq.person_id = $id AND pq.antall_svart >= q.antall_spørsmål");
 $sql->execute();
 $result = $sql->get_result();
 if ($result->num_rows > 0) {
     echo '<h2>Her finner du alt du har fullført </h2>';
     while($row = $result->fetch_assoc()) {
 
-        $prosent = $row['antall_rette'] / $row['antall_spørsmål'] * 100;
+        $prosent = $row['antall_svart'] / $row['antall_spørsmål'] * 100;
         $prosentdesimal = $prosent/100;
         $grader = 360 * $prosentdesimal / 2;
         $dato = date_create($row['fullført_dato']);
@@ -20,25 +20,23 @@ if ($result->num_rows > 0) {
         echo '<div class="mask full" style="animation: fill';
         echo $row['quiz_id'];
         echo ' ease-in-out 2s; transform: rotate(';
-        echo $grader;
+        echo '180';
         echo 'deg);';
         echo '">';
         echo '<div class="fill" style="animation: fill';
         echo $row['quiz_id'];
         echo ' ease-in-out 2s; transform: rotate(';
-        echo $grader;
+        echo '180';
         echo 'deg);';
         echo '"></div></div>';
         echo '<div class="mask half">';
         echo '<div class="fill" style="animation: fill';
         echo $row['quiz_id'];
         echo ' ease-in-out 2s; transform: rotate(';
-        echo $grader;
+        echo '180';
         echo 'deg);';
         echo '"></div>';
-        echo '</div><div class="inside-circle">';
-        echo $prosent;
-        echo '%</div>';
+        echo '</div><div class="inside-circle">100%</div>';
         echo '</div></div>';
         echo '<div class="poeng"><p>Opptjente poeng: <span>';
         echo $row['quizpoeng'];
@@ -51,11 +49,11 @@ if ($result->num_rows > 0) {
         echo '@keyframes fill';
         echo $row['quiz_id'];
         echo '{0% {transform: rotate(0deg);}100% {transform: rotate(';
-        echo $grader;
+        echo '180';
         echo 'deg);}}';
         echo '</style>';
 
     }
 } else {
-    echo '<h2>Det ser ikke ut som du har fullført noe. Trykk nedenfor for å begynne<br><br><a href="alleQuizer.php" class="utfclass">Test deg selv i quiz</a><a href="alleKurs.php" class="utfclass">Finn et kurs</a><a href="alleModuler.php" class="utfclass">Utforsk moduler</a></h2>';
+    echo '<h2>Det ser ikke ut som du har fullført noe. Trykk nedenfor for å begynne<br><br><br><a href="alleQuizer.php" class="utfclass">Test deg selv i quiz</a><br><br><a href="alleKurs.php" class="utfclass">Finn et kurs</a><br><br><a href="alleModuler.php" class="utfclass">Utforsk moduler</a></h2>';
 }

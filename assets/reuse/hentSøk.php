@@ -63,7 +63,7 @@ if ($result1->num_rows > 0) {
     if ($resultat == false) {
         echo '<h1>Fant ingenting som som stemmer med "';
         echo $søkeparameter;
-        echo '"</h1></div>';
+        echo '"</h1>';
     }
 }
 

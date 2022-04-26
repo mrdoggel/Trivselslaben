@@ -28,9 +28,15 @@
     </header>
 
     <main>
+        <form action="alleQuizer.php" method="post">
         <?php 
             require "assets/reuse/filter.php";
-            require "assets/reuse/hentQuiz.php";
+            if (isset($_POST['filter-knapp']))  {
+                require "assets/reuse/hentFiltrertQuiz.php";
+            } else {
+                require "assets/reuse/hentQuiz.php";
+            }
+
         ?>
     </main>
 
