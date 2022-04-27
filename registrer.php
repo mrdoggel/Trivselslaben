@@ -35,13 +35,13 @@
             <div id="navn">
                 <div>
                     <label for="name">Fornavn</label>
-                    <input name="fnavn" type="text" id="fname" placeholder="fornavn">
+                    <?php echo '<input name="fnavn" type="text" id="fname" value="'; if (isset($fnavn)) echo $fnavn; echo '" placeholder="fornavn">'?>
                 </div>
 
                 <div>
                     <!-- Her har jeg satt inn et etternavn :-) -->
                     <label for="name">Etternavn</label>
-                    <input name="enavn" type="text" id="ename" placeholder="etternavn">
+                    <?php echo '<input name="enavn" type="text" id="ename" value="';if (isset($enavn)) echo $enavn; echo'" placeholder="etternavn">'; ?>
                 </div>
             </div>
 
@@ -49,7 +49,7 @@
                 <div>
                     <label>Profilbilde</label>
                     <label for="bilde" id="last-opp-btn">last opp</label>
-                    <input type="file" id="bilde" name="bilde">
+                    <?php echo '<input type="file" id="bilde" name="bilde" value="';if (isset($fil)) echo $fil; echo'">'; ?>
 
                 </div>
 
@@ -58,13 +58,13 @@
             <div id="e-post">
                 <div>
                     <label for="fname">E-post</label>
-                    <input name="regEpost" type="text" id="email" placeholder="e-post">
+                    <?php echo '<input name="regEpost" type="text" value="';if (isset($epost)) echo $epost; echo'" id="email" placeholder="e-post">'; ?>
                 </div>
 
                 <div>
                     <!-- Felt for å bekreft e-post, vet ikke om dette er nødvendig - i så fall kan du ta det bort!! hvis ikke endre id..? -->
                     <label for="fname">Bekreft e-post</label>
-                    <input name="gjentaRegEpost" type="text" id="email" placeholder="e-post">
+                    <?php echo '<input name="gjentaRegEpost" type="text" value="';if (isset($epost)) echo $epost; echo'" id="email" placeholder="e-post">'; ?>
                 </div>
             </div>
 

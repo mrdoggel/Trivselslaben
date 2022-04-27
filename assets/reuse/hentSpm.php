@@ -49,15 +49,9 @@
             echo '<input type="hidden" name="quiz" value="';
             echo $quizid;
             echo '"></input>';
-            echo '<input type="hidden" name="ant" value="';
-            echo $antRett;
-            echo '"></input>';
             echo '<input type="hidden" value="';
             echo $tekst;
             echo '" name="alternativ"></input>';
-            echo '<input type="hidden" name="svart" value="';
-            echo $svart;
-            echo '"></input>';
 
             if ($spm > 1) {
                 echo '<button name="spm-btn-tilbake" type="submit">Tilbake</button>';

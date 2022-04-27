@@ -1,7 +1,7 @@
 <?php
 require "assets/connection/conn.php";
 $id = $_SESSION['id'];
-$sql = $conn->prepare("SELECT pq.antall_rette, q.quiz_id, q.quiznavn, q.antall_spørsmål FROM person_i_quiz pq, quiz q WHERE pq.quiz_id = q.quiz_id AND pq.person_id = $id AND pq.antall_svart < q.antall_spørsmål");
+$sql = $conn->prepare("SELECT pq.antall_svart, pq.antall_rette, q.quiz_id, q.quiznavn, q.antall_spørsmål FROM person_i_quiz pq, quiz q WHERE pq.quiz_id = q.quiz_id AND pq.person_id = $id AND pq.antall_svart < q.antall_spørsmål");
 $sql->execute();
 $result = $sql->get_result();
 if ($result->num_rows > 0) {
@@ -53,5 +53,5 @@ if ($result->num_rows > 0) {
 
     }
 } else {
-    echo '<h2>Det ser ikke ut som du har fullført noe. Trykk nedenfor for å begynne<br><br><br><a href="alleQuizer.php" class="utfclass">Test deg selv i quiz</a><br><br><a href="alleKurs.php" class="utfclass">Finn et kurs</a><br><br><a href="alleModuler.php" class="utfclass">Utforsk moduler</a></h2>';
+    echo '<h2>Det ser ikke ut som du har begynt på noe. Trykk nedenfor for å begynne<br><br><br><a href="alleQuizer.php" class="utfclass">Test deg selv i quiz</a><br><br><a href="alleKurs.php" class="utfclass">Finn et kurs</a><br><br><a href="alleModuler.php" class="utfclass">Utforsk moduler</a></h2>';
 }

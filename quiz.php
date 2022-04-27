@@ -25,21 +25,23 @@
             require "assets/reuse/top-nav.php";
             $id = $_SESSION["id"];
 
-            if (isset($_GET['ant'])) {
-                $antRett = $_GET['ant'];
+            if (isset($_SESSION['antRett'])) {
+                $antRett = $_SESSION['antRett'];
             } else {
-                $antRett = 0;
+                require "assets/reuse/setSessionQuiz.php";
             }
-            if (isset($_GET['svart'])) {
-                $svart = $_GET['svart'];
+            if (isset($_SESSION['svar'])) {
+                $svar = $_SESSION['svar'];
             } else {
-                $svart = 0;
+                require "assets/reuse/setSessionQuiz.php";
             }
             if (isset($_GET['quiz'])) {
                 $quizid = $_GET['quiz'];
             }
             if (isset($_GET['spm'])) {
                 $spm = $_GET['spm'];
+            } else {
+                $spm = 1;
             }
         ?>
     </header>
