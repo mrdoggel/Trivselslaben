@@ -1,5 +1,6 @@
 <head>
     <script src="assets/js/visPoengInfo.js"></script>
+    <link rel="stylesheet" href="assets/css/common/header.css">
 </head>
 
 <nav id="navbar">

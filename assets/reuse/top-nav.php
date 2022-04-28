@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="assets/css/common/top-nav.css">
+</head>
+
 <div id="top-nav">
     <nav>
         <ul>

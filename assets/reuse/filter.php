@@ -1,6 +1,6 @@
-    <head>
-        <link rel="stylesheet" href="assets/css/common/filter.css">
-    </head>
+<head>
+    <link rel="stylesheet" href="assets/css/common/filter.css">
+</head>
 
 <form action="">
     <input type="checkbox" id="org-tema" name="org-tema">

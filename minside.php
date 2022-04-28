@@ -9,14 +9,12 @@
     <title>Min side</title>
     <link rel="stylesheet" href="assets/css/common/reset.css"/>
     <link rel="stylesheet" href="assets/css/common/global.css"/>
-    <link rel="stylesheet" href="assets/css/common/header.css"/>
-    <link rel="stylesheet" href="assets/css/common/top-nav.css"/>
     <link rel="stylesheet" href="assets/css/minside.css">
     <link rel="stylesheet" href="assets/css/common/side-nav.css">
     <script src="assets/js/minside.js"></script>
     <script src="assets/js/top-nav.js"></script>
 </head>
-    <!-- hva skal jeg med den id-en -->
+    <!-- Hvis noe slutter å funke her tok jeg bort id="body" på body-tag -->
     <body id="body">
         <?php
             require "assets/reuse/navbar.php";

@@ -1,17 +1,15 @@
 nav ul li {
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: -0.1px;
     font-weight: 100;
 }
 
-.top-nav-active {
-    font-size: 1.15rem;
-    letter-spacing: 1px;
-    box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 10%);
-    background: #ffffff;
-    opacity: 80%;
-    font-style: italic;
-    border-radius: 2px;
+#top-nav .top-nav-active {
+    font-size: 1.01rem;
+    font-family: "Segoe UI";
+    opacity: 100%;
+    text-decoration: underline solid 1px black;
+    text-underline-offset: 4px;
 }
 
 #top-nav {
@@ -21,19 +19,21 @@ nav ul li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, #d0d9f9 , #a3ecc8, #f2f088);
-    box-shadow: 2px 2px 6px 3px rgb(0 0 0 / 15%);
+    /*background-image: linear-gradient(to right, #d0d9f9 , #a3ecc8, #f2f088);*/
+    background-color: #F4F6FA;
+    box-shadow: 2px 2px 6px 3px rgb(0 0 0 / 10%);
     opacity: 85%;
     color: black;
     text-transform: uppercase;
 }
   
 #top-nav nav ul li {
-    transition: all 0.5s;
+    transition: all 0.3s ease-in-out;
     display: inline;
     margin: 0.5rem 4rem 0.5rem 4rem; 
+    opacity: 60%;
 }
 
-#top-nav li:hover {
-    letter-spacing: 1px;
+#top-nav nav ul li:hover {
+    opacity: 100%;
 }

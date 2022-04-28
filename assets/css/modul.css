@@ -30,7 +30,7 @@ article {
     opacity: 90%;
     box-shadow: 1px 10px 20px 1px rgb(208 217 249 / 35%);
     /*box-shadow: 1px 10px 20px 1px rgb(0 0 0 / 15%);*/
-    padding: 5rem 10rem 5rem 10rem;
+    padding: 5rem 5rem 5rem 5rem;
     margin-top: 5rem;
     height: fit-content;
     text-align: right;
@@ -129,9 +129,33 @@ section button {
     font-size: 1rem;
     font-style: italic;
 }
-
+.modul-innhold p{
+    margin-top: -10px; 
+    line-height: 150%; 
+    font-size: 1.25rem;
+    letter-spacing: -1.25px;       
+}
+.første-tittel-modul{
+    margin: 0rem;
+    margin-bottom: 2rem;
+    padding: 0rem; 
+    font-size: 1.75rem;
+}
+.andre-tittel-modul{
+    margin: 0rem;
+    margin-bottom: 2rem;
+    padding: 0rem; 
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.underoverskrift-modul{
+    font-size: 1rem;
+    margin-top: 1rem; 
+    padding: 0.75rem 0rem 0.75rem 0rem; 
+    font-style: italic;
+}
 #modul-bilde {
-    max-width: 40%;
+    max-width: 25%;
     margin-top: 2rem; 
 }
 
@@ -166,7 +190,15 @@ section button {
     font-size: 1.2rem;
     cursor: pointer;
 }
-
+#forretningsmodell-liste {
+    margin-top: 1rem; 
+}
+#forretningsmodell-liste li{
+    font-size: 1.25rem;
+    margin-left: 0.75rem;
+    line-height: 150%;
+    font-style: italic;
+}
 #progresjon::after{
     position: absolute;
     content: "";
@@ -191,4 +223,14 @@ section button {
     50% {
       background-position: 100% 50%;
     }
-  }
+}
+#fullført-div {
+    position: relative;
+    height: fit-content;
+    margin-top: 3rem; 
+}
+#fullført-btn {
+    position: absolute;
+    left: 50%;
+    font-size: 1.25rem;
+}

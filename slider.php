@@ -1,141 +1,80 @@
-<?php
-    session_start();
-    require "assets/reuse/sessionSjekk.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Forside - Påbegynt</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/common/reset.css">
-    <link rel="stylesheet" href="assets/css/common/global.css">
-    <link rel="stylesheet" href="assets/css/modul.css">
+    <title>Slider test</title>
     <link rel="stylesheet" href="assets\splide\css\splide.min.css">
-    <script src="assets/js/visRepetisjonInfo.js"></script>
     <script src="assets/splide/js/splide.min.js"></script>
     <script src="assets/splide/js/init-splide.js"></script>
 </head>
-
 <body>
-    <header>
-      <?php
-          require "assets/reuse/navbar.php";
-          require "assets/reuse/top-nav.php"
-      ?>
-    </header>
-    <main>
-        <div>
-            <img id="modul-bilde" src="assets/images/analytics.png" alt="modul-img">
-            <h2>Modul: Inntekter, lønn, utgifter og regnskap</h2>
-            <nav>
-                <dl>
-                    <dt class="lest">1. Inntekter og utgifter</dt>
-                    <dd>1.1. Inntekter</dd>
-                    <dd>1.2. Utgifter</dd>
-
-                    <dt class="lest">2. Budsjett</dt>
-                    <dd>2.1. Resultatbudsjett</dd>
-                    <dd>2.2. Likviditetsbudsjett</dd>
-                    <dd>2.3. Forskjell på likviditetsbudsjett og resultatbudsjett</dd>
-                    
-                    <dt class="ikke-lest">3. Forretningsmodell</dt>
-                    
-                    <dt class="ikke-lest">4. Lønn</dt>
-                    <dd>4.2. Ansettelse i ENK</dd>
-                    <dd>4.3. Lønn ved ansettelse</dd>
-                    
-                    <dt class="ikke-lest">5. Regnskap</dt>
-                </dl>
-            </nav>
-        </div>
-
-        <section class="hidden">
-            <h2>MODUL</h2>
-            <h1>Inntekter, lønn, utgifter og regnskap</h1>
-
-            <div id="progresjon">
-                <p>Din progresjon:</p>
-                <img src="assets/images/logo.png" alt="logo">
-                <p id="rep-spm-info">Fullfør modul for å få tilgang til repetisjonsspørsmål</p>
-                <p class="hidden rep-spm-info-txt"><span>Når du fullfører denne modulen får du tilgang til oppsummeringsspørsmål</span></p>
-            </div>
-
-            <div id="om-modulen">
-                <p>Denne modulen handler om økonomi. Vi går gjennom noen sentrale begreper det kan være greit å ha kjennskap til. På venstre side der du en oversiktsmeny over temaene modulen dekker. De grønne hakene viser at du har fullført den delen. Når hele er fullført får du tilgang til oppsummeringsquizen.</p>
-            </div>
-
-            <button>Kom i gang!</button>
-            
-        </section>
-
-        <article class="">
-            <div class="splide">
-        <div class="splide__track modul-innhold">
+    <div class="splide">
+        <div class="splide__track">
             <ul class="splide__list">
                 <li class="splide__slide">
-                    <h2 class="første-tittel-modul">1. Inntekter og utgifter</h2>
+                    <h1>1. Inntekter og utgifter </h1>
                         <p>Inntekter henger ofte sammen med kostnader, ved at inntekter ved salg av en vare gjerne også inkluderer kostnader for produksjon av varen. Dersom man trekker kostnader fra inntektene, får man et overskudd eller underskudd.
                             Virksomheter skal utarbeide årsregnskap som viser alle virksomhetens inntekter fratrukket kostnader. Dersom virksomheten får et overskudd, kan dette tas ut som utbytte til eierne eller reinvesteres i virksomheten.
                         </p>
                 </li>
                 <li class="splide__slide">
-                    <h3 class="andre-tittel-modul">1.1. Inntekter</h3>
+                    <h2>1.1. Inntekter</h2>
                     <p>Begrepene salgsinntekt, omsetning og næringsinntekt er tre begreper vi møter på til stadighet, men hva betyr disse begrepene og hva er forskjellen mellom dem?
                         Svaret er enkelt. Alle tre begrepene betyr det samme og kan derfor benyttes om hverandre. Alle tre begrepene angir normalt bedriftens totale (samlede) inntekter og kan defineres som: summen av alle bedriftens inntektsstrømmer.
                         Bedriftens inntekter er dermed summen av alle de varene eller tjenestene de selger ved at de får penger tilbake, pluss alle transaksjonsinntekter, renteinntekter og andre kapitalinntekter. Bedriftens inntekter er også et tall som fremgår av virksomhetens regnskap.
                     </p>
 
-                    <!--<p> Bedriftens totalt inntekten er bedriftens samlede inntekter i en periode. Selger bedriften produkter eller tjenester kan den totale salgsinntekten beregnes slik: antall solgte enheter x salgspris = totalt inntekt.
+                    <p> Bedriftens totalt inntekten er bedriftens samlede inntekter i en periode. Selger bedriften produkter eller tjenester kan den totale salgsinntekten beregnes slik: antall solgte enheter x salgspris = totalt inntekt.
                         Vi kan også beregne bedriftens totale inntekter ved å se på regnskapet for å summere:
                         Salgsinntekter + Transaksjonsinntekter + Renteinntekter + Andre kapitalinntekter = Bedriftens totale inntekt.
-                    </p>-->
+                    </p>
                 </li>
                 <li class="splide__slide">
-                    <h3 class="andre-tittel-modul">1.2. Utgifter</h3>
-                    <!--<h4 class="underoverskrift-modul">Hva er utgifter</h4>-->
+                    <h2>1.2. Utgifter</h2>
+                    <h3>Hva er utgifter</h3>
                     <p>En utgift er noe du må betale. En utgift kan for eksempel være en regning du må betale for en vare eller tjeneste du har kjøpt, eller det kan være MVA bedriften din skal betale, skatter eller avgifter. Et fellestrekk er at utgifter gjør at penger går ut av bankkontoen til firmaet.</p>
                     
-                    <h4 class="underoverskrift-modul">Forskjellen mellom en utgift og en kostnad</h4>
+                    <h3>Forskjellen mellom en utgift og en kostnad</h3>
                     <p>Utgifter er en forpliktet utbetaling, for eksempel i forbindelse med råvarer til vareproduksjon. Det er først når disse råvarene forbrukes at det blir en kostnad. Det er kostnadene i en bedrift som påvirker resultatet, og ikke utgiftene.</p>
                     
-                    <h4 class="underoverskrift-modul">Hva er en driftsutgift?</h4>
+                    <h3>Hva er en driftsutgift?</h3>
                     <p>Driftsutgifter er alle utgifter som tilhører den løpende driften i en virksomhet. Driftsutgifter er de utgifter som tilhører den løpende driften i virksomheten. Det kan for eksempel være strøm eller lønnskostnader. Man kan også bruke uttrykket driftskostnader.</p>
                 </li>
 
                 <li class="splide__slide">
-                    <h2 class="første-tittel-modul">2. Budsjett</h2>
+                    <h2>2. Budsjett</h2>
                     <p>Et budsjett er et forhåndsregnskap som viser hvilke inntekter og utgifter bedriften din vil få.
                         Enkelt sagt kan vi si at et budsjett er et forhåndsregnskap og viser hvilke inntekter og utgifter bedriften din vil få. 
                         Å sette opp budsjett har både fordeler og ulemper: En av de største fordelene er at du har en plan for fremtiden, og kan ta beslutninger ut fra hvor stort overskudd du beregner i budsjettet. En ulempe kan imidlertid være at du går glipp av lønnsomme muligheter fordi det ikke er budsjettert med økte kostnader, for eksempel at du har mulighet til å ansette en person som kan bidra til økt inntjening i foretaket i fremtiden.
                     </p>
 
-                    <!--<p>Det er vanlig å periodisere budsjettet. Det betyr i praksis at du ikke bare setter opp forventede inntekter eller utgifter for et helt år, men også måned for måned.
+                    <p>Det er vanlig å periodisere budsjettet. Det betyr i praksis at du ikke bare setter opp forventede inntekter eller utgifter for et helt år, men også måned for måned.
                         I en oppstartbedrift kan det være vanskelig å beregne når inntekter og utgifter faktisk vil påløpe. Samtidig er det helt avgjørende både for hvor mye penger du trenger, og for hvilket resultat du oppnår. Vær derfor både nøye og realistisk når du periodiserer budsjettet ditt.
                         Du bør lage både driftsbudsjett (også kalt resultatbudsjett) og likviditetsbudsjett. Mange setter opp budsjettene selv, andre velger å få hjelp av regnskapsfører for å utføre denne jobben.
                         Hvis du har drevet en stund, kan tallene fra fjoråret være et bra sted å starte. Er bedriften din derimot fersk, kan du lage budsjetter ut fra hva det koster å produsere varene eller tjenestene dine, anslåtte kostnader på ting og tjenester du selv trenger og hvilken pris du skal ta. Skal du ta timepris?
-                    </p>-->
+                    </p>
                 </li>
 
                 <li class="splide__slide">
-                    <h3 class="andre-tittel-modul">2.1. Resultatbudsjett</h3>
+                    <h2>2.1. Resultatbudsjett</h2>
                     <p>Det kalles resultatbudsjett siden det er inntektene og kostnadene vi budsjetterer. Et resultat er forskjellen mellom inntekter og kostnader. Et resultatbudsjett består av alle de budsjetterte kostnadene og inntektene. Budsjettet viser også det budsjetterte resultatet, som kan være et overskudd eller et underskudd.</p>
                 </li>
 
                 <li class="splide__slide">
-                    <h3 class="andre-tittel-modul">2.2. Likviditetsbudsjett</h3>
+                    <h2>2.2. Likviditetsbudsjett</h2>
                     <p> Et likviditetsbudsjett er en virksomhets oversikt over planlagte innbetalinger og utbetalinger i en fremtidig periode, som forteller om man har penger nok til å betale løpende utgifter.
                         Likviditetsbudsjettet viser om selskapet har nok likvide midler til å betale utgiftene på et gitt tidspunkt i fremtiden. Det viser da hvor mye som går ut og inn av bedriftens konto i den aktuelle perioden, det vil si forskjell på forventede innbetalinger og utbetalinger.
                         Likviditetsbudsjettet brukes som hjelp til å finne ut hvor mye penger man har til enhver periode i fremtiden, i forhold til hvilke forpliktelser man har overfor betaling av regninger og så videre. Det er altså et budsjett over hvor mye likvide midler man skal ha tilgjengelig i en fremtidig periode.
                     </p>
-                    <!--<p>På denne måte sier likviditetsbudsjettet noe om bedriftens betalingsevne i en fremtidig periode.
+                    <p>På denne måte sier likviditetsbudsjettet noe om bedriftens betalingsevne i en fremtidig periode.
                         Fordelen med å føre et slikt budsjett er at du får et innblikk over innbetalinger og utbetalinger i fremtiden, og du vil på forhånd se i hvilke perioder man muligens må skaffe en annen type finansiering hvis man har lite penger tilgjengelig en periode og har utgifter som må betales.
-                    </p>-->
+                    </p>
                 </li>
 
                 <li class="splide__slide">
-                    <h3 class="andre-tittel-modul">2.3. Forskjell på likviditetsbudsjett og resultatbudsjett</h3>
+                    <h2>2.3. Forskjell på likviditetsbudsjett og resultatbudsjett</h2>
                     <p>Et likviditetsbudsjett skiller seg fra et resultatbudsjett ved at likviditetsbudsjettet gir en oversikt over pengestrømmen i et selskap. Dette gir et bilde på om man har penger til å betale løpende utgifter, med andre ord en kontroll over innbetalinger og utbetalinger i en gitt periode.
                         På den andre siden gir resultatbudsjettet forventet resultat, som er forskjellen mellom inntekter og kostnader i en periode. Her settes utgiftene i den perioden de tilhørende inntektene finner sted, og er derfor uavhengig av selve pengestrømmen.
                         Likviditetsbudsjettet tar dermed hensyn til når innbetalinger og utbetalinger utføres, og ikke når de regnskapsføres slik som i et resultatbudsjett.
@@ -144,11 +83,10 @@
                 </li>
 
                 <li class="splide__slide">
-                    <h2 class="første-tittel-modul">3. Forretningsmodell</h2>
-                    <p>Forretningsmodellen skal svare på følgende spørsmål:</p>
-                    <ul id="forretningsmodell-liste">
+                    <h2>3. Forretningsmodell</h2>
+                    <ul>
                         <li>Hva skal du levere?</li>
-                        <li>Hvem er kunden?</li>
+                        <li>hvem er kunden?</li>
                         <li>Hvem er venner og konkurrenter?</li>
                         <li>Hvordan skal du selge?</li>
                         <li>Hvordan skal du ta betalt?</li>
@@ -157,14 +95,20 @@
                 </li>
 
                 <li class="splide__slide">
-                    <h2 class="første-tittel-modul">4. Lønn</h2>
+                    <h2>4. Lønn</h2>
+                    <h3>Når regnes jeg som arbeidsgiver?</h3>
                     <p>Du er arbeidsgiver når du betaler ut lønn eller annen godtgjørelse. Det betyr at dersom det er du som betaler lønnen så er det også du som er arbeidsgiveren.
-                        Du er også arbeidsgiver dersom en annen (fullmektig) betaler på vegne av deg men du har den økonomiske risikoen. Kostnadene knyttet til å ha ansatte vil variere avhengig av faktisk sykefravær og hvilke ytelser/betingelser som er avtalt for arbeidstakerne. En tommelfingerregel kan være at du finner de forventede totale kostnadene ved å legge til 20–30 % på brutto årslønn.
+                        Du er også arbeidsgiver dersom en annen (fullmektig) betaler på vegne av deg men du har den økonomiske risikoen.
                     </p>
+                </li>
+                
+                <li class="splide__slide">
+                    <h2>4.1. Hva koster en arbeidstaker?</h2>
+                    <p>Kostnadene knyttet til å ha ansatte vil variere avhengig av faktisk sykefravær og hvilke ytelser/betingelser som er avtalt for arbeidstakerne. En tommelfingerregel kan være at du finner de forventede totale kostnadene ved å legge til 20–30 % på brutto årslønn.</p>
                 </li>
 
                 <li class="splide__slide">
-                    <h3 class="andre-tittel-modul">4.2. Ansettelse i ENK</h3>
+                    <h2>4.2. Ansettelse i ENK</h2>
                     <p>Som innehaver av et ENK, regnes du ikke selv som ansatt, men det er fullt mulig å ha ansatte i et enkeltpersonforetak.
                         Selv om du driver enkeltpersonforetak kan du ansette andre personer til å jobbe for deg. 
                         Da er det viktig å huske på at du må følge det samme lovverket som alle bedrifter med ansatte, og at du vil sitte med det fulle økonomiske ansvaret for lønn, arbeidsgiveravgift og så videre. Rent praktisk er det ikke noe vanskeligere å ha ansatte i ENK enn i AS, for eksempel.
@@ -172,12 +116,10 @@
                 </li>
                 
                 <li class="splide__slide">
-                    <h3 class="andre-tittel-modul">4.3. Lønn ved ansettelse</h3>
+                    <h2>4.3. Lønn ved ansettelse</h2>
                     <p>For mange kommer den store omleggingen i regnskapsrutinene den dagen de ansetter noen. Regelverket i forbindelse med ansettelser og utbetaling av lønn er omfattende. Mange velger nå å sette regnskapet ut til en regnskapsfører, eventuelt å la regnskapsfører ta seg av lønnskjøringen.</p>
                     <p>Lønnskostnader innebærer ikke bare vanlig lønnsutbetaling, som gjerne kalles direkte lønn. Virksomheten må også forberede seg på å betale for de indirekte lønnskostnadene. Eksempler på sistnevnte kan være sykepenger og feriepenger til sitt personale, samt arbeidsgiveravgift på opptil 14,1 % til staten.</p>
-                    <div id="fullført-div">
-                        <button id="fullført-btn">Fullfør</button>
-                    </div>
+                    <button>Fullfør</button>
                 </li>
             </ul>
 
@@ -187,8 +129,7 @@
             <div class="my-slider-progress-bar"></div>
         </div>
     </div>
-        </article>
 
-    </main>
 </body>
+
 </html>

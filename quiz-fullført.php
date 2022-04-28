@@ -8,8 +8,6 @@
     <title>Fullført quiz</title>
     <link rel="stylesheet" href="assets/css/common/reset.css"/>
     <link rel="stylesheet" href="assets/css/common/global.css"/>
-    <link rel="stylesheet" href="assets/css/common/header.css">
-    <link rel="stylesheet" href="assets/css/common/top-nav.css">
     <link rel="stylesheet" href="assets/css/common/quiz-fullført.css">
 </head>
 <body> 

@@ -1,0 +1,113 @@
+.splide__list{
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    display:-ms-flexbox;
+    display:flex;
+    align-items: flex-start;
+    height:100%;
+    margin:0!important;
+    padding:0!important
+}
+
+.splide__pagination{
+    display: none;
+}
+
+.my-slider-progress {
+    background: #F4F6FA;
+    margin-top: 2rem; 
+}
+
+.my-slider-progress-bar {
+    background: #B6F3AB;
+    height: 2px;
+    transition: width 400ms ease;
+}
+.splide{
+    position:relative;
+    visibility:hidden
+}
+.splide.is-initialized,.splide.is-rendered{
+    visibility:visible;
+}
+.splide__slide{
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    box-sizing:border-box;
+    -ms-flex-negative:0;
+    flex-shrink:0;
+    list-style-type:none!important;
+    margin:0;
+    position:relative
+}
+.splide__sr{
+    clip:rect(0 0 0 0);
+    border:0;
+    height:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    width:1px
+}
+
+.splide__track{
+    overflow:hidden;
+    position:relative;
+    z-index:0;
+    height: fit-content;
+    text-align: left;
+}
+
+.splide__track--draggable{
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+
+.splide__arrow{
+    -ms-flex-align:center;
+    align-items:center;
+    background:#ffffff;
+    border:0;
+    border-radius:50%;
+    cursor:pointer;
+    display:-ms-flexbox;
+    display:flex;
+    height:2em;
+    -ms-flex-pack:center;
+    justify-content:center;
+    opacity:.9;
+    padding:0;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:2em;
+    z-index:1
+}
+
+.splide__arrow svg{
+    fill:#a3ecc8;
+    height:1.4em;
+    width:1.4em
+}
+
+.splide__arrow:disabled{
+    opacity:.4
+}
+.splide__arrow--prev{
+    left:1em;
+    margin-left: -5rem;
+}
+.splide__arrow--prev svg{
+    transform:scaleX(-1)
+}
+.splide__arrow--next{
+    right:1em;
+    margin-right: -5rem;
+}
+
+.splide__slide{
+    -webkit-tap-highlight-color:transparent
+}

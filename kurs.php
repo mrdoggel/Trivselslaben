@@ -9,8 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="assets/css/common/reset.css"/>
     <link rel="stylesheet" href="assets/css/common/global.css"/>
-    <link rel="stylesheet" href="assets/css/common/header.css"/>
-    <link rel="stylesheet" href="assets/css/common/top-nav.css">
     <link rel="stylesheet" href="assets/css/ASKurs.css"/>
     <script src="assets/js/ASKurs.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
