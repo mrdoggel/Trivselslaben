@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/common/quiz-fullført.css">
     <link rel="stylesheet" href="assets/css/forside.css">
 </head>
-<body> 
+<body>
     <header>
     <?php
         require "assets/reuse/navbar.php";
@@ -20,13 +20,16 @@
 
     <main>
         <div class="quiz-res-container">
-            <h2>Du har nå fullført quizen</h2> 
-           <?php require "assets/reuse/hentQuizResultat.php"; ?>
+            <h2>Du har nå fullført Modulen</h2>
+            <?php
+                $modul = $_GET['modul'];
+                require "assets/reuse/hentModulResultat.php";
+            ?>
 
         </div>
 
-        <p><span><a href="alleQuizer.php">Utforsk flere quizer</a></span></p>
-        
+        <p><span><a href="alleModuler.php">Utforsk flere moduler</a></span></p>
+
     </main>
 </body>
 </html>

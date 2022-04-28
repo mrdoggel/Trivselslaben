@@ -181,7 +181,10 @@
                     <p>For mange kommer den store omleggingen i regnskapsrutinene den dagen de ansetter noen. Regelverket i forbindelse med ansettelser og utbetaling av lønn er omfattende. Mange velger nå å sette regnskapet ut til en regnskapsfører, eventuelt å la regnskapsfører ta seg av lønnskjøringen.</p>
                     <p>Lønnskostnader innebærer ikke bare vanlig lønnsutbetaling, som gjerne kalles direkte lønn. Virksomheten må også forberede seg på å betale for de indirekte lønnskostnadene. Eksempler på sistnevnte kan være sykepenger og feriepenger til sitt personale, samt arbeidsgiveravgift på opptil 14,1 % til staten.</p>
                     <div id="fullført-div">
-                        <button id="fullført-btn">Fullfør</button>
+                        <form action="assets/connection/fullførModul.php" method="post">
+                            <input type="hidden" name="modulId" value="3"></input>
+                            <button type="submit" id="fullført-btn">Fullfør</button>
+                        </form>
                     </div>
                 </li>
             </ul>
