@@ -13,7 +13,9 @@ if ($result->num_rows > 0) {
         $result1 = $sql1->get_result();
         if ($result1->num_rows > 0) {
             while ($row1 = $result1->fetch_assoc()) {
-                echo '<div id="kurs';
+                echo '<a href="kurs.php?kurs=';
+                echo $row1["kurs_id"];
+                echo '"><div id="kurs';
                 echo $row1["kurs_id"];
                 echo '" class="kurs">';
                 echo '<h4>KURS</h4>';
@@ -25,7 +27,7 @@ if ($result->num_rows > 0) {
                 echo $row1["farge"];
                 echo '"><h3>';
                 echo $row1["navn"];
-                echo '</h3></div></div>';
+                echo '</h3></div></div></a>';
             }
         }
 
@@ -34,7 +36,9 @@ if ($result->num_rows > 0) {
         $result2 = $sql2->get_result();
         if ($result2->num_rows > 0) {
             while($row2 = $result2->fetch_assoc()) {
-                echo '<div id="modul';
+                echo '<a href="modul.php?modul=';
+                echo $row2["modul_id"];
+                echo '"><div id="modul';
                 echo $row2["modul_id"];
                 echo '" class="modul">';
                 echo '<h4>MODUL</h4>';
@@ -45,7 +49,7 @@ if ($result->num_rows > 0) {
                 echo '<div class="bottom"';
                 echo '"><p>';
                 echo $row2["beskrivelse"];
-                echo '</p></div></div>';
+                echo '</p></div></div></a>';
             }
         }
 
