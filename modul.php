@@ -68,8 +68,9 @@
             </div>
 
             <button id="start-modul">Kom i gang!</button>
-            <form action="">
-                <button id="lagre-btn">- Lagre til senere -</button>
+            <form action="assets/connection/lagreModul.php" method="post">
+                <input type="hidden" name="modul" value="3"></input>
+                <button id="lagre-btn" name="modul_knapp">- Lagre til senere -</button>
             </form>
             
         </section>

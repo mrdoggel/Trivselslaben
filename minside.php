@@ -125,9 +125,9 @@
 
                 <div id="hidden" class="lagret">
                     <?php
-                        require "assets/reuse/hentQuiz.php";
-                        require "assets/reuse/hentKurs.php";
-                        require "assets/reuse/hentModul.php";
+                        require "assets/reuse/hentLagretQuiz.php";
+                        require "assets/reuse/hentLagretKurs.php";
+                        require "assets/reuse/hentLagretModul.php";
                     ?>
                 </div>
 

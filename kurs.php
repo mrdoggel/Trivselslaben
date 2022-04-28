@@ -56,8 +56,9 @@
             </div>
         </div>
         <button id="start-kurs">Start kurset</button>
-        <form action="">
-            <button id="lagre-btn">- Lagre til senere -</button>
+        <form method ="post" action="assets/connection/lagreKurs.php">
+            <?php echo '<input type="hidden" name="kurs" value="'; echo $_GET['kurs']; echo '"></input>'; ?>
+            <button type="submit" name="kurs_knapp" id="lagre-btn">- Lagre til senere -</button>
         </form>
     </div>
 

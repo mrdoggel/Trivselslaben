@@ -1,6 +1,7 @@
 <?php
 require "assets/connection/conn.php";
-$sql = $conn->prepare("SELECT * FROM quiz");
+$id = $_SESSION["id"];
+$sql = $conn->prepare("SELECT * FROM quiz q, person_lagret_quiz pl WHERE q.quiz_id = pl.quiz_id AND pl.person_id = $id");
 $sql->execute();
 $result = $sql->get_result();
 if ($result->num_rows > 0) {
@@ -23,11 +24,8 @@ if ($result->num_rows > 0) {
         echo '<p class="mer">&vellip;</p>';
         echo '<div class="overlap hidden">';
         echo '<p>Spill</p>';
-        echo '<form action="assets/connection/lagreQuiz.php" method="post">
-             <input type="hidden" name="quiz" value="';
-        echo $row['quiz_id'];
-        echo '"</input>
-             <button name="quiz_knapp" type="submit">Lagre til senere</button>
+        echo '<form action="">
+             <button>Lagre til senere</button>
              </form>';
         echo '</div>';
         echo '</div>';
