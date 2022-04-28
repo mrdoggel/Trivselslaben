@@ -22,7 +22,9 @@ if ($result->num_rows > 0) {
         echo '</a></h2>';
         echo '<p class="mer">&vellip;</p>';
         echo '<div class="overlap hidden">';
-        echo '<p>Spill</p>';
+        echo '<p><a href="quiz.php?quiz=';
+        echo $row['quiz_id'];
+        echo '">Ta quizen</a></p>';
         echo '<form action="assets/connection/lagreQuiz.php" method="post">
              <input type="hidden" name="quiz" value="';
         echo $row['quiz_id'];
