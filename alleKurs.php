@@ -25,13 +25,27 @@
     </header>
 
     <main>
-        <form action="alleKurs.php" method="post">
-        <?php require "assets/reuse/filter.php"?>
+        <?php
+        $side = 1;
+            require "assets/reuse/filter.php"
+        ?>
         
         <div id="alle-kurs">
             <?php
             if (isset($_POST['filter-knapp']))  {
-                require "assets/reuse/hentFiltrertKurs.php";
+                if (isset($_POST['filterInput1'])) {
+                    $otId1 = $_POST['filterInput1'];
+                }
+                if (isset($_POST['filterInput2'])) {
+                    $otId2 = $_POST['filterInput2'];
+                }
+                if (isset($_POST['filterInput3'])) {
+                    $otId3 = $_POST['filterInput3'];
+                }
+                if (isset($_POST['filterInput4'])) {
+                    $otId4 = $_POST['filterInput4'];
+                }
+            require "assets/reuse/hentFiltrertKurs.php";
             } else {
                 require "assets/reuse/hentKurs.php";
             }

@@ -25,12 +25,26 @@
     </header>
 
     <main>
-        <form action="alleModuler.php" method="post">
-        <?php require "assets/reuse/filter.php"; ?>
+        <?php
+            $side = 2;
+            require "assets/reuse/filter.php";
+        ?>
         
         <div id="alle-moduler">
         <?php
             if (isset($_POST['filter-knapp']))  {
+                if (isset($_POST['filterInput1'])) {
+                    $otId1 = $_POST['filterInput1'];
+                }
+                if (isset($_POST['filterInput2'])) {
+                    $otId2 = $_POST['filterInput2'];
+                }
+                if (isset($_POST['filterInput3'])) {
+                    $otId3 = $_POST['filterInput3'];
+                }
+                if (isset($_POST['filterInput4'])) {
+                    $otId4 = $_POST['filterInput4'];
+                }
                 require "assets/reuse/hentFiltrertModul.php";
             } else {
                 require "assets/reuse/hentModul.php";
