@@ -10,7 +10,11 @@
             echo '<div id="container">';
             echo '<legend><span>';
             echo $row['quiznavn'];
-            echo '</span></legend>';
+            echo ' (';
+            echo $spm;
+            echo '/';
+            echo $row['antall_spørsmål'];
+            echo ')</span></legend>';
             echo '<div class="spm-div" id="spm-';
             echo $spmid;
             echo '">';
