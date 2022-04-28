@@ -25,11 +25,16 @@
     </header>
 
     <main>
+        <form action="alleModuler.php" method="post">
         <?php require "assets/reuse/filter.php"; ?>
         
         <div id="alle-moduler">
         <?php
-            require "assets/reuse/hentModul.php";
+            if (isset($_POST['filter-knapp']))  {
+                require "assets/reuse/hentFiltrertModul.php";
+            } else {
+                require "assets/reuse/hentModul.php";
+            }
         ?>
         </div>
     </main>

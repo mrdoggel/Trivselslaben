@@ -27,11 +27,10 @@
                     $sql3->execute();
                     $result3 = $sql3->get_result();
                     if ($result3->num_rows > 0) {
-                        while($row3 = $result3->fetch_assoc()) {
-                            if ($row3['alternativ_id'] == $row2['alternativ_id']) {
-                                echo 'valgt-svar ';
-                                $tekst = $row2['tekst'];
-                            }
+                        $row3 = $result3->fetch_assoc();
+                        if ($row3['alternativ_id'] == $row2['alternativ_id']) {
+                            echo 'valgt-svar ';
+                            $tekst = $row2['tekst'];
                         }
                     } else {
                         $tekst = "";
@@ -46,19 +45,19 @@
             echo '<form action="assets/connection/registrerValg.php" method="post">
             <input type="hidden" name="spørsmål" value="';
             echo $spmid;
-            echo '">';
+            echo '"></input>';
             echo '<input type="hidden" name="quiz" value="';
             echo $quizid;
-            echo '">';
-            echo '<input type="hidden" name="ant" value="';
-            echo $antRett;
-            echo '">';
+            echo '"></input>';
             echo '<input type="hidden" value="';
             echo $tekst;
-            echo '" name="alternativ">';
+            echo '" name="alternativ"></input>';
 
             if ($spm > 1) {
                 echo '<button name="spm-btn-tilbake" type="submit">Tilbake</button>';
+                if ($spm < 10) {
+                    echo '<button name="spm-btn-senere" type="submit">Fullfør senere</button>';
+                }
             }
             if ($spmid < 10) {
                 echo '<button name="spm-btn-neste" type="submit">Neste</button>';

@@ -25,10 +25,17 @@
     </header>
 
     <main>
+        <form action="alleKurs.php" method="post">
         <?php require "assets/reuse/filter.php"?>
         
         <div id="alle-kurs">
-            <?php require "assets/reuse/hentKurs.php"; ?>
+            <?php
+            if (isset($_POST['filter-knapp']))  {
+                require "assets/reuse/hentFiltrertKurs.php";
+            } else {
+                require "assets/reuse/hentKurs.php";
+            }
+            ?>
         </div>
     </main>
 
