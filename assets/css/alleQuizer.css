@@ -49,6 +49,11 @@ main{
     box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
     background-color: #F4F6FA;    
 }
+.overlap form {
+    box-shadow: none;
+    margin: 0rem; 
+    padding: 0rem; 
+}
 .overlap button, .overlap p {
     border: none;
     background-color: transparent;
@@ -56,6 +61,7 @@ main{
     position: static;
     font-weight: 100;
     padding: 0.5rem 0rem 0.5rem 1rem; 
+    text-align: left;
 }
 .overlap p:hover, .overlap button:hover {
     cursor: pointer;

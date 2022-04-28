@@ -172,6 +172,14 @@ dd{
     animation: moveGradient 4s alternate infinite;
 }
 
+#lagre-btn {
+  border: none; 
+  background-color: #ffffff;
+  margin-top: 1rem; 
+  cursor: pointer;
+  opacity: 90%;
+  font-style: italic;
+}
 
 @keyframes moveGradient {
   50% {

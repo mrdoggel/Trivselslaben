@@ -56,6 +56,9 @@
             </div>
         </div>
         <button id="start-kurs">Start kurset</button>
+        <form action="">
+            <button id="lagre-btn">- Lagre til senere -</button>
+        </form>
     </div>
 
     <div id="kurs-container">

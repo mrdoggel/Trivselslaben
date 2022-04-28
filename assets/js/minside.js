@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", init);
 function init() {
   document.querySelector("#bruker-info").addEventListener("click", visBrukerInfo);
   document.querySelector("#bruker-interesser").addEventListener("click", visBrukerInteresser);
+  document.querySelector("#bruker-lagret").addEventListener("click", visBrukerLagret); 
 
   document.querySelector(".søk-input").addEventListener("mouseover", inputFokus);
   document.querySelector(".dropdown").addEventListener("mouseleave", inputFokusReset);
@@ -17,8 +18,7 @@ function visBrukerInfo(e){
   settValgtStil(e.target); 
   document.querySelector(".personling-info").id = ""
   document.querySelector(".interesser").id = "hidden"; 
-
-  console.log("vis brukerinfo")
+  document.querySelector(".lagret").id = "hidden"; 
 }
 
 function visBrukerInteresser(e){
@@ -26,8 +26,15 @@ function visBrukerInteresser(e){
   settValgtStil(e.target);
   document.querySelector(".personling-info").id = "hidden"
   document.querySelector(".interesser").id = "";
+  document.querySelector(".lagret").id = "hidden"; 
+}
 
-  console.log("vis brukerinteresser")
+function visBrukerLagret(e){
+  e.preventDefault(); 
+  settValgtStil(e.target);
+  document.querySelector(".personling-info").id = "hidden"
+  document.querySelector(".interesser").id = "hidden";
+  document.querySelector(".lagret").id = ""; 
 }
 
 function settValgtStil(menyValg){

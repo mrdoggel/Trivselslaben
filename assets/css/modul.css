@@ -2,10 +2,6 @@
     width: 25%;
 }
 
-
-
-
-
 main {
     display: flex;
 }
@@ -234,6 +230,17 @@ section button {
     left: 50%;
     font-size: 1.25rem;
 }
+#lagre-btn {
+    border: none; 
+    background-color: #ffffff;
+    margin-top: 1rem; 
+    cursor: pointer;
+    opacity: 90%;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
 @media only screen and (max-width: 1520px) {
     main nav {
         font-size: 1rem;

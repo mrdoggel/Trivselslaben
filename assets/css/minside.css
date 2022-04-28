@@ -97,13 +97,16 @@ form {
 
 #navn-bilde label {
     padding: 0rem; 
-    margin: 0rem; 
+    margin: 0rem;
+    margin-top: 0.25rem;  
+    width: 100%;
+}
+#navn-bilde label span {
     background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 0) 70%, #B6F3AB 0%,#B6F3AB 0%);
 }
-
 #last-opp-btn{
     display: block;
     font-size: 1rem;
@@ -205,11 +208,21 @@ form {
     padding: 0rem;
 }
 
+/* LAGRET */
+.lagret {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 /* HOVER */
-#navn-bilde label:hover{
+#navn-bilde label span:hover{
     background-color: #B6F3AB;
     letter-spacing: 0.04rem;
     transition: all 0.4s;
+    padding: 0rem; 
+    border-radius: 0.25rem;
 }
 
 .personling-info button:hover{

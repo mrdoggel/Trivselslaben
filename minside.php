@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="assets/css/common/global.css"/>
     <link rel="stylesheet" href="assets/css/minside.css">
     <link rel="stylesheet" href="assets/css/common/side-nav.css">
-    <script src="assets/js/minside.js"></script>
+    <link rel="stylesheet" href="assets/css/lagret.css">
+    <script src="assets/js/quiz.js"></script>
     <script src="assets/js/top-nav.js"></script>
+    <script src="assets/js/minside.js"></script>
 </head>
     <!-- Hvis noe slutter å funke her tok jeg bort id="body" på body-tag -->
     <body id="body">
@@ -27,7 +29,7 @@
                 <ul>
                     <li id="bruker-info" class="side-nav-valgt">Brukerinformasjon</li>
                     <li id="bruker-interesser">Mine interesser</li>
-                    <li>Lagrede kurs</li>
+                    <li id="bruker-lagret">Lagret</li>
                     <a href="assets/connection/logout.php"><li>Logg ut</li></a>
                 </ul>
             </nav>
@@ -40,7 +42,7 @@
                         
                         <div>
                             <img src="<?php echo $_SESSION['bilde']; ?>"></img>
-                            <label for="bilde" id="last-opp-btn">last opp</label>
+                            <label for="bilde" id="last-opp-btn"><span>last opp<span></label>
                             <input id="bilde" type="file" name ="bilde" placeholder="Nytt bilde">
                         </div>
                         <?php } else { ?>
@@ -85,7 +87,6 @@
                     <?php  endif ?>
                 </form>
 
-                <!-- Se/oppdater interesser -->
                 <div id="hidden" class="interesser">
                     <section>
                         <h2>Dine interesser</h2>
@@ -95,17 +96,12 @@
                     </section>
 
                     <section id="finn-og-legg-til">
-                        <!-- #TODO: SØKE ETTER INTERESSER MAN IKKE HAR OG EVENTUELT LEGGE TIL, Håper layouten funker -->
-                        <form method="post" action="assets/reuse/leggTilTema.php">
-                            
-                        <div class="dropdown">
-
-                                <!--<input id="myInput" onfocus="myFunction()" onfocusout="myFunction2()" type="text" placeholder="Legg til interesser..." onkeyup="filterFunction()">-->
+                        <form method="post" action="assets/reuse/leggTilTema.php">    
+                            <div class="dropdown">
                                 <input class="søk-input" id="myInput" type="text" placeholder="Søk og finn interesser ..."> 
 
                                 <div id="myDropdown" class="dropdown-content">
-
-                                <?php
+                                    <?php
                                         require "assets/connection/conn.php";
                                         $sql = $conn->prepare("SELECT * FROM tema WHERE tema_id NOT IN(SELECT tema_id FROM person_i_tema WHERE person_id = $id)");
                                         $sql->execute();
@@ -120,12 +116,19 @@
                                             }
                                         }
                                     ?>
-
                                 </div>
 
                             </div>
-                            </form>
+                        </form>
                     </section>
+                </div>
+
+                <div id="hidden" class="lagret">
+                    <?php
+                        require "assets/reuse/hentQuiz.php";
+                        require "assets/reuse/hentKurs.php";
+                        require "assets/reuse/hentModul.php";
+                    ?>
                 </div>
 
             </section>

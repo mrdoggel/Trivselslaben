@@ -16,6 +16,7 @@
     <script src="assets/js/visRepetisjonInfo.js"></script>
     <script src="assets/splide/js/splide.min.js"></script>
     <script src="assets/splide/js/init-splide.js"></script>
+    <script src="assets/js/visModulInnhold.js"></script>
 </head>
 
 <body>
@@ -51,7 +52,7 @@
             </nav>
         </div>
 
-        <section class="hidden">
+        <section class="modul-info-container">
             <h2>MODUL</h2>
             <h1>Inntekter, lønn, utgifter og regnskap</h1>
 
@@ -66,11 +67,14 @@
                 <p>Denne modulen handler om økonomi. Vi går gjennom noen sentrale begreper det kan være greit å ha kjennskap til. På venstre side der du en oversiktsmeny over temaene modulen dekker. De grønne hakene viser at du har fullført den delen. Når hele er fullført får du tilgang til oppsummeringsquizen.</p>
             </div>
 
-            <button>Kom i gang!</button>
+            <button id="start-modul">Kom i gang!</button>
+            <form action="">
+                <button id="lagre-btn">- Lagre til senere -</button>
+            </form>
             
         </section>
 
-        <article class="">
+        <article class="modul-innhold-container hidden">
             <div class="splide">
         <div class="splide__track modul-innhold">
             <ul class="splide__list">
