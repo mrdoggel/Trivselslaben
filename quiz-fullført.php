@@ -22,11 +22,8 @@
         <div class="quiz-res-container">
             <h2>Du har nå fullført quizen</h2> 
            <?php require "assets/reuse/hentQuizResultat.php"; ?>
-
         </div>
-
         <p><span><a href="alleQuizer.php">Utforsk flere quizer</a></span></p>
-        
     </main>
 </body>
 </html>

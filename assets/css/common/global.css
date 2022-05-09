@@ -100,31 +100,39 @@ padding: 0.25rem;
   h1 span {
     font-size: 1.2rem;
   }
+
   div h2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
+
   div p {
     font-size: 0.8rem;
   }
+
   p {
     font-size: 1rem;
   }
+
   ul li {
     font-size: 0.8rem;
   }
+
   div #beskrivelse {
     margin: 1rem auto 0rem auto;
   }
+
   div .dot {
     height: 0.4rem;
     width: 0.4rem;
   }
+
   div .guide {
     min-height: 40vh;
     max-height: 40vh;
   }
+  
   div .text .vedlegg-liste li span {
     font-size: 0.8rem;
   }

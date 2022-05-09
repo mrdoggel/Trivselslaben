@@ -243,19 +243,52 @@ section button {
 
 @media only screen and (max-width: 1520px) {
     main nav {
-        font-size: 1rem;
+        font-size: 0.85rem;
         margin-top: 0.25rem;
     }
 
-    article {
-        margin-top: 2.5rem;
-    }
-
-    article h1 {
-        font-size: 1.5rem;
-    }
-
-    article p {
+    section button {
         font-size: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    #progresjon {
+        margin-top: 1.5rem;
+    }
+
+    #rep-spm-info {
+        font-size: 0.75rem;
+    }
+
+    #om-modulen {
+        margin-top: 0.5rem;
+        margin-bottom: 0rem;
+    }
+
+    section button {
+        margin-top: 1rem;
+    }
+
+    .første-tittel-modul {
+        font-size: 1.25rem;
+    }
+
+    .andre-tittel-modul {
+        font-size: 1.25rem;
+    }
+
+    .modul-innhold p {
+        font-size: 1rem;
+    }
+
+    article {
+        margin-top: 3rem;
     }
 }
