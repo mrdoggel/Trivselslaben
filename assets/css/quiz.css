@@ -20,13 +20,16 @@ legend span {
 }
 label{
     width: 90%;
-    font-size: 1.5rem;
+    font-size: 2.1rem;
     box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
-    margin: 4rem 1rem 2rem 1rem; 
+    margin: 4rem 1rem 1rem 1rem; 
     padding: 2rem; 
 }
-form{
+.spm-div form{
     width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-top: 5rem;
 }
 button {
     width: fit-content;
@@ -72,6 +75,10 @@ button:hover {
     justify-content: center;
     width: 90%;
     margin:auto;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    height: 65vh;
+    position: relative;
 }
 .svr-1 {
     background-color: #F5F187;
