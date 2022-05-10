@@ -135,6 +135,12 @@ input[type=submit]:hover {
 }
 
 @media only screen and (max-width: 1300px) {
+    #venstre h1 {
+        font-size: 3.5rem;
+    }
+    #venstre h2 {
+        font-size: 2rem;
+    }
     .introtekst h1 {
         font-size: 2rem;
     }
@@ -155,7 +161,7 @@ input[type=submit]:hover {
         font-size: 1rem;
     }
     .glemt, .reg {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
     }
     input[type=submit]{
         font-size: 1.25rem;
