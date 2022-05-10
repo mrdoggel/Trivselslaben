@@ -93,6 +93,10 @@
         width: 15vw;
     }
     #navn_poeng .poeng-info-txt {
-      font-size: 0.75rem;
+      font-size: 0.65rem;
+    }
+
+    #navn_poeng p {
+      font-size: 0.8rem;
     }
   }
