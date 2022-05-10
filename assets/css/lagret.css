@@ -120,4 +120,21 @@
     .kurs h3, .underveis h3 {
         font-size: 1rem;
     }
+
+    .quiz-div {
+        min-width: 200px;
+        max-width: 200px;
+    }
+
+    .quiz-div h2{
+        font-size: 1rem;
+    }
+
+    .modul h3 {
+        font-size: 1rem;
+    }
+
+    .modul p {
+        font-size: 0.8rem;
+    }
 }
