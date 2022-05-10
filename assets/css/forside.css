@@ -263,7 +263,7 @@ main img {
   }
   section {
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   h2 {
@@ -306,18 +306,18 @@ main img {
   }
   
   #section-container h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .scrollmenu .kurs {
-    min-width: 180px;
-    max-width: 180px;
-    height: 220px;
+    min-width: 150px;
+    max-width: 150px;
+    height: 180px;
   }
 
   .scrollmenu .modul {
-    min-width: 260px;
-    height: 240px;
+    min-width: 240px;
+    height: 220px;
   }
 
   .kurs {
@@ -331,7 +331,7 @@ main img {
   }
 
   .modul h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .kurs, .modul {
