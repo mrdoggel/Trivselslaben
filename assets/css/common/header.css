@@ -100,4 +100,10 @@
     #navn_poeng p {
       font-size: 0.8rem;
     }
+
+    #profil img {
+      min-width: 2.5rem;
+      max-width: 2.5rem;
+      height: 2.5rem;
   }
+}
