@@ -96,7 +96,7 @@ button:hover {
     background-color: #95E3EC;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1550px) {
     main #container {
         margin-top: 4rem;
     }
@@ -106,13 +106,16 @@ button:hover {
     }
 
     label {
-        font-size: 1.5rem;
+        font-size:1.75rem;
         padding: 1rem;
         margin: 2.5rem 1rem 0rem 1rem;
     }
+    button {
+        font-size: 1rem;
+    }
 
     .svr {
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin: 0rem 1rem 1.25rem 1rem;
     }
 
