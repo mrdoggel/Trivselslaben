@@ -22,27 +22,25 @@
             require "assets/reuse/navbar.php";
             require "assets/reuse/top-nav.php";
         ?>
-        
 
-
-                <?php
-                    if (isset($_GET['side'])) {
-                        if ($_GET['side'] == 1) {
-                            require "assets/reuse/hentProfilSide.php";
-                        }
-                        if ($_GET['side'] == 2) {
-                            require "assets/reuse/hentInteresseSide.php";
-                        }
-                        if ($_GET['side'] == 3) {
-                            require "assets/reuse/hentLagretSide.php";
-                        }
-                    } else {
-                        require "assets/reuse/hentProfilSide.php";
-                    }
+        <?php
+            if (isset($_GET['side'])) {
+                if ($_GET['side'] == 1) {
+                    require "assets/reuse/hentProfilSide.php";
+                }
+                if ($_GET['side'] == 2) {
+                    require "assets/reuse/hentInteresseSide.php";
+                }
+                if ($_GET['side'] == 3) {
+                    require "assets/reuse/hentLagretSide.php";
+                }
+            } else {
+                require "assets/reuse/hentProfilSide.php";
+            }
 
 
 
-                ?>
+        ?>
 
 
 

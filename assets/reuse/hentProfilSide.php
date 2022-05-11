@@ -1,14 +1,13 @@
 <main>
-<nav id="admin-nav">
-    <h1>Min profil</h1>
-    <ul>
-        <a href="minside.php?side=1"><li id="bruker-info" class="side-nav-valgt">Brukerinformasjon</li></a>
-        <a href="minside.php?side=2"><li id="bruker-interesser">Mine interesser</li></a>
-        <a href="minside.php?side=3"><li id="bruker-lagret">Lagret</li></a>
-        <a href="assets/connection/logout.php"><li>Logg ut</li></a>
-    </ul>
-</nav>
-
+        <nav id="admin-nav">
+            <h1>Min profil</h1>
+            <ul>
+                <a href="minside.php?side=1"><li id="bruker-info" class="side-nav-valgt">Brukerinformasjon</li></a>
+                <a href="minside.php?side=2"><li id="bruker-interesser">Mine interesser</li></a>
+                <a href="minside.php?side=3"><li id="bruker-lagret">Lagret</li></a>
+                <a href="assets/connection/logout.php"><li>Logg ut</li></a>
+            </ul>
+        </nav>
 <section>
     <form class="personling-info" action="minside.php" method="post" enctype="multipart/form-data">
 
@@ -61,3 +60,5 @@
         </div>
         <?php  endif ?>
     </form>
+<section>
+</main>
