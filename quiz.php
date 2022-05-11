@@ -39,7 +39,7 @@
             if (isset($_GET['spm'])) {
                 $spm = $_GET['spm'];
             } else {
-                $spm = 1;
+                require "assets/reuse/hentFørsteSpm.php";
             }
         ?>
     </header>
