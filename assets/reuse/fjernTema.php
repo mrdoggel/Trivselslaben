@@ -6,7 +6,7 @@ $id = $_SESSION['id'];
 $sql = $conn->prepare("DELETE FROM person_i_tema WHERE tema_id = $tema AND person_id = $id");
 $sql->execute();
 if ($sql->execute() === TRUE) {
-    header('location: ../../minside.php');
+    header('location: ../../minside.php?side=2');
 } else {
     echo "Error deleting record: " . $conn->error;
 }

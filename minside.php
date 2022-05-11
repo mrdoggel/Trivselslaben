@@ -20,116 +20,31 @@
     <body id="body">
         <?php
             require "assets/reuse/navbar.php";
-            require "assets/reuse/top-nav.php"; 
+            require "assets/reuse/top-nav.php";
         ?>
         
-        <main>
-            <nav id="admin-nav">
-                <h1>Min profil</h1>
-                <ul>
-                    <li id="bruker-info" class="side-nav-valgt">Brukerinformasjon</li>
-                    <li id="bruker-interesser">Mine interesser</li>
-                    <li id="bruker-lagret">Lagret</li>
-                    <a href="assets/connection/logout.php"><li>Logg ut</li></a>
-                </ul>
-            </nav>
 
-            <section>
-                <form class="personling-info" action="minside.php" method="post" enctype="multipart/form-data">
-                    
-                    <div id="navn-bilde">
-                        <?php if (isset($_SESSION['bilde'])) { ?>
-                        
-                        <div>
-                            <img src="<?php echo $_SESSION['bilde']; ?>"></img>
-                            <label for="bilde" id="last-opp-btn"><span>last opp<span></label>
-                            <input id="bilde" type="file" name ="bilde" placeholder="Nytt bilde">
-                        </div>
-                        <?php } else { ?>
-                        <div>
-                            <img src="assets/images/default.jpg"></img>
-                            <label for="bilde" id="last-opp-btn">last opp</label>
-                            <input id="bilde" type="file" name ="bilde" placeholder="Nytt bilde">
-                        </div>
-                        
-                        <?php } ?>
-                        <h2><?php echo $_SESSION['fnavn'] . " " . $_SESSION['enavn'] ?></h2>
-                    </div>
 
-                    <div>
-                        
-                        <div>
-                        <label for="nyttfnavn">Fornavn</label>
-                        <input value="<?php echo $_SESSION['fnavn'] ?>" name="nyttfnavn" type="text" id="nyttfnavn" placeholder="fornavn">
-                        </div>
-                        <div>
-                        <label for="nyttenavn">Etternavn</label>
-                        <input value="<?php echo $_SESSION['enavn'] ?>" name="nyttenavn" type="text" id="nyttenavn" placeholder="etternavn">
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div>
-                            <label for="nybesk">Beskrivelse</label>
-                            <textarea rows="3" name="nybesk" type="text" id="nybesk" placeholder="beskrivelse"><?php echo $_SESSION['beskrivelse'] ?></textarea>
-                        </div>
-                    </div>
+                <?php
+                    if (isset($_GET['side'])) {
+                        if ($_GET['side'] == 1) {
+                            require "assets/reuse/hentProfilSide.php";
+                        }
+                        if ($_GET['side'] == 2) {
+                            require "assets/reuse/hentInteresseSide.php";
+                        }
+                        if ($_GET['side'] == 3) {
+                            require "assets/reuse/hentLagretSide.php";
+                        }
+                    } else {
+                        require "assets/reuse/hentProfilSide.php";
+                    }
 
-                    <div id="oppdater-btn"> 
-                        <button name="oppdater-knapp" type="submit">Oppdater profil</button>
-                    </div>
-                    <?php if (count($errors) > 0) : ?>
-                    <div id="error">
-                        <?php foreach ($errors as $error) : ?>
-                        <p>* <?php echo $error ?></p>
-                        <?php endforeach ?>
-                    </div>
-                    <?php  endif ?>
-                </form>
 
-                <div id="hidden" class="interesser">
-                    <section>
-                        <h2>Dine interesser</h2>
-                        <?php
-                            require "assets/reuse/hentTema.php"
-                        ?>
-                    </section>
 
-                    <section id="finn-og-legg-til">
-                        <form method="post" action="assets/reuse/leggTilTema.php">    
-                            <div class="dropdown">
-                                <input class="søk-input" id="myInput" type="text" placeholder="Søk og finn interesser ..."> 
+                ?>
 
-                                <div id="myDropdown" class="dropdown-content">
-                                    <?php
-                                        require "assets/connection/conn.php";
-                                        $sql = $conn->prepare("SELECT * FROM tema WHERE tema_id NOT IN(SELECT tema_id FROM person_i_tema WHERE person_id = $id)");
-                                        $sql->execute();
-                                        $result = $sql->get_result();
-                                        if ($result->num_rows > 0) {
-                                            while($row = $result->fetch_assoc()) {
-                                                echo '<button id="bruker-interesser" name="tema-knapp" type="submit" value="';
-                                                echo $row["tema_id"];
-                                                echo '">';
-                                                echo $row["navn"];
-                                                echo '</button><br>';
-                                            }
-                                        }
-                                    ?>
-                                </div>
 
-                            </div>
-                        </form>
-                    </section>
-                </div>
-
-                <div id="hidden" class="lagret">
-                    <?php
-                        require "assets/reuse/hentLagretQuiz.php";
-                        require "assets/reuse/hentLagretKurs.php";
-                        require "assets/reuse/hentLagretModul.php";
-                    ?>
-                </div>
 
             </section>
 
