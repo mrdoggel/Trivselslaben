@@ -14,8 +14,9 @@ if ($result->num_rows > 0) {
         echo '<h4>KURS</h4>';
         echo '<img src="';
         echo $row["bilde"];
-        echo '" alt="bilde">';
-        echo '<div class="bottom"';
+        echo '" alt="bilde"><h4 style="text-align: right; padding-right: 7px;">';
+        echo $row['varighet'];
+        echo ' minutter</h4><div class="bottom"';
         echo 'style="background-color:';
         echo $row["farge"];
         echo '"><h3>';
