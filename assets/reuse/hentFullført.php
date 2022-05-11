@@ -7,9 +7,13 @@ $result = $sql->get_result();
 $sql1 = $conn->prepare("SELECT * FROM person_i_modul pm, modul m WHERE pm.modul_id = m.modul_id AND pm.person_id = $id");
 $sql1->execute();
 $result1 = $sql1->get_result();
+if ($result1->num_rows > 0 || $result->num_rows > 0) {
+    if (!isset($tittel)) {
+        $tittel = "<h2>Her finner du alt du har fullført </h2>";
+        echo $tittel;
+    }
+}
 if ($result->num_rows > 0) {
-    $tittel = "<h2>Her finner du alt du har fullført </h2>";
-    echo $tittel;
     while($row = $result->fetch_assoc()) {
             $prosent = $row['antall_rette'] / $row['antall_spørsmål'] * 100;
             $prosentdesimal = $prosent/100;
@@ -56,11 +60,6 @@ if ($result->num_rows > 0) {
             echo 'deg);}}';
             echo '</style></div></div>';
         }
-} if ($result1->num_rows > 0) {
-    if (!isset($tittel)) {
-        $tittel = "<h2>Her finner du alt du har fullført </h2>";
-            echo $tittel;
-    }
      while($row1 = $result1->fetch_assoc()) {
         $prosent = 100;
         $prosentdesimal = $prosent/100;
