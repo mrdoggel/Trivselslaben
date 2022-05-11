@@ -76,7 +76,7 @@ input#reg-tema:checked + label#reg-tema {
     font-weight: 500;
 }
 
-@media only screen and (max-width: 1520px) {
+@media only screen and (max-width: 1550px) {
     label {
         margin: 0rem 4rem 0rem 0rem; 
     }

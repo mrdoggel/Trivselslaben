@@ -143,7 +143,7 @@
   margin-right: 7rem;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1550px) {
   main > div img {
     max-height: 20%;
   }

@@ -54,7 +54,7 @@ button:hover{
     letter-spacing: 0.02rem;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1550px) {
     section{
         font-size: 1.5rem;
         padding: 5rem;

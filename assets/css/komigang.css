@@ -150,7 +150,7 @@ button:hover{
     font-size: larger;
     letter-spacing: 0.02rem;
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1550px) {
   .komigang-container img {
     max-height: 25vh;
   }
