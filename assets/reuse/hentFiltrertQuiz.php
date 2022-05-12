@@ -1,7 +1,7 @@
 <?php
 require "assets/connection/conn.php";
 if (isset($otId1)) {
-    $sql = $conn->prepare("SELECT q.* FROM quiz q, quiz_i_tema qt, tema_i_ot tio WHERE q.quiz_id = qt.quiz_id AND qt.tema_id = tio.tema_id AND tio.ot_id = $otId1");
+    $sql = $conn->prepare("SELECT q.* FROM quiz q, quiz_i_ot tio WHERE q.quiz_id = tio.quiz_id AND tio.ot_id = $otId1");
     $sql->execute();
     $result = $sql->get_result();
     if ($result->num_rows > 0) {
@@ -34,7 +34,7 @@ if (isset($otId1)) {
     }
 }
 if (isset($otId2)) {
-    $sql = $conn->prepare("SELECT q.* FROM quiz q, quiz_i_tema qt, tema_i_ot tio WHERE q.quiz_id = qt.quiz_id AND qt.tema_id = tio.tema_id AND tio.ot_id = $otId2");
+    $sql = $conn->prepare("SELECT q.* FROM quiz q, quiz_i_ot tio WHERE q.quiz_id = tio.quiz_id AND tio.ot_id = $otId2");
     $sql->execute();
     $result = $sql->get_result();
     if ($result->num_rows > 0) {
@@ -67,7 +67,7 @@ if (isset($otId2)) {
     }
 }
 if (isset($otId3)) {
-    $sql = $conn->prepare("SELECT q.* FROM quiz q, quiz_i_tema qt, tema_i_ot tio WHERE q.quiz_id = qt.quiz_id AND qt.tema_id = tio.tema_id AND tio.ot_id = $otId3");
+    $sql = $conn->prepare("SELECT q.* FROM quiz q, quiz_i_ot tio WHERE q.quiz_id = tio.quiz_id AND tio.ot_id = $otId3");
     $sql->execute();
     $result = $sql->get_result();
     if ($result->num_rows > 0) {
@@ -100,7 +100,7 @@ if (isset($otId3)) {
     }
 }
 if (isset($otId4)) {
-    $sql = $conn->prepare("SELECT q.* FROM quiz q, quiz_i_tema qt, tema_i_ot tio WHERE q.quiz_id = qt.quiz_id AND qt.tema_id = tio.tema_id AND tio.ot_id = $otId4");
+    $sql = $conn->prepare("SELECT q.* FROM quiz q, quiz_i_ot tio WHERE q.quiz_id = tio.quiz_id AND tio.ot_id = $otId4");
     $sql->execute();
     $result = $sql->get_result();
     if ($result->num_rows > 0) {

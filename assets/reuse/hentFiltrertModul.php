@@ -1,7 +1,7 @@
 <?php
 require "assets/connection/conn.php";
 if (isset($otId1)) {
-    $sql = $conn->prepare("SELECT m.* FROM modul m , modul_i_tema mt, tema_i_ot tio WHERE m.modul_id = mt.modul_id AND mt.tema_id = tio.tema_id AND tio.ot_id = $otId1");
+    $sql = $conn->prepare("SELECT m.* FROM modul m , modul_i_ot tio WHERE m.modul_id = tio.modul_id AND tio.ot_id = $otId1");
     $sql->execute();
     $result = $sql->get_result();
     if ($result->num_rows > 0) {
@@ -23,7 +23,7 @@ if (isset($otId1)) {
     }
 }
 if (isset($otId2)) {
-    $sql = $conn->prepare("SELECT m.* FROM modul m , modul_i_tema mt, tema_i_ot tio WHERE m.modul_id = mt.modul_id AND mt.tema_id = tio.tema_id AND tio.ot_id = $otId2");
+    $sql = $conn->prepare("SELECT m.* FROM modul m , modul_i_ot tio WHERE m.modul_id = tio.modul_id AND tio.ot_id = $otId2");
     $sql->execute();
     $result = $sql->get_result();
     if ($result->num_rows > 0) {
@@ -45,7 +45,7 @@ if (isset($otId2)) {
     }
 }
 if (isset($otId3)) {
-    $sql = $conn->prepare("SELECT m.* FROM modul m , modul_i_tema mt, tema_i_ot tio WHERE m.modul_id = mt.modul_id AND mt.tema_id = tio.tema_id AND tio.ot_id = $otId3");
+    $sql = $conn->prepare("SELECT m.* FROM modul m , modul_i_ot tio WHERE m.modul_id = tio.modul_id AND tio.ot_id = $otId3");
     $sql->execute();
     $result = $sql->get_result();
     if ($result->num_rows > 0) {
@@ -67,7 +67,7 @@ if (isset($otId3)) {
     }
 }
 if (isset($otId4)) {
-    $sql = $conn->prepare("SELECT m.* FROM modul m , modul_i_tema mt, tema_i_ot tio WHERE m.modul_id = mt.modul_id AND mt.tema_id = tio.tema_id AND tio.ot_id = $otId4");
+    $sql = $conn->prepare("SELECT m.* FROM modul m , modul_i_ot tio WHERE m.modul_id = tio.modul_id AND tio.ot_id = $otId4");
     $sql->execute();
     $result = $sql->get_result();
     if ($result->num_rows > 0) {
