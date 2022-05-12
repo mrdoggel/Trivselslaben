@@ -117,7 +117,7 @@ main img {
   margin: auto;
 }
 
-.kurs:hover, .modul:hover{
+.kurs:hover, .modul:hover {
   transition: all 0.3s ease-in-out;
   opacity: 100%;
   transform: translateY(-1.5rem);
@@ -145,9 +145,8 @@ main img {
   justify-content: center;
 }
 .underveis .bottom {
-  background-color: #B7BFDE;
   height: 15vh;
-  margin-top: 1rem; 
+  margin-top: 1rem;
 }
 .underveis-container p:hover {
   cursor: pointer;
@@ -156,6 +155,13 @@ main img {
   font-size: larger;
   border-radius: 0.5rem;
   background-color: #f2f088;
+}
+
+.underveis-container:hover {
+    transition: all 0.3s ease-in-out;
+    opacity: 100%;
+    transform: translateY(-1rem);
+    cursor: pointer;
 }
 
 /* -------- */
@@ -174,12 +180,18 @@ main img {
   justify-content: center;
 }
 
-.fullført p{
-  padding-left: 0.5rem; 
+.fullført a {
+    width: 100%;
+    height: 100%;
+}
+
+.fullført p {
+  padding-left: 0.5rem;
   text-align: left;
   font-size: 1rem;
   font-weight: 100;
   line-height: normal;
+  height: 100%;
 }
 
 .fullført p span {
@@ -187,27 +199,38 @@ main img {
 }
 
 .fullført .poeng {
-  width: 100%;
-  padding: 1rem 0rem 1rem 0rem; 
-  margin-top: 1rem; 
+  padding: 1rem 0rem 1rem 0rem;
+  margin-top: 1rem;
   background-color: #F4F6FA;
   font-size: 1rem;
 }
 
-.fullført .bottom {
+.fullført .bottom,
+.fullført .modulbottom {
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  background: #B6F3AB;
   padding: 0.5rem; 
-  height: auto;
+  height: 15%;
+}
+.fullført .modulbottom {
+    background: #68cbd7;
+}
+
+.fullført:hover {
+    transition: all 0.3s ease-in-out;
+    opacity: 100%;
+    transform: translateY(-0.5rem);
+    cursor: pointer;
+    box-shadow:  1px 1px 20px 1px rgb(0 0 0 / 10%);
 }
 
 /* --------------- */
 /* PROGRESS CIRLCE */ 
 /* --------------- */
+
 .circle-wrap {
   margin: auto;
   width: 7.9vw;
@@ -217,16 +240,17 @@ main img {
 }
 
 .circle-wrap .circle .mask,
-.circle-wrap .circle .fill {
+.circle-wrap .circle .fill,
+.circle-wrap .circle .fillmodul {
   width: 7.9vw;
   height: 7.9vw;
   position: absolute;
   border-radius: 50%;
 }
 
-.mask .fill {
+.mask .fill,
+.mask .fillmodul {
   clip: rect(0px, 3.95vw, 7.9vw, 0px);
-  background-color: #D0D9F9;
 }
 
 .circle-wrap .circle .mask {

@@ -30,7 +30,7 @@
         <div>
             <!-- Ikke funksjonelt, bare for å vise hva som kan implementeres -->
             <img id="modul-bilde" src="assets/images/analytics.png" alt="modul-img">
-            <h2>Modul: Inntekter, lønn, utgifter og regnskap</h2>
+            <h2>Modul: Økonomi i en bedrift</h2>
             <nav>
                 <dl>
                     <dt class="lest">1. Inntekter og utgifter</dt>
@@ -55,7 +55,7 @@
 
         <section class="modul-info-container">
             <h2>MODUL</h2>
-            <h1>Inntekter, lønn, utgifter og regnskap</h1>
+            <h1>Økonomi i en bedrift</h1>
                 <!-- Ikke funksjonelt, bare for å vise hva som kan implementeres -->
                 <div id="progresjon">
                     <p>Din progresjon:</p>
