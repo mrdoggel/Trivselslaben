@@ -215,6 +215,76 @@ section button {
     animation: moveGradient 4s alternate infinite;
 }
 
+.circle-wrap {
+  margin: auto;
+  width: 7.9vw;
+  height: 7.9vw;
+  background: #fefcff;
+  border-radius: 50%;
+  padding-top: 1rem;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 7.9vw;
+  height: 7.9vw;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.half .fill {
+  clip: rect(0px, 3.95vw, 7.9vw, 0px);
+  background: linear-gradient(
+          #d0d9f9,
+          #a3ecc8,
+          #f2f088
+        );
+}
+
+.full .fill {
+  clip: rect(0px, 3.95vw, 7.9vw, 0px);
+  background: linear-gradient(
+          #f2f088,
+          #a3ecc8,
+          #d0d9f9
+        );
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 7.9vw, 7.9vw, 3.95vw);
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+#progresjon .circle-wrap .inside-circle {
+  width: 6.39vw;
+  height: 6.39vw;
+  border-radius: 50%;
+  font-family: "Leelawadee UI";
+  line-height: 6.32vw;
+  text-align: center;
+  margin-top: 0.734vw;
+  margin-left: 0.734vw;
+  position: absolute;
+  z-index: 100;
+  background: #ffffff;
+  font-weight: lighter;
+  font-size: 1.25vw;
+}
+
+@keyframes fill{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
 @keyframes moveGradient {
     50% {
       background-position: 100% 50%;
