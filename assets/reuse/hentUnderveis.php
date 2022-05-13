@@ -38,7 +38,7 @@ if ($result1->num_rows > 0 || $result->num_rows > 0) {
         skriv(3);
     }
 }else {
-    $tittel = '<h2>Det ser ikke ut som du har begynt på noe. Trykk nedenfor for å begynne<br><br><br><a href="alleQuizer.php" class="utfclass">Test deg selv i quiz</a><br><br><a href="alleKurs.php" class="utfclass">Finn et kurs</a><br><br><a href="alleModuler.php" class="utfclass">Utforsk moduler</a></h2>';
+    $tittel = '<h2>Det ser ikke ut som du har begynt på noe. Trykk nedenfor for å begynne<br><br><br><a class="link1" href="alleQuizer.php" class="utfclass">Test deg selv i quiz</a><br><br><a class="link2" href="alleKurs.php" class="utfclass">Finn et kurs</a><br><br><a class="link3" href="alleModuler.php" class="utfclass">Utforsk moduler</a></h2>';
     echo $tittel;
 }
 
