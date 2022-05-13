@@ -60,6 +60,7 @@
     min-width: 200px;
     max-width: 200px;
 }
+
 .overlap button, .overlap p {
     border: none;
     background-color: transparent;
@@ -127,11 +128,25 @@
     font-family: "Segoe UI";
     font-weight: 400;
 }
+
+.kurs .topp {
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    height: 65%;
+}
+
+.kurs .bottom {
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    height: 35%;
+}
+
 .modul p {
     font-size: 1rem;
     font-weight: 100;
     letter-spacing: -0.2px;
-    line-height: 200%;
   }
 .kurs img, .modul img {
     text-align: center;
@@ -139,19 +154,49 @@
     margin: 0rem 1rem 1rem 1rem;
     align-self: center;
   }
+
 .kurs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     min-width: 220px;
     max-width: 220px;
+    min-height: 240px;
+    max-height: 240px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
+
 .modul {
-    display: inline-block;
-    position: relative;
-    min-width: 300px;
-    max-width: 300px;
-    white-space: break-spaces;
+    height: 240px;
+    width: 300px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.modul h4 {
+    height: 14px;
+}
+
+.modul a {
+    height: 240px;
+    width: 300px;
+}
+
+.modul .modul-tittel {
+    height: 40%;
+}
+
+.modul .bottom {
+    height: 50%;
+    text-align: center;
+    background: #68cbd7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    max-width: 100%;
 }
 
 .modul-tittel {
@@ -160,22 +205,14 @@
     justify-content: center;
     align-items: center;
 }
-.bottom, .modulbottom {
+.kurs .bottom{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 52.5%;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     white-space: break-spaces;
-}
-.modul .bottom {
-    position: absolute;
-    bottom: 0;
-    min-height: 52.5%;
-    text-align: center;
-    background: #68cbd7;
 }
 
 .kurs:hover, .modul:hover, .quiz-div:hover{

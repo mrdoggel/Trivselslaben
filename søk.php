@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="assets/css/common/reset.css">
     <link rel="stylesheet" href="assets/css/common/global.css">
     <link rel="stylesheet" href="assets/css/forside.css">
-    <link rel="stylesheet" href="assets/css/lagret.css">
     <script src="assets/js/quiz.js"></script>
     <script src="assets/js/minside.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

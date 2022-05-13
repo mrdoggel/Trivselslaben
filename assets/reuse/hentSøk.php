@@ -22,28 +22,25 @@ if ($result2->num_rows > 0 || $result1->num_rows > 0 || $result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()) {
         echo '<div id="kurs';
-            echo $row["kurs_id"];
-            echo '" class="kurs">';
-            echo '<a href="kurs.php?kurs=';
-                echo $row["kurs_id"];
-                echo '">';
-                echo '<h4>KURS</h4>';
-                echo '<img src="';
-                if (!is_null($row["bilde"])) {
-                    echo $row["bilde"];
-                } else {
-                    echo "assets/media/default-image.png";
-                }
-                echo '" alt="image">';
-                echo '<div class="bottom"';
-                    echo 'style="background-color:';
-                    echo $row["farge"];
-                    echo '"><h3>';
-                    echo $row["navn"];
-                    echo '</h3>
-                </div>
-            </a>
-        </div>';
+                        echo $row["kurs_id"];
+                        echo '" class="kurs">';
+                        echo '<a href="kurs.php?kurs=';
+                        echo $row["kurs_id"];
+                        echo '">';
+                        echo '<div class="topp">';
+                        echo '<h4>KURS</h4>';
+                        echo '<img src="';
+                        echo $row["bilde"];
+                        echo '" alt="lightbulb"><h7>';
+                        echo $row['varighet'];
+                        echo ' minutter</h7>';
+                        echo '</div>';
+                        echo '<div class="bottom"';
+                        echo 'style="background-color:';
+                        echo $row["farge"];
+                        echo '"><h3>';
+                        echo $row["navn"];
+                        echo '</h3></div></a></div>';
     }
     while($row = $result1->fetch_assoc()) {
         echo '<div id="modul';

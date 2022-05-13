@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="assets/css/forside.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="assets/js/top-nav.js"></script>
+        <script src="assets/js/quiz.js"></script>
     </head>
     <body>
         <header>

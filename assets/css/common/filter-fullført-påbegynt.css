@@ -36,7 +36,7 @@ input[type="checkbox"]{
   margin: 0;
 }
 
-button[type="submit"]{
+.top button[type="submit"]{
     border: none;
     background-color: #a3ecc8;
     font-style: italic;

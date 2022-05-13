@@ -19,12 +19,14 @@ if ($result->num_rows > 0) {
                 echo '<a href="kurs.php?kurs=';
                 echo $row1["kurs_id"];
                 echo '">';
+                echo '<div class="topp">';
                 echo '<h4>KURS</h4>';
                 echo '<img src="';
                 echo $row1["bilde"];
-                echo '" alt="lightbulb"><h4 style="text-align: right; padding-right: 7px;">';
+                echo '" alt="lightbulb"><h7>';
                 echo $row1['varighet'];
-                echo ' minutter</h4>';
+                echo ' minutter</h7>';
+                echo '</div>';
                 echo '<div class="bottom"';
                 echo 'style="background-color:';
                 echo $row1["farge"];
@@ -54,6 +56,40 @@ if ($result->num_rows > 0) {
                 echo '"><p>';
                 echo $row2["beskrivelse"];
                 echo '</p></div></a></div>';
+            }
+        }
+        $sql3 = $conn->prepare("SELECT distinct q.* FROM quiz q, quiz_i_tema qt, tema t WHERE q.quiz_id = qt.quiz_id AND qt.tema_id = $temaId");
+        $sql3->execute();
+        $result3 = $sql3->get_result();
+        if ($result3->num_rows > 0) {
+            while($row3 = $result3->fetch_assoc()) {
+                echo '<div class="quiz-div" id="quiz-';
+                    echo $row3['quiz_id'];
+                    echo '">';
+                    echo '<a href="quiz.php?quiz=';
+                        echo $row3['quiz_id'];
+                        echo '">';
+                        echo '<img src="';
+                        echo $row3['bilde'];
+                        echo '" alt="quiz-img">
+                    </a>';
+                    echo '<h5>';
+                    echo $row3['quiznavn'];
+                    echo '</h5><h4>QUIZ</H4>';
+                    echo '<p id="mer" class="mer">&vellip;</p>';
+                    echo '<div id="overlap" class="overlap hidden">';
+                        echo '<p>';
+                        echo '<a href="quiz.php?quiz=';
+                        echo $row3['quiz_id'];
+                        echo '">Ta quizen</a></p>';
+                        echo '<form action="assets/connection/lagreQuiz.php" method="post">
+                            <input type="hidden" name="quiz" value="';
+                            echo $row3['quiz_id'];
+                            echo '"</input>
+                            <button name="quiz_knapp" type="submit">Lagre til senere</button>
+                        </form>';
+                    echo '</div>
+                </div>';
             }
         }
 
