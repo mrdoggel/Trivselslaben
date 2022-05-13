@@ -19,7 +19,12 @@
         <header>
             <?php
               require "assets/reuse/navbar.php";
-              require "assets/reuse/top-nav.php"
+              require "assets/reuse/top-nav.php";
+              if (isset($_POST['fullført-filter-knapp'])) {
+                  if (isset($_POST['fullført-filter'])) {
+                      $filter = $_POST['fullført-filter'];
+                  } else {$filter = 1;}
+              } else {$filter = 1;}
             ?>
         </header>
         <main>
