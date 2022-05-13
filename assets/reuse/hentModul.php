@@ -5,12 +5,13 @@ $sql->execute();
 $result = $sql->get_result();
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-        echo '<a href="modul.php?modul=';
-        echo $row["modul_id"];
-        echo '">';
+
         echo '<div id="modul';
         echo $row["modul_id"];
         echo '" class="modul">';
+        echo '<a href="modul.php?modul=';
+        echo $row["modul_id"];
+        echo '">';
         echo '<h4>MODUL</h4>';
         echo '<div class="modul-tittel">';
         echo '<h3>';
@@ -20,7 +21,7 @@ if ($result->num_rows > 0) {
         echo '<div class="bottom"';
         echo '"><p>';
         echo $row["beskrivelse"];
-        echo '</p></div></div></a>';
+        echo '</p></div></a></div>';
     }
 }
 ?>

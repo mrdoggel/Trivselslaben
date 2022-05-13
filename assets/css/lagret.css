@@ -1,36 +1,106 @@
 .quiz-div{
-    min-width: 300px;
-    max-width: 300px;
-    min-height: 37vh;
-    max-height: 37vh;
-    position: relative; 
-    text-align: center;
+    position:relative;
     box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
-    margin: 3rem 1.5rem 2rem 3rem; 
+    margin: 3rem 1.5rem 2rem 3rem;
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 240px;
+    max-height: 240px
+    text-align: center;
+}
+
+.quiz-div h4 {
+      width: 100%;
+      padding: 0.625rem 0rem 0rem 0.625rem;
+      text-align: left;
+      position: absolute;
+      bottom: 3%;
+      font-size: 0.75rem;
+      font-family: "Segoe UI";
+      font-weight: 400;
+ }
+
+#mer {
+    text-align: center;
+    width: 100%;
 }
 .quiz-div h2 {
-    margin-top: 0.5rem; 
+    margin-top: 0.5rem;
     font-size: 1.75rem;
-    padding: 0.5rem; 
+    padding: 0.5rem;
     font-weight: lighter;
 }
+
 .mer{
-    display: none;
+    position:absolute;
+    bottom: 3%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    z-index: 100;
+    text-align: center;
 }
+
+.mer:hover {
+    cursor: pointer;
+}
+
+.overlap {
+    position: absolute;
+    bottom: -7.15vh;
+    width: 100%;
+    max-height: fit-content;
+    text-align: center;
+    box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
+    background-color: #F4F6FA;
+}
+.overlap form {
+    box-shadow: none;
+    margin: 0rem;
+    padding: 0rem;
+    min-width: 200px;
+    max-width: 200px;
+}
+.overlap button, .overlap p {
+    border: none;
+    background-color: transparent;
+    position: static;
+    font-weight: 100;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    align-items:
+    width: 100%;
+}
+.overlap p:hover, .overlap button:hover {
+    cursor: pointer;
+    font-weight: 600;
+}
+
 .quiz-div img {
     max-width: 100%;
 }
+
 .kurs, .modul{
-    margin: 3rem 1.5rem 3rem 3rem; 
-    height: 37vh;
+    margin: 3rem 1.5rem 3rem 3rem;
+    min-height: 240px;
+    max-height: 240px
     border-radius: 0.5rem;
     box-shadow:  1px 1px 20px 1px rgb(0 0 0 / 5%);
     opacity: 85%;
+    text-align: center;
 }
-.kurs h2, .modul h2 {
-    width: 100%;
-    padding: 3rem; 
-    text-align: left;
+
+.quiz-div {
+    margin: 3rem 1.5rem 3rem 3rem;
+    min-height: 240px;
+    max-height: 240px
+    border-radius: 0.5rem;
+    opacity: 85%;
+    text-align: center;
+}
+
+.kurs h2, .modul h2, .quiz-div h2 {
     font-size: 1.75rem;
     font-weight: 500;
 }
@@ -90,12 +160,12 @@
     justify-content: center;
     align-items: center;
 }
-.bottom {
+.bottom, .modulbottom {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 100px;
+    min-height: 52.5%;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     white-space: break-spaces;
@@ -103,7 +173,7 @@
 .modul .bottom {
     position: absolute;
     bottom: 0;
-    height: 50%;
+    min-height: 52.5%;
     text-align: center;
     background: #68cbd7;
 }
@@ -113,7 +183,6 @@
     opacity: 100%;
     transform: translateY(-1.5rem);
     box-shadow:  1px 1px 20px 1px rgb(0 0 0 / 10%);
-    cursor: pointer;
 }
 
 @media only screen and (max-width: 1550px) {
@@ -122,12 +191,10 @@
     }
 
     .quiz-div {
-        min-width: 200px;
-        max-width: 200px;
     }
 
-    .quiz-div h2{
-        font-size: 1rem;
+    .quiz-div h2 {
+        font-size: 1.3rem;
     }
 
     .modul h3 {

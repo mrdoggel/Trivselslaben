@@ -50,20 +50,19 @@ p {
   font-size: 1rem;
   font-weight: 100;
   letter-spacing: -0.2px;
-  line-height: 200%;
 }
 main img {
   text-align: center;
   max-width: 40%;
-  margin: 0rem 1rem 1rem 1rem;
   align-self: center;
 }
 
 .scrollmenu {
   display: flex;
   overflow: auto;
-  white-space: nowrap;
+  white-space: wrap;
   padding-bottom: 2rem;
+  align-items: center;
 }
 .kurs {
   display: flex;
@@ -79,12 +78,18 @@ main img {
   max-width: 300px;
   white-space: break-spaces;
 }
+
+.modul p {
+    line-height: 200%;
+}
+
 .kurs, .modul{
-  margin: 2rem 1.5rem 3rem 3rem; 
-  height: 290px;
+  margin: 2rem 1.5rem 3rem 3rem;
   border-radius: 0.5rem;
   box-shadow:  1px 1px 20px 1px rgb(0 0 0 / 5%);
   opacity: 85%;
+  min-height: 240px;
+  max-height: 240px
 }
 .modul-tittel {
   height: 40%;
@@ -92,6 +97,7 @@ main img {
   justify-content: center;
   align-items: center;
 }
+
 .bottom {
   display: flex;
   align-items: center;
@@ -210,10 +216,10 @@ main img {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 25%;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  padding: 0.5rem; 
-  height: 15%;
+  max-width: 100%;
 }
 .fullført .modulbottom {
     background: #68cbd7;
@@ -275,6 +281,22 @@ main img {
 }
 
 @media only screen and (max-width: 1550px) {
+
+  .quiz-div h2 {
+      font-size: 1.3rem;
+  }
+
+  .mer {
+      font-size: 1.3rem;
+  }
+
+  .overlap p {
+      font-size: 0.8rem;
+  }
+  .overlap button, .overlap p {
+      font-size: 0.8rem;
+  }
+
   .utfclass {
     background: linear-gradient( 180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 70%, #B6F3AB 0%,#B6F3AB 0%);
     margin-right: 2rem;
@@ -335,14 +357,12 @@ main img {
   }
 
   .scrollmenu .kurs {
-    min-width: 150px;
-    max-width: 150px;
-    height: 180px;
+    min-width: 200px;
+    max-width: 200px;
   }
 
   .scrollmenu .modul {
     min-width: 240px;
-    height: 220px;
   }
 
   .kurs {

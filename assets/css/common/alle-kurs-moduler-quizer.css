@@ -1,8 +1,8 @@
-#alle-kurs, #alle-moduler {
+#alle-kurs, #alle-moduler, #alle-quizer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 60%;
+    width: 70%;
     margin: auto;
     margin-top: 1rem;
 }
@@ -12,12 +12,17 @@
 }
 
 #alle-moduler {
-    width: 60%;
+    width: 70%;
 }
+
+#alle-quizer {
+    width: 70%;
+}
+
 main {
     flex-wrap: wrap;
 }
-form {
+.filter form {
     width: 100%;
     text-align: center;
 }

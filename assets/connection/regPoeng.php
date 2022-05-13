@@ -26,24 +26,34 @@ if ($result->num_rows > 0) {
     if ($row['antall_svart'] != $antallSpørsmål) {
         //Hvis brukeren fullførte quizen
         if ($antSvart == $antallSpørsmål) {
-            //Oppdater den allerede opprettede raden + poeng
-            $sql = $conn->prepare("UPDATE person_i_quiz SET antall_rette = ?, fullført_dato = ?, antall_svart = ? WHERE person_id = ? AND quiz_id = ?");
-            $sql->bind_param("sssss", $antRett, $dato, $antSvart, $id, $quiz);
-            if($sql->execute()) {
-                $sql = $conn->prepare("UPDATE person SET poeng = poeng + ? WHERE person_id = $id");
-                $sql->bind_param("s", $poeng);
+            if ($antRett > $antallSpørsmål / 2) {
+                //Oppdater den allerede opprettede raden + poeng
+                $sql = $conn->prepare("UPDATE person_i_quiz SET antall_rette = ?, fullført_dato = ?, antall_svart = ? WHERE person_id = ? AND quiz_id = ?");
+                $sql->bind_param("sssss", $antRett, $dato, $antSvart, $id, $quiz);
                 if($sql->execute()) {
-                    $_SESSION['poeng'] = $_SESSION['poeng'] + $poeng;
+                    $sql = $conn->prepare("UPDATE person SET poeng = poeng + ? WHERE person_id = $id");
+                    $sql->bind_param("s", $poeng);
+                    if($sql->execute()) {
+                        $_SESSION['poeng'] = $_SESSION['poeng'] + $poeng;
+                        header("location: ../../quiz-fullført.php?quiz=$quiz");
+                    }
+                }
+            } else {
+                //Oppdater den allerede opprettede raden
+                $sql = $conn->prepare("UPDATE person_i_quiz SET antall_rette = ?, antall_svart = ? WHERE person_id = ? AND quiz_id = ?");
+                $sql->bind_param("ssss", $antRett, $antSvart, $id, $quiz);
+                if($sql->execute()) {
                     header("location: ../../quiz-fullført.php?quiz=$quiz");
                 }
             }
+
         //Hvis brukeren ikke fullførte quizen
         } else {
-            //Oppdater den allerede opprettede raden + poeng
+            //Oppdater den allerede opprettede raden
             $sql = $conn->prepare("UPDATE person_i_quiz SET antall_rette = ?, antall_svart = ? WHERE person_id = ? AND quiz_id = ?");
             $sql->bind_param("ssss", $antRett, $antSvart, $id, $quiz);
             if($sql->execute()) {
-                header("location: ../../forside.php");
+                header("location: ../../quiz-fullført.php?quiz=$quiz");
             }
         }
     //Hvis quizen allerede har gitt poeng
@@ -59,22 +69,32 @@ if ($result->num_rows > 0) {
 } else {
     //Hvis brukeren fullførte quizen
     if ($antSvart == $antallSpørsmål) {
-        $sql = $conn->prepare("INSERT INTO person_i_quiz (person_id, quiz_id, antall_rette, fullført_dato, antall_svart) VALUES (?,?,?,?,?)");
-        $sql->bind_param("sssss", $id, $quiz, $antRett, $dato, $antSvart);
-        if($sql->execute()) {
-            $sql = $conn->prepare("UPDATE person SET poeng = poeng + ? WHERE person_id = $id");
-            $sql->bind_param("s", $poeng);
+        if ($antRett > $antallSpørsmål / 2) {
+            $sql = $conn->prepare("INSERT INTO person_i_quiz (person_id, quiz_id, antall_rette, fullført_dato, antall_svart) VALUES (?,?,?,?,?)");
+            $sql->bind_param("sssss", $id, $quiz, $antRett, $dato, $antSvart);
             if($sql->execute()) {
-                $_SESSION['poeng'] = $_SESSION['poeng'] + $poeng;
+                $sql = $conn->prepare("UPDATE person SET poeng = poeng + ? WHERE person_id = $id");
+                $sql->bind_param("s", $poeng);
+                if($sql->execute()) {
+                    $_SESSION['poeng'] = $_SESSION['poeng'] + $poeng;
+                    header("location: ../../quiz-fullført.php?quiz=$quiz");
+                }
+            }
+        } else {
+            //Oppdater den allerede opprettede raden
+            $sql = $conn->prepare("UPDATE person_i_quiz SET antall_rette = ?, antall_svart = ? WHERE person_id = ? AND quiz_id = ?");
+            $sql->bind_param("ssss", $antRett, $antSvart, $id, $quiz);
+            if($sql->execute()) {
                 header("location: ../../quiz-fullført.php?quiz=$quiz");
             }
         }
+
     //Hvis brukeren ikke fullførte quizen
     } else {
         $sql = $conn->prepare("INSERT INTO person_i_quiz (person_id, quiz_id, antall_rette, antall_svart) VALUES (?,?,?,?)");
         $sql->bind_param("ssss", $id, $quiz, $antRett, $antSvart);
         if($sql->execute()) {
-            header("location: ../../forside.php");
+            header("location: ../../quiz-fullført.php?quiz=$quiz");
         }
     }
 }

@@ -21,7 +21,7 @@ if ($result->num_rows > 0) {
         echo $row["farge"];
         echo '"><h3>';
         echo $row["navn"];
-        echo '</h3></div></div></a>';
+        echo '</h3></div></a></div>';
     }
 }
 ?>

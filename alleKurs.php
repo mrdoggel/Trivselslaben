@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/common/reset.css">
     <link rel="stylesheet" href="assets/css/common/global.css">
     <link rel="stylesheet" href="assets/css/forside.css">
-    <link rel="stylesheet" href="assets/css/common/alle-kurs-moduler.css">
+    <link rel="stylesheet" href="assets/css/common/alle-kurs-moduler-quizer.css">
     <script src="assets/js/top-nav.js"></script>
 </head>
 
