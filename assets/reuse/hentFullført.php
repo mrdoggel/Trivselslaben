@@ -9,20 +9,24 @@ $sql1->execute();
 $result1 = $sql1->get_result();
 if ($result1->num_rows > 0 || $result->num_rows > 0) {
     if (!isset($tittel)) {
+        echo '<div class="top">';
         $tittel = "<h2>Her finner du alt du har fullført </h2>";
         echo $tittel;
         echo '<form method="post" action="fullført.php">';
-            echo '<input type="radio" name="fullført-filter" value="1"';
+            echo '<input style="display:none;" id="isf" type="radio" name="fullført-filter" value="1"';
             if ($filter == 1) {echo " checked";}
-            echo '>Ingen sortering</input>';
-            echo '<input type="radio" name="fullført-filter" value="2"';
+            echo '></input>';
+            echo '<label for="isf" id="isf" name="isf_label">Ingen sortering</label>';
+            echo '<input style="display:none;" id="qf" type="radio" name="fullført-filter" value="2"';
             if ($filter == 2) {echo " checked";}
-            echo '>Se quizer</input>';
-            echo '<input type="radio" name="fullført-filter" value="3"';
+            echo '></input>';
+            echo '<label for="qf" id="qf" name="qf_label">Se quizer</label>';
+            echo '<input style="display:none;" id="mf" type="radio" name="fullført-filter" value="3"';
             if ($filter == 3) {echo " checked";}
-            echo '>Se moduler</input>';
+            echo '></input>';
+            echo '<label for="mf" id="mf" name="mf_label">Se moduler</label>';
             echo '<button type="submit" name="fullført-filter-knapp">Sorter</button>';
-        echo '</form>';
+        echo '</form></div>';
     }
 }
 if ($result1->num_rows > 0 || $result->num_rows > 0) {

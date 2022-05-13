@@ -9,20 +9,24 @@ $sql1->execute();
 $result1 = $sql1->get_result();
 if ($result1->num_rows > 0 || $result->num_rows > 0) {
     if (!isset($tittel)) {
+        echo '<div class="top">';
         $tittel = "<h2>Her finner du det du ikke rakk å fullføre</h2>";
         echo $tittel;
         echo '<form method="post" action="påbegynt.php">';
-            echo '<input type="radio" name="påbegynt-filter" value="1"';
+            echo '<input style="display:none;" id="is" type="radio" name="påbegynt-filter" value="1"';
             if ($filter == 1) {echo " checked";}
-            echo '>Ingen sortering</input>';
-            echo '<input type="radio" name="påbegynt-filter" value="2"';
+            echo '></input>';
+            echo '<label for="is" id="is" name="is_label">Ingen sortering</label>';
+            echo '<input style="display:none;" id="q" type="radio" name="påbegynt-filter" value="2"';
             if ($filter == 2) {echo " checked";}
-            echo '>Se quizer</input>';
-            echo '<input type="radio" name="påbegynt-filter" value="3"';
+            echo '></input>';
+            echo '<label for="q" id="q" name="q_label">Se quizer</label>';
+            echo '<input style="display:none;" id="m" type="radio" name="påbegynt-filter" value="3"';
             if ($filter == 3) {echo " checked";}
-            echo '>Se moduler</input>';
+            echo '></input>';
+            echo '<label for="m" id="m" name="m_label">Se moduler</label>';
             echo '<button type="submit" name="påbegynt-filter-knapp">Sorter</button>';
-        echo '</form>';
+        echo '</form></div>';
     }
 }
 if ($result1->num_rows > 0 || $result->num_rows > 0) {

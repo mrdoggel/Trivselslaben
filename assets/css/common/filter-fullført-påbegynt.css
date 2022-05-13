@@ -1,0 +1,70 @@
+.top {
+    display: flex;
+    width: 100%;
+}
+
+.top h2 {
+    width: 35%;
+    padding: 0;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.top form {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+form {
+    box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 10%);
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+label {
+    font-size: 1rem;
+    margin: 0rem 7rem 0rem 0rem;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+}
+
+button[type="submit"]{
+    border: none;
+    background-color: #a3ecc8;
+    font-style: italic;
+    cursor: pointer;
+    font-family: "Segoe UI";
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+input#is:checked + label#is,
+input#q:checked + label#q,
+input#m:checked + label#m,
+input#isf:checked + label#isf,
+input#qf:checked + label#qf,
+input#mf:checked + label#mf {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 60%,
+        #B6F3AB 0%,
+        #B6F3AB 0%
+    );
+    font-family: "Segoe UI";
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1550px) {
+    label {
+        margin: 0rem 4rem 0rem 0rem;
+    }
+}

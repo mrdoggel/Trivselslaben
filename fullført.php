@@ -11,6 +11,8 @@
           <link rel="stylesheet" href="assets/css/common/reset.css">
           <link rel="stylesheet" href="assets/css/common/global.css">
           <link rel="stylesheet" href="assets/css/common/side-nav.css">
+          <link rel="stylesheet" href="assets/css/common/filter-fullført-påbegynt.css">
+          <link rel="stylesheet" href="assets/css/common/alle-kurs-moduler-quizer.css">
           <link rel="stylesheet" href="assets/css/forside.css">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
           <script src="assets/js/top-nav.js"></script>
