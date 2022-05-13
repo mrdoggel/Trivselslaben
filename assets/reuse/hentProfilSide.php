@@ -22,7 +22,7 @@
             <?php } else { ?>
             <div>
                 <img src="assets/images/default.jpg"></img>
-                <label for="bilde" id="last-opp-btn">last opp</label>
+                <label for="bilde" id="last-opp-btn"><span>last opp<span></label>
                 <input id="bilde" type="file" name ="bilde" placeholder="Nytt bilde">
             </div>
 
