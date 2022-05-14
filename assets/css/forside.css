@@ -579,5 +579,10 @@ main img {
   .bottom, .modulbottom {
     min-height: 60px;
   }
+
+  .kurs h7 {
+    margin-top: 2.5rem;
+    font-size: 0.75rem;
+  }
   
 }
