@@ -41,15 +41,15 @@
                 </ul>
             </nav>
             <div id="section-container">
-              <section>
-                <?php require "assets/reuse/hentUnderveis.php"; ?>
-              </section>
+                <section>
+                    <?php require "assets/reuse/hentUnderveis.php"; ?>
+                </section>
                 <section>
                     <h2>Toppvalg basert på dine interesser</h2>
                     <div class="scrollmenu">
-                      <?php
-                        require "assets/reuse/hentInteresser.php";
-                      ?>
+                        <?php
+                            require "assets/reuse/hentInteresser.php";
+                        ?>
                     </div>
                 </section>
             </div>
