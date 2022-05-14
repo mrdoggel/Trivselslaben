@@ -4,13 +4,13 @@
 <?php
 switch ($side) {
     case 1:
-        echo '<form class="filter" action="alleKurs.php" method="post">';
+        echo '<form action="alleKurs.php" method="post">';
         break;
     case 2:
-        echo '<form class="filter" action="alleModuler.php" method="post">';
+        echo '<form action="alleModuler.php" method="post">';
         break;
     case 3:
-        echo '<form class="filter" action="alleQuizer.php" method="post">';
+        echo '<form action="alleQuizer.php" method="post">';
         break;
 }
 ?>

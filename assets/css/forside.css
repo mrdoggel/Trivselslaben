@@ -50,20 +50,20 @@ p {
   font-size: 1rem;
   font-weight: 100;
   letter-spacing: -0.2px;
+  line-height: 200%;
 }
-
-main img {
+main .kurs img {
   text-align: center;
   max-width: 40%;
+  margin: 0rem 1rem 1rem 1rem;
   align-self: center;
 }
 
 .scrollmenu {
   display: flex;
   overflow: auto;
-  white-space: wrap;
+  /*white-space: nowrap;*/
   padding-bottom: 2rem;
-  align-items: center;
 }
 .kurs {
   display: flex;
@@ -71,29 +71,7 @@ main img {
   justify-content: center;
   min-width: 220px;
   max-width: 220px;
-  min-height: 240px;
-  max-height: 240px;
 }
-
-.kurs a{
-    width: 220px;
-    height: 240px;
-}
-
-.kurs .topp {
-    text-align: center;
-    justify-content: center;
-    align-self: center;
-    height: 65%;
-}
-
-.kurs .bottom {
-    text-align: center;
-    justify-content: center;
-    align-self: center;
-    height: 35%;
-}
-
 .modul {
   display: inline-block;
   position: relative;
@@ -101,18 +79,12 @@ main img {
   max-width: 300px;
   white-space: break-spaces;
 }
-
-.modul p {
-    line-height: 200%;
-}
-
-.kurs, .modul{
-  margin: 2rem 1.5rem 3rem 3rem;
+.kurs, .modul {
+  margin: 2rem 1.5rem 3rem 3rem; 
+  height: 290px;
   border-radius: 0.5rem;
   box-shadow:  1px 1px 20px 1px rgb(0 0 0 / 5%);
   opacity: 85%;
-  min-height: 240px;
-  max-height: 240px
 }
 .modul-tittel {
   height: 40%;
@@ -120,30 +92,19 @@ main img {
   justify-content: center;
   align-items: center;
 }
-
 .bottom, .modulbottom {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100px;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   white-space: break-spaces;
 }
-
-.modul a {
-    height: 240px;
-    width: 300px;
-}
-
-.modul .modul-tittel {
-
-}
-
 .modul .bottom {
-  position: absolute;
-  bottom: 0;
-  height: 45%;
+  height: 50%;
   text-align: center;
   background: #68cbd7;
 }
@@ -154,42 +115,13 @@ main img {
   width: 90%;
   margin: auto;
 }
-#section-container .link1 {
-    background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 60%,#d0d9f9 0%,#d0d9f9 0%);
-    font-family: "Segoe UI";
-    font-weight: 500;"
-}
-#section-container .link2 {
-    background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 60%,#a3ecc8 0%,#a3ecc8 0%);
-    font-family: "Segoe UI";
-    font-weight: 500;"
-}
-#section-container .link3 {
-    background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 60%,#f2f088 0%,#f2f088 0%);
-    font-family: "Segoe UI";
-    font-weight: 500;"
-}
 
-.kurs:hover, .modul:hover, .quiz-div:hover {
+.kurs:hover, .modul:hover, .underveis-container:hover, .fullført:hover {
   transition: all 0.3s ease-in-out;
   opacity: 100%;
   transform: translateY(-1.5rem);
   box-shadow:  1px 1px 20px 1px rgb(0 0 0 / 10%);
   cursor: pointer;
-}
-
-.kurs .topp {
-    text-align: center;
-    justify-content: center;
-    align-self: center;
-    height: 65%;
-}
-
-.kurs .bottom {
-    text-align: center;
-    justify-content: center;
-    align-self: center;
-    height: 35%;
 }
 
 /* --------- */
@@ -213,17 +145,14 @@ main img {
 }
 .underveis .bottom, .underveis .modulbottom {
   height: 15vh;
-  margin-top: 1rem;
+  margin-top: 1rem; 
 }
-
-.underveis .bottom {
-    background: #B6F3AB;
+.bottom {
+    background-color: #B6F3AB;
 }
-
-.underveis .modulbottom {
+.modulbottom {
     background: #68cbd7;
 }
-
 .underveis-container p:hover {
   cursor: pointer;
   transition: 0.5s ease;
@@ -231,13 +160,6 @@ main img {
   font-size: larger;
   border-radius: 0.5rem;
   background-color: #f2f088;
-}
-
-.underveis-container:hover {
-    transition: all 0.3s ease-in-out;
-    opacity: 100%;
-    transform: translateY(-1rem);
-    cursor: pointer;
 }
 
 /* -------- */
@@ -257,17 +179,16 @@ main img {
 }
 
 .fullført a {
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    max-width: 100%;
 }
 
-.fullført p {
-  padding-left: 0.5rem;
+.fullført p{
+  padding-left: 0.5rem; 
   text-align: left;
   font-size: 1rem;
   font-weight: 100;
   line-height: normal;
-  height: 100%;
 }
 
 .fullført p span {
@@ -275,149 +196,28 @@ main img {
 }
 
 .fullført .poeng {
-  padding: 1rem 0rem 1rem 0rem;
-  margin-top: 1rem;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 1rem 0rem 1rem 0rem; 
+  margin-top: 1rem; 
   background-color: #F4F6FA;
   font-size: 1rem;
 }
 
-.quiz-div{
-    position:relative;
-    box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
-    margin: 2rem 1.5rem 3rem 3rem;
-    min-width: 200px;
-    max-width: 200px;
-    min-height: 240px;
-    max-height: 240px
-    text-align: center;
-    min-height: 240px;
-    max-height: 240px
-    border-radius: 0.5rem;
-    opacity: 85%;
-    text-align: center;
-}
-
-.quiz-div h4 {
-      width: 100%;
-      padding: 0.625rem 0rem 0rem 0.625rem;
-      text-align: left;
-      position: absolute;
-      bottom: 3%;
-      font-size: 0.75rem;
-      font-family: "Segoe UI";
-      font-weight: 400;
- }
-
-#mer {
-    text-align: center;
-    width: 100%;
-}
-.quiz-div h2 {
-    margin-top: 0.5rem;
-    font-size: 1.75rem;
-    padding: 0.5rem;
-    font-weight: lighter;
-}
-
-.mer{
-    position:absolute;
-    bottom: 3%;
-    font-weight: bold;
-    font-size: 1.5rem;
-    z-index: 100;
-    text-align: center;
-}
-
-.mer:hover {
-    cursor: pointer;
-}
-
-.overlap {
-    position: absolute;
-    bottom: -7.15vh;
-    width: 100%;
-    max-height: fit-content;
-    text-align: center;
-    box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
-    background-color: #F4F6FA;
-}
-.overlap form {
-    box-shadow: none;
-    margin: 0rem;
-    padding: 0rem;
-    min-width: 200px;
-    max-width: 200px;
-}
-.overlap button, .overlap p {
-    border: none;
-    background-color: transparent;
-    position: static;
-    font-weight: 100;
-    font-size: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-}
-.overlap p:hover, .overlap button:hover {
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.quiz-div img {
-    max-width: 100%;
-}
-
-.quiz-div h2 {
-    font-size: 1.75rem;
-    font-weight: 500;
-}
-
-.topp {
-    display: flex wrap;
-    width: 100%;
-}
-
-.kurs h7 {
-    display: flex;
-    text-align: right;
-    justify-content: right;
-    margin-right: 1rem;
-    margin-top: 1.5rem;
-}
-
-.fullført .bottom,
-.fullført .modulbottom {
+.fullført .bottom, .fullført .modulbottom {
+  min-width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 25%;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  max-width: 100%;
-}
-.fullført .modulbottom {
-    background: #68cbd7;
-}
-
-.fullført .bottom {
-    background: #B6F3AB;
-}
-
-
-.fullført:hover {
-    transition: all 0.3s ease-in-out;
-    opacity: 100%;
-    transform: translateY(-0.5rem);
-    cursor: pointer;
-    box-shadow:  1px 1px 20px 1px rgb(0 0 0 / 10%);
+  height: auto;
 }
 
 /* --------------- */
-/* PROGRESS CIRLCE */
+/* PROGRESS CIRLCE */ 
 /* --------------- */
-
 .circle-wrap {
   margin: auto;
   width: 7.9vw;
@@ -427,7 +227,6 @@ main img {
 }
 
 .circle-wrap .circle .mask,
-.circle-wrap .circle .fill,
 .circle-wrap .circle .fill {
   width: 7.9vw;
   height: 7.9vw;
@@ -435,9 +234,9 @@ main img {
   border-radius: 50%;
 }
 
-.mask .fill,
-.mask .fillmodul {
+.mask .fill {
   clip: rect(0px, 3.95vw, 7.9vw, 0px);
+  background-color: #D0D9F9;
 }
 
 .circle-wrap .circle .mask {
@@ -462,22 +261,6 @@ main img {
 }
 
 @media only screen and (max-width: 1550px) {
-
-  .quiz-div h2 {
-      font-size: 1.3rem;
-  }
-
-  .mer {
-      font-size: 1.3rem;
-  }
-
-  .overlap p {
-      font-size: 0.8rem;
-  }
-  .overlap button, .overlap p {
-      font-size: 0.8rem;
-  }
-
   .utfclass {
     background: linear-gradient( 180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 70%, #B6F3AB 0%,#B6F3AB 0%);
     margin-right: 2rem;
@@ -514,12 +297,9 @@ main img {
   .underveis-container > p {
     font-size: 0.75rem;
   }
-  .underveis .bottom p {
+  .underveis .bottom p, .underveis .modulbottom p {
     font-size: 0.9rem;
   }
-  .underveis .modulbottom p {
-      font-size: 0.9rem;
-    }
   .underveis-container > p:hover{
     font-size: 0.9rem;
     cursor: pointer;
@@ -541,12 +321,14 @@ main img {
   }
 
   .scrollmenu .kurs {
-    min-width: 200px;
-    max-width: 200px;
+    min-width: 150px;
+    max-width: 150px;
+    height: 180px;
   }
 
   .scrollmenu .modul {
     min-width: 240px;
+    height: 220px;
   }
 
   .kurs {
@@ -572,7 +354,7 @@ main img {
     max-width: 200px;
   }
 
-  .fullført .bottom {
+  .fullført .bottom, .fullført .modulbottom {
     padding: 0rem;
   }
 

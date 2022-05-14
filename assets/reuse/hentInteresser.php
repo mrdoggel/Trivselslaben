@@ -8,31 +8,28 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $currKurs = 0;
         $temaId = $row['tema_id'];
-        $sql1 = $conn->prepare("SELECT k.* FROM kurs k, kurs_i_tema kt WHERE k.kurs_id = kt.kurs_id AND kt.tema_id = $temaId AND k.kurs_id;");
+        $sql1 = $conn->prepare("SELECT k.* FROM kurs k, kurs_i_tema kt WHERE k.kurs_id = kt.kurs_id AND kt.tema_id = $temaId");
         $sql1->execute();
         $result1 = $sql1->get_result();
         if ($result1->num_rows > 0) {
             while ($row1 = $result1->fetch_assoc()) {
-                echo '<div id="kurs';
-                echo $row1["kurs_id"];
-                echo '" class="kurs">';
+                echo '<div>';
                 echo '<a href="kurs.php?kurs=';
                 echo $row1["kurs_id"];
-                echo '">';
-                echo '<div class="topp">';
+                echo '"<div id="kurs';
+                echo $row1["kurs_id"];
+                echo '" class="kurs">';
                 echo '<h4>KURS</h4>';
                 echo '<img src="';
                 echo $row1["bilde"];
-                echo '" alt="lightbulb"><h7>';
+                echo '" alt="bilde"><h4 style="text-align: right; padding-right: 7px;">';
                 echo $row1['varighet'];
-                echo ' minutter</h7>';
-                echo '</div>';
-                echo '<div class="bottom"';
+                echo ' minutter</h4><div class="bottom"';
                 echo 'style="background-color:';
                 echo $row1["farge"];
                 echo '"><h3>';
                 echo $row1["navn"];
-                echo '</h3></div></a></div>';
+                echo '</h3></div></div></a>';
             }
         }
 
@@ -58,12 +55,12 @@ if ($result->num_rows > 0) {
                 echo '</p></div></a></div>';
             }
         }
-        $sql3 = $conn->prepare("SELECT distinct q.* FROM quiz q, quiz_i_tema qt, tema t WHERE q.quiz_id = qt.quiz_id AND qt.tema_id = $temaId");
+        $sql3 = $conn->prepare("SELECT distinct q.* FROM quiz q, quiz_i_tema qt, tema t WHERE q.quiz_id = qt.quiz_id AND qt.tema_id = $temaId AND q.quiz_id != 5");
         $sql3->execute();
         $result3 = $sql3->get_result();
         if ($result3->num_rows > 0) {
             while($row3 = $result3->fetch_assoc()) {
-                echo '<div class="quiz-div" id="quiz-';
+                echo '<div class="quiz" id="quiz-';
                     echo $row3['quiz_id'];
                     echo '">';
                     echo '<a href="quiz.php?quiz=';

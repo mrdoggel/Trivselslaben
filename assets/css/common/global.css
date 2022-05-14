@@ -71,10 +71,6 @@ legend{
   display: none;
 }
 
-.visible {
-    display: block;
-}
-
 .error {
 display: block;
 text-align: center;

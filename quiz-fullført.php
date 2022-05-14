@@ -1,7 +1,4 @@
-<?php
-    session_start();
-    require "assets/reuse/sessionSjekk.php";
-?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

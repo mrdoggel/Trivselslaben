@@ -23,8 +23,8 @@ $result = $sql->get_result();
 if ($result->num_rows > 0) {
     header("Location: ../../alleModuler.php");
 } else {
-    $sql = $conn->prepare("INSERT INTO person_i_modul (person_id, modul_id, fullført_dato, antall_sett) VALUES (?,?,?,?)");
-    $sql->bind_param("ssss", $id, $modul, $dato, 11);
+    $sql = $conn->prepare("INSERT INTO person_i_modul (person_id, modul_id, fullført_dato) VALUES (?,?,?)");
+    $sql->bind_param("sss", $id, $modul, $dato);
     if ($sql->execute() === TRUE) {
         $sql = $conn->prepare("UPDATE person SET poeng = poeng + ? WHERE person_id = ?");
         $sql->bind_param("ss", $poeng, $id);

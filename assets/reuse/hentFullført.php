@@ -238,7 +238,7 @@ function skriv($filterId) {
                                     echo $modulfarge;
                                     echo '">';
                                         echo $prosent;
-                                    echo '% riktig</div>';
+                                    echo '% ferdig</div>';
                                 echo '
                                 </div>
                             </div>';
@@ -496,7 +496,7 @@ function skriv($filterId) {
                              echo $modulfarge;
                              echo '">';
                                  echo $prosent;
-                             echo '% riktig</div>';
+                             echo '% ferdig</div>';
                          echo '
                          </div>
                      </div>';

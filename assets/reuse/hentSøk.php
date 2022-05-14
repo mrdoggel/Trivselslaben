@@ -8,7 +8,7 @@ $result = $sql->get_result();
 $sql1 = $conn->prepare("SELECT m.* FROM modul m, modul_i_ot mt, ot ot WHERE m.navn LIKE '%$søkeparameter%' OR m.beskrivelse LIKE '%$søkeparameter%' OR m.modul_id = mt.modul_id AND mt.ot_id = ot.ot_id AND ot.navn = '$søkeparameter' GROUP BY m.navn");
 $sql1->execute();
 $result1 = $sql1->get_result();
-$sql2 = $conn->prepare("SELECT q.* FROM quiz q, quiz_i_ot qt, ot ot WHERE q.quiznavn LIKE '%$søkeparameter%' OR q.quiz_id = qt.quiz_id AND qt.ot_id = ot.ot_id AND ot.navn = '$søkeparameter' GROUP BY q.quiznavn");
+$sql2 = $conn->prepare("SELECT q.* FROM quiz q, quiz_i_ot qt, ot ot WHERE q.quiz_id != 5 AND q.quiznavn LIKE '%$søkeparameter%' OR q.quiz_id = qt.quiz_id AND qt.ot_id = ot.ot_id AND ot.navn = '$søkeparameter' GROUP BY q.quiznavn");
 $sql2->execute();
 $result2 = $sql2->get_result();
 if ($result2->num_rows > 0 || $result1->num_rows > 0 || $result->num_rows > 0) {
@@ -21,26 +21,23 @@ if ($result2->num_rows > 0 || $result1->num_rows > 0 || $result->num_rows > 0) {
     }
 
     while($row = $result->fetch_assoc()) {
-        echo '<div id="kurs';
-        echo $row["kurs_id"];
-        echo '" class="kurs">';
+        echo '<div>';
         echo '<a href="kurs.php?kurs=';
         echo $row["kurs_id"];
-        echo '">';
-        echo '<div class="topp">';
+        echo '"<div id="kurs';
+        echo $row["kurs_id"];
+        echo '" class="kurs">';
         echo '<h4>KURS</h4>';
         echo '<img src="';
         echo $row["bilde"];
-        echo '" alt="lightbulb"><h7>';
+        echo '" alt="bilde"><h4 style="text-align: right; padding-right: 7px;">';
         echo $row['varighet'];
-        echo ' minutter</h7>';
-        echo '</div>';
-        echo '<div class="bottom"';
+        echo ' minutter</h4><div class="bottom"';
         echo 'style="background-color:';
         echo $row["farge"];
         echo '"><h3>';
         echo $row["navn"];
-        echo '</h3></div></a></div>';
+        echo '</h3></div></div></a>';
     }
     while($row = $result1->fetch_assoc()) {
         echo '<div id="modul';
@@ -64,7 +61,7 @@ if ($result2->num_rows > 0 || $result1->num_rows > 0 || $result->num_rows > 0) {
         </div>';
     }
     while($row2 = $result2->fetch_assoc()) {
-        echo '<div class="quiz-div" id="quiz-';
+        echo '<div class="quiz" id="quiz-';
             echo $row2['quiz_id'];
             echo '">';
             echo '<a href="quiz.php?quiz=';
