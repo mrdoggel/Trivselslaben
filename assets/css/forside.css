@@ -157,17 +157,17 @@ main img {
 #section-container .link1 {
     background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 60%,#d0d9f9 0%,#d0d9f9 0%);
     font-family: "Segoe UI";
-    font-weight: 500;"
+    font-weight: 500;
 }
 #section-container .link2 {
     background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 60%,#a3ecc8 0%,#a3ecc8 0%);
     font-family: "Segoe UI";
-    font-weight: 500;"
+    font-weight: 500;
 }
 #section-container .link3 {
     background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 60%,#f2f088 0%,#f2f088 0%);
     font-family: "Segoe UI";
-    font-weight: 500;"
+    font-weight: 500;
 }
 
 .kurs:hover, .modul:hover, .quiz-div:hover {
@@ -288,10 +288,10 @@ main img {
     min-width: 200px;
     max-width: 200px;
     min-height: 240px;
-    max-height: 240px
+    max-height: 240px;
     text-align: center;
     min-height: 240px;
-    max-height: 240px
+    max-height: 240px;
     border-radius: 0.5rem;
     opacity: 85%;
     text-align: center;
