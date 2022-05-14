@@ -215,6 +215,15 @@ main img {
   height: 15vh;
   margin-top: 1rem;
 }
+
+.underveis .bottom {
+    background: #B6F3AB;
+}
+
+.underveis .modulbottom {
+    background: #68cbd7;
+}
+
 .underveis-container p:hover {
   cursor: pointer;
   transition: 0.5s ease;
@@ -391,6 +400,11 @@ main img {
 .fullført .modulbottom {
     background: #68cbd7;
 }
+
+.fullført .bottom {
+    background: #B6F3AB;
+}
+
 
 .fullført:hover {
     transition: all 0.3s ease-in-out;
