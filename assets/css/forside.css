@@ -107,6 +107,8 @@ main .kurs img {
   height: 50%;
   text-align: center;
   background: #68cbd7;
+  position: absolute;
+  bottom: 0;
 }
 #section-container {
   width: 80%;

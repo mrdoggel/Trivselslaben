@@ -13,7 +13,7 @@
           <link rel="stylesheet" href="assets/css/common/side-nav.css">
           <link rel="stylesheet" href="assets/css/common/filter-fullført-påbegynt.css">
           <link rel="stylesheet" href="assets/css/forside.css">
-          <link rel="stylesheet" href="assets/css/quiz-div.css">
+          <link rel="stylesheet" href="assets/css/common/quiz-enkel.css">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
           <script src="assets/js/top-nav.js"></script>
           <script src="assets/js/quiz.js"></script>

@@ -61,7 +61,7 @@ if ($result2->num_rows > 0 || $result1->num_rows > 0 || $result->num_rows > 0) {
         </div>';
     }
     while($row2 = $result2->fetch_assoc()) {
-        echo '<div class="quiz" id="quiz-';
+        echo '<div class="quiz-enkel" id="quiz-';
             echo $row2['quiz_id'];
             echo '">';
             echo '<a href="quiz.php?quiz=';

@@ -60,7 +60,8 @@ if ($result->num_rows > 0) {
         $result3 = $sql3->get_result();
         if ($result3->num_rows > 0) {
             while($row3 = $result3->fetch_assoc()) {
-                echo '<div class="quiz" id="quiz-';
+                //Lagt til quiz-div her så blir den lik.. 
+                echo '<div class="quiz-enkel" id="quiz-';
                     echo $row3['quiz_id'];
                     echo '">';
                     echo '<a href="quiz.php?quiz=';

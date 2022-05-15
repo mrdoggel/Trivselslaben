@@ -1,18 +1,19 @@
 .quiz-div{
-    min-width: 300px;
-    max-width: 300px;
-    min-height: 37vh;
-    max-height: 37vh;
-    position: relative; 
+    min-width: 220px;
+    max-width: 220px;
+    position: relative;
     text-align: center;
     box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 15%);
-    margin: 3rem 1.5rem 2rem 3rem; 
+    margin: 1rem; 
+    border-radius: 0.5rem;
+    opacity: 90%; 
 }
-.quiz-div h2 {
-    margin-top: 0.5rem; 
-    font-size: 1.75rem;
+.quiz-div h2{
+    max-width: 100%;
     padding: 0.5rem; 
-    font-weight: lighter;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-top: 2rem;
 }
 .mer{
     display: none;
@@ -20,7 +21,7 @@
 .quiz-div img {
     max-width: 100%;
 }
-.kurs, .modul{
+.kurs, .modul, .quiz-div{
     margin: 3rem 1.5rem 3rem 3rem; 
     height: 37vh;
     border-radius: 0.5rem;
@@ -28,7 +29,7 @@
     opacity: 85%;
 }
 .kurs h2, .modul h2 {
-    width: 100%;
+    max-width: 100%;
     padding: 3rem; 
     text-align: left;
     font-size: 1.75rem;

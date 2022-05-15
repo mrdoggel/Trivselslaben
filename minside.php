@@ -42,8 +42,6 @@
 
         ?>
 
-
-
             </section>
 
         </main>
