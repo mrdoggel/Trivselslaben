@@ -32,7 +32,8 @@ if (isset($otId1)) {
 
         }
     }
-}else if (isset($otId2)) {
+}
+if (isset($otId2)) {
     $sql = $conn->prepare("SELECT q.* FROM quiz q, quiz_i_ot tio WHERE q.quiz_id = tio.quiz_id AND tio.ot_id = $otId2");
     $sql->execute();
     $result = $sql->get_result();
@@ -64,7 +65,8 @@ if (isset($otId1)) {
 
         }
     }
-}else if (isset($otId3)) {
+}
+if (isset($otId3)) {
     $sql = $conn->prepare("SELECT q.* FROM quiz q, quiz_i_ot tio WHERE q.quiz_id = tio.quiz_id AND tio.ot_id = $otId3");
     $sql->execute();
     $result = $sql->get_result();
@@ -96,7 +98,8 @@ if (isset($otId1)) {
 
         }
     }
-}else if (isset($otId4)) {
+}
+if (isset($otId4)) {
     $sql = $conn->prepare("SELECT q.* FROM quiz q, quiz_i_ot tio WHERE q.quiz_id = tio.quiz_id AND tio.ot_id = $otId4");
     $sql->execute();
     $result = $sql->get_result();
@@ -128,7 +131,7 @@ if (isset($otId1)) {
 
         }
     }
-} else {
+} if (!isset($otId1) && !isset($otId2) && !isset($otId3) && !isset($otId4)){
     $sql = $conn->prepare("SELECT q.* FROM quiz q");
     $sql->execute();
     $result = $sql->get_result();

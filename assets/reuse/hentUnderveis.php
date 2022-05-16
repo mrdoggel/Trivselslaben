@@ -1,7 +1,7 @@
 <?php
 require "assets/connection/conn.php";
 $id = $_SESSION['id'];
-$sql = $conn->prepare("SELECT pq.antall_svart, pq.antall_rette, q.quiz_id, q.quiznavn, q.antall_spørsmål FROM person_i_quiz pq, quiz q WHERE pq.quiz_id = q.quiz_id AND pq.person_id = $id AND pq.antall_svart < q.antall_spørsmål");
+$sql = $conn->prepare("SELECT pq.antall_svart, pq.antall_rette, q.quiz_id, q.quiznavn, q.antall_spørsmål FROM person_i_quiz pq, quiz q WHERE pq.quiz_id = q.quiz_id AND pq.person_id = $id AND pq.antall_svart < q.antall_spørsmål OR pq.person_id = $id AND pq.quiz_id = q.quiz_id AND pq.antall_rette < q.antall_spørsmål/2");
 $sql->execute();
 $result = $sql->get_result();
 $sql1 = $conn->prepare("SELECT pm.antall_sett, m.modul_poeng, pm.modul_id, m.antall_sider, m.navn, pm.fullført_dato FROM person_i_modul pm, modul m WHERE pm.modul_id = m.modul_id AND pm.person_id = $id AND pm.antall_sett < m.antall_sider");
@@ -10,7 +10,7 @@ $result1 = $sql1->get_result();
 if ($result1->num_rows > 0 || $result->num_rows > 0) {
     if (!isset($tittel)) {
         echo '<div class="top">';
-        $tittel = "<h2>Her finner du det du ikke rakk å fullføre</h2>";
+        $tittel = "<h2>Her finner du det du ikke har fullført</h2>";
         echo $tittel;
         echo '<form method="post" action="påbegynt.php">';
             echo '<input style="display:none;" id="is" type="radio" name="påbegynt-filter" value="1"';
@@ -45,7 +45,7 @@ if ($result1->num_rows > 0 || $result->num_rows > 0) {
 function skriv($filterId) {
     require "assets/connection/conn.php";
     $id = $_SESSION['id'];
-    $sql = $conn->prepare("SELECT pq.antall_svart, pq.antall_rette, q.quiz_id, q.quiznavn, q.antall_spørsmål FROM person_i_quiz pq, quiz q WHERE pq.quiz_id = q.quiz_id AND pq.person_id = $id AND pq.antall_svart < q.antall_spørsmål");
+    $sql = $conn->prepare("SELECT pq.antall_svart, pq.antall_rette, q.quiz_id, q.quiznavn, q.antall_spørsmål FROM person_i_quiz pq, quiz q WHERE pq.person_id = $id AND pq.quiz_id = q.quiz_id AND pq.antall_svart < q.antall_spørsmål OR pq.person_id = $id AND pq.quiz_id = q.quiz_id AND pq.antall_rette < q.antall_spørsmål/2");
     $sql->execute();
     $result = $sql->get_result();
     $sql1 = $conn->prepare("SELECT pm.antall_sett, m.modul_poeng, pm.modul_id, m.antall_sider, m.navn, pm.fullført_dato FROM person_i_modul pm, modul m WHERE pm.modul_id = m.modul_id AND pm.person_id = $id AND pm.antall_sett < m.antall_sider");
@@ -54,6 +54,13 @@ function skriv($filterId) {
     if ($filterId == 1) {
         while($row = $result->fetch_assoc()) {
             $prosent = round($row['antall_svart'] / $row['antall_spørsmål'] * 100);
+            $ferdigRiktig = "ferdig";
+            $videre = "Fortsett der du slapp";
+            if ($row['antall_rette'] < $row['antall_spørsmål']) {
+                $prosent = $row['antall_rette'] / $row['antall_spørsmål']*100;
+                $ferdigRiktig = "riktig";
+                $videre = "Prøv igjen";
+            }
             if ($prosent == 100) {
                 $farge = "#B6F3AB";
             }
@@ -108,10 +115,14 @@ function skriv($filterId) {
             echo $farge;
             echo '">';
             echo $prosent;
-            echo '% ferdig</div>';
+            echo '% ';
+            echo $ferdigRiktig;
+            echo '</div>';
             echo '</div></div><div class="bottom"><h3>';
             echo $row['quiznavn'];
-            echo '</h3></div></div><p>Fortsett der du slapp</p></a>';
+            echo '</h3></div></div><p>';
+            echo $videre;
+            echo '</p></a>';
             echo '<style>';
             echo '@keyframes fill';
             echo $row['quiz_id'];
@@ -289,6 +300,13 @@ function skriv($filterId) {
     } else if ($filterId == 2) {
         while($row = $result->fetch_assoc()) {
             $prosent = round($row['antall_svart'] / $row['antall_spørsmål'] * 100);
+            $ferdigRiktig = "ferdig";
+            $videre = "Fortsett der du slapp";
+            if ($row['antall_rette'] < $row['antall_spørsmål']) {
+                $prosent = $row['antall_rette'] / $row['antall_spørsmål']*100;
+                $ferdigRiktig = "riktig";
+                $videre = "Prøv igjen";
+            }
             if ($prosent == 100) {
                 $farge = "#B6F3AB";
             }
@@ -343,10 +361,14 @@ function skriv($filterId) {
             echo $farge;
             echo '">';
             echo $prosent;
-            echo '% ferdig</div>';
+            echo '% ';
+            echo $ferdigRiktig;
+            echo '</div>';
             echo '</div></div><div class="bottom"><h3>';
             echo $row['quiznavn'];
-            echo '</h3></div></div><p>Fortsett der du slapp</p></a>';
+            echo '</h3></div></div><p>';
+            echo $videre;
+            echo '</p></a>';
             echo '<style>';
             echo '@keyframes fill';
             echo $row['quiz_id'];

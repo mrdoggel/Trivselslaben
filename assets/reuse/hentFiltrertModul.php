@@ -21,7 +21,8 @@ if (isset($otId1)) {
             echo '</p></div></div>';
         }
     }
-}else if (isset($otId2)) {
+}
+if (isset($otId2)) {
     $sql = $conn->prepare("SELECT m.* FROM modul m , modul_i_ot tio WHERE m.modul_id = tio.modul_id AND tio.ot_id = $otId2");
     $sql->execute();
     $result = $sql->get_result();
@@ -42,7 +43,8 @@ if (isset($otId1)) {
             echo '</p></div></div>';
         }
     }
-}else if (isset($otId3)) {
+}
+if (isset($otId3)) {
     $sql = $conn->prepare("SELECT m.* FROM modul m , modul_i_ot tio WHERE m.modul_id = tio.modul_id AND tio.ot_id = $otId3");
     $sql->execute();
     $result = $sql->get_result();
@@ -63,7 +65,8 @@ if (isset($otId1)) {
             echo '</p></div></div>';
         }
     }
-}else if (isset($otId4)) {
+}
+if (isset($otId4)) {
     $sql = $conn->prepare("SELECT m.* FROM modul m , modul_i_ot tio WHERE m.modul_id = tio.modul_id AND tio.ot_id = $otId4");
     $sql->execute();
     $result = $sql->get_result();
@@ -84,7 +87,7 @@ if (isset($otId1)) {
             echo '</p></div></div>';
         }
     }
-} else {
+} if (!isset($otId1) && !isset($otId2) && !isset($otId3) && !isset($otId4)) {
     $sql = $conn->prepare("SELECT m.* FROM modul m");
     $sql->execute();
     $result = $sql->get_result();
