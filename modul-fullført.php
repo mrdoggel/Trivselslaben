@@ -20,7 +20,6 @@
 
     <main>
         <div class="quiz-res-container">
-            <h2>Du har nå fullført Modulen</h2>
             <?php
                 $modul = $_GET['modul'];
                 require "assets/reuse/hentModulResultat.php";

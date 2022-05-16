@@ -4,6 +4,7 @@ require "conn.php";
 $id = $_SESSION['id'];
 $modul = $_POST['modulId'];
 $dato = date("Y-m-d");
+$elve = 11;
 
 //Finn ut hvor mye poeng modulen gir
 $sql = $conn->prepare("SELECT modul_poeng FROM modul WHERE modul_id = $modul");
@@ -21,10 +22,10 @@ $sql->execute();
 $result = $sql->get_result();
 //Hvis det er noen svar
 if ($result->num_rows > 0) {
-    header("Location: ../../alleModuler.php");
+    header("Location: ../../modul-fullført.php?modul=$modul&poeng=1");
 } else {
-    $sql = $conn->prepare("INSERT INTO person_i_modul (person_id, modul_id, fullført_dato) VALUES (?,?,?)");
-    $sql->bind_param("sss", $id, $modul, $dato);
+    $sql = $conn->prepare("INSERT INTO person_i_modul (person_id, modul_id, fullført_dato, antall_sett) VALUES (?,?,?,?)");
+    $sql->bind_param("ssss", $id, $modul, $dato, $elve);
     if ($sql->execute() === TRUE) {
         $sql = $conn->prepare("UPDATE person SET poeng = poeng + ? WHERE person_id = ?");
         $sql->bind_param("ss", $poeng, $id);
