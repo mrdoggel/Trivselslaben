@@ -10,6 +10,7 @@ $result = $sql->get_result();
 if (!isset($poeng)) {
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
+            $farge = "#B6F3AB";
             $navn = $row['navn'];
             $poeng = $row['modul_poeng'];
             $prosent = 100;
@@ -22,34 +23,72 @@ if (!isset($poeng)) {
             echo '<div class="circle-wrap">';
             echo '<div class="circle">';
             echo '<div class="mask full" style="animation: fill';
-            echo $row['modul_id'];
             echo ' ease-in-out 2s; transform: rotate(';
             echo $grader;
             echo 'deg);';
             echo '">';
             echo '<div class="fill" style="animation: fill';
-            echo $row['quiz_id'];
             echo ' ease-in-out 2s; transform: rotate(';
             echo $grader;
             echo 'deg); background: #B6F3AB;';
             echo '"></div></div>';
             echo '<div class="mask half">';
             echo '<div class="fill" style="animation: fill';
-            echo $row['quiz_id'];
             echo ' ease-in-out 2s; transform: rotate(';
             echo $grader;
             echo 'deg); background: #B6F3AB;';
             echo '"></div>';
             echo '</div><div class="inside-circle" style=" color: #B6F3AB;">';
             echo $prosent;
-            echo '%</div>';
+            echo '% ferdig</div>';
             echo '</div></div>';
             echo '<style>';
             echo '@keyframes fill';
-            echo $row['quiz_id'];
             echo '{0% {transform: rotate(0deg);}100% {transform: rotate(';
             echo $grader;
             echo 'deg);}}';
+            echo ' .mask .fill { background-color: ';
+                echo $farge;
+                echo ';}
+                .circle-wrap {
+                  margin: auto;
+                  width: 7.9vw;
+                  height: 7.9vw;
+                  background: #fefcff;
+                  border-radius: 50%;
+                }
+
+                .circle-wrap .circle .mask,
+                .circle-wrap .circle .fill {
+                  width: 7.9vw;
+                  height: 7.9vw;
+                  position: absolute;
+                  border-radius: 50%;
+                }
+
+                .mask .fill {
+                  clip: rect(0px, 3.95vw, 7.9vw, 0px);
+                }
+
+                .circle-wrap .circle .mask {
+                  clip: rect(0px, 7.9vw, 7.9vw, 3.95vw);
+                }
+
+                .circle-wrap .inside-circle {
+                  width: 6.39vw;
+                  height: 6.39vw;
+                  border-radius: 50%;
+                  font-family: "Leelawadee UI";
+                  line-height: 6.32vw;
+                  text-align: center;
+                  margin-top: 0.734vw;
+                  margin-left: 0.734vw;
+                  position: absolute;
+                  z-index: 100;
+                  background: #ffffff;
+                  font-weight: lighter;
+                  font-size: 1.25vw;
+                }';
             echo '</style></div>';
             echo "<p><span>Du fullførte modulen og fikk $poeng poeng!</span></p>";
             echo '<p id="prøv-igjen"><a href="forside.php';
